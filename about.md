@@ -3,28 +3,12 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+I am Samarth Bansal, an independent journalist based in New Delhi. 
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+I previously worked with the data journalism teams of the *[Hindustan Times](http://www.hindustantimes.com)* and *[The Hindu](http://www.thehindu.com)*. In 2018, I spent five months at with the data/investigations team of the *[Wall Street Journal](http://www.wsj.com)* in New York as part of the [Alfred Friendly Fellowship](http://www.presspartners.org). 
 
-There are currently two themes built on Poole:
+I mostly write about politics, policy and technology. You can see my selected work here. 
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+I graduated with a BS in Mathematics and Scientific Computing from the [Indian Institute of Technology, Kanpur](http://iitk.ac.in/) in 2015. 
 
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+Have things to chat? [Say hi!](/contact) I’d love to hear from you.
