@@ -1,10 +1,26 @@
 ---
 layout: page
-title: Posts
-published: false
+title: Blog Archive
+<!-- published: true -->
 ---
 
-##Technology
+
+{% for post in site.posts %}
+<!-- 
+{{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})   -->
+
+**[ {{ post.title }} ]({{post.url}})**  &raquo; *{{ post.date | date_to_string }}* 
+
+
+<!-- [ {{ post.title }} ]({{ post.url }})  &raquo;  -->
+
+
+
+
+{% endfor %}
+
+
+<!-- ##Technology
 
 * [Facebook and free spech, explained](2018/07/28/facebook-free-seech/)
 * Interesting readings on quantum crpytography
@@ -24,4 +40,4 @@ published: false
 
 * Universal Basic Income
 * Primary healthcare in India
-* Air Pollution
+* Air Pollution -->
