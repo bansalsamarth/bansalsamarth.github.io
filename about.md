@@ -3,11 +3,11 @@ layout: page
 title: About
 ---
 
-I am Samarth Bansal, an independent journalist and computer programmer based in New Delhi. I mostly write about politics, economicy policy and technology. You can see my selected work here.
+I am Samarth Bansal, an independent journalist and computer programmer based in New Delhi. I write about politics, economicy policy and the interection of technology and society. You can see my [selected work here](/work).
 
-I previously worked with the data journalism teams of the *[Hindustan Times](http://www.hindustantimes.com)* and *[The Hindu](http://www.thehindu.com)*. In 2018, I spent five months reporting for the data/investigations team of the *[Wall Street Journal](http://www.wsj.com)* in New York as part of the [Alfred Friendly Fellowship](http://www.presspartners.org). 
+I previously worked with the data journalism teams of the *[Hindustan Times](http://www.hindustantimes.com)* and *[The Hindu](http://www.thehindu.com)*. In 2018, I was awarded the [Alfred Friendly Press Partners Fellowship](http://www.presspartners.org) — as part of the program, I spent five months reporting for the investigative team of the *[Wall Street Journal](http://www.wsj.com)* in New York City. 
 
-I have also written for *The Atlantic*, *HuffPost India* and *Livemint*. 
+My work has also appeared in *[The Atlantic](https://www.theatlantic.com)*, *[HuffPost India](https://www.huffingtonpost.in/)* and *[Livemint](https://www.livemint.com/)*. 
 
 I graduated with a BS in Mathematics and Scientific Computing from the [Indian Institute of Technology, Kanpur](http://iitk.ac.in/) in 2015. 
 
