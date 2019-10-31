@@ -54,7 +54,7 @@ Both the articles aimed to provide autonomy to J&K. The debate centers around ab
 
 **Arguments against Article 370 and special status for J&K:**
 
-* The RSS has held Article 370 and 35A as the root cause for separatist sentiment in the valley. Autonomy creates conditions for separatism, they ague, and it against the Hindutva-inspired view of the “nation”. The step leads to the full integration of the state in the Indian Union. 
+* The RSS has held Article 370 and 35A as the root cause for separatist sentiment in the valley. Autonomy creates conditions for separatism, they argue, and it against the Hindutva-inspired view of the “nation”. The step leads to the full integration of the state in the Indian Union. 
 
 * Home Minister Amit Shah said Article 370 was hurting the development of the region. It has led to people stuck in poverty, rampant corruption in the government, and lack to access the benefits of reservation hurts the progress of the state. Special status has done nothing special for the citizens. 
 
