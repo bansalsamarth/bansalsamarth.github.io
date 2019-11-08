@@ -2,7 +2,7 @@
 
 layout: post
 title: Jammu & Kashmir, Article 370 and the aftermath
-
+comments: true
 
 ---
 
