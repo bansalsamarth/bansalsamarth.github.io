@@ -93,7 +93,7 @@ Under the Paris climate agreement, each country was required to submit a nationa
 
 3.  **Goal #3: “**India will create an additional ‘carbon sink’ of 2.5 to 3 billion tonnes of CO2 equivalent through additional forest and tree cover by 2030.” **(Lagging)**
 
-From ****[Business Standard](https://www.business-standard.com/article/economy-policy/draft-report-for-un-india-set-to-meet-2-of-its-3-paris-agreement-goals-118111100203_1.html):
+From [*Business Standard*](https://www.business-standard.com/article/economy-policy/draft-report-for-un-india-set-to-meet-2-of-its-3-paris-agreement-goals-118111100203_1.html):
 
 > The report indicates that India is well on way to achieve the target for emission intensity of the economy [Goal #1] and share of non-fossil fuel-based power capacity [Goal #2]. In fact, at current rates of improvement on both fronts, India could achieve these targets ahead of the 2030 deadline. 
 >

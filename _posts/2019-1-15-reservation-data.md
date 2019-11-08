@@ -19,17 +19,21 @@ In this post, I will restrict myself to empirical evidence that answers the abov
 
 There are seven major points. 
 
-### 1. **How many Indians are eligible** for caste-based reservation
+### 1. How many Indians are eligible for caste-based reservation
 
-**Around three-fourths of the population is already covered with existing policies:** According to data from the National Sample Survey Office, 44% of Indians identify as OBCs. Add 9% of ST population and 20% of SC—that makes 73% of Indian population eligible for caste-based reservation. 
+Around three-fourths of the population is already covered with existing policies: According to data from the National Sample Survey Office, 44% of Indians identify as OBCs. Add 9% of ST population and 20% of SC—that makes 73% of Indian population eligible for caste-based reservation. 
 
 **Read more**: [Quantifying the Caste Quotas (The Hindu)](https://www.thehindu.com/opinion/op-ed/caste-reservation-quantifying-the-caste-quotes/article8281303.ece)
 
+---
+
 ### 2. **Who benefits from the new quota based on the economic criterion**
 
-**Almost everyone:** The government has not released any official figure. Using data from the India Human Development Survey, [Sonalde Desai, a Sociology professor at the University of Maryland, estimates](https://www.thehindu.com/opinion/lead/a-solution-in-search-of-a-problem/article25962037.ece) that the new quota will cover over 95% of the households—taking the income threshold of ₹8 lakh per annum and land ownership based exclusion. [(The Hindu)](https://www.thehindu.com/opinion/lead/a-solution-in-search-of-a-problem/article25962037.ece)
+Almost everyone: The government has not released any official figure. Using data from the India Human Development Survey, [Sonalde Desai, a Sociology professor at the University of Maryland, estimates](https://www.thehindu.com/opinion/lead/a-solution-in-search-of-a-problem/article25962037.ece) that the new quota will cover over 95% of the households—taking the income threshold of ₹8 lakh per annum and land ownership based exclusion. [(The Hindu)](https://www.thehindu.com/opinion/lead/a-solution-in-search-of-a-problem/article25962037.ece)
 
 **Read more on income and expenditure of Indians**: [How many Indians are richer than you? (The Hindu)](https://www.thehindu.com/data/how-many-indians-are-richer-than-you/article8551773.ece)
+
+---
 
 ### **3. U**pper-caste families are wealthier
 
@@ -43,6 +47,8 @@ Nearly half of general category individuals (excluding Muslims) belong to the af
 
 > While at a broad brushstroke the National Sample Survey (NSS) shows that mean consumption expenditure of forward castes is higher than that of Dalits, clusters of poverty persist among forward castes. According to NSS data, the bottom fourth of forward castes are poorer than the top half of Dalits. ([The Hindu](https://www.thehindu.com/opinion/lead/the-tools-for-counting/article24247791.ece))
 
+---
+
 ### 4. **Education and caste-based inequalities**
 
 Education is a big driver of wealth in India and very few of the underprivileged communities have access to education.
@@ -52,6 +58,8 @@ According to a [Mint analysis](https://www.livemint.com/Politics/DymS22taK4EyAbS
 **Why it matters:** 
 
 > The rising premium on education in India’s job market and the absence of any discrimination against them has meant that upper castes have been able to access well-paying jobs more easily compared to other social groups and have, in turn, been able to maintain their position on the socioeconomic ladder. [(Mint)](https://www.livemint.com/Politics/Jc5vLIol1v8MYsPvZzob5L/Why-income-inequality-in-India-may-be-fuelling-populist-poli.html)
+
+---
 
 ### 5. **Is there caste-based discrimination in the corporate job market?** 
 
@@ -68,6 +76,8 @@ In this [excellent essay on the economics of discrimination](https://www.livemin
 > Thorat and Attewell then analysed the response patterns from firms. Their findings, published in a 2007 Economic and Political Weekly research paper, were striking. 
 >
 > The ones with Muslim surnames had the lowest chance of being selected for an interview, followed by those with Dalit surnames. Candidates with upper-caste surnames faced significantly brighter prospects. [(Mint)](https://www.livemint.com/Sundayapp/rYsXiKLn1lVEp9Pq2bSpuJ/The-economics-of-discrimination-and-a-tailormade-Hollywood.html)
+
+---
 
 ### **6. Why young people want government jobs**
 
@@ -86,6 +96,8 @@ Even qualified professionals working with the government at the entry level are 
 **Why it matters:** The consequences of this disparity in salaries between public and private sector are far reaching, said Sonalde Desai, the University of Maryland professor, in an emailed response. She added:
 
 > A secure government job is what most young men and women in India aspire to. But these jobs are not easy to come by and reservations for SC, ST and OBCs add fat to the fire by making it seem like a prize that is kept out of the reach of young men and women from general categories. Not surprisingly we see escalation of demands from privileged groups like Jats, Gujjars and Patidars to be allowed into this golden circle.
+
+---
 
 #### 7. We still rely on caste data from the 1931 census
 

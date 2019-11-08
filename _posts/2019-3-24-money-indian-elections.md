@@ -63,7 +63,9 @@ Gift-giving is so prominent, Bussell found, that politicians estimate at least a
 
 While gifts and bribes are prominent, that’s not the sole cause of rising campaign costs. Here are [two other reasons](https://www.hindustantimes.com/india-news/why-are-elections-getting-more-expensive-in-india/story-21EktDEJdZhjRX0w1DP9DL.html):
 
-**1. Increase in constituency size:** Indian constituencies still represent populations based on the 1971 census. In 1971, each Lok Sabha MP represented around 7.24 lakh people in 1971; now, the figure stands at 17.11 lakh people, as per 2011 census. [From the IDFC institute](http://www.idfcinstitute.org/blog/2019/march/the-urgent-need-to-rework-indias-electoral-constituencies/): [![](https://cdn.substack.com/image/fetch/w_1100,c_limit,f_auto,q_auto:good/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F0bad6f05-8024-41e4-8178-35fff3386c37_1334x492.png)](https://cdn.substack.com/image/fetch/c_limit,f_auto,q_auto:good/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F0bad6f05-8024-41e4-8178-35fff3386c37_1334x492.png)
+**1. Increase in constituency size:** Indian constituencies still represent populations based on the 1971 census. In 1971, each Lok Sabha MP represented around 7.24 lakh people in 1971; now, the figure stands at 17.11 lakh people, as per 2011 census. [From the IDFC institute](http://www.idfcinstitute.org/blog/2019/march/the-urgent-need-to-rework-indias-electoral-constituencies/): 
+
+![Chart](/public/images/const-size.png){:class="img-responsive"}
 
 Larger populations, obviously, require candidates to spend more.
 
@@ -76,6 +78,9 @@ Larger populations, obviously, require candidates to spend more.
 # How the so-called “electoral reforms” have made things worse[![](https://cdn.substack.com/image/fetch/w_1100,c_limit,f_auto,q_auto:good/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2f06c491-dad7-4a00-b2ca-82f7f437a3b2_1560x1058.png)](https://www.bloomberg.com/graphics/2019-india-election-funds/)
 
 (Chart from _[Bloomberg Graphics](https://www.bloomberg.com/graphics/2019-india-election-funds/)_)
+
+![Chart](/public/images/bloomberg-funding.jpeg){:class="img-responsive"}
+
 
 India witnessed major changes in campaign finance regulation in 2017. 
 

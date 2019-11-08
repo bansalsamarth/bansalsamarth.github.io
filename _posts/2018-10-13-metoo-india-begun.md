@@ -1,6 +1,6 @@
 ---
 layout: post
-title: #MeTooIndia has just begun
+title: India's MeToo movement has just begun
 
 ---
 

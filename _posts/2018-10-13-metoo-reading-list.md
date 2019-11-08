@@ -1,6 +1,6 @@
 ---
 layout: post
-title: #MeTooIndia and the backlash, a reading list
+title: MeTooIndia and the backlash, a reading list
 
 ---
 

@@ -6,7 +6,9 @@ title: BJP and Congress are telling different stories. But they are converging.
 
 ---
 
-2019 is an election year: political rhetoric will reach its height and economic policy is likely to take a backseat. A [Hindustan Times column captures the stories](https://www.hindustantimes.com/india-news/bjp-congress-stories-script-a-political-thriller-in-2018/story-lUI1DBPvsWsLWvi0ivkwDM.html) that the two national parties are telling us about today’s India. The narratives revolve around three aspects: quality of life; corruption; and identity, democracy and institutions. 
+2019 is an election year: political rhetoric will reach its height and economic policy is likely to take a backseat. A [Hindustan Times column captures the stories](https://www.hindustantimes.com/india-news/bjp-congress-stories-script-a-political-thriller-in-2018/story-lUI1DBPvsWsLWvi0ivkwDM.html) that the two national parties are telling us about today’s India. 
+
+The narratives revolve around three aspects: *quality of life*; *corruption*; and *identity, democracy and institutions*. 
 
 #### **1. Quality of life**
 
@@ -38,7 +40,7 @@ From current trends, no: at least not in any significant way. Sure, in theory, B
 
 Look at three recent events: 
 
-**1. Surveillance and privacy:** Both parties are [complicit in expanding state surveillance](https://theprint.in/opinion/both-bjp-and-congress-are-complicit-in-expanding-state-surveillance-without-legal-basis/168084/) without legal basis. I had explained this in the [previous DisFact issue](https://bansalsamarth.substack.com/p/disfact-15-india-needs-surveillance). 
+**1. Surveillance and privacy:** Both parties are [complicit in expanding state surveillance](https://theprint.in/opinion/both-bjp-and-congress-are-complicit-in-expanding-state-surveillance-without-legal-basis/168084/) without legal basis. I had explained this in the [previous DisFact post](/2018/12/30/govt-snooping/). 
 
 **2. Sabarimala temple politics:** Despite the Supreme Court order [allowing the entry of women in the Sabarimala temple](https://bansalsamarth.substack.com/p/disfact-6-sabarimala-minister-resigns), both the [Congress and the BJP are opposing the Kerala government](https://www.indiatoday.in/india/story/sabarimala-protests-bring-bjp-congress-on-same-side-in-kerala-1392598-2018-11-20) in the implementation of the court order. 
 
@@ -69,3 +71,10 @@ This forced the Congress to “adopt a pronounced pro-Hindu stance in an attempt
 > This is evident not only in Gandhi’s increased demonstration of religiosity but also in the changing composition of the key Congress decision-making bodies—which have seen a sharp decline in Muslim representation since 2014. 
 >
 > The Congress’s new strategy on social policy is also reflected in its silence on the Ram mandir issue. The party’s strategists seem to harbour the hope that the lack of any response on the party’s part will diminish the polarizing potential of this issue.
+
+
+#### Looking ahead
+
+This is just one explanation, and it comes with its caveats. For instance, ideological differences between the parties impact government priorities.
+
+As we head towards the general election, political analysis in this newsletter will map out such similarities and differences. It will be less about day-to-day political action—alliances, allegations, arithmetic—and more on issues, policies and political trends that reflect the future course of India.

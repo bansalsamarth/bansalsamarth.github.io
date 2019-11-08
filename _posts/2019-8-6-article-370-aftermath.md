@@ -8,7 +8,7 @@ title: Jammu & Kashmir, Article 370 and the aftermath
 
 The Union government has scrapped the special status of Jammu and Kashmir by modifying Article 370 of the Indian constitution and bifurcated the state into two Union Territories: Jammu and Kashmir with a legislature (like Delhi and Puducherry) and Ladakh without legislature (like Chandigarh).
 
-[![Union Home Minister Amit Shah responds to the debate in the Lok Sabha to revoke Article 370 in LokâSabha on Tuesday. (ANI Photo)](https://cdn.substack.com/image/fetch/w_1100,c_limit,f_auto,q_auto:good/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F22f0a9a5-105c-45e8-a80f-24aa7d14170b.jp2)](https://cdn.substack.com/image/fetch/c_limit,f_auto,q_auto:good/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F22f0a9a5-105c-45e8-a80f-24aa7d14170b.jp2)
+![Union Home Minister Amit Shah responds to the debate in the Lok Sabha to revoke Article 370 in Lok Sabha on Tuesday. (ANI Photo)](/public/images/shah-parl-370.jpg){:class="img-responsive"}
 
 In practice, this means that Jammu and Kashmir won’t have its own constitution anymore, there will be no separate flag for the erstwhile state, its own laws will be nullified and laws passed in the Indian Parliament will be applicable, people outside the erstwhile state can buy property and invest in the region, among other things. 
 

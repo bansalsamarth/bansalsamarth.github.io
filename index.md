@@ -4,13 +4,18 @@ title: Blog Archive
 <!-- published: true -->
 ---
 
-
 {% for post in site.posts %}
 <!-- 
 {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})   -->
 
-**[ {{ post.title }} ]({{post.url}})**  &raquo; *{{ post.date | date_to_string }}* 
 
+
+
+**[ {{ post.title }} ]({{post.url}})**  <br> *{{ post.date | date_to_string }}* <br>
+
+{{post.desc}}
+
+---
 
 <!-- [ {{ post.title }} ]({{ post.url }})  &raquo;  -->
 

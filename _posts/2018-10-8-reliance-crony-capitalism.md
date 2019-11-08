@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Crony capitalism, exemplified
+title: Crony capitalism, exemplified (Ambanis and Reliance)
 
 ---
 
@@ -8,13 +8,13 @@ Free markets are at the heart of global capitalism. But that’s not how capital
 
 I keep hearing about Ambani-owned Reliance in this context. Here are three stories — two from this week and one from a few months ago—that illustrate how crony capitalism works.
 
-#### **FIRST: [India: the creation of a mobile phone juggernaut](https://www.ft.com/content/4297df22-bcfa-11e8-94b2-17176fbf93f5)** (Financial Times)
+#### **1. [Reliance Jio: the creation of a mobile phone juggernaut](https://www.ft.com/content/4297df22-bcfa-11e8-94b2-17176fbf93f5)** (Financial Times)
 
 In this piece, FT looks at some of the concerns raised about the stellar rise of Reliance Jio—basically, looking at policy changes that were favourable to the growth of the company. 
 
 > In particular, it has been accompanied by persistent questions about how much it owes to the elder Mr Ambani’s business acumen or to favourable political and regulatory decisions
 
-#### **SECOND: [Reliance Jio Phones as freebies](https://www.business-standard.com/article/elections/free-mobile-schemes-in-election-states-jio-gets-customers-govts-get-data-118100100351_1.html)** (Business Standard)
+#### **2. [Reliance Jio Phones as freebies](https://www.business-standard.com/article/elections/free-mobile-schemes-in-election-states-jio-gets-customers-govts-get-data-118100100351_1.html)** (Business Standard)
 
 See this [Twitter thread by Business Standard’s Kumar Sambhav Srivastava](https://twitter.com/Kum_Sambhav/status/1048053925092286464), which I have reproduced here, with minor changes. 
 
@@ -22,9 +22,9 @@ See this [Twitter thread by Business Standard’s Kumar Sambhav Srivastava](http
 
 These schemes would give a big benefit to one company: Reliance Jio. 
 
-**In Chhattisgarh**: Reliance Jio has won the bidding to bring network to 5 million families. The government will give the company free land for 10 years to establish 1000 new towers. Jio will get these 5 million families as captive users. **For two years, they will have to necessarily use Jio SIMs. It is compulsory.** 
+- **In Chhattisgarh**: Reliance Jio has won the bidding to bring network to 5 million families. The government will give the company free land for 10 years to establish 1000 new towers. Jio will get these 5 million families as captive users. For two years, they will have to necessarily use Jio SIMs. It is compulsory.
 
-**In Rajasthan:** The Rajasthan government gave an **early-bird advantage to Jio without even floating a tender**. Though the scheme was opened to all companies, the first set of instructions to district administration were to give Jio phones to up to 10 million families on government expenditure with "co-branding". 
+- **In Rajasthan:** The Rajasthan government gave an early-bird advantage to Jio without even floating a tender. Though the scheme was opened to all companies, the first set of instructions to district administration were to give Jio phones to up to 10 million families on government expenditure with "co-branding". 
 
 **Why this matters:** 
 
@@ -36,7 +36,7 @@ The phones will have pre-installed apps: BJP-promoted Narendra Modi app and the 
 
 The Chattisgarh government wants to employ data analytics, including social media analytics, to draw insights. 
 
-#### **THIRD: Reliance Foundation’s non-existent Jio Institute among India’s six Institutions of Eminence** [(Indian Express)](https://indianexpress.com/article/education/institutes-of-eminence-tag-hrd-ministry-and-pmo-disagreed-on-crucial-issues-reliance-jio-5327945/)
+#### **3. [Reliance Foundation’s non-existent Jio Institute among India’s six Institutions of Eminence](https://indianexpress.com/article/education/institutes-of-eminence-tag-hrd-ministry-and-pmo-disagreed-on-crucial-issues-reliance-jio-5327945/)** (Indian Express)
 
 Remember the Institute of Eminence controversy? 
 

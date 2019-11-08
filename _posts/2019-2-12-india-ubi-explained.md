@@ -15,7 +15,11 @@ Last week, I finished reading _Give People Money,_ an excellent book on UBI writ
 
 If you go by that view, despite all the excitement, India is far away from any UBI-ish scheme. I strongly recommend that book if you are interested in the idea of UBI. 
 
-**Today**: A deep-dive to understand the UBI debate. I list the existing social protection policies in India to explore where UBI fits into that framework, followed by a brief look at the new policies that have been announced in the run-up to the election and the questions one needs to ask to analyse those. I end the India section with insights from the experimental evidence and lament the lack of it. Finally, why globally, 2018 was a bad year for UBI advocates. 
+**Today**: A deep-dive to understand the UBI debate:
+- I list the existing social protection policies in India to explore where UBI fits into that framework
+- A brief look at the new policies that have been announced in the run-up to the 2019 general election and the questions one needs to ask to analyse those
+- I end the India section with insights from the experimental evidence and lament the lack of it. 
+- Finally, why globally, 2018 was a bad year for UBI advocates. 
 
 ---
 
@@ -23,11 +27,13 @@ If you go by that view, despite all the excitement, India is far away from any U
 
 In the book _India’s Long Road,_ economist Vijay Joshi provides a good framework to think about India’s social protection architecture. 
 
-**Purpose:** “Social protection is concerned with guaranteeing every individual or family an acceptable minimum standard of living _regardless of earning capacity,”_ Joshi wrote. 
+**Purpose:** “Social protection is concerned with guaranteeing every individual or family an acceptable minimum standard of living _regardless of earning capacity_,” Joshi wrote. 
 
 **How to achieve it:** Either _directly_ (social protection policies) or _indirectly_ (growth-promoting and labour-demanding policies), Joshi explained. Governments need to strike balance between the two and make a choice between “enablement” and “protection”. 
 
-UBI is a social protection policy. By giving people money, it aims to reduce poverty directly. Think about this: if we give every Indian a sum of money that amounts to India’s poverty line, poverty in India (at least statistically) would vanish in one go. 
+UBI is a social protection policy. By giving people money, it aims to reduce poverty directly. 
+
+Think about this: if we give every Indian a sum of money that amounts to India’s poverty line, poverty in India (at least statistically) would vanish in one go. 
 
 **So why don’t we do it?** In development economics, there is a long-standing debate on the two modes of welfare delivery: cash transfers and in-kind benefits.
 

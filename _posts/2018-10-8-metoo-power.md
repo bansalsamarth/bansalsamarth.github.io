@@ -18,7 +18,7 @@ Three things happened this week:
 
 The Guardian has put together key moments from Kavanaugh’s confirmation battle in this video:
 
-<iframe src="https://www.youtube-nocookie.com/embed/dmOCbX4t_3k?rel=0&autoplay=0&showinfo=0" frameborder="0" gesture="media" allow="autoplay; fullscreen" allowautoplay="true" allowfullscreen="true"></iframe>
+<iframe width="100%" height="400px" src="https://www.youtube-nocookie.com/embed/dmOCbX4t_3k?rel=0&autoplay=0&showinfo=0" frameborder="0" gesture="media" allow="autoplay; fullscreen" allowautoplay="true" allowfullscreen="true"></iframe>
 
 **Third, at home: it appears India is at the cusp of its own [\#MeToo movement.](https://www.theguardian.com/world/2017/oct/20/women-worldwide-use-hashtag-metoo-against-sexual-harassment)** 
 
@@ -46,6 +46,8 @@ Women are declaring that they are not going to take it anymore. But the problem 
 
 **Read more**: [How One Harasser Can Rob a Generation of Women](https://static.nytimes.com/email-content/INT_6296.html?nlid=72203392) (New York Times)
 
+---
+
 **2.** In many of the recent revelations, **there were people who knew what was happening and didn't do enough to stop it**. 
 
 * Anurag Kashyap knew about allegations against Vikas Bahl. 
@@ -54,13 +56,19 @@ Women are declaring that they are not going to take it anymore. But the problem 
 
 (Both apologised)
 
+---
+
 **3. This episode reminds me of my undergrad days at IIT Kanpur:** the pattern was similar. We knew something was wrong. We saw how obviously inappropriate sexist practices were normalised as part of “culture”. 
 
 It was in my last semester when [the debate about sexual assault touched its peak](http://voxiitk.com/hall-2-day-skit-leads-to-suspension/): six students were suspended following complaints by two girls. After I graduated, a girl wrote a long Facebook post, describing an incident where a batchmate had assaulted her—and she named the boy. 
 
 But we—the campus community—didn’t do enough to fix things. Many didn’t even acknowledge the problem. I wonder: when will the movement reach college campuses? And if that happens, will it lead to some significant change?
 
+---
+
 **4. Why women speaking up is a big deal?** Look at this statistic: **[99% of sexual violence cases in India go unreported](https://www.livemint.com/Politics/AV3sIKoEBAGZozALMX8THK/99-cases-of-sexual-assaults-go-unreported-govt-data-shows.html)**[.](https://www.livemint.com/Politics/AV3sIKoEBAGZozALMX8THK/99-cases-of-sexual-assaults-go-unreported-govt-data-shows.html) And homes are apparently the most unsafe place for women. “The average Indian woman is 17 times more likely to face sexual violence from her husband than from others” [(Livemint)](https://www.livemint.com/Politics/AV3sIKoEBAGZozALMX8THK/99-cases-of-sexual-assaults-go-unreported-govt-data-shows.html)
+
+---
 
 **5. #MeToo is the first step. It should not be the end.**
 

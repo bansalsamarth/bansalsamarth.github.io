@@ -18,9 +18,9 @@ R Jagannathan, Editorial Director of Swarajya, [argues that differentiated pract
 
 > If Sabarimala is about a celibate God and giving priority to male-bonding in worship, it is not a tradition that should be easily discarded. It’s like setting up a gym or club specifically for one gender, with limited rights for the other….Reason: a specific practice in a specific temple or dargah or mosque cannot be said to be totally unfair if it is not the general practice everywhere. **What should be called out is consistent discriminatory practices across temples or mosques, not the oddball institution with has an idiosyncratic tradition.** [(Swarajya)](https://swarajyamag.com/books/triple-talaq-sabarimala-supreme-court-must-strike-balance-between-religious-and-individual-rights)
 
-**The Supreme Court verdict:** In the last week of September, the Supreme Court ****struck down the ban and ****decided ****that **women of all age groups can enter the Ayyappa temple.** In a 4:1 majority ruling, the court said that the temple practice violates the rights of Hindu women and that banning entry of women to shrine is gender discrimination. 
+**The Supreme Court verdict:** In the last week of September, the Supreme Court struck down the ban and decided that women of all age groups can enter the Ayyappa temple.** In a 4:1 majority ruling, the court said that the temple practice violates the rights of Hindu women and that banning entry of women to shrine is gender discrimination. 
 
-(In the past two years, courts have unlocked the gates of **Shani Shingnapur temple** and **Haji Ali mosque** for women.)
+(In the past two years, courts have unlocked the gates of *Shani Shingnapur temple* and *Haji Ali mosque* for women.)
 
 **What happened this week:** This Wednesday, the doors of the temple were opened for the first time after the SC judgement. However, “females who tried to make it to the shrine met a wall of resistance in the form of regular devotees, who turned them away, intimidated journalists and clashed with the police.” (Business Standard)
 

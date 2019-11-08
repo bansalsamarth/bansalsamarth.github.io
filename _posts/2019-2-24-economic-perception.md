@@ -74,7 +74,7 @@ Three things can be simultaneously true:
 
 #### **Related readings**
 
-**1. [The problem with facts ](https://www.ft.com/content/eef2e2f8-0383-11e7-ace0-1ce02ef0def9)**[(Financial Times)](https://www.ft.com/content/eef2e2f8-0383-11e7-ace0-1ce02ef0def9): ****
+**1. [The problem with facts ](https://www.ft.com/content/eef2e2f8-0383-11e7-ace0-1ce02ef0def9)**[(Financial Times)](https://www.ft.com/content/eef2e2f8-0383-11e7-ace0-1ce02ef0def9)
 
 This is a great piece by economist Tim Harford that I often go back to for a reality check. Do facts matter?
 

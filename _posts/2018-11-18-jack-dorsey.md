@@ -21,7 +21,7 @@ him at Twitter’s Delhi office. Three things stood out for me as they offered a
 insight on how Twitter is dealing with the challenges that are somewhat related
 to human biases.
 
-#### 1. On accusations of Twitter’s “left-leaning liberal bias”
+### 1. On accusations of Twitter’s “left-leaning liberal bias”
 
 **What:** Twitter has been accused of “left-leaning liberal bias” — that it
 suppresses the voice of right-leaning conservatives. So does a section of the
@@ -47,7 +47,9 @@ As for account suspension, this means offering a detailed explanation of why an
 account was removed and what specific terms and conditions were violated, he
 said. Twitter has not done that yet.
 
-#### 2. On filter bubbles
+---
+
+### 2. On filter bubbles
 
 **What are filter bubbles:** Filter bubbles are activated by personalised
 social-media feeds, where netizens get stuck in an echo chamber, hearing same
@@ -80,7 +82,9 @@ research that says it [filter bubbles] emboldens [existing views],” he said.
 comprehensively. And make a more informed choice. We need to show more
 perspectives. But people try to game them and that is dangerous.”*
 
-#### 3. On fake news
+---
+
+### 3. On fake news
 
 Fake news is arguably Twitter’s biggest ongoing headache. Dorsey has spoken
 extensively about this issue over the past two years, especially after the

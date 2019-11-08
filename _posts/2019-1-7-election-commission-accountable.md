@@ -6,9 +6,11 @@ title: Holding the Election Commission accountable
 
 ---
 
-In a [previous post](/2018/11/11/elections-hacked/), I had explained two important stories concerning the Election Commission of India. First, regarding the allegations of voter deletion in Telangana. Second, the clash in Mizoram regarding voting rights for several thousand Bru refugees.
+In a [previous post](/2018/11/11/elections-hacked/), I had explained two important stories concerning the Election Commission of India. 
+- First, regarding the allegations of voter deletion in Telangana. 
+- Second, the clash in Mizoram regarding voting rights for several thousand Bru refugees.
 
-In a column for the[ Economic and Political Weekly](https://www.epw.in/journal/2018/50/law-and-society/holding-election-commission-accountable.html), Alok Prasanna Kumar, a senior resident fellow at Vidhi Centre for Legal Policy, has the latest on this.
+In a column for the *[Economic and Political Weekly](https://www.epw.in/journal/2018/50/law-and-society/holding-election-commission-accountable.html)*, Alok Prasanna Kumar, a senior resident fellow at Vidhi Centre for Legal Policy, has the latest on this.
 
 **Concerns:**
 
