@@ -11,7 +11,7 @@ We take you inside the Association of Billion Minds, Amit Shah's secretive consu
 ---
 
 **<a href="https://www.huffingtonpost.in/entry/narendra-modi-app-has-a-fake-news-problem_in_5c4d5c86e4b0287e5b8b6d52" target='_blank'>Narendra Modi App Has A Fake News Problem</a>**<br> 
-*Livemint | January 27, 2019* 
+*HuffPost India | January 27, 2019* 
 
 The built-in social network of the personal mobile application of the Indian Prime Minister works like Twitter, where any user who signs up on the platform can post any piece of content (images, videos, website links). The visible lack of content moderation leaves the app as vulnerable to communal propaganda and fake news as Facebook, WhatsApp and Twitter. While the American platforms have come under scrutiny for the presence of misleading and polarising content, the NaMo app has been off the radar.
 
@@ -86,6 +86,21 @@ India is facing information wars of an unprecedented nature and scale. Indians a
 
 ---
 
+**<a href="https://www.theatlantic.com/international/archive/2019/11/india-tiktok-stars-are-outshining-traditional-celebrities/602059/" target='_blank'>TikTok is taking over India</a>**<br> 
+*The Atlantic | November 15, 2019* 
+
+TikTok is currently the most downloaded mobile app in India, with more than 200 million users, and it’s shaping a new youth culture in which millions of young people—in big cities and small villages alike—are trying to be TikTok’s next big star. The results are both magical and nightmarish.
+
+
+---
+
+**<a href="https://www.livemint.com/news/india/smart-user-s-guide-to-the-snooping-game-11573567241722.html" target='_blank'>Smart user’s guide to the snooping game</a>**<br> 
+*Livemint | November 12, 2019* 
+
+The WhatsApp-Pegasus hack has put the spotlight on surveillance abuse in India. Here’s the different ways that the government can learn about your whereabouts, and how you can try to stay ahead. 
+
+---
+
 **<a href="https://www.livemint.com/elections/lok-sabha-elections/games-people-play-on-facebook-comment-threads-1554228802281.html" target='_blank'>Games people play on Facebook comment threads</a>**<br> 
 *Livemint | April 3, 2019* 
 
@@ -109,14 +124,14 @@ While the learning deficit in schools, especially government ones, has been reco
 ---
 
 **<a href="https://www.cigionline.org/articles/patchwork-policy-working-fend-misinformation" target='_blank'>The Patchwork of Policy Working to Fend off Misinformation</a>**<br> 
-*Livemint | October 4, 2019* 
+*Centre for International Governance Innovation | October 4, 2019* 
 
 Election-oriented misinformation is one of the most pressing issues of the information age. What have governments, tech companies and civil society done to tackle this challenge? 
 
 ---
 
 **<a href="https://www.cigionline.org/articles/how-bjp-used-technology-secure-modis-second-win" target='_blank'>How the BJP Used Technology to Secure Modi's Second Win</a>**<br> 
-*Livemint | June 12, 2019* 
+*Centre for International Governance Innovation | June 12, 2019* 
 
 In 2017, Narenda Modi declared that the 2019 election would be fought on the smartphone — he was right. In India's general election, the internet was instrumental in at least two vital aspects of the campaign: mobilizing and setting the narrative, and messaging and misinformation. I explain how. 
 
@@ -237,6 +252,13 @@ How diverse is an average Indian’s diet? Do people eat better in villages or c
 *Hindustan Times | February 20, 2018* 
 
 Do people smoke more bidis or cigarettes? What is the most preferred drink in India: whisky, beer or wine? How frequently do they drink? Does prohibition lead to significant reduction in alcohol consumption? How does wealth affect use of intoxicants in India? We have the answer.
+
+---
+**<a href="https://www.hindustantimes.com/india-news/how-india-spends-on-health/story-CPyiZZ4jcI4imSKJq03jBM.html
+" target='_blank'>How India spends on health</a>**<br>
+*Hindustan Times | December 11, 2017* 
+
+Where Indian households spend on health? How does it compare with other countries? How much of the fund is utilised?
 
 ---
 
