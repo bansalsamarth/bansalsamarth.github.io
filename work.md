@@ -11,7 +11,7 @@ Police departments across India, dozens of unemployed people, and placement agen
 ---
 
 **<a href="https://www.livemint.com/technology/tech-news/why-india-is-falling-behind-in-the-y2q-race-11579018170008.html" target='_blank'>Why India is falling behind in the Y2Q race</a>**<br>
-*HuffPost India | January 15, 2020*
+*Livemint | January 15, 2020*
 
 Encryption forms the backbone of secure cyberspace. It helps to protect the data we send, receive or store. Behind the high degree of confidence in the security of the most commonly used encryption algorithms, like RSA, lies an assumption: modern computers, including the fastest supercomputers, will take forever to factor a large number that is a product of two prime numbers.
 
@@ -24,7 +24,7 @@ As the US and China lead the global race in quantum tech, India lags far behind.
 ---
 
 **<a href="https://www.livemint.com/news/india/big-brother-on-top-in-data-protection-bill-11576164271430.html" target='_blank'>India's proposed data protection act, explained</a>**<br>
-*HuffPost India | December 12, 2019*
+*Livemint | December 12, 2019*
 
 Indian parliament tabled the “Personal Data Protection Act, 2019" in December 2019. The bill is essentially a data governance framework that forces organizations dealing with people’s personal data to relook at data management, and regulates practices to protect individual privacy and personal data. It defines what they can and can’t do.In the story, I explain what the provisions of the proposed legislation mean for individuals, organisations, regulator and the government.
 
