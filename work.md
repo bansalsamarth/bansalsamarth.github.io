@@ -19,7 +19,7 @@ Indian public authorities are building apps—at least 17 are public—to fight 
 
 ---
 
-**<a href="https://www.livemint.com/news/india/the-murky-world-of-india-s-fintech-scams-11584975873895.html" target='_blank'> India is pinning hopes on apps in virus fight</a>**<br>
+**<a href="https://www.livemint.com/news/india/the-murky-world-of-india-s-fintech-scams-11584975873895.html" target='_blank'> The murky world of India’s fintech scams</a>**<br>
 *Mint | March 24, 2020*
 
 Wallets and UPI have taken over the Indian digital payment ecosystem. The reduction of friction in payments is driving the growth of new businesses. But it is also orchestrating fraud: thousands of Indians experience digital payment frauds every day, with sums ranging from a few thousand rupees to several lakhs. Why do the scams persist? Why are we not able to find a solution? 
