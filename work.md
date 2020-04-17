@@ -3,6 +3,51 @@ layout: page
 title: Selected Work
 ---
 
+**<a href="https://qz.com/india/1811151/chinese-dating-apps-are-exploiting-loneliness-of-indias-men/" target='_blank'> Inside the Chinese dating apps exploiting the loneliness of India’s men </a>**<br>
+*Quartz | March 13, 2020*
+
+Dozens of scammy Chinese dating apps are exploiting the loneliness of Indian men outside of the Tinder-Bumble demographic. That includes India’s most downloaded dating app in 2019, L’amour. It's as mainstream as it can get. 
+
+What happens when men sign up? How does the machinery operate behind the scenes? For Quartz, Snigdha Poonam and I report from inside this thriving industry of predatory dating apps. 
+
+---
+
+**<a href="https://www.livemint.com/news/india/india-is-pinning-hopes-on-apps-in-virus-fight-11586447095280.html" target='_blank'> India is pinning hopes on apps in virus fight</a>**<br>
+*Mint | April 10, 2020*
+
+Indian public authorities are building apps—at least 17 are public—to fight COVID-19. In Mint, I wrote about the app ecosystem looking at two big products: Central government's Aarogya Setu and Maharashtra government's MahaKavach to explore what the apps can do, what they can’t and where we are headed when it comes to individual privacy.  
+
+---
+
+**<a href="https://www.livemint.com/news/india/the-murky-world-of-india-s-fintech-scams-11584975873895.html" target='_blank'> India is pinning hopes on apps in virus fight</a>**<br>
+*Mint | March 24, 2020*
+
+Wallets and UPI have taken over the Indian digital payment ecosystem. The reduction of friction in payments is driving the growth of new businesses. But it is also orchestrating fraud: thousands of Indians experience digital payment frauds every day, with sums ranging from a few thousand rupees to several lakhs. Why do the scams persist? Why are we not able to find a solution? 
+
+---
+
+**<a href="https://www.huffingtonpost.in/entry/how-modi-shah-turned-a-women-s-rights-ngo-into-a-secret-election-propaganda-machine_in_5ca5962ce4b05acba4dc1819" target='_blank'>How Modi, Shah Turned A Women’s NGO Into A Secret Election Propaganda Machine</a>**<br>
+*HuffPost India | April 4, 2019*
+
+The story investigates the operations of Association of Billion Minds, BJP's in-house secretive consulting unit that does everything from recommending election candidates to creating fake news sites and spread digital propaganda. The consultancy directly reported to the then party president Amit Shah, though the party doesn't publicly acknowledge any links with the company. The story, based on review of company documents, cyber forensics, interviews and ground reportage, brings out previously unreported evidence how the parallel election machinery of the BJP works and gives readers a glimpse inside the opaque world of political consulting.
+
+---
+
+**<a href='http://graphics.wsj.com/elon-musk-twitter-habit-analysis/
+' target="_blank">4,925 Tweets: Elon Musk's Twitter Habit, Dissected</a>**<br>
+*Wall Street Journal | July 31, 2018*
+
+We analysed all tweets of Elon Musk. He shares life views, rebuts critics, teases business ideas—and causes controversy.
+
+---
+
+**<a href="https://www.theatlantic.com/international/archive/2019/04/india-misinformation-election-fake-news/586123/" target='_blank'>Misinformation Is Endangering India’s 2019 Election</a>**<br>
+*The Atlantic | April 1, 2019*
+
+India is facing information wars of an unprecedented nature and scale. Indians are bombarded with fake news and divisive propaganda on a near-constant basis from a wide range of sources, from television news to global platforms like Facebook and WhatsApp. In this story, we map the misinformation ecosystem.
+
+---
+
 **<a href="https://www.hindustantimes.com/interactives/inside-fake-job-industry/" target='_blank'> How  the fake-jobs industry scams Indians </a>**<br>
 *Hindustan Times | October 10, 2017*
 
@@ -41,20 +86,12 @@ We collected data from over 2000 politics-focussed public WhatsApp groups in the
 
 ---
 
-**<a href="https://www.huffingtonpost.in/entry/how-modi-shah-turned-a-women-s-rights-ngo-into-a-secret-election-propaganda-machine_in_5ca5962ce4b05acba4dc1819" target='_blank'>How Modi, Shah Turned A Women’s NGO Into A Secret Election Propaganda Machine</a>**<br>
-*HuffPost India | April 4, 2019*
-
-The story investigates the operations of Association of Billion Minds, BJP's in-house secretive consulting unit that does everything from recommending election candidates to creating fake news sites and spread digital propaganda. The consultancy directly reported to the then party president Amit Shah, though the party doesn't publicly acknowledge any links with the company. The story, based on review of company documents, cyber forensics, interviews and ground reportage, brings out previously unreported evidence how the parallel election machinery of the BJP works and gives readers a glimpse inside the opaque world of political consulting.
-
----
-
 **<a href="https://www.theatlantic.com/international/archive/2019/11/india-tiktok-stars-are-outshining-traditional-celebrities/602059/" target='_blank'>TikTok is taking over India</a>**<br>
 *The Atlantic | November 15, 2019*
 
 TikTok is currently the most downloaded mobile app in India, with more than 200 million users, and it’s shaping a new youth culture in which millions of young people—in big cities and small villages alike—are trying to be TikTok’s next big star. The results are both magical and nightmarish.
 
 ---
-
 
 
 **<a href="https://www.huffingtonpost.in/entry/narendra-modi-app-has-a-fake-news-problem_in_5c4d5c86e4b0287e5b8b6d52" target='_blank'>Narendra Modi App Has A Fake News Problem</a>**<br>
@@ -112,13 +149,6 @@ The gender gap in the Indian formal sector is pervasive: at least 85% of the wor
 *Hindustan Times | September 26, 2018*
 
 Disagreements over Aadhaar data security and its implications for privacy continue. Whether Aadhaar is fully secure or fundamentally flawed depends on where one stands. The disagreements begin with definitions. For instance, what is a data leak? It extends to issues such as the use of biometrics for authentication and repercussions of Aadhaar numbers leak etc. Supporters dismiss as rare the instances critics highlight as Aadhaar’s vulnerabilities. In this story, I explain the arguments of both sides.
-
----
-
-**<a href="https://www.theatlantic.com/international/archive/2019/04/india-misinformation-election-fake-news/586123/" target='_blank'>Misinformation Is Endangering India’s 2019 Election</a>**<br>
-*The Atlantic | April 1, 2019*
-
-India is facing information wars of an unprecedented nature and scale. Indians are bombarded with fake news and divisive propaganda on a near-constant basis from a wide range of sources, from television news to global platforms like Facebook and WhatsApp. In this story, we map the misinformation ecosystem.
 
 ---
 
@@ -223,14 +253,6 @@ Following our Wall Street Journal investigation, Google takes action to weed out
 *Hindustan Times | April 10, 2017*
 
 Studies suggest that 86% of phone-based tech support scams operate from India. A colleague and I investigated one such call center running from Gurgaon and uncovered how this industry functions.
-
----
-
-**<a href='http://graphics.wsj.com/elon-musk-twitter-habit-analysis/
-' target="_blank">4,925 Tweets: Elon Musk's Twitter Habit, Dissected</a>**<br>
-*Wall Street Journal | July 31, 2018*
-
-We analysed all tweets of Elon Musk. He shares life views, rebuts critics, teases business ideas—and causes controversy.
 
 ---
 
