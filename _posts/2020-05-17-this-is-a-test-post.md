@@ -6,4 +6,4 @@ layout: Page
 ---
 # This is a test post
 
-try it out?
+Try?
