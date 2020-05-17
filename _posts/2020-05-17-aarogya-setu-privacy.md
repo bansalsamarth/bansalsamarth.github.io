@@ -4,7 +4,7 @@ comments: true
 layout: post
 
 ---
-Many are concerned that Aarogya Setu, India's contact tracing app, is a privacy disaster, a mass surveillance project masquerading as a tool for public health interventions.
+Many are concerned that [Aarogya Setu, India's contact tracing app, is a privacy disaster,](https://www.bbc.com/news/world-asia-india-52659520) a mass surveillance project masquerading as a tool for public health interventions.
 
 Well, the privacy concerns are obvious: the purpose of the app is to track you. It asks you for the most sensitive information that a smartphone can collect: your location. The developers of the app want you, in the ideal scenario, to give access to your location all the time, and it will log location coordinates every fifteen minutes. Every move will be tracked. Bluetooth access allows the app to keep a log of every person you came in close contact with—who also has the app installed. This helps in contact tracing while GPS data aids in identifying disease hotspots. They won't pull in the data until it is necessary, developers say, and claim that they care about privacy.
 
@@ -26,7 +26,7 @@ Because there are no _technical safeguards_. Think of it as the difference betwe
 
 That's what I mean by technical safeguards, or constraints. When they are absent, we have to trust the app developers to not misuse our data, and hold on the promise they are making in the privacy policy. I don't trust the Indian government to protect my privacy. Zero trust. Plus, we don't even have a data protection law, and the one that was tabled in the Parliament, [does not restrict government's power over citizen's private data.](https://www.livemint.com/news/india/big-brother-on-top-in-data-protection-bill-11576164271430.html)
 
-[_READ: Why India needs surveillance reform_](http://www.disfact.in/2018/12/30/govt-snooping/)
+[**Read more: Why India needs surveillance reform**](http://www.disfact.in/2018/12/30/govt-snooping/)
 
 That means: when I use the app, I do so under the assumption that _nothing in the privacy policy will hold_. I want to be prepared for the worst case scenario—even if there is a less than 1% chance of that happening.
 
@@ -75,7 +75,7 @@ I want to especially stress here on one point. Unlike other mass surveillance te
 
 **1. Can Aarogya Setu access any information beyond what it claims?** No. It is important to note that the _only permission_ that Aarogya Setu requests for is your location access. That’s it. Without explicitly asking for any other permission, it can’t access any other data from my phone. It is technically not possible. Stressing this because some friends were worried about that possibility: the app can’t access your photographs, contacts, messages etc. (It can know, however, all the other apps on your phone — which is a bit creepy, yes!)
 
-**2. What about issues flagged by ethical hacker Elliot Anderson?** Again, let me answer this for myself. The main issue Anderson flagged was the "ability to know who is sick anywhere in India".
+**2. What about** [**issues flagged by ethical hacker Elliot Anderson**](https://medium.com/@fs0c131y/aarogya-setu-the-story-of-a-failure-3a190a18e34)**?** Again, let me answer this for myself. The main issue Anderson flagged was the "ability to know who is sick anywhere in India".
 
 The concerns is based on a feature of Aarogya Setu that allows you to choose a radius—500m, 1km, 2kms, 5kms or 10kms—and know how many covid positive / unwell patients reside in that area. Anderson claims he was able to change the geo-location and find out how many positive people are there. For instance, one person near the Indian Army Headquarters was covid positive, Anderson found.
 
