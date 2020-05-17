@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blog Archive
+title: Blog
 <!-- published: true -->
 ---
 
@@ -11,11 +11,9 @@ title: Blog Archive
 
 
 
-**[ {{ post.title }} ]({{post.url}})**  <br> *{{ post.date | date_to_string }}* <br>
+ *{{ post.date | date_to_string }}* **[ {{ post.title }} ]({{post.url}})** <br>
 
 {{post.desc}}
-
----
 
 <!-- [ {{ post.title }} ]({{ post.url }})  &raquo;  -->
 
