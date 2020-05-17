@@ -6,7 +6,7 @@ layout: post
 ---
 Many are concerned that India's contact tracing app is a privacy disaster, a mass surveillance tool masquerading as a public health utility. Well, the very nature and the purpose of the app is to track you. So the concerns are legitimate. What it is asking you for is one of the most sensitive information that a smartphone collects: your location. Every move will be tracked. Every person you cross--who also has the app installed--will be logged. India does not have a data protection law, yet. So you don't even have legal safeguards for your data.
 
-Few thoughts on this:
+Few thoughts on this: 
 
 1. Remember that you, the user, have the power to turn off the tracking whenever you want. It is not like telephone metadata tracking where you have no control and just because you are using a phone service you'd be tracked.
 2. The privacy policy has some really good features: the data stays on the phone until you come in close contact with covid positive patient or you test positive. However, there is no _technical safeguard_ here. Think of it as the difference between WhatsApp and Facebook messenger. Both are owned by Facebook. For messenger, the company claims they don't look at private messages, unless there is a legitimate law enforcement request. But for WhatsApp, the company, even if it wants, can't look at the messages because it is end-to-end encrypted. That's what I mean by technical constraints. When that is absent, we have to trust the people behind the app to not misuse our data, and if they do, should have a legal channel to address our concerns.
