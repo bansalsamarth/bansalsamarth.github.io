@@ -1,5 +1,5 @@
 ---
-label: test
+label: Posts
 hide_body: false
 fields:
 - name: title
@@ -12,10 +12,12 @@ fields:
   label: Comments
 - name: layout
   type: select
-  default: []
+  default: ''
   config:
     required: false
-    options: []
+    options:
+    - Post
+    - Page
     source:
       type: simple
       section: 
