@@ -1,7 +1,7 @@
 ---
 title: This is a test post
 comments: true
-layout: ''
+layout: Page
 
 ---
 # This is a test post
