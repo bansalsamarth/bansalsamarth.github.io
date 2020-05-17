@@ -25,4 +25,5 @@ fields:
       path: 
   label: Layout
 pages:
+- _posts/interesting-reading.md
 - _posts/tets-post-2020-05-17.md
