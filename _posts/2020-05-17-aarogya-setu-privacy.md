@@ -6,7 +6,7 @@ layout: post
 ---
 Many are concerned that [Aarogya Setu, India's contact tracing app, is a privacy disaster,](https://www.bbc.com/news/world-asia-india-52659520) a mass surveillance project masquerading as a tool for public health interventions.
 
-Well, the privacy concerns are obvious: the purpose of the app is to track you. It asks you for the most sensitive information that a smartphone can collect: your location. The developers of the app want you, in the ideal scenario, to give access to your location all the time, and it will log location coordinates every fifteen minutes. Every move will be tracked. Bluetooth access allows the app to keep a log of every person you came in close contact with—who also has the app installed. This helps in contact tracing while GPS data aids in identifying disease hotspots. They won't pull in the data until it is necessary, developers say, and claim that they care about privacy.
+Well, the privacy concerns are obvious: the purpose of the app is to track you. It asks you for the most sensitive information that a smartphone can collect: your location. The government wants you to give access to your location all the time—every fifteen minutes to be precise. Every move will be tracked. Bluetooth access allows the app to keep a log of every person you came in close contact with—who also has the app installed. This helps in contact tracing while GPS data aids in identifying disease hotspots. The government won't pull in the data until it is necessary, the privacy policy says, and claim that they care about privacy.
 
 I [explained this, and more about the idea behind the app, in _Mint,_](https://www.livemint.com/news/india/india-is-pinning-hopes-on-apps-in-virus-fight-11586447095280.html) a week after the app was launched in April. I also compared the app with home quarantine monitoring apps that various state governments had built, specifically looking at Maharashtra government's Mahakavach. I wrote:
 
@@ -39,6 +39,8 @@ Yes, I will—despite all the concerns. But in a limited way. There aren't simpl
 Note that the explanation that follows is my view as a user of the app and _what it means for me, personally._
 
 ### What data does Aarogya Setu collect?
+
+As of May 17:
 
 **1. Basic demographic information**: name, mobile number, age, gender, profession. This information goes to a government server and what you get in return is a Device ID — DiD — number that is used in all future interactions.
 
@@ -84,3 +86,5 @@ Well, I don't see much of a problem here (many disagree). One can find the same 
 Anderson takes this further and says that using triangulation, an "attacker can get with a meter precision the health status of someone". But as [WIRED pointed out,](https://www.wired.com/story/india-covid-19-contract-tracing-app-patient-location-privacy/) "the triangulation would also be most effective when a suspected Covid-19 positive person is the only reported case in roughly a kilometer radius".
 
 I am not too convinced that this is a major lapse. Generally speaking, I actually like this feature. In Delhi, for instance, the state government is concealing data, and for many days, didn't even share district-wise breakup of covid cases. In that context, information from the app can help me make make everyday decisions on which areas are safe and which are not. A few days ago, the app told us that there are ten covid positive patients around my house (500m). We were alert, and next morning, we learnt that the virus had reached my own locality.
+
+_What do you think? I would love to hear your thoughts. If I missed crucial details in this, please email me — samarthbansal@protonmail.com. I will update this post when I get new insights on privacy threats._ 
