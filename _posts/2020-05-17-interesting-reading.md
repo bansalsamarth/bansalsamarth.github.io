@@ -1,7 +1,7 @@
 ---
 title: Aarogya Setu and privacy
 comments: true
-layout: Post
+layout: post
 
 ---
 # Aarogya Setu and privacy 
