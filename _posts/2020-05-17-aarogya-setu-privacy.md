@@ -56,7 +56,9 @@ As of May 17:
 
 **_Concerns sharing this with government for (3) and (4):_** I have hesitation in sharing this data all the time — especially location — but I also want to be alerted in case I come in contact with a covid-19 positive patient.
 
-While I have my doubts whether this will actually work, I am open to be a part of this experiment, meaning I am willing to give up some private information for the potential public health gains. The larger point here is rejection of privacy absolutism. For me, privacy is not an end in itself. It is a gateway to freedom. My default state remains more privacy everywhere, but I do evaluate trade-offs in cases where I need to share private information for another end I care about—here, public health.
+While I have my doubts whether the app will work or not, I am open to be a part of this experiment. I am willing to give up some private information for potential public health gains. The larger point here is rejection of privacy absolutism. Privacy is not an end in itself. My default state remains more privacy everywhere, but I do evaluate trade-offs in cases where I need to share private information for another goal I care about—here, public health. 
+
+If in weeks to come it becomes clear that the app doesn't work as intended, there is no case to surrender any information whatsoever. To be sure, I am strictly against location tracking, and only making an exception right now because of the pandemic and the unprecedented circumstances we are living through. 
 
 ### So how will I use it?
 
@@ -67,7 +69,9 @@ Fairly simple:
   So step one for me is to set location access to “Allow only while the app is in use”.
 * **Be conscious when you want the app to collect data:** I will selectively give access to my location and Bluetooth to the app for contact tracing purposes. This means I need to be very cautious about the app all the time. I am willing to take that cognitive burden for the time being.
 
-  If and when I go to the market—or any crowded public place for that matter—and I come in contact with a covid infected patient, I do want to be informed about that interaction. That's what I hope to gain from the app, and in return, I am okay letting the government know which market I visited, what route I took, with whom I went and when—all the information I would never want anyone else to know in normal circumstances—even if there is a 1% chance it may alert me about possible infection. This is the trade-off I am making. Give data, but not all the time.
+  If and when I go to the market—or any crowded public place for that matter—and I come in contact with a covid infected patient, I do want to be informed about that interaction. 
+
+  That's what I hope to gain from the app, and in return, I am okay letting the government know which market I visited, what route I took, with whom I went and when—all the information I would never want anyone else to know in normal circumstances. This is the trade-off I am making. Give data, but not all the time.
 
 That’s it. This is how I plan to use Aarogya Setu: totally aware of the information I will share, recognising the risks associated with it and doing so for a perceived gain.
 
