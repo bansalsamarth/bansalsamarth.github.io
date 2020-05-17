@@ -7,6 +7,21 @@ fields:
   config:
     required: false
   label: Heading
+- name: comments
+  type: boolean
+  label: Comments
+- name: layout
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Layout
 pages:
 - _posts/2020-05-17-this-is-a-test-post.md
 - _posts/tets-post-2020-05-17.md
