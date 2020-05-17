@@ -2,3 +2,5 @@
 label: test
 hide_body: false
 fields: []
+pages:
+- _posts/tets-post-2020-05-17.md
