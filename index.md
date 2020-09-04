@@ -3,18 +3,18 @@ layout: page
 title: About
 ---
 
-I am Samarth Bansal, an independent journalist and computer programmer based in New Delhi. I write about politics, policy and the intersection of technology and society. You can see my [selected work here](/work). 
+I am Samarth Bansal, an independent journalist and computer programmer based in New Delhi. While I have a formal degree in mathematics, I spent most of my time thinking and solving engineering problems during my undergrad at IIT Kanpur. [Journalism happened to me by chance](http://voxiitk.com/unorthodox-career-choices/): It was an accident.
 
-I previously worked with the data journalism teams of the *[Hindustan Times](http://www.hindustantimes.com)* and *[The Hindu](http://www.thehindu.com)*. In 2018, I was awarded the [Alfred Friendly Press Partners Fellowship](http://www.presspartners.org): as part of the program, I spent five months reporting for the investigative team of the *[Wall Street Journal](http://www.wsj.com)* in New York City.
 
-My freelance work has appeared in *[The Atlantic](https://www.theatlantic.com)*, *[HuffPost India](https://www.huffingtonpost.in/)*, *[Livemint](https://www.livemint.com/)* and *[Quartz](https://www.livemint.com/)*. 
+I have worked with the data journalism teams of the *[Hindustan Times](http://www.hindustantimes.com)* and *[The Hindu](http://www.thehindu.com)*. In 2018, I did a five-month reporting fellowship with the investigative team of the *[Wall Street Journal](http://www.wsj.com)* in New York City as an [Alfred Friendly Press Partners](http://www.presspartners.org) fellow.
 
-I graduated with a BS in Mathematics and Scientific Computing from the [Indian Institute of Technology, Kanpur](http://iitk.ac.in/) in 2015.
+In February 2019, I started my freelance career. I write long-form stories for various Indian and International publications, most of which lie at the intersection of technology, politics and policy — though, generally speaking, I am beat agnostic, and enjoy chasing stories that pique my curiosity. My freelance work has appeared in *[The Atlantic](https://www.theatlantic.com)*, *[HuffPost India](https://www.huffingtonpost.in/)*, *[Livemint](https://www.livemint.com/)* and *[Quartz](https://www.livemint.com/)*. You can see [selected stories here](/work).
 
-<!-- <iframe height="320" src="https://disfact.substack.com/embed" frameborder="0" scrolling="no" width="100%"></iframe>
- -->
+In January 2020, I got into the dual career mode, splitting time between hands on engineering and journalism. A friend and I tried building a news automation startup. It didn't work out and we shut shop in six months. Now I work part-time for [AmuseLabs](https://amuselabs.com/), a Bangalore-based startup.
 
-[Say hi!](/contact) I’d love to hear from you. For monthly updates about my work, please subscribe to my email newsletter. 
+I love reading non-fiction and can talk about books and ideas all the time. I enjoy dancing and traveling frugally, place high regard for quality leisure, almost paranoid about online privacy, and always resisting (and ranting about) the forces of attention economy manipulating us in doing things we don't want to. 
+
+ If you'd like to know more about my work and projects, want to discuss the future of news and digital technology, schedule a meeting, exchange ideas, write to me at samarthbansal@protonmail.com. I generally respond in a week. For updates about my work, please subscribe to my email newsletter.
 
 <br>
 
