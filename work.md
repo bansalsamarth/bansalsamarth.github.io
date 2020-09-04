@@ -2,13 +2,27 @@
 layout: page
 title: Selected Work
 ---
+<b>Two-part series investigating low-cost ventilators buily by AgVa Healthcare, procured by Indian government during COVID-19</b> *HuffPost India*
+
+In the last week of May 2020, we began working on a story on what we thought would be a celebration of Indian ingenuity: A startup called AgVa had teamed up with Maruti Suzuki to build what they claimed was the world's cheapest, smallest and most advanced ventilator.
+
+They had just bagged an order to supply 10,000 ventilators under the PMCARES fund.
+
+As our investigation progressed, we were troubled by what we found: Doctors who had used AgVa ventilators shared their accounts, former employees described a worrying lack of rigour and confessed how the company had fudges software, and two government clinical evaluation committees said the ventilators were not suitable for ICUs and should only be used in hospitals that had backups.
+
+Story #1: **<a href="https://www.huffingtonpost.in/entry/agva-ventilators-pmcares-covid-19-order_in_5ef1ea38c5b6001a27157ccd" target='_blank'> Govt Panels Flag Issues With AgVa Ventilators Bought By PMCARES Fund</a>** *June 24, 2020*
+
+Story #2: **<a href="https://qz.com/india/1811151/chinese-dating-apps-are-exploiting-loneliness-of-indias-men/" target='_blank'> PMCARES Ventilator Maker AgVa Fudged Software To Hide Poor Performance, Ex-Employees Say</a>** *July 4, 2020*
+
+
+---
 
 **<a href="https://qz.com/india/1811151/chinese-dating-apps-are-exploiting-loneliness-of-indias-men/" target='_blank'> Inside the Chinese dating apps exploiting the loneliness of India’s men </a>**<br>
 *Quartz | March 13, 2020*
 
-Dozens of scammy Chinese dating apps are exploiting the loneliness of Indian men outside of the Tinder-Bumble demographic. That includes India’s most downloaded dating app in 2019, L’amour. It's as mainstream as it can get. 
+Dozens of scammy Chinese dating apps are exploiting the loneliness of Indian men outside of the Tinder-Bumble demographic. That includes India’s most downloaded dating app in 2019, L’amour. It's as mainstream as it can get.
 
-What happens when men sign up? How does the machinery operate behind the scenes? For Quartz, Snigdha Poonam and I report from inside this thriving industry of predatory dating apps. 
+What happens when men sign up? How does the machinery operate behind the scenes? For Quartz, Snigdha Poonam and I report from inside this thriving industry of predatory dating apps.
 
 ---
 
@@ -22,7 +36,7 @@ Indian public authorities are building apps—at least 17 are public—to fight 
 **<a href="https://www.livemint.com/news/india/the-murky-world-of-india-s-fintech-scams-11584975873895.html" target='_blank'> The murky world of India’s fintech scams</a>**<br>
 *Mint | March 24, 2020*
 
-Wallets and UPI have taken over the Indian digital payment ecosystem. The reduction of friction in payments is driving the growth of new businesses. But it is also orchestrating fraud: thousands of Indians experience digital payment frauds every day, with sums ranging from a few thousand rupees to several lakhs. Why do the scams persist? Why are we not able to find a solution? 
+Wallets and UPI have taken over the Indian digital payment ecosystem. The reduction of friction in payments is driving the growth of new businesses. But it is also orchestrating fraud: thousands of Indians experience digital payment frauds every day, with sums ranging from a few thousand rupees to several lakhs. Why do the scams persist? Why are we not able to find a solution?
 
 ---
 
