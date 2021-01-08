@@ -3,8 +3,7 @@ layout: page
 title: About
 ---
 
-I am Samarth Bansal, an independent journalist and computer programmer based in New Delhi. While I have a formal degree in mathematics, I spent most of my time thinking and solving engineering problems during my undergrad at IIT Kanpur. [Journalism happened to me by chance](http://voxiitk.com/unorthodox-career-choices/): It was an accident.
-
+I am Samarth Bansal, an independent journalist and computer programmer based in New Delhi. I studied mathematics and computing at IIT Kanpur. [Journalism happened to me by chance](http://voxiitk.com/unorthodox-career-choices/): it was an accident.
 
 I have worked with the data journalism teams of the *[Hindustan Times](http://www.hindustantimes.com)* and *[The Hindu](http://www.thehindu.com)*. In 2018, I did a five-month reporting fellowship with the investigative team of the *[Wall Street Journal](http://www.wsj.com)* in New York City as an [Alfred Friendly Press Partners](http://www.presspartners.org) fellow.
 
