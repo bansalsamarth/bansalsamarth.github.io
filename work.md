@@ -2,6 +2,14 @@
 layout: page
 title: Selected Work
 ---
+
+**<a href="https://restofworld.org/2020/all-the-data-fit-to-sell/" target='_blank'> Inside India’s booming dark data economy</a>**<br>
+*Rest of World | December 22, 2020*
+
+Long read on India's booming dark data economy: spyware, detectives, data brokers, scammers—all that and more. Thanks to lax privacy laws and high consumer demand, details on everything from how you shop to who you date are all for sale.
+
+---
+
 <b>Two-part series investigating low-cost ventilators buily by AgVa Healthcare, procured by Indian government during COVID-19</b> *HuffPost India*
 
 In the last week of May 2020, we began working on a story on what we thought would be a celebration of Indian ingenuity: A startup called AgVa had teamed up with Maruti Suzuki to build what they claimed was the world's cheapest, smallest and most advanced ventilator.
@@ -22,7 +30,7 @@ Story #2: **<a href="https://qz.com/india/1811151/chinese-dating-apps-are-exploi
 
 Dozens of scammy Chinese dating apps are exploiting the loneliness of Indian men outside of the Tinder-Bumble demographic. That includes India’s most downloaded dating app in 2019, L’amour. It's as mainstream as it can get.
 
-What happens when men sign up? How does the machinery operate behind the scenes? For Quartz, Snigdha Poonam and I report from inside this thriving industry of predatory dating apps.
+What happens when men sign up? How does the machinery operate behind the scenes? We report from inside this thriving industry of predatory dating apps.
 
 ---
 
