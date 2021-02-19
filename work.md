@@ -3,6 +3,17 @@ layout: page
 title: Selected Work
 ---
 
+**<a href="https://www.livemint.com/news/india/food-warning-labels-are-in-the-deep-freeze-11613403030011.html" target='_blank'> Inside the five-year battle food companies have fought to resist stricter labelling norms </a>**<br>
+*Mint | February 16, 2021*
+
+<a href="https://drive.google.com/file/d/1dKwk6CqwYVpvtSzg2BmvshDDJf3m7f84/view">Unpaywalled link: PDF</a>
+
+India's food regulator proposed changes in labeling rules to empower consumers: if the quantity of fat/salt/sugar exceeds a specified threshold, food packets would have a front-of-pack warning label. But this policy is not moving, following fierce opposition from the industry. 
+
+My interviews with scientists, government officials, independent experts and a review of documents obtained under the RTI Act—including meeting minutes of FSSAI panels and hundreds of comments submitted by the food industry on the draft law—show how debates between industry and government keep moving from one committee to another and the unresolved conflicts stay on the table. As a result, India’s attempt to regulate highfat, sugar and salt (HFSS) foods is stuck for five years now. The story explores these tensions and explains what's at stake. 
+
+---
+
 **<a href="https://restofworld.org/2020/all-the-data-fit-to-sell/" target='_blank'> Inside India’s booming dark data economy</a>**<br>
 *Rest of World | December 22, 2020*
 
