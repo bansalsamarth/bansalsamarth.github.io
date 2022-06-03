@@ -10,7 +10,7 @@ author: Samarth Bansal
 
 Liberal critics, unsurprisingly, are outraged at this mass reaction and calling out, among other things, Indian celebrities for "towing the line", asking them to "show some spine" instead of participating in this non-sensical tamasha. 
 
-This incident reminded me of a [fascinating interview of documentary film maker Adam Curtis published in ](https://www.economist.com/open-future/2018/12/06/the-antidote-to-civilisational-collapse)*[The Economist](https://www.economist.com/open-future/2018/12/06/the-antidote-to-civilisational-collapse)* magazine in 2018:
+This incident reminded me of a [fascinating interview of documentary film maker Adam Curtis published in ](https://www.economist.com/open-future/2018/12/06/the-antidote-to-civilisational-collapse) *[The Economist](https://www.economist.com/open-future/2018/12/06/the-antidote-to-civilisational-collapse)* magazine in 2018:
 
 > No one is really sure what Trump represents. My working theory is that he’s part of the pantomime-isation of politics. Every morning Donald Trump wakes up in the White House, he tweets something absolutely outrageous which he knows the liberals will get upset by, the liberals read his tweets and go “This is terrible, this is outrageous,” and then tell each other via social media how terrible it all is. It becomes a feedback loop in which they are locked together. In my mind, it’s like they’re together in a theatre watching a pantomime villain. The pantomime villain comes forward into the light, looks at them and says something terrible, and they go “Boo!!”. Meanwhile, outside the theatre, real power is carrying on but no one is really analysing it.
 > 
