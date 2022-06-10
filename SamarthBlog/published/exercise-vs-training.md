@@ -6,7 +6,7 @@ date_published: May 27, 2022
 
 Since February 2021, I have largely maintained the healthy habits I adopted during my  fat loss phase. I exercise regularly, move frequently and eat well.
 
-Another factor is crucial: I left Delhi and moved home to Mussoorie in Arpil 201. Living in the mountains has only made me fitter. Hiking is not a touristy excursion: it's part of my daily life. I walk a lot, including elevations. And I don't think of that as an exercise. It is just something I love to do. My endurance has increased, energy levels have improved. I can feel it.
+Another factor is crucial: I left Delhi and moved home to Mussoorie in Arpil 2021. Living in the mountains has only made me fitter. Hiking is not a touristy excursion: it's part of my daily life. I walk a lot, including elevations. And I don't think of that as an exercise. It is just something I love to do. My endurance has increased, energy levels have improved. I can feel it.
 
 But what I feel has not translated into numbers: even though I was regular with at-home dumbbell-based workouts, my body composition has not changed. 
 
