@@ -34,6 +34,8 @@ In today’s edition of **The Interval**, I dive into three categories of health
 
 **So read what follows as my opinion,** that is, how I perceive these so-called “healthy” products.
 
+---
+
 ## **1. The unholy trinity: Salt, Sugar and Fat**
 
 'TagZ' was the second food startup in Season One of Shark Tank India. They sell “popped potato chips”.
@@ -238,12 +240,12 @@ To be sure, the founders acknowledged that they are not marketing the pops as a 
 
 **Context:** “Flavours” are ingredients that exist for taste and not for nutritional value. At its most basic, “natural flavours” are chemicals extracted from a natural source — a plant or animal, for example. “Artificial flavours” are the same chemicals synthesised in a lab. Both can have exactly the same chemical composition. What is different is the source.
 
-The problem? From the [*New York Times*](https://www.nytimes.com/2018/02/16/business/natural-food-products.html):
+The problem? From the *[New York Times](https://www.nytimes.com/2018/02/16/business/natural-food-products.html)*:
 
 > Consumers, increasingly wary of products that are overly processed or full of manufactured chemicals, are paying premium prices for natural goods, from fruit juices and cereals to shampoos and baby wipes. 
-
+> 
 > But as a spate of lawsuits and consumer advocacy efforts show, one person’s “natural” is another person’s methylisothiazolinone. 
-
+> 
 > The problem, consumer groups and even some manufacturers say, is that there is no legal or regulatory definition of what “natural” is.
 
 So the reason companies use this label in wholesale is simple: marketing. Skippy is exploiting this and it was easy to catch their bluff. 
@@ -257,6 +259,8 @@ I emailed the company but they didn’t respond to a request for comment.
 **The bottomline:** Yet again, just ignore all the front-of-pack claims. If you really care about the “natural” vs “artificial” distinction, read the label. Three experts [interviewed by NPR](https://www.npr.org/sections/thesalt/2017/11/03/560048780/is-natural-flavor-healthier-than-artificial-flavor) say it doesn’t really matter, though I avoid it when I can.
 
 **From Professor Tim Specter's book *Spoon-Fed*:** “Many of the multiple added ingredients are chemicals that alone or in combination are likely to be bad for our long-term health. We know manufacturers manipulate the flavours to make us eat much more than we want to, and many of the key chemicals can interfere with the health of our gut ingredients. This includes artificial sweeteners, emulsifiers and preservatives. None of these chemicals are naturally present in the food of any of our ancestors and our gut microbes and genes or hormones will not have evolved to deal with them safely. “
+
+---
 
 ## **Conclusion**
 
