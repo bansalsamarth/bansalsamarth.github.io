@@ -4,11 +4,17 @@ slug: indian-pollsters-are-doing-fine
 date_published: 27 march, 2022
 tags: The Interval
 author: Samarth Bansal
-excerpt: "Why do we have election polls at all? How does a polling company craft and execute an accurate survey? Why do some succeed while others fail? Also: how do we define 'accuracy'? The answers to these common-sense questions may surprise you. It's a 15-minute read."
+
 ---
 
 ![](assets/images/pollster-nl/interval-poll-cover.jpg) 
 *Illustration by [@somethingsketchy](https://www.instagram.com/somethingsketchy/)*
+
+*This story was originally published in my fortnightly deep-dive newsletter, **The Interval**. You can read more about it [here](./welcome-to-the-interval.html).*
+
+**Brief:** Why do we have election polls at all? How does a polling company craft and execute an accurate survey? Why do some succeed while others fail? Also: how do we define 'accuracy'? The answers to these common-sense questions may surprise you. It's a 15-minute read.
+
+---
 
 Election forecasting is an utterly useless exercise.
 

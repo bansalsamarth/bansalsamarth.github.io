@@ -6,7 +6,12 @@ tags: The Interval
 author: Samarth Bansal
 ---
 
-*The wildly popular show ‘Shark Tank India’ introduced us to an exciting array of startups promising to deliver delicious snacks, drinks and desserts that are good for us. But an assessment of their nutritional charts reveals how food marketeers use misleading labels to trick consumers. When shopping at the grocery store, the buyer truly has to beware. It's a 15-minute read.* 
+
+![](assets/images/interval-banner.png)
+
+*This story was originally published in my fortnightly deep-dive newsletter, **The Interval**. You can read more about it [here](./welcome-to-the-interval.html).*
+
+**TLDR:** The wildly popular show ‘Shark Tank India’ introduced us to an exciting array of startups promising to deliver delicious snacks, drinks and desserts that are good for us. But an assessment of their nutritional charts reveals how food marketeers use misleading labels to trick consumers. When shopping at the grocery store, the buyer truly has to beware. It's a 15-minute read.
 
 ---
 

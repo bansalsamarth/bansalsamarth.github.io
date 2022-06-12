@@ -4,6 +4,15 @@ slug: five-books-clear-thinking
 date_published: 1 January, 2022
 author: Samarth Bansal
 ---
+![](assets/images/interval-banner.png)
+
+*This story was originally published in my fortnightly deep-dive newsletter, **The Interval**. You can read more about it [here](./welcome-to-the-interval.html).**
+
+Sharing five books that are central to **The Interval’s** theme: clear thinking.
+
+It is hard to recommend books. Few have quasi-universal appeal and reading tastes vary widely: a mind-blowing book for me can be mind-numbing for you. In addition, none of the books in the following list are leisurely reads. So to make it easy, I briefly describe the reader who I think will find the book useful. I hope that helps.
+
+---
 
 ![](assets/images/books-clear-thinking/superforecasting.jpg)
 

@@ -6,9 +6,11 @@ tags: The Interval
 author: Samarth Bansal
 ---
 
-*Hi, this is Samarth. Welcome to **The Interval**, a fortnightly newsletter to think deeply about the truth-seeking process and forces that distort it. You can read [more about it and sign up here](__GHOST_URL__/welcome-to-the-interval/). Here is a link to [all previous issues](__GHOST_URL__/tag/the-interval-newsletter/). Please send feedback to samarthbansal@protonmail.com or just reply to this email.*
+![](assets/images/interval-banner.png)
 
-**In today's issue:** Journalists are hard-wired to look for instances of shadowy wrongdoing. This is especially true for stories that involve cronyism, conflict of interest or payoffs in scientific research and/or regulatory policy. But a *[New York Times](https://www.nytimes.com/2019/09/16/health/ilsi-food-policy-india-brazil-china.html)* story that called out a prominent Indian scientist—overseeing packaged labelling in India—shows how this bias can lead to bad reporting and misinformation. Even when there is smoke, there isn’t always fire. It's a 15-minute read.
+*This story was originally published in my fortnightly deep-dive newsletter, **The Interval**.* You can read more about it [here](./welcome-to-the-interval.html).
+
+**TLDR:** Journalists are hard-wired to look for instances of shadowy wrongdoing. This is especially true for stories that involve cronyism, conflict of interest or payoffs in scientific research and/or regulatory policy. But a *[New York Times](https://www.nytimes.com/2019/09/16/health/ilsi-food-policy-india-brazil-china.html)* story that called out a prominent Indian scientist—overseeing packaged labelling in India—shows how this bias can lead to bad reporting and misinformation. Even when there is smoke, there isn’t always fire. It's a 15-minute read.
 
 ---
 

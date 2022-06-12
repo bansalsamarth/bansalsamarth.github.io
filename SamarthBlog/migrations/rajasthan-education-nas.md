@@ -8,6 +8,13 @@ author: Samarth Bansal
 excerpt: In 2017, Rajasthan was both the best and the worst Indian state in terms of learning outcomes. How did that happen?
 ---
 
+
+![](assets/images/interval-banner.png)
+
+*This story was originally published in my fortnightly deep-dive newsletter, **The Interval**. You can read more about it [here](./welcome-to-the-interval.html).*
+
+<br>
+
 2017 witnessed a governance miracle. Rajasthan, the [least literate Indian state](https://www.dnaindia.com/money/report-one-third-of-rural-population-illiterate-in-india-2101486?google_editors_picks=true) was ranked the best in the National Achievement Survey (NAS), the [largest ever student assessment](https://pib.gov.in/newsite/printrelease.aspx?relid=173462) conducted by the government. 
 
 It was a big deal. Just two years before the exam, then Chief Minister Vasundhara Raje acknowledged the poor quality of education and announced her goal to [break into the top ten](https://www.internationalnewsandviews.com/rajasthan-should-figure-in-education-top-10-states-in-education-vasundhara-raje/).
@@ -22,7 +29,7 @@ The Boston Consulting Group, the management consultancy Raje had hired to assist
 
 My bullshit detector beeped when I saw these claims. Something was off and I looked more closely.
 
-![](https://media.tenor.com/images/85bb3c964b0b13aa07f0b22818905628/tenor.gif)
+![](assets/images/edu-rajasthan-nas/gif-1.gif)
 
 There is one more national survey tracking student learning outcomes. It’s called ASER. The education non-profit Pratham conducts it. Many in the government hate it but they can’t ignore it. Since the mid-2000s, ASER has exposed what Pratham calls the “learning crisis” in Indian schools.
 
@@ -66,7 +73,7 @@ That is the official narrative.
 
 Now look, my understanding of India’s education scene is not much different from Elon Musk’s [understanding of journalism](https://www.vox.com/2018/5/24/17389388/elon-musk-twitter-pravda): I don't know enough to grasp its complexity. So I could not critically assess Gangwar’s reasoning.
 
-![](https://media.tenor.com/images/4fae6517b0ce773ecec8255805b04fe9/tenor.gif)
+![](assets/images/edu-rajasthan-nas/gif-2.gif)
 
 I compensated for my ignorance with common sense and made one assumption: Learning outcomes could not have improved if nothing changed inside the classroom. Teachers had to be doing something different. Sounds right?
 
@@ -77,6 +84,9 @@ So I booked a ticket for Jaipur and rode a bus for three days to visit governmen
 ---
 
 ### II. Schools and dashboards
+
+![](assets/images/edu-rajasthan-nas/jaipur-school.jpg)
+
 Teachers at the first two schools shot me puzzled looks when I asked about NAS. They were not aware of the rankings which brought me to their school. Oops. 
 
 So I stopped mentioning NAS and enquired what had changed over the last few years. Some pointed to a newly constructed building and some showed me wall paintings. Some mentioned new donation initiatives and others highlighted school mergers. (None of the teachers I met wanted to be identified. So I won't disclose their names.)
@@ -124,7 +134,11 @@ But he had given me a lead to explore more. I looked for government documents me
 On 19 June 2017, five months before the exam, education [secretary Gangwar informed state officials about NAS](https://drive.google.com/file/d/164lWp4KNfu1q4jmbhwSJwVDdVRcQ6zLk/view?usp=sharing). He told them its results will feed in state education rankings. So officials should start preparing. Rajasthan’s learning levels should be better than others, he wrote.
 
 The letter ended with a warning: “Do remember that disciplinary action will be taken against district education officers whose district’s learning levels fall below the average”. Wow. 
-![](__GHOST_URL__/content/images/2021/12/Screenshot-2021-12-18-at-12.22.16-AM.png)Letter dated June 19, 2017. [Link to the full letter](https://drive.google.com/file/d/164lWp4KNfu1q4jmbhwSJwVDdVRcQ6zLk/view?usp=sharing). 
+
+![](assets/images/edu-rajasthan-nas/letter-1.png)
+
+*Letter dated June 19, 2017. [Link to the full letter](https://drive.google.com/file/d/164lWp4KNfu1q4jmbhwSJwVDdVRcQ6zLk/view?usp=sharing).*
+
 Here again, the same mistake: punishment was linked with performance metrics. 
 
 "The puzzle is now half-solved," I told myself at the first glance of this letter.
@@ -137,7 +151,10 @@ In September, officials were concerned that the upcoming Dussehra holiday would 
 
 On October 5, five weeks before the exam, officials were asked to assign 
 "holiday homework" during the Diwali break for NAS preparation.
-![](__GHOST_URL__/content/images/2021/12/Screenshot-2021-12-18-at-12.53.19-AM.png)Letter dated October 5, 2017. [Link to the full letter](https://drive.google.com/file/d/164lWp4KNfu1q4jmbhwSJwVDdVRcQ6zLk/view?usp=sharing). 
+
+![](assets/images/edu-rajasthan-nas/letter-2.png)
+
+*Letter dated October 5, 2017. [Link to the full letter](https://drive.google.com/file/d/164lWp4KNfu1q4jmbhwSJwVDdVRcQ6zLk/view?usp=sharing)*. 
 
 The letters made it clear: state officials were preparing kids for a competitive exam—not a diagnostic exam. They wanted to win and shine in the rankings. 
 
@@ -147,7 +164,7 @@ There is no sign where officials signalled the exam will help diagnose problems.
 
 You can imagine what this would have led to.
 
-![](https://media.tenor.com/images/880ee6afe0ec6eb0d2e896b906031564/tenor.gif)
+![](assets/images/edu-rajasthan-nas/gif-3.gif)
 
 But one question still remained: what exactly happened on the day of the exam? 
 
@@ -167,7 +184,7 @@ What Singh saw could not be called an exam. Teachers and students sat together. 
 
 Singh [published his eye-witness account in the next day's paper](https://www.patrika.com/nagaur-news/national-achievement-survey-named-after-the-joke-1996843/): “NAS became a joke,” he wrote. I called up Singh to confirm, just to be sure. “Yes, it was a complete sham. NAS ranking has no meaning. It is totally bogus,” Singh told me.
 
-My confidence in Singh’s account strengthened when I read [another report in *Patrika* from Dausa district](https://www.patrika.com/dausa-news/national-achievement-survey-1996298/) with similar observations: “Students were helped to improve the ranking of the school and make the district look better. There was no secrecy.”
+My confidence in Singh’s account strengthened when I read [another report in Patrika from Dausa district](https://www.patrika.com/dausa-news/national-achievement-survey-1996298/) with similar observations: “Students were helped to improve the ranking of the school and make the district look better. There was no secrecy.”
 
 Singh asked teachers why they were doing this. 
 
@@ -175,7 +192,7 @@ You know why.
 
 "Why should our school result be down? We will be penalised for students' poor performance," Singh recalled one teacher telling him.
 
-> I remember thinking at the time: “How unfortunate. The government conducted this big exercise — the largest ever student assessment survey — to manufacture junk? What a waste of public resources!”
+*I remember thinking at the time: “How unfortunate. The government conducted this big exercise — the largest ever student assessment survey — to manufacture junk? What a waste of public resources!”*
 
 ---
 

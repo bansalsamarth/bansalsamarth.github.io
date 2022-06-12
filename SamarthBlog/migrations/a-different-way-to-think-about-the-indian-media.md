@@ -3,8 +3,16 @@ title: A different way to think about Indian media
 slug: a-different-way-to-think-about-the-indian-media
 date_published: 29 January, 2022
 tags: The Interval, Journalism
-excerpt:  Is the Indian media broken beyond repair? Or is it thriving as feisty regional and independent outlets report truth to power? The answer lies not in the specifics but the larger systems. The answer is also complicated, not even remotely captured by tweet-sized debates that often occupy our attention. It's a 10-minute read. 
 author: Samarth Bansal
+---
+
+
+![](assets/images/interval-banner.png)
+
+*This story was originally published in my fortnightly deep-dive newsletter, **The Interval**. You can read more about it [here](./welcome-to-the-interval.html).*
+
+**Brief:** Is the Indian media broken beyond repair? Or is it thriving as feisty regional and independent outlets report truth to power? The answer lies not in the specifics but the larger systems. The answer is also complicated, not even remotely captured by tweet-sized debates that often occupy our attention. It's a 10-minute read. 
+
 ---
 
 I often find myself making two contradictory arguments about the Indian press.

@@ -3,8 +3,16 @@ title: "The Wire’s TekFog investigation: A futile search for evidence"
 slug: the-wires-tek-fog-investigation-futile-search-for-evidence
 date_published: 15 January, 2022
 tags: The Interval
-excerpt: The Wire's recent three-part investigation into a secret BJP app called TekFog raised great concerns about a powerful tool that hijacks social media and targets thousands with a click of a button. But a closer look at the evidence reveals glaring holes. What we have, in fact, is a grab-bag of possibly interesting leads and great leaps of extrapolation held together by ‘confirmation bias’. The failures in this reporting—despite best intentions—point to a critical, underlying problem with Indian journalism today. It's a 20-minute read. I hope it's worth your time.
 author: Samarth Bansal
+---
+
+
+![](assets/images/interval-banner.png)
+
+*This story was originally published in my fortnightly deep-dive newsletter, **The Interval**. You can read more about it [here](./welcome-to-the-interval.html).*
+
+**TLDR:** The Wire's recent three-part investigation into a secret BJP app called TekFog raised great concerns about a powerful tool that hijacks social media and targets thousands with a click of a button. But a closer look at the evidence reveals glaring holes. What we have, in fact, is a grab-bag of possibly interesting leads and great leaps of extrapolation held together by ‘confirmation bias’. The failures in this reporting—despite best intentions—point to a critical, underlying problem with Indian journalism today. It's a 20-minute read. 
+
 ---
 
 “Did you read the ‘Tek Fog’ story?” a friend texted me on the evening of January 6. “It’s insane. Looks like the BJP has hacked all of social media.”
