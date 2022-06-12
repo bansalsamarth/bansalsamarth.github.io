@@ -1,5 +1,5 @@
 ---
-title: The Wire’s TekFog investigation: A futile search for evidence
+title: "The Wire’s TekFog investigation: A futile search for evidence"
 slug: the-wires-tek-fog-investigation-futile-search-for-evidence
 date_published: 15 January, 2022
 tags: The Interval

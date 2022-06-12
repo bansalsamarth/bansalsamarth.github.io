@@ -1,5 +1,5 @@
 ---
-title: Sugar-coated conspiracies: How ‘publication bias’ amplifies half-truths
+title: "Sugar-coated conspiracies: How ‘publication bias’ amplifies half-truths"
 slug: india-food-politics-half-truths
 date_published: 26 February, 2022
 tags: The Interval

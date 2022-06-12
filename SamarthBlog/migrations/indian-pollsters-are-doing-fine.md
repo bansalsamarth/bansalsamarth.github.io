@@ -1,10 +1,10 @@
 ---
-title: "#Indian pollsters are doing fine. Here is how forecasts work."
+title: "Indian pollsters are doing fine. Here is how forecasts work."
 slug: indian-pollsters-are-doing-fine
 date_published: 27 march, 2022
 tags: The Interval
 author: Samarth Bansal
-excerpt: Why do we have election polls at all? How does a polling company craft and execute an accurate survey? Why do some succeed while others fail? Also: how do we define "accuracy"? The answers to these common-sense questions may surprise you. It's a 15-minute read.
+excerpt: "Why do we have election polls at all? How does a polling company craft and execute an accurate survey? Why do some succeed while others fail? Also: how do we define 'accuracy'? The answers to these common-sense questions may surprise you. It's a 15-minute read."
 ---
 
 Election forecasting is an utterly useless exercise.

@@ -1,5 +1,5 @@
 ---
-title: Feeding the Sharks: The unpalatable truth about 'healthy' food
+title: "Feeding the Sharks: The unpalatable truth about healthy food"
 slug: shark-tank-india-health-food-claims-truth
 date_published: 12 February, 2022
 tags: The Interval

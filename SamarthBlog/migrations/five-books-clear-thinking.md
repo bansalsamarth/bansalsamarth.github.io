@@ -6,7 +6,7 @@ tags: The Interval
 author: Samarth Bansal
 ---
 
-The best way to start writing a newsletter is to start writing it and the best way to launch it is to just launch it. Overthinking almost always delays passion projects. To avoid that trap after **The Interval**was born in my head, I wrote an announcement post in the first week of December, designed a banner, and let it out in the world.
+The best way to start writing a newsletter is to start writing it and the best way to launch it is to just launch it. Overthinking almost always delays passion projects. To avoid that trap after **The Interval** was born in my head, I wrote an announcement post in the first week of December, designed a banner, and let it out in the world.
 
 At the time, I did not foresee that the second dispatch will go live on the first day of the new year — a great day to think and reflect on the past (ten pages were inked in my new journal yesterday) but not so great to read about conspiracy theorists (the planned story for today.) So I am holding it for next time and instead sharing five books that are central to **The Interval’s** theme: clear thinking. 
 
