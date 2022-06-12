@@ -1,31 +1,24 @@
 ---
-title: Five books on thinking clearly
+title: "Five books on thinking clearly"
 slug: five-books-clear-thinking
 date_published: 1 January, 2022
-tags: The Interval
 author: Samarth Bansal
 ---
 
-The best way to start writing a newsletter is to start writing it and the best way to launch it is to just launch it. Overthinking almost always delays passion projects. To avoid that trap after **The Interval** was born in my head, I wrote an announcement post in the first week of December, designed a banner, and let it out in the world.
+![](assets/images/books-clear-thinking/superforecasting.jpg)
 
-At the time, I did not foresee that the second dispatch will go live on the first day of the new year — a great day to think and reflect on the past (ten pages were inked in my new journal yesterday) but not so great to read about conspiracy theorists (the planned story for today.) So I am holding it for next time and instead sharing five books that are central to **The Interval’s** theme: clear thinking. 
-
-It is hard to recommend books. Few have quasi-universal appeal and reading tastes vary widely: a mind-blowing book for me can be mind-numbing for you. In addition, none of the books in the following list are leisurely reads. So to make it easy, I briefly describe the reader who I think will find the book useful. I hope that helps. 
-
-Happy new year, friends. Please be kind to yourself and stay well.
-
----
-![](__GHOST_URL__/content/images/2021/12/1.png)
 If you have read the work of Daniel Kahneman ([“Thinking Fast and Slow”](https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow)) or Nassim Nicholas Taleb ([“Fooled by Randomness”](https://www.goodreads.com/book/show/38315.Fooled_by_Randomness) or any other), you should read Philip Tetlock. Economist [Tyler Cowen calls him](https://conversationswithtyler.com/episodes/philip-e-tetlock/) one of the “greatest social scientists in the world” but his books have not reached the audience as wide as the other two. (If you haven’t read either, consider it.)
 
-Tetlock's research spanning three decades has shown that the [average expert is no better than dart-throwing chimps](https://www.newyorker.com/magazine/2005/12/05/everybodys-an-expert) — meaning, their predictions were as good as flipping a coin. But the crucial thing is this: there was a sub-group who did better than chimps and consistently maintained a good hit rate with predictions. Tetlock calls them superforecasters and tells us [about their method](https://thecorrespondent.com/493/how-to-become-a-superforecaster/65267876586-9ffafaeb) in his book [*Superforecasting*](https://www.goodreads.com/book/show/23995360-superforecasting)co-authored with Dan Garnder. 
+Tetlock's research spanning three decades has shown that the [average expert is no better than dart-throwing chimps](https://www.newyorker.com/magazine/2005/12/05/everybodys-an-expert) — meaning, their predictions were as good as flipping a coin. But the crucial thing is this: there was a sub-group who did better than chimps and consistently maintained a good hit rate with predictions. Tetlock calls them superforecasters and tells us [about their method](https://thecorrespondent.com/493/how-to-become-a-superforecaster/65267876586-9ffafaeb) in his book *[Superforecasting](https://www.goodreads.com/book/show/23995360-superforecasting)* co-authored with Dan Garnder. 
 
 This one is for those who want a better way to think about the future and understand why it's hard. There is a world between "math models are the best guide to future" and "all forecasting is bunk" which the book explores. It also offers solid insights on decision making under uncertainty. Tetlock's counterintuitive take on the [Iraq WMD intelligence failure](https://en.wikipedia.org/wiki/Iraq_and_weapons_of_mass_destruction) and the discussion on [Barack Obama's decision to raid on Osama bin Laden’s compound](https://www.obama.org/updates/obl-ten/) gave me a lot to think about. 
 
 The book is full of interesting stories and examples that makes it an easy read.
 
 ---
-![](__GHOST_URL__/content/images/2021/12/2.png)
+
+![](assets/images/books-clear-thinking/maxims.jpg)
+
 I will start with the book’s weakness: writing. It was simple enough that I finished it in two sittings but it was not a delightful read. An editor could have helped shape the book better.
 
 But the book is jam-packed with practical ideas about rational thinking and decision making. Chapters are structured around nineteen sentence-long nuggets, each of which capture ideas of Harvard professor Richard Zeckhauser to think about problems from first principles. It has a bent towards policy but what one learns applies to everyday life decisions. The author documents case studies from the professor's former students to show how these ideas helped them in real-world decisions. 
@@ -37,7 +30,9 @@ From the [book's abstract](https://www.goodreads.com/en/book/show/58489701-maxim
 For those new to probabilistic thinking and don't have a framework to account for uncertainty, this one is a great primer to get started, especially because of the wide-ranging examples. 
 
 ---
-![](__GHOST_URL__/content/images/2021/12/3.png)
+
+![](assets/images/books-clear-thinking/why.jpg)
+
 If you have ever said “correlation is not causation” and felt smart, I highly recommend Judea Pearl’s [The Book of Why](https://www.goodreads.com/book/show/36204378-the-book-of-why) to start figuring out what causation is if not correlation. Others better avoid: it’s a dense book diving deep into statistical and philosophical ideas on the utility of data to understand cause and effect relationships.
 
 The book falls in the now-popular category of scientists trying to make their work accessible to a wider audience. Yet, I think that readers who have consciously struggled to answer the “why” questions — they are the hardest among [the five W’s and one H](https://en.wikipedia.org/wiki/Five_Ws) (who, what, when, where, why, how) to be sure about — will find this book relevant and appreciate it the most. 
@@ -53,7 +48,9 @@ Pearl says the science of “causal inference” is new which helps us articulat
 If you want a rigorous framework to think about these questions, this book is a good starting point. And if you believe that computational advances in data science and artificial intelligence will make it easy to answer causal questions, you should read Pearl — he challenges that. 
 
 ---
-![](__GHOST_URL__/content/images/2021/12/4.png)
+
+![](assets/images/books-clear-thinking/notes.jpg)
+
 I am not proud of my memory. I read a lot but forget what I read after a few months. There are times when I vaguely recall an article or a book chapter, but it's tedious to to trace back the source and quote specific insights. 
 
 I used to think it didn't matter: even if I could not recall, it’s okay because exposure to those ideas had shaped my thinking and subconscious storage should filter and process new information. I want to believe that’s true, but in itself, it was never satisfying. I could not stop asking myself: what is the point of reading so much if I don’t remember it? Is more reading leading to more understanding?
@@ -67,7 +64,9 @@ You can start [with this excellent summary](https://fortelabs.co/blog/how-to-tak
 *Note: I use [Obsidian](https://obsidian.md/) to implement the “slip-box” he describes in the book.*
 
 ---
-![](__GHOST_URL__/content/images/2021/12/5.png)
+
+![](assets/images/books-clear-thinking/bs.jpg)
+
 I can comfortably recommend [Calling Bullshit](https://www.goodreads.com/book/show/48889983-calling-bullshit) to most people. It's a fun, entertaining and educational read with examples everyone can relate with and learn from. Bullshit packaged with charts and numbers is rampant in the modern media ecosystem. The authors are concerned about it and their solution is data literacy. 
 
 > Of course an advertisement is trying to sell you something, but do you know whether the TED talk you watched last night is also bullshit — and if so, can you explain why? Can you see the problem with the latest *New York Times* or *Washington Post* article fawning over some startup's big data analytics? Can you tell when a clinical trial reported in the *New England Journal* or *JAMA* is trustworthy, and when it is just a veiled press release for some big pharma company?
