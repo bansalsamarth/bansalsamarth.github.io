@@ -6,7 +6,7 @@ author: Samarth Bansal
 ---
 ![](assets/images/interval-banner.png)
 
-*This story was originally published in my fortnightly deep-dive newsletter, **The Interval**. You can read more about it [here](./welcome-to-the-interval.html).**
+*This story was originally published in my fortnightly deep-dive newsletter, **The Interval**. You can read more about it [here](./welcome-to-the-interval.html).*
 
 Sharing five books that are central to **The Interval’s** theme: clear thinking.
 

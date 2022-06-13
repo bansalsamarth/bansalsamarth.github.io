@@ -46,17 +46,8 @@ In today’s edition of **The Interval**, I will tell you a ‘null story’ on 
 
 In September 2019, the *New York Times* published a [bombshell report](https://www.nytimes.com/2019/09/16/health/ilsi-food-policy-india-brazil-china.html): **“A Shadowy Industry Group Shapes Food Policy Around the World!”**
 
-It begins with a discussion on India’s progressive front-of-pack labelling regulation. (It was introduced to solve the problem of misleading “healthy food” labels I had discussed in the [previous issue](__GHOST_URL__/shark-tank-india-health-food-claims-truth/).)
-[
+It begins with a discussion on India’s progressive front-of-pack labelling regulation. (It was introduced to solve the problem of misleading “healthy food” labels I had discussed in the [previous issue](./shark-tank-india-health-food-claims-truth.html).)
 
-#5: Feeding the Sharks: The unpalatable truth about ‘healthy’ food
-
-‘Shark Tank India’ introduced us to an exciting array of healthy food startups. But their nutritional charts reveals the food marketeer’s tricks.
-
-![](__GHOST_URL__/favicon.ico)Samarth BansalSamarth Bansal
-
-![](__GHOST_URL__/content/images/2022/02/Copy-of-Blue-Skies-Email-Header-1--2.png)
-](__GHOST_URL__/shark-tank-india-health-food-claims-truth/)
 The idea of the regulation is simple. From a story I wrote for *[Mint](https://www.livemint.com/news/india/food-warning-labels-are-in-the-deep-freeze-11613403030011.html)*:
 
 > If the content of fat, salt or sugar—the three nutrients of concern—exceed a specified quantity, the food packet would come with a front-of-pack warning label. An easily understandable red dot for each element that surpasses a defined threshold.
@@ -72,9 +63,9 @@ The NYT report offered a clue for these delays: the appointment of a specific sc
 This panel was headed by Dr Boindala Sesikeran. This, the NYT told us, was a problem. Here are the first three paragraphs:
 
 > When the Indian government bowed to powerful food companies last year and postponed its decision to put red warning labels on unhealthy packaged food, officials also sought to placate critics of the delay by creating an expert panel to review the proposed labeling system, which would have gone far beyond what other countries have done in the battle to combat soaring obesity rates.
-
+> 
 > But the man chosen to head the three-person committee, Dr. Boindala Sesikeran, a veteran nutritionist and former adviser to Nestle, only further enraged health advocates.
-
+> 
 > That’s because Dr. Sesikeran is a trustee of the International Life Sciences Institute, an American nonprofit with an innocuous sounding name that has been quietly infiltrating government health and nutrition bodies around the world.
 
 Sesikaran’s presence in the expert committee, health advocates told the NYT, is not acceptable: “To have a covert food lobby group deciding public health policy is wrong and a blatant conflict of interest,” one activist told the publication.
@@ -126,18 +117,20 @@ More contradictions appear in the Sesikaran narrative.
 In October 2020, nearly two years after the Sesikaran meeting, India’s sugar lobby (ISMA) started a bizarre public relations campaign. The association launched a new portal — meetha.org — to fight the ‘misinformation surrounding sugar’.
 
 India's union food secretary was present at the website launch.
-![](https://lh6.googleusercontent.com/-6Gztn6BaZOV0mbjL6PK7uVUpuVt1sfBqathBXdflZJqA03KTL8nVgFiv4U-QBlwX4ZH9t_aOICAT73kUHpewGrCn0wGGHiO6Q4QDNokYNM6uMxsy_zRd-X8Nxm2g11xBETpCCdr)
+
+![](assets/images/food-politics-half-truths/meetha.png)
+
 On a Zoom call, the association’s director-general Abhinash Verma told me the origin story.
 
 > I have been attending a lot of conferences and meetings at the international level and we are concerned about the campaign that is going on against sugar to make everybody believe that if you reduce your sugar consumption you will be the healthiest person in the world. This campaign is getting bigger and bigger in India.
-
+> 
 > Someone is behind this campaign without much research. We realized that none of these scientists, anywhere in the world, have ever concluded that sugar is bad. Nobody, be it doctors or nutritionists will tell you that consuming sugar per se will lead to diabetes or dental caries or will increase your chances of getting cancer.
-
+> 
 > So as a responsible association of sugar producers, we have started a small campaign to discuss in a public forum what is correct and what is incorrect. Our meetha.org could be the platform to convey the right details and fill the vacuum.
 
 Verma spoke to me for close to an hour. He clarified: they are not asking people to eat more sugar. They are asking for moderation and busting misconceptions which are leading to misguided policies like front-of-pack labelling.
 
-I wrote about sugar in **The Interval's**[previous issue](__GHOST_URL__/shark-tank-india-health-food-claims-truth/) and I won't get into the specifics here. As Daniel Engber pointed out in a fine [Atlantic essay](https://www.theatlantic.com/magazine/archive/2017/01/the-sugar-wars/508751/):
+I wrote about sugar in **The Interval's** [previous issue](./shark-tank-india-health-food-claims-truth.html) and I won't get into the specifics here. As Daniel Engber pointed out in a fine [Atlantic essay](https://www.theatlantic.com/magazine/archive/2017/01/the-sugar-wars/508751/):
 
 > Just as the history defies a simple reading, the research on nutrition—ample and diverse though it’s been—isn’t close to dispositive. We can’t prove the case against sugar, and we can’t prove the case against that case, either.
 
@@ -203,22 +196,19 @@ Was there ever really a “sugar conspiracy”?
 
 Twists and turns in science and policy are not necessarily products of malevolence
 
-![](https://www.science.org/pb-assets/images/logos/apple-touch-icon-120x120.png)ScienceDavid Merritt Johns
 
-![](https://www.science.org/cms/asset/02733bf3-d446-434a-960c-85a762f1d081/359_747_f2.gif)
-](https://www.science.org/doi/10.1126/science.aaq1618)
 From their article in *[Slate](https://slate.com/technology/2018/03/big-sugar-isnt-to-blame-for-steering-us-away-from-fat.html)*:
 
 > Over the last two decades a remarkable shift in focus has taken place in the nutrition field—we’ve gone from blaming fat for our expanding waistlines to fingering sugar instead.
-
+> 
 > And who was to blame for our nutritional befuddlement?
-
+> 
 > In late 2016, there emerged an explanation that appeared to cut through the fog: It was the sugar industry. Researchers with the University of California announced they had unearthed secret archival documents showing that in the mid-1960s, the industry-backed Sugar Research Foundation had covertly paid top scientists at Harvard to conduct a literature review playing down the role of sugar in heart disease and pinning the blame on dietary fat instead.
-
+> 
 > But as we detailed last month in Science, our own examination of the historical events in question shows this alluring tale of industry meddling is based on a highly selective and profoundly flawed interpretation of the history.
-
+> 
 > The long-deceased Mad Men–era Harvard scientists who stand accused of having been “paid off” to “shift the blame” to fat were, in fact, already on record in support of low-fat diets as a way to fight heart disease for nearly a decade before the sugar men came calling. In adopting this stance they were in sync with the dominant nutritional paradigm of the era: the idea that the fatty American diet, by raising cholesterol levels in the blood, was behind the epidemic of heart attacks that was killing so many middle-aged breadwinners. No blame-shifting was even required!
-
+> 
 > So what explains the emergence of this shadowy narrative about Big Sugar? Certainly there is a rich tradition in contested areas of science of using bits and pieces of history to add urgency to one’s claims.
 
 The Sesikaran-ILSI saga had similarities with this case. So I emailed David to get his views on what I had found in my reporting.
@@ -231,9 +221,9 @@ Here is our email exchange, slightly edited for clarity:
 
 That said, there is no question that it has become a popular academic and journalistic trope to seek out financial connections and then use those ties to discredit some public figure, or to use those ties to explain why one (bad) thing happened while another (good) thing didn’t."
 
-**Samarth: **What are its implications for our understanding of complex issues in food policy? What do we miss out on?
+**Samarth:** What are its implications for our understanding of complex issues in food policy? What do we miss out on?
 
-**David Johns: **"One relevant point in the journalistic realm is that I think there has been a tendency to focus on and demonize particular individual scientists who have had or do have relationships with industry, rather than consider how the industry’s activities as a whole might tend to amplify certain ideas and arguments that align with the industry’s interests.
+**David Johns:** "One relevant point in the journalistic realm is that I think there has been a tendency to focus on and demonize particular individual scientists who have had or do have relationships with industry, rather than consider how the industry’s activities as a whole might tend to amplify certain ideas and arguments that align with the industry’s interests.
 
 If the conferences are set up in such a way that they amplify certain industry-friendly messages (e.g., they promote exercise instead of denigrating junk food), then maybe you have academic articles are published as a result of the conference. Maybe journalists cover the conference, and they transmit that message.
 

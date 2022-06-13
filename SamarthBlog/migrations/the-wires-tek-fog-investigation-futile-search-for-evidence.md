@@ -17,14 +17,16 @@ author: Samarth Bansal
 
 “Did you read the ‘Tek Fog’ story?” a friend texted me on the evening of January 6. “It’s insane. Looks like the BJP has hacked all of social media.”
 
-I did. It was electrifying. A [two-year-long investigation by *The Wire*](https://thewire.in/tekfog/en/1.html) found that India’s ruling Bharatiya Janata Party has access to a secret app called ‘Tek Fog’ that automates hate: it can create and delete social media accounts on the fly, compromise WhatsApp to send unauthorised messages, hijack online conversations, use a vast citizen database for targeted harassment, and more. Two private tech companies were complicit in enabling this operation.
+I did. It was electrifying. A [two-year-long investigation by The Wire](https://thewire.in/tekfog/en/1.html) found that India’s ruling Bharatiya Janata Party has access to a secret app called ‘Tek Fog’ that automates hate: it can create and delete social media accounts on the fly, compromise WhatsApp to send unauthorised messages, hijack online conversations, use a vast citizen database for targeted harassment, and more. Two private tech companies were complicit in enabling this operation.
 
 The investigation was based on information shared by a whistleblower followed by open-source investigative techniques to conduct an extensive forensic analysis.
 
 Twitterati were outraged and politicians noticed. TMC Rajya Sabha MP [Derek O’Brien said the use of Tek Fog](https://www.ndtv.com/india-news/derek-obrien-says-tek-fog-app-can-jeopardise-national-security-2693721) “has serious ramifications and could jeopardise national security.” A parliamentary panel headed by Congress leader Anand Sharma has [sought a response on Tek Fog](https://www.thehindu.com/news/national/parliamentary-panel-asks-home-secretary-to-respond-on-tek-fog-app/article38258217.ece) from the Home Ministry.
 
 NDTV’s [Ravish Kumar amplified the findings](https://www.youtube.com/watch?v=RZVSImx585A) of *The Wire* on national television. “Just press one button and thousands of accounts will start posting fake hashtags or retweet other hashtags and replies start coming,” he told his millions of loyal viewers.
-![](__GHOST_URL__/content/images/2022/01/ravish.png)
+
+![](assets/images/wire-tek-fog/ravish.png)
+
 I read the story, and then I read it again, and again, and I was baffled. I have covered [online propaganda](https://www.theatlantic.com/international/archive/2019/04/india-misinformation-election-fake-news/586123/) and reported on [BJP’s organised disinformation machinery](https://www.huffpost.com/archive/in/entry/how-modi-shah-turned-a-women-s-rights-ngo-into-a-secret-election-propaganda-machine_in_5ca5962ce4b05acba4dc1819). And yet, I remained uneasy and unconvinced. The story had glaring holes.
 
 I called my friends to see if I was missing something and learnt that most readers could not understand the story.
@@ -70,11 +72,15 @@ Do they have an explanation of how this might be happening? No.
 Then?
 
 Their source sent them screenshots of the app. One lists account creation and deletion as a feature. Not a single recording of their phone screen to show *The Wire* how it works. So all we have is the static suggestion of a potential functionality.
-![](__GHOST_URL__/content/images/2022/01/create_account.png)
+
+![](assets/images/wire-tek-fog/create_account.png)
+
 Despite underlining this capability — “no trace left behind” is listed as one of Tek Fog’s four “alarming” features — even *The Wire* admits it could not independently verify its existence.
 
 So we should believe the BJP has an app that can break the security measures of  the world’s biggest social media giants to protect their platforms because of a screenshot of an app that no one at *The Wire* has actually used.
-![](__GHOST_URL__/content/images/2022/01/wtf.gif)
+
+![](assets/images/wire-tek-fog/wtf.gif)
+
 So why make that claim? 
 
 I asked the authors to explain: “We added this without verification for the sake of completeness,” Devesh, who co-wrote the article told me.  "One of the features we have verified was how a large number of accounts were tweeting to trend hashtags. If we did not add the part where the Tek Fog app can create or manage multiple accounts, then a lot of people would have questioned how they are doing this? How are thousands of accounts coming on a single app?”
@@ -89,7 +95,7 @@ This is circular reasoning. Because *The Wire* does not have hard evidence that 
 
 Good news stories provide context. It helps readers understand the significance of what’s new. *The Wire* offers none. Here are three things you should know to make sense of Twitter hijacking claims (more on that in a bit).
 
-**One: **“Automation” in itself is no big deal. College kids make good-for-nothing Twitter bots in every hackathon. “Auto-retweet” or “auto-reply” are simple features — not bugs or hacks. Don’t jump off your seats when you hear these terms.
+**One:** “Automation” in itself is no big deal. College kids make good-for-nothing Twitter bots in every hackathon. “Auto-retweet” or “auto-reply” are simple features — not bugs or hacks. Don’t jump off your seats when you hear these terms.
 
 **Two:**[Twitter trends suck](https://www.theverge.com/interface/2020/9/2/21413001/twitter-trends-labels-representative-tweets-conspiracies-misinformation). They are prone to manipulation. They are fake and meaningless. We have known this for years.
 
@@ -118,7 +124,9 @@ Look at the proof offered for the claim that the app has personal data — inclu
 How do the authors know this dataset exists? Screenshots.
 
 Screenshots of the database with a few names? No. Screenshots that merely list groups: “female reporters”, “based on religion” and so on.
-![](__GHOST_URL__/content/images/2022/01/database.png)
+
+![](assets/images/wire-tek-fog/database.png) 
+
 What is in there? They don’t know. 
 
 They have not seen names or details of even one person in this dataset. Even their key source can’t see the names in the database. Why is that?
@@ -132,7 +140,9 @@ Okay, so what is the content in the Google Sheets? They haven’t seen it so the
 They don’t know anything specific about the features that make the app significant.
 
 Ok, so *The Wire *acknowledges these problems and did a large-scale social media analysis to “independently verify” the damning screenshots.
-![](__GHOST_URL__/content/images/2022/01/data.gif)
+
+![](assets/images/wire-tek-fog/data.gif) 
+
 Let’s look at what that analysis yields.
 
 **Second question: How big is Tek Fog?**
@@ -153,10 +163,7 @@ So how many total Twitter accounts does Tekfog handle–and which ones? The answ
 
 So, how did they conclude that 18% of all replies to women reporters came from accounts managed by Tek Fog if they don’t know which accounts were managed by Tek Fog? How did they arrive at the 18% number and this viral bar chart?
 
-> Here’s a preview of what [@thewire_in](https://twitter.com/thewire_in?ref_src=twsrc%5Etfw)’s [#TekFog](https://twitter.com/hashtag/TekFog?src=hash&amp;ref_src=twsrc%5Etfw) series will explain in Pts 2/3 in next days: A chart of how app was used to target [@RanaAyyub](https://twitter.com/RanaAyyub?ref_src=twsrc%5Etfw)[@BDUTT](https://twitter.com/BDUTT?ref_src=twsrc%5Etfw)[@rohini_sgh](https://twitter.com/rohini_sgh?ref_src=twsrc%5Etfw)[@Nidhi](https://twitter.com/Nidhi?ref_src=twsrc%5Etfw)[@khanumarfa](https://twitter.com/khanumarfa?ref_src=twsrc%5Etfw)[@bainjal](https://twitter.com/bainjal?ref_src=twsrc%5Etfw)[@fayedsouza](https://twitter.com/fayedsouza?ref_src=twsrc%5Etfw)[@MnshaP](https://twitter.com/MnshaP?ref_src=twsrc%5Etfw)[@smitaprakash](https://twitter.com/smitaprakash?ref_src=twsrc%5Etfw) & other women journos
-> 
-> ICYM Pt 1: [https://t.co/8LKOYOlDDx](https://t.co/8LKOYOlDDx)[pic.twitter.com/YxBofIVLp0](https://t.co/YxBofIVLp0)
-> &mdash; Siddharth (@svaradarajan) [January 9, 2022](https://twitter.com/svaradarajan/status/1480077122626461702?ref_src=twsrc%5Etfw)
+![](assets/images/wire-tek-fog/sv-tweet.png) 
 
 Let’s look at that. All that *The Wire* had was a list of 32 Twitter accounts provided by their whistleblower — yes, only thirty-two — and around 100 hashtags that the source said were made to trend using Tek Fog.
 
@@ -190,7 +197,8 @@ Not really, he said. “Tek Fog is basically an assimilation of all the coding r
 
 > “Tek Fog is an app. But it’s different. For example, Facebook is one app and it’s identity can’t be changed. It doesn’t have different versions. Everyone has the same version. Tek Fog is not like this. It has multiple teams. Some teams have Twitter trending features. Some have tasker features. Some have it by the name of Tek Fog. Others have it with a different name. This is what the source has told us. We don’t have a way to verify this. That’s why I am saying if someone is tweeting from an app, but a different app, then why don’t we consider it Tek Fog only? That’s my question.”
 
-![](__GHOST_URL__/content/images/2022/01/confused.gif)
+![](assets/images/wire-tek-fog/confused.gif) 
+
 I was so confused by then. “Hmm, I am just trying to understand what Tek Fog is. So are we talking about a concept here? Like, whatever different things are happening, its unified version is Tek Fog?” I asked.
 
 > “Yeah. It’s a cliche thing to say but it’s like metaworld. It has different variants which different people are using. We can’t verify them. What we have verified is one variant of Tek Fog,” Devesh said.
@@ -203,7 +211,7 @@ So let’s review: *The Wire* has no evidence that any of the fancy Tek Fog feat
 
 And yet, we are all talking about a single app called Tek Fog that has single-handedly subverted “public discourse in the world's largest democracy.”
 
-![](https://media.tenor.com/images/e23b0a71945773b0e155d07565f0832d/tenor.gif)
+![](assets/images/wire-tek-fog/tenor.gif)
 
 I am not saying such an app can’t exist. Does the BJP have the money to invest resources to build this? Yes. Would they want it? Yes. Would they use it to harass its critics? Totally. But *The Wire*’s story has no hard evidence to prove any of this.
 
@@ -215,7 +223,7 @@ Back in 2018, when I started reporting on technology and politics, I saw problem
 
 I wanted someone else to report this story because this company was born in front of me: the startup’s CEO is my college batchmate and I was at the hackathon where the three founders started building things together.
 
-But no one did. The company only got celebratory press coverage. So I did the story. In November 2018, ShareChat was on the [front page of the *Hindustan Times*](https://www.hindustantimes.com/opinion/how-regional-social-media-platforms-spew-fake-news-and-get-away-with-it/story-s8Kc2s4TKfne0ZRlXNuLuM.html): “Fake news and hate speech thrive on regional language social media.”
+But no one did. The company only got celebratory press coverage. So I did the story. In November 2018, ShareChat was on the [front page of the Hindustan Times](https://www.hindustantimes.com/opinion/how-regional-social-media-platforms-spew-fake-news-and-get-away-with-it/story-s8Kc2s4TKfne0ZRlXNuLuM.html): “Fake news and hate speech thrive on regional language social media.”
 
 And yet, I was astounded when *The Wire* called ShareChat a partner-in-crime in creating this alleged hate machine. Their investigation offers no such proof. It includes hints of some kind of connection, but no more.
 
@@ -242,7 +250,9 @@ But the source shared it on a condition that it not be made public. So *The Wire
 We also don’t know what the term “assigned client” means — and if this payment was specifically made in connection with TekFog. Nothing. As readers, we are supposed to just accept the fact that this piece of paper exists — and that it is authentic, and that it proves something damning.
 
 The story has no other evidence that money was exchanged. In leading global newsrooms, an editor would not have allowed any mention of the bank payment without establishing a direct link between ShareChat and Tekfog.
-![](__GHOST_URL__/content/images/2022/01/prove-it.gif)
+
+![](assets/images/wire-tek-fog/prove-it.gif) 
+
 Now look, I understand that proving financial transactions is hard. I have dropped stories because I failed to do so. So does *The Wire* have anything else to show ShareChat’s direct involvement?
 
 They do.
@@ -262,7 +272,9 @@ I discussed this with the authors. I pointed out that a number of common softwar
 Their answer: Because they can’t think of any reason why a ShareChat URL should be present on that list. I understand. But at least tell us what exactly it proves? 
 
 What is ShareChat doing via this connection with TekFog? Surely, Zoho (a utility tool), ShareChat (a social media platform) and Dainik Jagran (a news organisation) are not interacting with TekFog in the exact same way! *The Wire* does not have answers to any of these questions. All they have is a list of URLs.
-![](__GHOST_URL__/content/images/2022/01/details.gif)
+
+![](assets/images/wire-tek-fog/details.gif) 
+
 Let’s move on. *The Wire* also points to data that offers “further insight” into ShareChat’s “connection to the broader operation.”
 
 **Third: Data Analysis**
@@ -286,7 +298,9 @@ Look, ask any AI researcher: algorithms that require human judgement and discret
 But let's assume they are right and review what we’ve learned here: The operatives share hateful content across social media platforms using TekFog, and they first do it on ShareChat. How does this establish ShareChat as an active partner?
 
 When I pushed the authors to explain, they  said:
-![](__GHOST_URL__/content/images/2022/01/didnt-say.gif)
+
+![](assets/images/wire-tek-fog/didnt-say.gif) 
+
 Specifically, Devesh clarified:
 
 > “If you read the piece, we are more certain about Persistent Systems, and we are directly naming them, but for ShareChat, we are going in the direction that it feels like they are directly involved, but it might be a possibility that their platform is used by Tek Fog operators to do this and the company is not aware of this or not taking action. It is possible that they don’t know this and their platform is being misused.”
