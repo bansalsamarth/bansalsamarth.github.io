@@ -2,7 +2,6 @@
 title: Inside a fictional education revolution
 slug: rajasthan-education-nas
 date_published: 18 December, 2022
-date_updated: 2021-12-18T12:54:30.000Z
 tags: The Interval
 author: Samarth Bansal
 excerpt: In 2017, Rajasthan was both the best and the worst Indian state in terms of learning outcomes. How did that happen?
