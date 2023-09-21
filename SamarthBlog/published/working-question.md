@@ -35,13 +35,15 @@ So, through a bit of trial and error, I've carved out a lifestyle for myself, ra
 
 This perspective might seem naive, but if it is, life will surely teach me otherwise. For now, I'm talking about the present.
 
-All of this is to say, I don’t have work-related goals. Actually, the only goals I do have are fitness-related. I’m not on a quest to get somewhere or prepare for some grand future event. (I am trying to do something journalism-related, but the thought process behind it is would need more explanation, so I will keep that for later.) 
+___
 
-I find immense joy in honing my writing skills, deepening the quality of my thought processes, and expanding my reading horizons. When I write stories that contain solid ideas and well-crafted sentences—and I know they resonate with at least some people in this otherwise indifferent world—I feel fulfilled. Writing isn’t just what I do; it’s how I exist. To try to describe it as ‘work’ would be...odd. What I can say is that I feel incredibly grateful that my daily life aligns so well with my core values.
+**Four:** I don’t really have work-related goals. Actually, the only goals I do have are fitness-related. I’m not on a quest to get somewhere or prepare for some grand future event. (I am trying to do something journalism-related, but the thought process behind it would need more explanation, so I will keep that for later.) 
+
+I just find immense joy in honing my writing skills, deepening the quality of my thought processes, and expanding my reading horizons. When I write stories that contain solid ideas and well-crafted sentences—and I know they resonate with at least some people in this otherwise indifferent world—I feel fulfilled. Writing isn’t just what I do; it’s how I exist. To try to describe it as ‘work’ would be...odd. What I can say is that I feel incredibly grateful that my daily life aligns so well with my core values.
 
 ___
 
-**Four:** None of this is to be pretentious about what others are up to. Everyone has their own preferences, and often circumstances, rather than choice, dictate one’s actions. 
+**Five:** None of this is to be pretentious about what others are up to. Everyone has their own preferences, and often circumstances, rather than choice, dictate one’s actions. 
 
 My issue is with the way we frame conversations about work. When someone asks, “What are you working on?” during a first meeting or after a long absence, it seems to tether a person’s worth or identity to their career. Which is alienating for people like me who are neither doing anything ground-breaking, nor fit neatly into traditional forms of employment. Which sets up a tension between my personal inclinations and broader socio-economic norms. 
 
@@ -49,7 +51,7 @@ That dissonance is the core reason I find that question so off-putting.
 
 ___
 
-**Five:** I also feel that as a society, we're a bit too obsessed with productivity. I'm happy for those who have structured disciplined routines; I respect them, and there’s always something to learn from them. 
+**Six:** I also feel that as a society, we're a bit too obsessed with productivity. I'm happy for those who have structured disciplined routines; I respect them, and there’s always something to learn from them. 
 
 But for me, schedules are foreign territory—I’m rather chaotic by nature. Somehow, I manage to complete both the tasks that the world expects of me and the activities that bring me daily joy.
 
@@ -59,7 +61,7 @@ As long as I'm having these experiences, I know I’m doing alright. So, I don't
 
 ___
 
-**Six:** It’s always worth remembering that language shapes thought. It can be both limiting and freeing, and it can perpetuate societal biases. 
+**Seven:** It’s always worth remembering that language shapes thought. It can be both limiting and freeing, and it can perpetuate societal biases. 
 
 For example, as a society, we often undervalue domestic and care work. It's essential for human well-being but because it's not part of the formal economy, it's not considered ‘work’. 
 
@@ -71,6 +73,6 @@ Truly amazing. 
 
 ___
 
-If you read this, thank you. I don’t know if you were even curious to know what I am working on, but if you ever are, you now know. Bye for now— need to do some important work i.e. dissect why Annie Hall and Alvy Singer broke up in *Annie Hall*. Catch you later. 
+If you read this, thank you. I don’t know if you were even curious to know what I am working on, but if you ever are, you now know. Bye for now— need to do some important work i.e. dissect why Annie Hall and Alvy Singer broke up in the movie *Annie Hall*. Catch you later. 
 
 ___
