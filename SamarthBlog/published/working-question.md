@@ -10,9 +10,9 @@ tags:
 ---
 Among the many questions I don't like answering, the one that bothers me the most is: “What are you working on these days?”
 
-This question bothers me because it's usually well-intentioned. It's just someone expressing curiosity about my work. The problem is that I can't blame the person asking me the question for the uneasy feeling their words give me—and it’s far easier to navigate life when you have someone to blame. So it’s likely my overthinking mind that reads too much into ordinary interactions.
+This question bothers me because it's usually well-intentioned. It's just someone expressing curiosity about my work. So I can't blame the person asking me the question for the uneasy feeling their words give me—and as we all know, it’s far easier to get through life when you have someone to blame. 
 
-So why do I find the question troubling? Because telling the truth feels awkward, and lying isn’t my style. But I will try to tell the truth here. 
+Why do I find the question troubling? Because telling the truth feels awkward, and lying isn’t my style. But I will try to tell the truth here. 
 
 ___
 
@@ -22,7 +22,6 @@ This means I have enough. But I can't drive myself to earn more money. I simply 
 
 With all this free time, I am not technically working by society’s standard definition of work—tasks that earn you money. So, if you were to ask me what I’m working on, the honest answer is: I’m doing nothing significant. But who wants to hear that in casual conversation?
 
-Which means I have an insane amount of time left in the week where I am practically not working—where I am narrowly defining work as things that make you money. So if I were to tell you what I am working on, the honest answer is: I am doing nothing. Who would want to hear this? I know I am eccentric, but I don’t want to appear eccentric in everyday conversations. 
 
 ___
 
@@ -36,7 +35,7 @@ So, through a bit of trial and error, I've carved out a lifestyle for myself, ra
 
 This perspective might seem naive, but if it is, life will surely teach me otherwise. For now, I'm talking about the present.
 
-All of this is to say, I don’t have work-related goals. Actually, the only goals I do have are fitness-related. I’m not on a quest to get somewhere or prepare for some grand future event. (I am trying to do something journalism-related, but the thought process behind it would needs more explanation, so I will keep that for later.) 
+All of this is to say, I don’t have work-related goals. Actually, the only goals I do have are fitness-related. I’m not on a quest to get somewhere or prepare for some grand future event. (I am trying to do something journalism-related, but the thought process behind it is would need more explanation, so I will keep that for later.) 
 
 I find immense joy in honing my writing skills, deepening the quality of my thought processes, and expanding my reading horizons. When I write stories that contain solid ideas and well-crafted sentences—and I know they resonate with at least some people in this otherwise indifferent world—I feel fulfilled. Writing isn’t just what I do; it’s how I exist. To try to describe it as ‘work’ would be...odd. What I can say is that I feel incredibly grateful that my daily life aligns so well with my core values.
 
@@ -72,8 +71,6 @@ Truly amazing. 
 
 ___
 
-If you read this, thank you. I don’t know if you were even curious to know what I am working on, but if you now know. Just save us both the awkwardness, and please don't ask. 
-
-Bye for now— need to do some important work i.e. dissect why Annie Hall and Alvy Singer broke up in *Annie Hall*. Catch you later. 
+If you read this, thank you. I don’t know if you were even curious to know what I am working on, but if you ever are, you now know. Bye for now— need to do some important work i.e. dissect why Annie Hall and Alvy Singer broke up in *Annie Hall*. Catch you later. 
 
 ___
