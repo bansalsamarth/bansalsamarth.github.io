@@ -3,10 +3,11 @@ title: The Simple Life
 slug: simple-life
 date_published: 12 September, 2023
 date_updated: 12 September, 2023
-tags: Blog, Personal
+tags:
+  - Blog
+  - Personal
 author: Samarth Bansal
 ---
-
 September 12, 2023. It's 7:21 a.m. 
 
 "Big Brother" by The Stephane Wremble Trio is playing in the background—a beautiful song I first heard yesterday in Woody Allen's lovely film, Vicky Cristina Barcelona. I've had my morning coffee. Now I have to work out, but before that, I feel like getting this feeling out of me, before I start overthinking and reading what others have to say about it. My thoughts are occupied with the notion of a simple life.

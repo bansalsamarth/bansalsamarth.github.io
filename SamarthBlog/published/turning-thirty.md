@@ -14,25 +14,31 @@ I have to write; it's my thirtieth birthday. Ahhh. What? So, I'm not a twenty-so
 
 Sure, age is just a number. But today, that phrase feels a bit hollow. Who's to say our personal experience of life aligns with the cold, hard facts? Maybe it does for Zen monks. Not for me. 
 
-So, yes, emotions are running high. Suddenly, I feel the pressure to act like a responsible adult. There are work tasks that would've taken me an hour, max, to complete two days ago—but I didn't, because procrastination. I love money—anyone who says they don't is fibbing—but I haven’t filed two big invoices. Why? Because I'm a hot mess. 
+So yes, I am feeling things. Emotions are running high. I suddenly feel the pressure to act like a responsible adult. I mean… there are a few work tasks that would have taken me just an hour to finish, and I should have done them two days ago, but I didn't, because of procrastination. I love money—whoever says they don't is a liar—but I haven't filed two invoices because I am a chaotic person. A hot mess. 
 
-Plus, I completely missed hitting the fitness goals I'd set for today. I wanted that chiselled jawline back, and to hit some health markers, but neither are happening. Is adulting still optional in your thirties?
+Plus, I completely missed achieving the fitness goals I told myself I'd hit today. I wanted that chiselled jawline back, and some internal body markers in range for health, but the jawline is definitely missing and there's absolutely no point in getting blood tests done. I must grow up. Is adulting still optional in your thirties?
 
-In the back of my mind, 75 seems like a reasonable age to aim for. Why? I read an article in The Atlantic that made a convincing case. Thinking about mortality—yeah, we’re all gonna die, it's the only certainty—keeps me grounded.
+At the back of my mind, I think 75 is a good age to live to. No hard logic. There was an article in The Atlantic that said so, and it sounded reasonable. Meditating on mortality—all of us will ultimately die, death is the only truth, all that jazz—keeps me quite sane and grounded.
 
-So, if all pans out and I dodge life’s curveballs, I've got about 45 years left. But who thinks in years? Months are too abstract. Weeks feel just right. Quick maths: I've lived for 1,560 weeks, and I’ve got around 2,340 weeks left. Not as many as you’d think. Key takeaway: 40% of my expected life is behind me. Time is a jet plane.
+Which means, if all goes well, and I survive this harsh world, I have 45 years left. But it's hard to think about life in terms of years. Even months feel a bit too long. Weeks are the best. Just did the maths: I have lived for 1,560 weeks, and 2,340 weeks are left. Which doesn't sound like a lot. And yes, important note: I have now lived 40% of my expected life. Time really does fly.
 
-This is just a sneak peek of my thought process this morning. A bit of hyperbole is allowed today.
+That's just a glimpse of some thoughts this morning. I will permit myself some exaggeration today.
 
-Why am I writing this? First, I made a promise to my twenty-year-old self. In 2013, I wrote a 'Turning Twenty' blog post on my then-blog, KrazzySam, and vowed that a 'Turning Thirty' post would follow a decade later. Hats off to younger me; I'm honouring that promise.
+Why am I writing this? 
 
-Secondly, writing is my way of existing in the world. I'd write even if nobody read a word or paid me a dime. Writing is the greatest privilege of my life, and I wouldn’t trade it for anything.
+First, I made a promise to my twenty-year-old self. In 2013, I wrote a "Turning Twenty" blog post on my then-blog, *KrazzySam*, and vowed that a "Turning Thirty" post would follow a decade later. Hats off to younger me; I'm honouring that promise.
+
+Second, writing is my way of existing in the world. I'd write even if nobody read a word or paid me a dime. Writing is the greatest privilege of my life, and I wouldn’t trade it for anything.
 
 So today, I'll celebrate with words. I will write throughout the day, whenever I get the time. No theme, just sharing some reflections, just a stream of consciousness. 
 
 ---
 
-**One:** My life at this point is pretty good, for which I am very grateful. I make just enough money to feel secure about my existence. I love the work I do. I am largely healthy. I have deep friendships, and spaces where I can be vulnerable—and cry if I want to. I have amazing mentors who care about me, who are deeply invested in my professional success, and who believe in me more than I do. I'm in the initial stages of building a publication to publish the kind of journalism India needs—which is very thrilling. Family problems never leave me; that bit is not ideal, but I've become excellent at dealing with fraught situations, so it's fine. And of course, I just love the life I've built for myself in Landour—this small mountain town has deeply enriched my life. I am not a hermit, nor do I aspire to be one—I want to actively engage with the world, however chaotic—but Landour allows me to see through the manufactured facades of urban life and escape the chaos of modernity to whatever extent possible. All in all, deep inside me, I feel at peace. What else can one ask for?
+**One:** My life at this point is pretty good, for which I am very grateful. I make just enough money to feel secure about my existence. I love the work I do. I am largely healthy. I have deep friendships, and spaces where I can be vulnerable—and cry if I want to. I have amazing mentors who care about me, who are deeply invested in my professional success, and who believe in me more than I do. I'm in the initial stages of building a publication to publish the kind of journalism India needs—which is very thrilling. Family problems never leave me; that bit is not ideal, but I've become excellent at dealing with fraught situations, so it's fine. 
+
+And of course, I just love the life I've built for myself in Landour—this small mountain town has deeply enriched my life. I am not a hermit, nor do I aspire to be one—I want to actively engage with the world, however chaotic—but Landour allows me to see through the manufactured facades of urban life and escape the chaos of modernity to whatever extent possible. 
+
+All in all, deep inside me, I feel at peace. What else can one ask for?
 
 ---
 
@@ -72,7 +78,9 @@ As for your house help, your driver, or anyone else working for you, treat them 
 
 ---  
 
-**Six:** More advice. If you like someone, find the courage to tell them. They deserve to know they're desired. If you admire an artist's work, drop them an email. Share why their work resonates with you. If you have mates or colleagues who inspire you, shoot them a text. Let them know their existence improves your life. If a teacher ever did something that changed your trajectory, find a way to contact them and share your gratitude. And don't hold back from telling those you love just how much they mean to you.None of this takes much time or effort. No essays required—a short message does the trick. What I've learnt is that it makes a world of difference. So many of us wrestle with self-doubt, feeling lost or questioning our worth—just a few words can reignite someone's spirits. You can't go wrong by spreading more love and kindness in this otherwise chaotic world. We all have more capacity for love than we think. Discover yours and share it freely. That's what I try to do, in my own small way.
+**Six:** More advice. If you like someone, find the courage to tell them. They deserve to know they're desired. If you admire an artist's work, drop them an email. Share why their work resonates with you. If you have mates or colleagues who inspire you, shoot them a text. Let them know their existence improves your life. If a teacher ever did something that changed your trajectory, find a way to contact them and share your gratitude. And don't hold back from telling those you love just how much they mean to you. 
+
+None of this takes much time or effort. No essays required—a short message does the trick. What I've learnt is that it makes a world of difference. So many of us wrestle with self-doubt, feeling lost or questioning our worth—just a few words can reignite someone's spirits. You can't go wrong by spreading more love and kindness in this otherwise chaotic world. We all have more capacity for love than we think. Discover yours and share it freely. That's what I try to do, in my own small way.
 
 ---
 
@@ -106,7 +114,7 @@ No, I'm not saying live in the past. It's just that sometimes, we're so focused 
 
 ---
 
-**Ten:** Back in college, when Facebook was still a thing, I posted a cover image with a Bill Gates quote declaring he never took a day off in his twenties. found that inspiring. This is who I thought I would be. For me, work was everything. I aimed to work hard and achieve something meaningful. 
+**Ten:** Back in college, when Facebook was still a thing, I posted a cover image with a Bill Gates quote declaring he never took a day off in his twenties. I found that inspiring. This is who I thought I would be. For me, work was everything. I aimed to work hard and achieve something meaningful. 
 
 I remember— and partly regret—skipping an outing with my IIT hostel wing, which housed 39 of us. Thirty-five managed to make it that night, but I opted out because I was busy working. (These friends of mine—all nutcases like me—ended up fighting on trivial matters like typical college kids, haha!)
 
