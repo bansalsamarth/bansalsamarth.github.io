@@ -1,109 +1,309 @@
-<!-- templates/editor.html -->
 <!DOCTYPE html>
-<html>
+<html class="h-full bg-gray-50">
 <head>
-    <title>Blog Editor</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Blog Admin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <!-- Monaco Editor -->
-    <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.33.0/min/vs/loader.js"></script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <style>
+        :root { font-family: 'Inter', sans-serif; }
+        @supports (font-variation-settings: normal) {
+            :root { font-family: 'Inter var', sans-serif; }
+        }
+        
+        /* Editor customization */
+        .EasyMDEContainer {
+            height: calc(100vh - 200px);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .CodeMirror {
+            flex: 1;
+            border: none !important;
+            font-family: 'Inter', sans-serif;
+            font-size: 1.125rem;
+            line-height: 1.75;
+            padding: 1rem;
+        }
+
+        .editor-toolbar {
+            border: none;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 0.5rem;
+            opacity: 1;
+        }
+
+        .editor-toolbar button {
+            color: #4b5563 !important;
+        }
+
+        .editor-toolbar button:hover {
+            background: #f3f4f6 !important;
+            border-color: #e5e7eb !important;
+        }
+
+        /* Preview styling to match your blog */
+        .preview-wrapper {
+            max-width: 65ch;
+            margin: 0 auto;
+            padding: 2rem;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.75;
+        }
+
+        .blog-preview h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .blog-preview p {
+            margin-bottom: 1.5rem;
+            font-size: 1.125rem;
+            line-height: 1.75;
+        }
+
+        .blog-preview blockquote {
+            border-left: 4px solid #e5e7eb;
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+            color: #4b5563;
+            font-style: italic;
+        }
+        
+        /* Toast notification */
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            padding: 1rem 1.5rem;
+            border-radius: 0.5rem;
+            background: white;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+            z-index: 50;
+            display: none;
+        }
+
+        .toast.success {
+            border-left: 4px solid #34d399;
+        }
+
+        .toast.error {
+            border-left: 4px solid #f87171;
+        }
+    </style>
 </head>
-<body class="bg-gray-100">
-    <div class="container mx-auto px-4 py-8">
-        <div class="flex space-x-4">
-            <!-- Editor Panel -->
-            <div class="w-1/2 space-y-4">
-                <div class="bg-white p-4 rounded shadow">
-                    <input type="text" id="title" placeholder="Post Title" 
-                           class="w-full px-3 py-2 border rounded mb-4">
-                    
-                    <div class="mb-4">
-                        <label class="block text-sm font-medium mb-2">Categories:</label>
-                        <div class="flex flex-wrap gap-2">
-                            {% for category in categories %}
-                            <label class="inline-flex items-center">
-                                <input type="checkbox" name="tags[]" value="{{ category }}"
-                                       class="form-checkbox">
-                                <span class="ml-2">{{ category }}</span>
-                            </label>
-                            {% endfor %}
-                        </div>
-                    </div>
-                    
-                    <div id="editor" style="height: 500px; border: 1px solid #ccc;"></div>
-                    
-                    <div class="flex space-x-2 mt-4">
-                        <button onclick="previewPost()" 
-                                class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
-                            Preview
-                        </button>
-                        <button onclick="savePost()" 
-                                class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">
-                            Save Draft
-                        </button>
-                        <button onclick="publishPost()" 
-                                class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">
-                            Publish
-                        </button>
-                    </div>
+<body class="h-full bg-gray-50">
+    <!-- Top Nav -->
+    <header class="fixed top-0 left-0 right-0 bg-white border-b border-gray-200 z-50">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <h1 class="text-lg font-semibold text-gray-900">Blog Admin</h1>
                 </div>
-            </div>
-            
-            <!-- Preview Panel -->
-            <div class="w-1/2">
-                <div class="bg-white p-4 rounded shadow">
-                    <h2 class="text-xl font-bold mb-4">Preview</h2>
-                    <div id="preview" class="prose"></div>
+                <div class="flex items-center space-x-4">
+                    <div id="save-status" class="text-sm text-gray-500"></div>
+                    <button onclick="toggleDrafts()" 
+                            class="inline-flex items-center px-3 py-1.5 text-sm font-medium text-gray-700 hover:text-gray-900">
+                        Drafts
+                    </button>
+                    <button onclick="previewInNewTab()" 
+                            class="inline-flex items-center px-3 py-1.5 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50">
+                        Preview
+                    </button>
+                    <button onclick="savePost()" id="save-button"
+                            class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700">
+                        Save Draft
+                    </button>
+                    <button onclick="publishPost()" id="publish-button"
+                            class="inline-flex items-center px-4 py-2 text-sm font-medium text-indigo-700 bg-indigo-100 border border-transparent rounded-md hover:bg-indigo-200">
+                        Publish
+                    </button>
                 </div>
             </div>
         </div>
+    </header>
+
+    <main class="pt-16 h-full">
+        <div class="flex h-full">
+            <!-- Main Editor Section -->
+            <div class="flex-1 bg-white">
+                <!-- Title Input -->
+                <div class="px-8 py-6 border-b border-gray-200">
+                    <input type="text" id="title" placeholder="Post Title" 
+                           class="w-full text-2xl font-bold border-0 focus:ring-0 focus:outline-none placeholder-gray-400">
+                </div>
+
+                <!-- Categories -->
+                <div class="px-8 py-4 border-b border-gray-200 bg-gray-50">
+                    <div class="flex flex-wrap gap-3">
+                        {% for category in categories %}
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" name="tags[]" value="{{ category }}"
+                                   class="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
+                            <span class="ml-2 text-sm text-gray-700">{{ category }}</span>
+                        </label>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <!-- Editor -->
+                <div class="flex-1">
+                    <textarea id="editor"></textarea>
+                </div>
+            </div>
+
+            <!-- Drafts Sidebar -->
+            <div id="drafts-panel" class="hidden w-80 border-l border-gray-200 bg-white overflow-y-auto">
+                <div class="px-6 py-4 border-b border-gray-200">
+                    <h2 class="text-lg font-medium text-gray-900">Drafts</h2>
+                </div>
+                <div class="divide-y divide-gray-200">
+                    {% for draft in drafts %}
+                    <div class="p-6 hover:bg-gray-50">
+                        <h3 class="text-sm font-medium text-gray-900">{{ draft.title }}</h3>
+                        <p class="text-sm text-gray-500 mt-1">{{ draft.date }}</p>
+                        <button onclick="loadDraft('{{ draft.slug }}')"
+                                class="mt-2 text-sm text-indigo-600 hover:text-indigo-900">
+                            Edit
+                        </button>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <span id="toast-message"></span>
     </div>
 
     <script>
         let editor;
         let currentSlug;
-        
-        // Initialize Monaco Editor
-        require.config({ paths: { 'vs': 'https://cdn.jsdelivr.net/npm/monaco-editor@0.33.0/min/vs' }});
-        require(['vs/editor/editor.main'], function() {
-            editor = monaco.editor.create(document.getElementById('editor'), {
-                value: '',
-                language: 'markdown',
-                theme: 'vs',
-                automaticLayout: true
-            });
+        let lastSavedContent = '';
+        let saveTimer;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            setupEditor();
+            setupAutoSave();
         });
 
-        async function previewPost() {
-            const content = editor.getValue();
-            const title = document.getElementById('title').value;
-            const tags = Array.from(document.querySelectorAll('input[name="tags[]"]:checked'))
-                             .map(cb => cb.value);
-            
-            const formData = new FormData();
-            formData.append('content', content);
-            formData.append('title', title);
-            tags.forEach(tag => formData.append('tags[]', tag));
-            
-            const response = await fetch('/preview', {
-                method: 'POST',
-                body: formData
+        function setupEditor() {
+            editor = new EasyMDE({
+                element: document.getElementById('editor'),
+                autofocus: true,
+                spellChecker: false,
+                status: false,
+                toolbar: [
+                    'bold', 'italic', 'heading', '|',
+                    'quote', 'unordered-list', 'ordered-list', '|',
+                    'link', '|',
+                    {
+                        name: "guide",
+                        action: "https://www.markdownguide.org/basic-syntax/",
+                        className: "fa fa-question-circle",
+                        title: "Markdown Guide"
+                    }
+                ],
+                placeholder: "Start writing...",
             });
-            
-            const html = await response.text();
-            const previewFrame = document.getElementById('preview');
-            previewFrame.innerHTML = html;
+
+            // Track changes for auto-save
+            editor.codemirror.on("change", () => {
+                clearTimeout(saveTimer);
+                saveTimer = setTimeout(autoSave, 3000);
+                updateSaveStatus("Unsaved changes");
+            });
         }
 
-        async function savePost() {
-            const content = editor.getValue();
+        function updateSaveStatus(message) {
+            const status = document.getElementById('save-status');
+            status.textContent = message;
+        }
+
+        function showToast(message, type = 'success') {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toast-message');
+            
+            toast.className = `toast ${type}`;
+            toastMessage.textContent = message;
+            toast.style.display = 'block';
+            
+            setTimeout(() => {
+                toast.style.display = 'none';
+            }, 3000);
+        }
+
+        async function loadDraft(slug) {
+            try {
+                updateSaveStatus("Loading draft...");
+                const response = await fetch(`/draft/${slug}`);
+                const draft = await response.json();
+                
+                if (draft.error) {
+                    showToast('Error loading draft: ' + draft.error, 'error');
+                    return;
+                }
+                
+                // Set current slug
+                currentSlug = draft.slug;
+                
+                // Fill form
+                document.getElementById('title').value = draft.title;
+                editor.value(draft.content);
+                lastSavedContent = draft.content;
+                
+                // Set categories
+                document.querySelectorAll('input[name="tags[]"]').forEach(cb => {
+                    cb.checked = draft.tags.includes(cb.value);
+                });
+                
+                updateSaveStatus("Draft loaded");
+                toggleDrafts();
+                
+            } catch (error) {
+                showToast('Error loading draft', 'error');
+                console.error('Error loading draft:', error);
+            }
+        }
+
+        function toggleDrafts() {
+            const panel = document.getElementById('drafts-panel');
+            panel.classList.toggle('hidden');
+        }
+
+        async function autoSave() {
+            const content = editor.value();
+            const title = document.getElementById('title').value;
+            
+            if (content === lastSavedContent || !title || !content) {
+                return;
+            }
+            
+            await savePost(true);
+        }
+
+        async function savePost(isAutoSave = false) {
+            const content = editor.value();
             const title = document.getElementById('title').value;
             const tags = Array.from(document.querySelectorAll('input[name="tags[]"]:checked'))
                              .map(cb => cb.value);
             
             if (!title) {
-                alert('Please enter a title');
+                showToast('Please enter a title', 'error');
                 return;
+            }
+            
+            if (!isAutoSave) {
+                updateSaveStatus("Saving...");
             }
             
             const formData = new FormData();
@@ -111,36 +311,80 @@
             formData.append('title', title);
             tags.forEach(tag => formData.append('tags[]', tag));
             
-            const response = await fetch('/save', {
-                method: 'POST',
-                body: formData
-            });
-            
-            const result = await response.json();
-            if (result.success) {
-                currentSlug = result.slug;
-                alert('Draft saved successfully!');
-            } else {
-                alert('Error saving draft: ' + result.error);
+            try {
+                const response = await fetch('/save', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                if (result.success) {
+                    currentSlug = result.slug;
+                    lastSavedContent = content;
+                    if (!isAutoSave) {
+                        showToast('Draft saved successfully!');
+                    }
+                    updateSaveStatus("Saved");
+                } else {
+                    showToast('Error saving draft: ' + result.error, 'error');
+                    updateSaveStatus("Save failed");
+                }
+            } catch (error) {
+                showToast('Error saving draft', 'error');
+                updateSaveStatus("Save failed");
+                console.error('Error saving draft:', error);
             }
         }
 
         async function publishPost() {
             if (!currentSlug) {
-                alert('Please save the post first');
+                showToast('Please save the draft first', 'error');
                 return;
             }
             
-            const response = await fetch(`/publish/${currentSlug}`, {
-                method: 'POST'
-            });
-            
-            const result = await response.json();
-            if (result.success) {
-                alert('Post published successfully!');
-            } else {
-                alert('Error publishing post: ' + result.error);
+            try {
+                updateSaveStatus("Publishing...");
+                const response = await fetch(`/publish/${currentSlug}`, {
+                    method: 'POST'
+                });
+                
+                const result = await response.json();
+                if (result.success) {
+                    showToast('Post published successfully!');
+                    updateSaveStatus("Published");
+                    setTimeout(() => window.location.reload(), 1500);
+                } else {
+                    showToast('Error publishing post: ' + result.error, 'error');
+                    updateSaveStatus("Publish failed");
+                }
+            } catch (error) {
+                showToast('Error publishing post', 'error');
+                updateSaveStatus("Publish failed");
+                console.error('Error publishing post:', error);
             }
+        }
+
+        function previewInNewTab() {
+            const content = editor.value();
+            const title = document.getElementById('title').value;
+            const tags = Array.from(document.querySelectorAll('input[name="tags[]"]:checked'))
+                             .map(cb => cb.value);
+            
+            const formData = new FormData();
+            formData.append('content', content);
+            formData.append('title', title);
+            tags.forEach(tag => formData.append('tags[]', tag));
+            
+            fetch('/preview', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(html => {
+                const win = window.open('', '_blank');
+                win.document.write(html);
+                win.document.close();
+            });
         }
     </script>
 </body>

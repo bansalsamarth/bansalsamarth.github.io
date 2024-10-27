@@ -6,4 +6,14 @@ tags:
 - Writing
 title: Story Physics
 ---
-Testing this. Am just figuring!
+
+There are four things you need to know. 
+
+* Momentum
+* Gravity
+
+> The idea comes from physics.
+
+***
+
+This is just a test.

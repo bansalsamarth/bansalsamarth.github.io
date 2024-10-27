@@ -18,7 +18,6 @@ app = Flask(__name__)
 
 class BlogManager:
     def __init__(self):
-        # Get the root directory (blog_admin's parent directory)
         self.root_dir = Path(__file__).parent.parent.resolve()
         self.obsidian_dir = self.root_dir / "SamarthBlog"
         self.published_dir = self.obsidian_dir / "published"
@@ -33,60 +32,149 @@ class BlogManager:
             "Journalism", "Politics", "Learning", "Health"
         ]
         
-        # Verify paths
-        self._verify_paths()
-    
-    def _verify_paths(self):
-        if not self.template_path.exists():
-            raise FileNotFoundError(f"Template not found at {self.template_path}")
-        if not self.blog_index_path.exists():
-            raise FileNotFoundError(f"Blog index not found at {self.blog_index_path}")
-        if not self.published_dir.exists():
-            raise FileNotFoundError(f"Published directory not found at {self.published_dir}")
+        # Load template once
+        with open(self.template_path, 'r', encoding='utf-8') as f:
+            self.template = f.read()
+
+    def get_drafts(self):
+        """Get list of draft posts"""
+        drafts = []
+        for file in self.published_dir.glob('*.md'):
+            try:
+                post = frontmatter.load(file)
+                # Convert date string to datetime object for consistent sorting
+                date_str = post.metadata.get('date_published', '')
+                try:
+                    date = datetime.datetime.strptime(date_str, "%d %B, %Y")
+                except (ValueError, TypeError):
+                    date = datetime.datetime.fromtimestamp(0)  # Default to epoch if invalid date
+                    
+                drafts.append({
+                    'title': post.metadata.get('title', file.stem),
+                    'slug': post.metadata.get('slug', file.stem),
+                    'date': date_str,  # Keep original string for display
+                    'sort_date': date,  # Add date object for sorting
+                    'tags': post.metadata.get('tags', []),
+                    'content': post.content
+                })
+            except Exception as e:
+                print(f"Error loading {file}: {e}")
+        return sorted(drafts, key=lambda x: x['sort_date'], reverse=True)
+
+    def get_draft(self, slug):
+        """Get specific draft content by slug"""
+        try:
+            # First try by direct slug match
+            for file in self.published_dir.glob('*.md'):
+                post = frontmatter.load(file)
+                if post.metadata.get('slug') == slug:
+                    return {
+                        'title': post.metadata.get('title', ''),
+                        'content': post.content,
+                        'tags': post.metadata.get('tags', []),
+                        'date': post.metadata.get('date_published', ''),
+                        'slug': slug
+                    }
+            return None
+        except Exception as e:
+            print(f"Error loading draft {slug}: {e}")
+            return None
+
+    # def preview_post(self, content, metadata=None):
+    #     """Generate HTML preview using actual blog template"""
+    #     if metadata is None:
+    #         metadata = {}
+            
+    #     # Convert markdown to HTML
+    #     html_content = markdown.markdown(
+    #         content,
+    #         extensions=[
+    #             'markdown.extensions.fenced_code',
+    #             'markdown.extensions.tables',
+    #             'markdown.extensions.extra'
+    #         ]
+    #     )
+        
+    #     # Fill template
+    #     html = self.template
+        
+    #     # Replace conditional blocks first
+    #     html = re.sub(r'\$if\([^$]+\)\$.*?\$endif\$', '', html, flags=re.DOTALL)
+    #     html = re.sub(r'\$for\([^$]+\)\$.*?\$endfor\$', '', html, flags=re.DOTALL)
+        
+    #     # Replace variables
+    #     html = html.replace('$title$', metadata.get('title', ''))
+    #     html = html.replace('$author$', 'Samarth Bansal')
+    #     html = html.replace('$date_published$', metadata.get('date_published', ''))
+    #     html = html.replace('$body$', html_content)
+        
+    #     # Clean up any remaining template variables
+    #     html = re.sub(r'\$[^$]+\$', '', html)
+        
+    #     return html
 
     def preview_post(self, content, metadata=None):
-        """Generate HTML preview of the post"""
-        try:
-            # Convert markdown to HTML
-            html_content = markdown.markdown(
-                content,
-                extensions=[
-                    'markdown.extensions.fenced_code',
-                    'markdown.extensions.tables',
-                    'markdown.extensions.extra'
-                ]
-            )
+        """Generate HTML preview using actual blog template"""
+        if metadata is None:
+            metadata = {}
             
-            # Read template
+        # Convert markdown to HTML
+        html_content = markdown.markdown(
+            content,
+            extensions=[
+                'markdown.extensions.fenced_code',
+                'markdown.extensions.tables',
+                'markdown.extensions.extra'
+            ]
+        )
+        
+        # Read template if not already loaded
+        if not hasattr(self, 'template'):
             with open(self.template_path, 'r', encoding='utf-8') as f:
-                template = f.read()
-            
-            if metadata is None:
-                metadata = {}
-            
-            # Current date if not provided
-            if 'date_published' not in metadata:
-                metadata['date_published'] = datetime.datetime.now().strftime("%d %B, %Y")
-                
-            # Create HTML
-            html = template
-            # Replace simple variables first
-            html = html.replace('$title$', metadata.get('title', ''))
-            html = html.replace('$author$', 'Samarth Bansal')
-            html = html.replace('$date_published$', metadata['date_published'])
-            html = html.replace('$body$', html_content)
-            
-            # Remove conditional blocks and their content
-            html = re.sub(r'\$if\([^$]+\)\$.*?\$endif\$', '', html, flags=re.DOTALL)
-            html = re.sub(r'\$for\([^$]+\)\$.*?\$endfor\$', '', html, flags=re.DOTALL)
-            # Remove any remaining template variables
-            html = re.sub(r'\$[^$]+\$', '', html)
-            
-            return html
-            
-        except Exception as e:
-            print(f"Preview error: {e}")
-            return f"Error generating preview: {str(e)}"
+                self.template = f.read()
+        
+        # Start with template
+        html = self.template
+        
+        # Basic replacements
+        basic_replacements = {
+            '$lang$': 'en',
+            '$dir$': 'ltr',
+            '$title$': metadata.get('title', ''),
+            '$pagetitle$': metadata.get('title', ''),
+            '$author$': 'Samarth Bansal',
+            '$author-meta$': 'Samarth Bansal',
+            '$date_published$': metadata.get('date_published', ''),
+            '$body$': html_content,
+        }
+        
+        for key, value in basic_replacements.items():
+            html = html.replace(key, value)
+        
+        # Handle conditional blocks
+        patterns_to_remove = [
+            r'\$if\(title-prefix\)\$.*?\$endif\$',
+            r'\$if\(keywords\)\$.*?\$endif\$',
+            r'\$if\(description-meta\)\$.*?\$endif\$',
+            r'\$if\(math\)\$.*?\$endif\$',
+            r'\$for\(keywords\)\$.*?\$endfor\$',
+            r'\$for\(header-includes\)\$.*?\$endfor\$',
+            r'\$for\(include-after\)\$.*?\$endfor\$',
+            r'\$if\(toc\)\$.*?\$endif\$',
+            r'\$if\(excerpt\)\$.*?\$endif\$'
+        ]
+        
+        for pattern in patterns_to_remove:
+            html = re.sub(pattern, '', html, flags=re.DOTALL)
+        
+        # Clean up any remaining template variables
+        html = re.sub(r'\$[^$]+\$', '', html)
+        
+        # Ensure CSS path is correct for preview
+        html = html.replace('href="../css/', 'href="/css/')
+        
+        
+        return html
 
     def save_draft(self, title, content, metadata):
         """Save post as markdown with frontmatter"""
@@ -113,15 +201,17 @@ class BlogManager:
 
     def publish_post(self, slug):
         """Convert markdown to HTML and update index"""
-        md_path = self.published_dir / f"{slug}.md"
-        if not md_path.exists():
-            raise FileNotFoundError(f"Markdown file not found: {md_path}")
+        # Get the draft
+        draft = self.get_draft(slug)
+        if not draft:
+            raise ValueError(f"Draft not found: {slug}")
             
-        # Load the markdown file
-        post = frontmatter.load(md_path)
-        
         # Convert to HTML
-        html_content = self.preview_post(post.content, post.metadata)
+        html_content = self.preview_post(draft['content'], {
+            'title': draft['title'],
+            'date_published': draft['date'],
+            'tags': draft['tags']
+        })
         
         # Save HTML
         output_path = self.root_dir / 'blog' / f"{slug}.html"
@@ -130,12 +220,18 @@ class BlogManager:
             f.write(html_content)
             
         # Update index
-        self.update_index(post.metadata)
+        self.update_index({
+            'title': draft['title'],
+            'slug': slug,
+            'date_published': draft['date'],
+            'tags': draft['tags']
+        })
         
         # Git operations
         try:
-            subprocess.run(['git', 'add', '.'], cwd=self.root_dir, check=True)
-            subprocess.run(['git', 'commit', '-m', f"Publish post: {slug}"], cwd=self.root_dir, check=True)
+            subprocess.run(['git', 'add', str(output_path)], cwd=self.root_dir, check=True)
+            subprocess.run(['git', 'add', str(self.blog_index_path)], cwd=self.root_dir, check=True)
+            subprocess.run(['git', 'commit', '-m', f"Publish post: {draft['title']}"], cwd=self.root_dir, check=True)
             subprocess.run(['git', 'push'], cwd=self.root_dir, check=True)
             return True
         except subprocess.CalledProcessError as e:
@@ -184,22 +280,6 @@ class BlogManager:
                 
         return "Personal"
 
-    def get_drafts(self):
-        """Get list of draft posts"""
-        drafts = []
-        for file in self.published_dir.glob('*.md'):
-            try:
-                post = frontmatter.load(file)
-                drafts.append({
-                    'title': post.metadata.get('title', file.stem),
-                    'slug': post.metadata.get('slug', file.stem),
-                    'date': post.metadata.get('date_published', ''),
-                    'tags': post.metadata.get('tags', [])
-                })
-            except Exception as e:
-                print(f"Error loading {file}: {e}")
-        return drafts
-
 blog_manager = BlogManager()
 
 @app.route('/')
@@ -214,10 +294,18 @@ def preview():
     content = request.form.get('content', '')
     metadata = {
         'title': request.form.get('title', ''),
+        'date_published': datetime.datetime.now().strftime("%d %B, %Y"),
         'tags': request.form.getlist('tags[]')
     }
     html = blog_manager.preview_post(content, metadata)
     return html
+
+@app.route('/draft/<slug>')
+def get_draft(slug):
+    draft = blog_manager.get_draft(slug)
+    if draft:
+        return jsonify(draft)
+    return jsonify({'error': 'Draft not found'}), 404
 
 @app.route('/save', methods=['POST'])
 def save():
@@ -229,21 +317,40 @@ def save():
     
     try:
         slug = blog_manager.save_draft(title, content, metadata)
-        return jsonify({'success': True, 'slug': slug})
+        return jsonify({
+            'success': True, 
+            'slug': slug,
+            'message': 'Draft saved successfully!'
+        })
     except Exception as e:
-        return jsonify({'success': False, 'error': str(e)})
+        return jsonify({
+            'success': False, 
+            'error': str(e)
+        })
 
 @app.route('/publish/<slug>', methods=['POST'])
 def publish(slug):
     try:
         success = blog_manager.publish_post(slug)
-        return jsonify({'success': success})
+        if success:
+            return jsonify({
+                'success': True,
+                'message': 'Post published successfully!'
+            })
+        return jsonify({
+            'success': False,
+            'error': 'Failed to publish post'
+        })
     except Exception as e:
-        return jsonify({'success': False, 'error': str(e)})
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        })
 
-@app.route('/static/<path:path>')
-def send_static(path):
-    return send_from_directory('static', path)
+# Add this route to serve static files
+@app.route('/css/<path:filename>')
+def serve_css(filename):
+    return send_from_directory('../css', filename)
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
