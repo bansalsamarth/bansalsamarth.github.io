@@ -5,8 +5,7 @@ author: Samarth Bansal
 date_published: 31 December, 2023
 date_updated: 31 December, 2023
 tags:
-  - Blog
-  - Personal
+  - Writing
 ---
 It’s 1:30 pm. It’s the last day of the year. Woke up late this morning, around eight-thirty, had a cup of black coffee, heard the writer Benjamín Labatut talk about [how anything that comes out of a writer is fiction](https://www.youtube.com/watch?v=E-OFnHwuTBg), ate a three-egg sunny side up, spent an hour and half at the gym to train chest, shoulders, and triceps, had a chocolate-flavoured protein shake, indulged in half a poori and chole, showered, posted memes on Instagram story, and drove to Blue Tokai. 
 
