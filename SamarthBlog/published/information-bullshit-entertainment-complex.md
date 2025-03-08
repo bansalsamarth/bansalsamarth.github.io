@@ -1,7 +1,7 @@
 ---
 title: Fighting the information-bullshit-entertainment complex
 author: Samarth Bansal
-date_published: Jan 10, 2023
+date_published: 10 January, 2023
 ---
 
 Seven years of journalism and the crisis my profession is facing — everyone loves to hate “the media” — led me to think deeply about the beast called “information sphere”.

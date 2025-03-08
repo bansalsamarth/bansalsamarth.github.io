@@ -1,7 +1,7 @@
 ---
 title: Exercise vs training
 author: Samarth Bansal
-date_published: May 27, 2022
+date_published: 27 May, 2022
 ---
 
 Since February 2021, I have largely maintained the healthy habits I adopted during my  fat loss phase. I exercise regularly, move frequently and eat well.

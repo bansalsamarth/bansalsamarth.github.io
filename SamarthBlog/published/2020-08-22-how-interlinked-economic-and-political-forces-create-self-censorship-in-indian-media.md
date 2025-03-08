@@ -6,7 +6,6 @@ date_updated: 2021-08-12T05:48:35.000Z
 tags: Journalism, Politics, Blog
 author: Samarth Bansal
 ---
-
 Most contemporary discussions on press freedom begin with some sort of rankings: X country slipped Y positions on Z index—that’s evidence something wrong is happening.
 
 This makes headlines every year in India, as we continue to slip down in these indices. Criminal defamation cases are filed against journalists for merely doing their jobs and reporting stories. Organized disinformation campaigns and troll armies delegitimize the institution of journalism and individual reporters to evade trust in the media. The list goes on. These observable metrics—all problematic—reflect in the various rankings.

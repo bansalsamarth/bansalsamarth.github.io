@@ -1,7 +1,7 @@
 ---
 title: Seven rules to resist online manipulation
 author: Samarth Bansal
-date_published: May 28, 2022
+date_published: 28 May, 2022
 ---
 
 [Carl Miller](https://www.carlmiller.co/) is research director for the Centre for the Analysis of Social Media, at the think tank Demos. He tweeted a brilliant [thread](https://twitter.com/carljackmiller/status/1186206735540862976) listing seven rules to resist online manipulation. I really liked it, and sharing his ideas here — as it is — to amplify its reach.

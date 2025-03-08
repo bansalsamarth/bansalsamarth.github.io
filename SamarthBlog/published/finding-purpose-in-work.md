@@ -1,8 +1,7 @@
 ---
 title: Finding purpose in work?
 author: Samarth Bansal
-date_published: 9, December, 2021
-
+date_published: 9 December, 2021
 ---
 
 I like to understand the thought process and motivation that leads elite workers to quit their stable, comfortable and well-paying jobs. What are the driving factors? What's the push?
