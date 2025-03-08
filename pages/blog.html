@@ -1,111 +1,603 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<link href="../css/mvp.css" rel="stylesheet"/>
-<meta charset="utf-8"/>
-<meta content="Website of journalist Samarth Bansal" name="Samarth Bansal"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Samarth's Blog</title>
-<style>
-      .blog-page-date{
-        float: right;
-        font-style: oblique;
-      }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog · Samarth Bansal</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="description" content="Personal blog of Samarth Bansal">
 </head>
 <body>
-<main>
-<h1>👋 Hey, I am Samarth. Welcome to my Personal Blog.</h1>
-<span>
-<a href="../index.html"> &lt; Home </a>
-</span>
-<hr/>
-<div class="post-list">
-<!-- <p><a href=""></a></p> -->
-<h3>Writing</h3>
-      
-      
-<p><a href="../blog/creator-mode.html">A Note On Creator Mode</a> — October 2024 </p>
-<p><a href="../blog/2023-12-31-on-writing.html">On Writing</a> — December 2023 </p>
-<p><a href="../blog/writers-inbox.html">The Writer's Inbox</a> — April 2023 </p>
-<p><a href="https://samarth.micro.blog/2023/01/10/the-want-to.html">The want to write. But why?</a> — Jan 2023</p>
-<hr/>
-<h3>Dating</h3>
-<p><a href="../romantic-idiot.html">The Romantic Idiot</a> — July 2023 </p>
-<p><a href="../thirty-thriving.html">Thirty and Thriving</a> — February 2024 </p>
-<p><a href="../blog/overthinking-underdating.html">Overthinking and Underdating</a> — October 2024 </p>
-<hr/>
-<h3>Personal</h3>
-      <p><a href="../blog/turning-thirty.html">Thoughts on Turning Thirty</a> — September 2023</p>
+    <div class="container">
+        <nav>
+            <a href="/">← Home</a>
+        </nav>
 
-      <p><a href="../blog/i-dont-know-how-to-resolve-the-tension-between-the-desire-to-enjoy-the-world-the-curiosity-to-understand-it-and-the-rage-to-change-it-2.html">I don’t know how to resolve the tension between the desire to enjoy the world, the curiosity to understand it and the rage to change it</a> — February 2021</p>
+        <h1 class="page-title">Blog</h1>
 
-      <p><a href="../blog/how-i-cope-when-it-seems-like-the-world-is-falling-apart.html">How I cope when it seems like the world is falling apart</a> — February 2021</p>
+        <div class="view-toggle">
+            <button class="active" data-view="chronological">All Posts</button>
+            <button data-view="category">By Category</button>
+        </div>
 
-      <p><a href="../blog/jan-ends.html">Let me sleep as January ends</a> — January 2024</p>
-
-      <p><a href="../blog/confused-about-aarogya-setu-here-is-a-guide-to-think-about-your-privacy.html">Confused about Aarogya Setu? Here is a guide to think about your privacy</a> — May 2020</p>
-
-      <p><a href="../blog/why-i-am-relearning-statistics.html">Why I am relearning statistics</a> — June 2021</p>
-
-      <p><a href="../blog/28-hours.html">28 Hours in 2023</a> — January 2024</p>
-
-      <p><a href="../blog/on-writing-2023.html">31 December, 2023—On Writing</a> — December 2023</p>
-
-
+        <!-- Chronological View -->
+        <ul class="posts-list" id="chronological-view">
+            <li class="post-item">
+                <span class="post-date">Jan 2025</span>
+                <h2 class="post-title">
       <p><a href="../blog/deleted-scenes.html">Deleted Scenes and Private Shames</a> — January 2025</p>
+                        Deleted Scenes and Private Shames
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Oct 2024</span>
+                <h2 class="post-title">
+                    <a href="../blog/creator-mode.html">
+                        A Note On Creator Mode
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Oct 2024</span>
+                <h2 class="post-title">
+                    <a href="../blog/overthinking-underdating.html">
+                        Overthinking and Underdating
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Sep 2024</span>
+                <h2 class="post-title">
+                    <a href="../blog/i-have-questions.html">
+                        I Have Questions
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Jul 2024</span>
+                <h2 class="post-title">
+                    <a href="../blog/how-twt.html">
+                        Truth Be Told: How I Ended Up at The Whole Truth
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Jun 2024</span>
+                <h2 class="post-title">
+                    <a href="../blog/june-feelings.html">
+                        The Existential Afterlife of My June Feelings
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Apr 2024</span>
+                <h2 class="post-title">
+                    <a href="../blog/2024-04-14-28-hours.html">
+                        28 Hours in 2023
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Mar 2024</span>
+                <h2 class="post-title">
+                    <a href="../blog/journalism-advice.html">
+                        My advice for young journalists
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Feb 2024</span>
+                <h2 class="post-title">
+                    <a href="../thirty-thriving.html">
+                        Thirty and Thriving
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Jan 2024</span>
+                <h2 class="post-title">
+                    <a href="../blog/2024-01-30-jan-ends.html">
+                        Let me sleep as January ends
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Dec 2023</span>
+                <h2 class="post-title">
+                    <a href="../blog/2023-12-31-on-writing.html">
+                        On Writing
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Sep 2023</span>
+                <h2 class="post-title">
+                    <a href="../blog/2023-09-02-turning-thirty.html">
+                        Turning Thirty
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Sep 2023</span>
+                <h2 class="post-title">
+                    <a href="../blog/simple-life.html">
+                        The Simple Life
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Sep 2023</span>
+                <h2 class="post-title">
+                    <a href="../blog/working-question.html">
+                        The question I dread: What are you working on?
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Jul 2023</span>
+                <h2 class="post-title">
+                    <a href="../romantic-idiot.html">
+                        The Romantic Idiot
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Apr 2023</span>
+                <h2 class="post-title">
+                    <a href="../blog/writers-inbox.html">
+                        The Writer's Inbox
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Jan 2023</span>
+                <h2 class="post-title">
+                    <a href="../blog/information-bullshit-entertainment-complex.html">
+                        Fighting the information-bullshit-entertainment complex
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Jun 2022</span>
+                <h2 class="post-title">
+                    <a href="../blog/information-knowledge-competence.html">
+                        The distinction between information, knowledge and competence
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">May 2022</span>
+                <h2 class="post-title">
+                    <a href="../blog/rules-to-resist-online-manipulation.html">
+                        Seven rules to resist online manipulation
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">May 2022</span>
+                <h2 class="post-title">
+                    <a href="../blog/why-body-composition-matters.html">
+                        Why body composition matters
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">May 2022</span>
+                <h2 class="post-title">
+                    <a href="../blog/exercise-vs-training.html">
+                        Exercise vs Training
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Apr 2022</span>
+                <h2 class="post-title">
+                    <a href="../blog/why-resistance-training.html">
+                        Why resistance training matters
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Dec 2021</span>
+                <h2 class="post-title">
+                    <a href="../blog/finding-purpose-in-work.html">
+                        Finding purpose in work?
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Jun 2021</span>
+                <h2 class="post-title">
+                    <a href="../lessons-learnt-from-my-52-week-workout-streak.html">
+                        Lessons learnt from my 52-week workout streak
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Jun 2021</span>
+                <h2 class="post-title">
+                    <a href="../blog/2021-06-20-why-i-am-relearning-statistics.html">
+                        Why I am relearning statistics
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Feb 2021</span>
+                <h2 class="post-title">
+                    <a href="../blog/2021-02-23-i-dont-know-how-to-resolve-the-tension-between-the-desire-to-enjoy-the-world-the-curiosity-to-understand-it-and-the-rage-to-change-it-2.html">
+                        I don't know how to resolve the tension between the desire to enjoy the world, the curiosity to understand it and the rage to change it
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Feb 2021</span>
+                <h2 class="post-title">
+                    <a href="../blog/2021-02-11-how-i-cope-when-it-seems-like-the-world-is-falling-apart.html">
+                        How I cope when it seems like the world is falling apart
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Feb 2021</span>
+                <h2 class="post-title">
+                    <a href="../blog/2021-02-04-turning-politics-into-theatre.html">
+                        Turning politics into theatre
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Jan 2021</span>
+                <h2 class="post-title">
+                    <a href="../how-i-approach-and-manage-my-freelance-journalism-career.html">
+                        How I approach and manage my freelance journalism career
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Jan 2021</span>
+                <h2 class="post-title">
+                    <a href="../thoughts-and-observations-on-data-journalism-in-india.html">
+                        Thoughts and observations on data journalism in India
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Jan 2021</span>
+                <h2 class="post-title">
+                    <a href="../blog/2021-01-25-journalists-refer-to-themselves-as-storytellers-is-that-a-mistake.html">
+                        Journalists refer to themselves as storytellers. Is that a mistake?
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Dec 2020</span>
+                <h2 class="post-title">
+                    <a href="../blog/2020-12-20-why-the-event-oriented-structure-of-news-doesnt-help-in-understanding-how-the-world-works.html">
+                        Why the event-oriented structure of news doesn't help in understanding how the world works
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Aug 2020</span>
+                <h2 class="post-title">
+                    <a href="../blog/2020-08-22-how-interlinked-economic-and-political-forces-create-self-censorship-in-indian-media.html">
+                        How interlinked economic and political forces create self-censorship in Indian media
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">May 2020</span>
+                <h2 class="post-title">
+                    <a href="../blog/2020-05-17-confused-about-aarogya-setu-here-is-a-guide-to-think-about-your-privacy.html">
+                        Confused about Aarogya Setu? Here is a guide to think about your privacy
+                    </a>
+                </h2>
+            </li>
+            <li class="post-item">
+                <span class="post-date">Sep 2017</span>
+                <h2 class="post-title">
+                    <a href="../blog/start-building-hard-skills.html">
+                        Start building hard skills. Now.
+                    </a>
+                </h2>
+            </li>
+        </ul>
 
-<p><a href="../blog/i-have-questions.html">I Have Questions</a> — September 2024 </p>
-<p><a href="../blog/how-twt.html">Truth Be Told: How I Ended Up at The Whole Truth</a> — July 2024 </p>
-<p><a href="../blog/june-feelings.html">The Existential Afterlife of My June Feelings</a> — June 2024 </p>
-<p><a href="../blog/2024-01-30-jan-ends.html">Let me sleep as January ends </a> — January 2024 </p>
-<p><a href="../blog/2024-04-14-28-hours.html">28 Hours in 2023 </a> — January 2024  </p>
-      <p><a href="../blog/simple-life.html">The Simple Life</a> — September 2023</p>
-      <p><a href="../blog/working-question.html">The question I dread: What are you working on?</a> — September 2023</p>
-<p><a href="../blog/2023-09-02-turning-thirty.html">Turning Thirty</a> — September 2023 </p>
-<p><a href="../blog/2021-02-23-i-dont-know-how-to-resolve-the-tension-between-the-desire-to-enjoy-the-world-the-curiosity-to-understand-it-and-the-rage-to-change-it-2.html">I don’t know how to resolve the tension between the desire to enjoy the world, the curiosity to understand it and the rage to change it </a> — February 2021   </p>
-<p><a href="../blog/2021-02-11-how-i-cope-when-it-seems-like-the-world-is-falling-apart.html">How I cope when it seems like the world is falling apart</a> — February 2021</p>
-<p><a href="https://samarth.micro.blog/2023/01/10/i-hate-instant.html">I hate instant messaging</a> — Jan 2023 </p>
-<p><a href="https://samarth.micro.blog/2023/01/11/everyday-communication-goals.html">Everyday communication goals</a> — Jan 2023 </p>
-<hr/>
-<h3>Work and Career</h3>
-<p><a href="../blog/journalism-advice.html">My advice for young journalists</a> — March 2024</p>
-<p><a href="../how-i-approach-and-manage-my-freelance-journalism-career.html">How I approach and manage my freelance journalism career</a> — January 2021</p>
-      <p><a href="../blog/start-building-hard-skills.html">Start building hard skills. Now.</a> — September 2017</p>
-      <p><a href="../blog/finding-purpose-in-work.html">Finding purpose in work?</a> — December 2021</p>
-<hr/>
-<h3>Journalism</h3>
-      <p><a href="../blog/journalists-refer-to-themselves-as-storytellers-is-that-a-mistake.html">Journalists refer to themselves as storytellers. Is that a mistake?</a> — January 2021</p>
+        <!-- Category View -->
+        <div class="posts-list" id="category-view" style="display: none;">
+            <!-- Writing -->
+            <div class="category-section">
+                <h3 class="category-title">Writing</h3>
+                <ul class="posts-list">
+                    <li class="post-item">
+                        <span class="post-date">Oct 2024</span>
+                        <h2 class="post-title">
+                            <a href="../blog/creator-mode.html">A Note On Creator Mode</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Dec 2023</span>
+                        <h2 class="post-title">
+                            <a href="../blog/2023-12-31-on-writing.html">On Writing</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Apr 2023</span>
+                        <h2 class="post-title">
+                            <a href="../blog/writers-inbox.html">The Writer's Inbox</a>
+                        </h2>
+                    </li>
+                </ul>
+            </div>
 
-      <p><a href="../blog/turning-politics-into-theatre.html">Turning politics into theatre</a> — February 2021</p>
+            <!-- Dating -->
+            <div class="category-section">
+                <h3 class="category-title">Dating</h3>
+                <ul class="posts-list">
+                    <li class="post-item">
+                        <span class="post-date">Oct 2024</span>
+                        <h2 class="post-title">
+                            <a href="../blog/overthinking-underdating.html">Overthinking and Underdating</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Feb 2024</span>
+                        <h2 class="post-title">
+                            <a href="../thirty-thriving.html">Thirty and Thriving</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Jul 2023</span>
+                        <h2 class="post-title">
+                            <a href="../romantic-idiot.html">The Romantic Idiot</a>
+                        </h2>
+                    </li>
+                </ul>
+            </div>
 
-      <p><a href="../blog/why-the-event-oriented-structure-of-news-doesnt-help-in-understanding-how-the-world-works.html">Why the event-oriented structure of news doesn't help in understanding how the world works</a> — December 2020</p>
+            <!-- Personal -->
+            <div class="category-section">
+                <h3 class="category-title">Personal</h3>
+                <ul class="posts-list">
+                    <li class="post-item">
+                        <span class="post-date">Jan 2025</span>
+                        <h2 class="post-title">
+                            <a href="../blog/deleted-scenes.html">Deleted Scenes and Private Shames</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Sep 2024</span>
+                        <h2 class="post-title">
+                            <a href="../blog/i-have-questions.html">I Have Questions</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Jul 2024</span>
+                        <h2 class="post-title">
+                            <a href="../blog/how-twt.html">Truth Be Told: How I Ended Up at The Whole Truth</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Jun 2024</span>
+                        <h2 class="post-title">
+                            <a href="../blog/june-feelings.html">The Existential Afterlife of My June Feelings</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Apr 2024</span>
+                        <h2 class="post-title">
+                            <a href="../blog/2024-04-14-28-hours.html">28 Hours in 2023</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Jan 2024</span>
+                        <h2 class="post-title">
+                            <a href="../blog/2024-01-30-jan-ends.html">Let me sleep as January ends</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Sep 2023</span>
+                        <h2 class="post-title">
+                            <a href="../blog/2023-09-02-turning-thirty.html">Turning Thirty</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Sep 2023</span>
+                        <h2 class="post-title">
+                            <a href="../blog/simple-life.html">The Simple Life</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Sep 2023</span>
+                        <h2 class="post-title">
+                            <a href="../blog/working-question.html">The question I dread: What are you working on?</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Feb 2021</span>
+                        <h2 class="post-title">
+                            <a href="../blog/2021-02-23-i-dont-know-how-to-resolve-the-tension-between-the-desire-to-enjoy-the-world-the-curiosity-to-understand-it-and-the-rage-to-change-it-2.html">I don't know how to resolve the tension between the desire to enjoy the world, the curiosity to understand it and the rage to change it</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Feb 2021</span>
+                        <h2 class="post-title">
+                            <a href="../blog/2021-02-11-how-i-cope-when-it-seems-like-the-world-is-falling-apart.html">How I cope when it seems like the world is falling apart</a>
+                        </h2>
+                    </li>
+                </ul>
+            </div>
 
-      <p><a href="../blog/information-bullshit-entertainment-complex.html">Fighting the information-bullshit-entertainment complex</a> — January 2023</p>
+            <!-- Work and Career -->
+            <div class="category-section">
+                <h3 class="category-title">Work and Career</h3>
+                <ul class="posts-list">
+                    <li class="post-item">
+                        <span class="post-date">Mar 2024</span>
+                        <h2 class="post-title">
+                            <a href="../blog/journalism-advice.html">My advice for young journalists</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Jan 2021</span>
+                        <h2 class="post-title">
+                            <a href="../how-i-approach-and-manage-my-freelance-journalism-career.html">How I approach and manage my freelance journalism career</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Dec 2021</span>
+                        <h2 class="post-title">
+                            <a href="../blog/finding-purpose-in-work.html">Finding purpose in work?</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Sep 2017</span>
+                        <h2 class="post-title">
+                            <a href="../blog/start-building-hard-skills.html">Start building hard skills. Now.</a>
+                        </h2>
+                    </li>
+                </ul>
+            </div>
 
-      <p><a href="../thoughts-and-observations-on-data-journalism-in-india.html">Thoughts and observations on data journalism in India</a> — January 2021</p>
-<p><a href="../blog/2021-01-25-journalists-refer-to-themselves-as-storytellers-is-that-a-mistake.html">Journalists refer to themselves as storytellers. Is that a mistake?</a> — January 2021</p>
-<p><a href="../blog/2020-12-20-why-the-event-oriented-structure-of-news-doesnt-help-in-understanding-how-the-world-works.html">Why the event-oriented structure of news doesn’t help in understanding how the world works </a>— December 2020</p>
-      <p><a href="../blog/information-knowledge-competence.html">The distinction between information, knowledge and competence</a> — June 2022</p>
-<p><a href="https://samarth.micro.blog/2023/01/10/fighting-the-informationbullshitentertainment.html">Fighting the information-bullshit-entertainment complex</a> — Jan 2023</p>
-<p><a href="https://samarth.micro.blog/2023/01/13/why-personal-essays.html">Why personal essays matter </a> — Jan 2023 </p>
-<p><a href="https://samarth.micro.blog/2023/01/13/why-india-does.html">Why India does not have a personal essay culture</a> — Jan 2023 </p>
-<hr/>
-<h3>Politics and Public Affairs</h3>
-<p><a href="../blog/2021-02-04-turning-politics-into-theatre.html">Turning politics into theatre</a> — February 2021</p>
-      <p><a href="../blog/rules-to-resist-online-manipulation.html">Seven rules to resist online manipulation</a> — May 2022</p>
-<hr/>
-<h3>Learning</h3>
-<p><a href="../blog/2021-06-20-why-i-am-relearning-statistics.html">Why I am relearning statistics</a> — June 2021 </p>
-<hr/>
-<h3>Health and Fitness</h3>
-<p><a href="../lessons-learnt-from-my-52-week-workout-streak.html">Lessons learnt from my 52-week workout streak</a> — June 2021</p>
-      <p><a href="../blog/why-resistance-training.html">Why resistance training matters</a> — April 2022</p>
-      <p><a href="../blog/why-body-composition-matters.html">Why body compositiom matters</a> — May 2022</p>
-      <p><a href="../blog/exercise-vs-training.html">Exercise vs training</a> — May 2022</p>
-<hr/>
-<div>
-</div></p></div></main>
+            <!-- Journalism -->
+            <div class="category-section">
+                <h3 class="category-title">Journalism</h3>
+                <ul class="posts-list">
+                    <li class="post-item">
+                        <span class="post-date">Jan 2023</span>
+                        <h2 class="post-title">
+                            <a href="../blog/information-bullshit-entertainment-complex.html">Fighting the information-bullshit-entertainment complex</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Jun 2022</span>
+                        <h2 class="post-title">
+                            <a href="../blog/information-knowledge-competence.html">The distinction between information, knowledge and competence</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Jan 2021</span>
+                        <h2 class="post-title">
+                            <a href="../thoughts-and-observations-on-data-journalism-in-india.html">Thoughts and observations on data journalism in India</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Jan 2021</span>
+                        <h2 class="post-title">
+                            <a href="../blog/2021-01-25-journalists-refer-to-themselves-as-storytellers-is-that-a-mistake.html">Journalists refer to themselves as storytellers. Is that a mistake?</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Dec 2020</span>
+                        <h2 class="post-title">
+                            <a href="../blog/2020-12-20-why-the-event-oriented-structure-of-news-doesnt-help-in-understanding-how-the-world-works.html">Why the event-oriented structure of news doesn't help in understanding how the world works</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Aug 2020</span>
+                        <h2 class="post-title">
+                            <a href="../blog/2020-08-22-how-interlinked-economic-and-political-forces-create-self-censorship-in-indian-media.html">How interlinked economic and political forces create self-censorship in Indian media</a>
+                        </h2>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Politics and Public Affairs -->
+            <div class="category-section">
+                <h3 class="category-title">Politics and Public Affairs</h3>
+                <ul class="posts-list">
+                    <li class="post-item">
+                        <span class="post-date">May 2022</span>
+                        <h2 class="post-title">
+                            <a href="../blog/rules-to-resist-online-manipulation.html">Seven rules to resist online manipulation</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Feb 2021</span>
+                        <h2 class="post-title">
+                            <a href="../blog/2021-02-04-turning-politics-into-theatre.html">Turning politics into theatre</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">May 2020</span>
+                        <h2 class="post-title">
+                            <a href="../blog/2020-05-17-confused-about-aarogya-setu-here-is-a-guide-to-think-about-your-privacy.html">Confused about Aarogya Setu? Here is a guide to think about your privacy</a>
+                        </h2>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Learning -->
+            <div class="category-section">
+                <h3 class="category-title">Learning</h3>
+                <ul class="posts-list">
+                    <li class="post-item">
+                        <span class="post-date">Jun 2021</span>
+                        <h2 class="post-title">
+                            <a href="../blog/2021-06-20-why-i-am-relearning-statistics.html">Why I am relearning statistics</a>
+                        </h2>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Health and Fitness -->
+            <div class="category-section">
+                <h3 class="category-title">Health and Fitness</h3>
+                <ul class="posts-list">
+                    <li class="post-item">
+                        <span class="post-date">May 2022</span>
+                        <h2 class="post-title">
+                            <a href="../blog/exercise-vs-training.html">Exercise vs Training</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">May 2022</span>
+                        <h2 class="post-title">
+                            <a href="../blog/why-body-composition-matters.html">Why body composition matters</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Apr 2022</span>
+                        <h2 class="post-title">
+                            <a href="../blog/why-resistance-training.html">Why resistance training matters</a>
+                        </h2>
+                    </li>
+                    <li class="post-item">
+                        <span class="post-date">Jun 2021</span>
+                        <h2 class="post-title">
+                            <a href="../lessons-learnt-from-my-52-week-workout-streak.html">Lessons learnt from my 52-week workout streak</a>
+                        </h2>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Toggle between chronological and category views
+        document.addEventListener('DOMContentLoaded', function() {
+            const viewToggle = document.querySelectorAll('.view-toggle button');
+            viewToggle.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    viewToggle.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Toggle view
+                    const view = this.getAttribute('data-view');
+                    if (view === 'chronological') {
+                        document.getElementById('chronological-view').style.display = 'block';
+                        document.getElementById('category-view').style.display = 'none';
+                    } else {
+                        document.getElementById('chronological-view').style.display = 'none';
+                        document.getElementById('category-view').style.display = 'block';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
