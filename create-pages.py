@@ -18,17 +18,13 @@ class BlogPublisher:
         self.obsidian_dir = self.root_dir / "SamarthBlog"
         self.published_dir = self.obsidian_dir / "published"
         self.template_path = self.root_dir / "templates" / "post-template.html"
+        print(f"Using template: {self.template_path}")
         self.blog_index_path = self.root_dir / "pages" / "blog.html"
-        self.archive_index_path = self.root_dir / "pages" / "archive.html"
         self.modified_files = []  # Track files we modify
         self.file_hashes = {}  # Store file hashes to detect changes
         self.processed_posts = []  # Store metadata of processed posts
         self.error_report = []  # Store markdown errors
         
-        # Create archive index if it doesn't exist
-        if not self.archive_index_path.exists():
-            self._create_archive_index()
-            
         # Load existing file hashes if available
         self._load_hashes()
 
@@ -48,34 +44,115 @@ class BlogPublisher:
         with open(hash_file, 'w', encoding='utf-8') as f:
             json.dump(self.file_hashes, f, indent=2)
 
-    def _create_archive_index(self):
-        """Create a new archive index page"""
-        archive_html = """<!DOCTYPE html>
-<html lang="en">
-<head>
-<link href="../css/mvp.css" rel="stylesheet"/>
-<meta charset="utf-8"/>
-<meta content="Website of journalist Samarth Bansal" name="Samarth Bansal"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Samarth's Blog Archive</title>
-</head>
-<body>
-<main>
-<h1>Blog Archive</h1>
-<span>
-<a href="../index.html"> &lt; Home </a>
-<a href="../pages/blog.html"> &lt; Blog Categories </a>
-</span>
-<hr/>
-<div class="post-list">
-<!-- Posts will be listed here in chronological order -->
-</div>
-</main>
-</body>
-</html>"""
-        with open(self.archive_index_path, 'w', encoding='utf-8') as f:
-            f.write(archive_html)
-        self.modified_files.append(self.archive_index_path)
+    def _update_chronological_view(self):
+        """Update the chronological view in blog.html with ALL posts"""
+        # Get all published markdown files
+        all_md_files = list(self.published_dir.glob('*.md'))
+        all_posts = []
+        
+        # Load metadata from all markdown files
+        for md_file in all_md_files:
+            try:
+                post = frontmatter.load(md_file)
+                metadata = post.metadata
+                # Ensure slug exists
+                metadata['slug'] = metadata.get('slug', md_file.stem)
+                # Handle date-prefixed filenames
+                parts = md_file.stem.split("-", 3)
+                if len(parts) >= 4 and parts[0].isdigit() and parts[1].isdigit() and parts[2].isdigit():
+                    if 'slug' not in metadata:
+                        metadata['slug'] = parts[3]
+                all_posts.append(metadata)
+            except Exception as e:
+                print(f"  WARNING: Could not load metadata from {md_file}: {e}")
+        
+        # Also include any posts processed in this run that might not be on disk yet
+        for post in self.processed_posts:
+            if post not in all_posts:
+                all_posts.append(post)
+                
+        # Skip if no posts were found
+        if not all_posts:
+            print("  WARNING: No posts found for updating the blog index")
+            return
+            
+        # Helper function to safely convert dates to naive datetime objects
+        def safe_datetime(dt_value):
+            if isinstance(dt_value, datetime):
+                # Ensure we're using a naive datetime (no timezone)
+                if dt_value.tzinfo is not None:
+                    return dt_value.replace(tzinfo=None)
+                return dt_value
+            try:
+                return datetime.strptime(dt_value, "%d %B, %Y")
+            except (ValueError, TypeError):
+                # Fallback to current date (naive datetime)
+                return datetime.now().replace(tzinfo=None)
+                
+        # Sort posts by date, newest first
+        def get_date(post):
+            date_published = post.get('date_published')
+            return safe_datetime(date_published)
+                
+        sorted_posts = sorted(
+            all_posts,
+            key=get_date,
+            reverse=True
+        )
+        
+        # Read current blog.html content
+        with open(self.blog_index_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+            
+        # Find the chronological view section
+        chrono_start = content.find('<ul class="posts-list" id="chronological-view">')
+        if chrono_start == -1:
+            print("  WARNING: Could not locate chronological view section in blog.html")
+            return
+            
+        chrono_end = content.find('<!-- Category View -->', chrono_start)
+        if chrono_end == -1:
+            print("  WARNING: Could not locate end of chronological view section in blog.html")
+            return
+        
+        # Build new chronological list
+        chrono_html = '<ul class="posts-list" id="chronological-view">\n'
+        
+        for post in sorted_posts:
+            date_published = post.get('date_published')
+            if isinstance(date_published, datetime):
+                date = date_published
+                month_year = date.strftime("%b %Y")
+            else:
+                try:
+                    date = datetime.strptime(date_published, "%d %B, %Y")
+                    month_year = date.strftime("%b %Y")
+                except (ValueError, TypeError):
+                    date = datetime.now()
+                    month_year = "Unknown"
+            
+            slug = post.get('slug', '')
+            title = post.get('title', 'Untitled')
+            
+            chrono_html += f'''<li class="post-item">
+<span class="post-date">{month_year}</span>
+<h2 class="post-title">
+<a href="../blog/{slug}.html">
+{title}
+</a>
+</h2>
+</li>\n'''
+        
+        chrono_html += '</ul>\n'
+        
+        # Replace the chronological view section
+        new_content = content[:chrono_start] + chrono_html + content[chrono_end:]
+        
+        # Only write if content has changed
+        if new_content != content:
+            with open(self.blog_index_path, 'w', encoding='utf-8') as f:
+                f.write(new_content)
+            self.modified_files.append(self.blog_index_path)
 
     def _get_file_hash(self, file_path):
         """Calculate MD5 hash for a file"""
@@ -119,53 +196,137 @@ class BlogPublisher:
                 sys.exit(1)
             print("Proceeding...")
     
-    def update_archive_index(self):
-        """Update the archive index with all processed posts"""
-        # Skip if no posts were processed
-        if not self.processed_posts:
+    def update_category_view(self):
+        """Update the category view in blog.html with ALL posts"""
+        # Get all published markdown files
+        all_md_files = list(self.published_dir.glob('*.md'))
+        all_posts = []
+        
+        # Load metadata from all markdown files
+        for md_file in all_md_files:
+            try:
+                post = frontmatter.load(md_file)
+                metadata = post.metadata
+                # Ensure slug exists
+                metadata['slug'] = metadata.get('slug', md_file.stem)
+                # Handle date-prefixed filenames
+                parts = md_file.stem.split("-", 3)
+                if len(parts) >= 4 and parts[0].isdigit() and parts[1].isdigit() and parts[2].isdigit():
+                    if 'slug' not in metadata:
+                        metadata['slug'] = parts[3]
+                all_posts.append(metadata)
+            except Exception as e:
+                print(f"  WARNING: Could not load metadata from {md_file}: {e}")
+        
+        # Also include any posts processed in this run that might not be on disk yet
+        for post in self.processed_posts:
+            if post not in all_posts:
+                all_posts.append(post)
+                
+        # Skip if no posts were found
+        if not all_posts:
+            print("  WARNING: No posts found for updating the blog index")
             return
             
+        # Helper function to safely convert dates to naive datetime objects
+        def safe_datetime(dt_value):
+            if isinstance(dt_value, datetime):
+                # Ensure we're using a naive datetime (no timezone)
+                if dt_value.tzinfo is not None:
+                    return dt_value.replace(tzinfo=None)
+                return dt_value
+            try:
+                return datetime.strptime(dt_value, "%d %B, %Y")
+            except (ValueError, TypeError):
+                # Fallback to current date (naive datetime)
+                return datetime.now().replace(tzinfo=None)
+                
         # Sort posts by date, newest first
+        def get_date(post):
+            date_published = post.get('date_published')
+            return safe_datetime(date_published)
+                
         sorted_posts = sorted(
-            self.processed_posts, 
-            key=lambda x: datetime.strptime(x['date_published'], "%d %B, %Y"),
+            all_posts,
+            key=get_date,
             reverse=True
         )
         
-        # Read current archive content
-        with open(self.archive_index_path, 'r', encoding='utf-8') as f:
+        # Read current blog.html content
+        with open(self.blog_index_path, 'r', encoding='utf-8') as f:
             content = f.read()
             
-        # Find where to insert posts
-        insert_point = content.find('<div class="post-list">') + len('<div class="post-list">')
-        
-        # Generate HTML for all posts
-        posts_html = "\n<!-- Posts listed in chronological order -->\n"
-        
-        # Group by year
-        posts_by_year = {}
-        for post in sorted_posts:
-            year = datetime.strptime(post['date_published'], "%d %B, %Y").year
-            if year not in posts_by_year:
-                posts_by_year[year] = []
-            posts_by_year[year].append(post)
+        # Find the category view section
+        category_start = content.find('<div class="posts-list" id="category-view"')
+        if category_start == -1:
+            print("  WARNING: Could not locate category view section in blog.html")
+            return
             
-        # Generate HTML for each year
-        for year in sorted(posts_by_year.keys(), reverse=True):
-            posts_html += f"\n<h2>{year}</h2>\n"
-            for post in posts_by_year[year]:
-                date = datetime.strptime(post['date_published'], "%d %B, %Y")
-                formatted_date = date.strftime("%B %d")
-                posts_html += f"<p><a href=\"../blog/{post['slug']}.html\">{post['title']}</a> — {formatted_date}</p>\n"
+        category_end = content.find('</div>', category_start)
+        if category_end == -1:
+            print("  WARNING: Could not locate end of category view section in blog.html")
+            return
+            
+        # Find the closing div for the entire category view
+        category_end = content.rfind('</div>', category_start, content.rfind('</body>'))
+        if category_end == -1:
+            print("  WARNING: Could not locate proper end of category view section in blog.html")
+            return
+            
+        # Group posts by category
+        posts_by_category = {}
+        for post in sorted_posts:
+            category = self.get_category_from_tags(post.get('tags', []))
+            if category not in posts_by_category:
+                posts_by_category[category] = []
+            posts_by_category[category].append(post)
+            
+        # Build new category view HTML
+        category_html = '<div class="posts-list" id="category-view" style="display: none;">\n'
         
-        # Replace content
-        new_content = content[:insert_point] + posts_html + content[insert_point:]
+        # For each category
+        for category in sorted(posts_by_category.keys()):
+            category_html += f'<!-- {category} -->\n'
+            category_html += f'<div class="category-section">\n'
+            category_html += f'<h3 class="category-title">{category}</h3>\n'
+            category_html += f'<ul class="posts-list">\n'
+            
+            for post in sorted(posts_by_category[category], key=get_date, reverse=True):
+                date_published = post.get('date_published')
+                if isinstance(date_published, datetime):
+                    date = date_published
+                    month_year = date.strftime("%b %Y")
+                else:
+                    try:
+                        date = datetime.strptime(date_published, "%d %B, %Y")
+                        month_year = date.strftime("%b %Y")
+                    except (ValueError, TypeError):
+                        date = datetime.now()
+                        month_year = "Unknown"
+                
+                slug = post.get('slug', '')
+                title = post.get('title', 'Untitled')
+                
+                category_html += f'''<li class="post-item">
+<span class="post-date">{month_year}</span>
+<h2 class="post-title">
+<a href="../blog/{slug}.html">{title}</a>
+</h2>
+</li>\n'''
+            
+            category_html += '</ul>\n'
+            category_html += '</div>\n'
+        
+        category_html += '</div>\n'
+        
+        # Replace the category view section
+        new_content = content[:category_start] + category_html + content[category_end+6:]
         
         # Only write if content has changed
         if new_content != content:
-            with open(self.archive_index_path, 'w', encoding='utf-8') as f:
+            with open(self.blog_index_path, 'w', encoding='utf-8') as f:
                 f.write(new_content)
-            self.modified_files.append(self.archive_index_path)
+            self.modified_files.append(self.blog_index_path)
 
     def add_to_blog_index(self, title, slug, date_published, tags):
         """Add the post to the blog index under its category"""
@@ -176,7 +337,18 @@ class BlogPublisher:
         original_content = content
 
         category = self.get_category_from_tags(tags)
-        date_obj = datetime.strptime(date_published, "%d %B, %Y")
+        
+        # Handle date_published which might already be a datetime object
+        if isinstance(date_published, datetime):
+            date_obj = date_published
+        else:
+            try:
+                date_obj = datetime.strptime(date_published, "%d %B, %Y")
+            except (ValueError, TypeError):
+                # Fallback to current date if we can't parse the date
+                print(f"  WARNING: Could not parse date '{date_published}'. Using current date.")
+                date_obj = datetime.now()
+                
         formatted_date = date_obj.strftime("%B %Y")
         
         new_entry = f'\n      <p><a href="../blog/{slug}.html">{title}</a> — {formatted_date}</p>\n'
@@ -292,34 +464,67 @@ class BlogPublisher:
             with open(self.template_path, 'r', encoding='utf-8') as f:
                 template = f.read()
             
-            # Create a clean HTML document
+            # Extract category from tags if available
+            category = None
+            if 'tags' in post.metadata and post.metadata['tags']:
+                category = self.get_category_from_tags(post.metadata['tags'])
+                
+            print("  Using new template with style.css")
+            
+            # Create a clean HTML document using the new template structure
             html = template\
-                .replace('$if(title)$', '')\
-                .replace('$endif$', '')\
                 .replace('$title$', post.metadata.get('title', ''))\
-                .replace('$for(author)$', '')\
-                .replace('$endfor$', '')\
-                .replace('$author$', post.metadata.get('author', ''))\
-                .replace('$if(date_published)$', '')\
-                .replace('$date_published$', post.metadata.get('date_published', ''))
+                .replace('$author$', post.metadata.get('author', ''))
+            
+            # Handle date_published
+            if 'date_published' in post.metadata:
+                html = html.replace('$date_published$', post.metadata.get('date_published', ''))
+            else:
+                html = html.replace('$date_published$', '')
+                
+            # Handle category if present
+            if category:
+                html = html.replace('$if(category)$', '')
+                html = html.replace('$category$', category)
+                html = html.replace('$endif$', '')
+            else:
+                html = re.sub(r'\$if\(category\)\$.*?\$endif\$', '', html, flags=re.DOTALL)
                 
             # Handle excerpt if present
             if 'excerpt' in post.metadata:
                 html = html.replace('$if(excerpt)$', '')
-                html = html.replace('$endif$', '')
                 html = html.replace('$excerpt$', post.metadata.get('excerpt', ''))
+                html = html.replace('$endif$', '')
             else:
                 html = re.sub(r'\$if\(excerpt\)\$.*?\$endif\$', '', html, flags=re.DOTALL)
                 
             # Insert the content
             html = html.replace('$body$', html_content)
 
+            # Handle description metadata
+            if 'description-meta' in post.metadata:
+                html = html.replace('$if(description-meta)$', '')
+                html = html.replace('$description-meta$', post.metadata.get('description-meta', ''))
+                html = html.replace('$endif$', '')
+            else:
+                # Use excerpt as description if available, otherwise use a snippet of the content
+                description = ""
+                if 'excerpt' in post.metadata:
+                    description = post.metadata.get('excerpt', '')
+                else:
+                    # Create a description from the first 150 characters of content
+                    plain_content = re.sub(r'<[^>]+>', '', html_content)
+                    description = plain_content[:150] + '...' if len(plain_content) > 150 else plain_content
+                
+                html = re.sub(r'\$if\(description-meta\)\$.*?\$endif\$', '', html, flags=re.DOTALL)
+                html = html.replace('$description-meta$', description)
+
             # Remove all remaining template variables and their conditional blocks
             html = re.sub(r'\$if\([^$]+\)\$.*?\$endif\$', '', html, flags=re.DOTALL)
             html = re.sub(r'\$for\([^$]+\)\$.*?\$endfor\$', '', html, flags=re.DOTALL)
             html = re.sub(r'\$[^$]+\$', '', html)
             
-            # Remove the TOC navigation
+            # Remove the TOC navigation if present
             html = re.sub(r'<nav id="TOC"[^>]*>.*?</nav>', '', html, flags=re.DOTALL)
             
             # Clean up any multiple newlines
@@ -352,33 +557,9 @@ class BlogPublisher:
         return temp_path
 
     def git_publish(self):
-        """Commit and push only the modified files"""
-        try:
-            # Convert Path objects to strings for git commands
-            files_to_commit = [str(f.relative_to(self.root_dir)) for f in self.modified_files]
-            
-            if not files_to_commit:
-                print("No files were modified.")
-                return True
-
-            print("\nCommitting the following files:")
-            for file in files_to_commit:
-                print(f"  - {file}")
-
-            # Add specific files
-            for file in files_to_commit:
-                subprocess.run(['git', 'add', file], cwd=self.root_dir, check=True)
-
-            # Commit with list of files in message
-            commit_message = "Update blog: " + ", ".join(files_to_commit)
-            subprocess.run(['git', 'commit', '-m', commit_message], cwd=self.root_dir, check=True)
-            
-            # Push
-            subprocess.run(['git', 'push'], cwd=self.root_dir, check=True)
-            return True
-        except subprocess.CalledProcessError as e:
-            print(f"Git operation failed: {e}")
-            return False
+        """THIS METHOD IS DISABLED - Git operations are now manual"""
+        print("Automatic git publishing is disabled - please commit and push changes manually.")
+        return False
 
     def process_single_file(self, filename, update_indexes=True):
         """Process a single markdown file"""
@@ -463,24 +644,18 @@ class BlogPublisher:
         return success_count > 0
 
     def update_indexes(self):
-        """Update blog index and archive index"""
+        """Update blog index views"""
         if not self.processed_posts:
             print("No posts to update in indexes.")
             return
             
         print("\nUpdating blog indexes...")
         
-        # Update category-based index
-        for post in self.processed_posts:
-            self.add_to_blog_index(
-                post.get('title'),
-                post.get('slug'),
-                post.get('date_published'),
-                post.get('tags', [])
-            )
-            
-        # Update chronological archive
-        self.update_archive_index()
+        # Update chronological view
+        self._update_chronological_view()
+        
+        # Update category view
+        self.update_category_view()
         
         print("Indexes updated successfully.")
 
@@ -523,31 +698,25 @@ class BlogPublisher:
                     
                 temp_file = self.preview_post(html_content, str(preview_file))
                 
-                # Ask for confirmation before git publishing
-                print("\nPreview opened in your browser.")
-                confirm = input("Do you want to publish these changes? (y/N): ")
-                
                 # Clean up temp file
                 try:
                     os.unlink(temp_file)
                 except:
                     pass
                     
-                if confirm.lower() != 'y':
-                    print("Aborting publication...")
-                    return False
-        
-            # Git publish
-            print("\nPublishing changes to git...")
-            if self.git_publish():
-                print("\n=== Successfully published changes ===")
-                return True
-            else:
-                print("\nPublishing completed but git operations failed")
-                print("Modified files that need to be pushed:")
+                print("\nPreview opened in your browser.")
+                print("\nGeneration completed - no automatic git commit will be performed.")
+                print("\nModified files that need to be committed manually:")
                 for file in self.modified_files:
                     print(f"  - {file}")
-                return False
+            else:
+                print("\nNo HTML blog files were modified, but other files were.")
+                print("Changes completed - no automatic git commit will be performed.")
+                print("\nModified files that need to be committed manually:")
+                for file in self.modified_files:
+                    print(f"  - {file}")
+            
+            return True
         else:
             print("\nNo files were modified.")
             return True
