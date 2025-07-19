@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thoughts on Turning Thirty - Samarth&#39;s Blog</title>
+    <meta name="description" content="Thoughts on Turning Thirty">
+    <meta name="author" content="Samarth Bansal">
+    
+    <style>
+        :root {
+            --content-width: 600px;
+            --text-primary: rgb(17, 17, 17);
+            --text-secondary: rgb(82, 82, 82);
+            --date-color: rgb(138, 138, 138);
+            --link-color: rgb(93, 24, 220);
+            --subtle-hover: rgba(93, 24, 220, 0.05);
+            --border-light: rgba(0, 0, 0, 0.06);
+            --blockquote-border: rgb(230, 230, 230);
+            --code-bg: rgb(248, 248, 248);
+            --horizontal-rule: rgb(238, 238, 238);
+            --highlight-bg: rgba(93, 24, 220, 0.05);
+            --newsletter-bg: rgb(250, 250, 250);
+        }
+
+        /* Base Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            background-color: rgb(252, 252, 252);
+        }
+
+        .container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+
+        /* Navigation */
+        nav {
+            margin-bottom: 4rem;
+        }
+
+        nav a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-right: 1.5rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Back to home link */
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            transition: color 0.2s ease;
+        }
+
+        .back-home:hover {
+            color: var(--link-color);
+        }
+
+        .back-home::before {
+            content: '←';
+            margin-right: 0.5rem;
+        }
+
+        /* Page Title */
+        .page-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: var(--text-primary);
+            margin: 0 0 2rem;
+        }
+
+        /* Posts List */
+        .posts-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .post-item {
+            display: flex;
+            align-items: baseline;
+            margin: 0.35rem 0;
+            padding: 0.5rem 0.75rem;
+            margin-left: -0.75rem;
+            margin-right: -0.75rem;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .post-item:hover {
+            background-color: var(--subtle-hover);
+        }
+
+        .post-date {
+            flex: 0 0 5rem;
+            color: var(--date-color);
+            font-size: 0.875rem;
+            font-weight: 400;
+            font-feature-settings: "tnum";
+            font-variant-numeric: tabular-nums;
+            letter-spacing: 0.01em;
+        }
+
+        .post-title {
+            flex: 1;
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .post-title a {
+            color: var(--text-primary);
+            text-decoration: none;
+            position: relative;
+            transition: color 0.15s ease;
+        }
+
+        .post-title a::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .post-item:hover .post-title a {
+            color: var(--link-color);
+        }
+
+        .post-item:hover .post-title a::after {
+            transform: scaleX(1);
+        }
+
+        .external-link {
+            color: var(--date-color);
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+        }
+
+        /* Post Page Styles */
+        article .post-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin: 0 0 3rem;
+            color: var(--text-primary);
+        }
+
+        .post-meta {
+            color: var(--text-secondary);
+            margin: 2.5rem 0;
+            font-size: 0.95rem;
+            font-weight: 400;
+        }
+
+        .post-content {
+            font-size: 1.05rem;
+            font-weight: 400;
+            color: var(--text-primary);
+        }
+
+        .post-content p {
+            margin: 1.8em 0;
+        }
+
+        .post-content h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            margin: 2.5em 0 1em;
+            line-height: 1.3;
+        }
+
+        .post-content h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 2em 0 0.8em;
+            line-height: 1.4;
+        }
+
+        .post-content h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.8em 0 0.6em;
+        }
+
+        .post-content a {
+            color: var(--text-primary);
+            text-decoration: underline;
+            text-decoration-color: rgba(0, 0, 0, 0.3);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        .post-content a:hover {
+            text-decoration-color: var(--text-primary);
+        }
+
+        .post-content blockquote {
+            margin: 2em 0;
+            padding-left: 1.5em;
+            border-left: 2px solid var(--blockquote-border);
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        .post-content blockquote p {
+            margin: 0.8em 0;
+        }
+
+        .post-content code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9em;
+            background: var(--code-bg);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+
+        .post-content pre {
+            background: var(--code-bg);
+            padding: 1.2em;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 2em 0;
+        }
+
+        .post-content pre code {
+            background: none;
+            padding: 0;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .post-content hr {
+            margin: 3em 0;
+            border: none;
+            border-top: 1px solid var(--horizontal-rule);
+        }
+
+        .post-content img {
+            max-width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 600px;
+        }
+
+        /* Home page specific styles */
+        .intro-section {
+            margin-bottom: 3rem;
+        }
+
+        .work-section {
+            margin-bottom: 3rem;
+        }
+
+        .work-section h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .page-links {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .page-links li {
+            margin: 0.8rem 0;
+        }
+
+        .page-links a {
+            display: inline-block;
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+
+        .page-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--link-color);
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .page-links a:hover::after {
+            transform: scaleX(1);
+        }
+
+        /* View Toggle Styles */
+        .view-toggle {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .view-toggle button {
+            background: none;
+            border: none;
+            padding: 0.4rem 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            position: relative;
+            transition: color 0.2s ease;
+            font-family: inherit;
+        }
+
+        .view-toggle button:hover {
+            color: var(--link-color);
+        }
+
+        .view-toggle button.active {
+            color: var(--link-color);
+        }
+
+        .view-toggle button.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--link-color);
+        }
+
+        /* Category Section Styles */
+        .category-section {
+            margin: 2.5rem 0;
+        }
+
+        .category-title {
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin: 0 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-light);
+            position: relative;
+        }
+
+        .category-title::before {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 2rem;
+            height: 1px;
+            background-color: var(--link-color);
+            opacity: 0.6;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            :root {
+                --content-width: 100%;
+            }
+            
+            .container {
+                padding: 2.5rem 1.25rem;
+            }
+            
+            article .post-title {
+                font-size: 2rem;
+            }
+
+            .post-content h2 {
+                font-size: 1.6rem;
+            }
+
+            .post-content h3 {
+                font-size: 1.3rem;
+            }
+
+            .post-content blockquote {
+                margin: 1.5em 0;
+                padding-left: 1.2em;
+            }
+
+            .post-item {
+                gap: 1.25rem;
+            }
+
+            .post-date {
+                flex: 0 0 4.5rem;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <div class="container">
+        
+
+<a href="/blog/" class="back-home">Blog</a>
+
+
+        
+        <main>
+            
+<article>
+    <h1 class="post-title">Thoughts on Turning Thirty</h1>
+    
+    
+    <div class="post-meta">
+        Published on September 02, 2023
+    </div>
+    
+    
+    <div class="post-content">
+        <p>September 2, 2023. It’s 8:40 am. I've just driven to Blue Tokai in Punjabi Bagh. Fresh from a killer dance fitness session at Rajouri Garden cult.fit. I’m drenched in sweat and buzzing with endorphins. I've ordered a cup of black coffee and am now writing these words on my iPad.</p>
+<p>I have to write; it's my thirtieth birthday. Ahhh. What? So, I'm not a twenty-something anymore? How do I even begin to process this?</p>
+<p>Sure, age is just a number. But today, that phrase feels a bit hollow. Who's to say our personal experience of life aligns with the cold, hard facts? Maybe it does for Zen monks. Not for me. </p>
+<p>So yes, I am feeling things. Emotions are running high. I suddenly feel the pressure to act like a responsible adult. I mean… there are a few work tasks that would have taken me just an hour to finish, and I should have done them two days ago, but I didn't, because of procrastination. I love money—whoever says they don't is a liar—but I haven't filed two invoices because I am a chaotic person. A hot mess.</p>
+<p>Plus, I completely missed achieving the fitness goals I told myself I'd hit today. I wanted that chiselled jawline back, and some internal body markers in range for health, but the jawline is definitely missing and there's absolutely no point in getting blood tests done. I must grow up. Is adulting still optional in your thirties?</p>
+<p>At the back of my mind, I think 75 is a good age to live to. No hard logic. There was an article in The Atlantic that said so, and it sounded reasonable. Meditating on mortality—all of us will ultimately die, death is the only truth, all that jazz—keeps me quite sane and grounded.</p>
+<p>Which means, if all goes well, and I survive this harsh world, I have 45 years left. But it's hard to think about life in terms of years. Even months feel a bit too long. Weeks are the best. Just did the maths: I have lived for 1,560 weeks, and 2,340 weeks are left. Which doesn't sound like a lot. And yes, important note: I have now lived 40% of my expected life. Time really does fly.</p>
+<p>That's just a glimpse of some thoughts this morning. I will permit myself some exaggeration today.</p>
+<p>Why am I writing this?</p>
+<p>First, I made a promise to my twenty-year-old self. In 2013, I wrote a &quot;Turning Twenty&quot; blog post on my then-blog, <em>KrazzySam</em>, and vowed that a &quot;Turning Thirty&quot; post would follow a decade later. Hats off to younger me; I'm honouring that promise.</p>
+<p>Second, writing is my way of existing in the world. I'd write even if nobody read a word or paid me a dime. Writing is the greatest privilege of my life, and I wouldn’t trade it for anything.</p>
+<p>So today, I'll celebrate with words. I will write throughout the day, whenever I get the time. No theme, just sharing some reflections, just a stream of consciousness. </p>
+<hr />
+<p><strong>One:</strong> My life at this point is pretty good, for which I am very grateful. I make just enough money to feel secure about my existence. I love the work I do. I am largely healthy. I have deep friendships, and spaces where I can be vulnerable—and cry if I want to. I have amazing mentors who care about me, who are deeply invested in my professional success, and who believe in me more than I do. I'm in the initial stages of building a publication to publish the kind of journalism India needs—which is very thrilling. Family problems never leave me; that bit is not ideal, but I've become excellent at dealing with fraught situations, so it's fine.</p>
+<p>And of course, I just love the life I've built for myself in Landour—this small mountain town has deeply enriched my life. I am not a hermit, nor do I aspire to be one—I want to actively engage with the world, however chaotic—but Landour allows me to see through the manufactured facades of urban life and escape the chaos of modernity to whatever extent possible.</p>
+<p>All in all, deep inside me, I feel at peace. What else can one ask for?</p>
+<hr />
+<p><strong>Two:</strong> I did go through a bit of an existential crisis over the last year. You know, all those questions that I would sometimes discuss at 2 a.m. with friends in our IIT dorm room: What is the meaning of life? Why do we exist? What's the point of doing anything if we're all going to die anyway? What’s the point of 'making a difference,' or 'making the world a better place,' or 'leaving your mark,' if the Earth will, someday in the far future, just disappear? There was nothing, there will be nothing, and in the tiny trillion years between that nothingness, we exist. So why?</p>
+<p>I'm not completely out of the crisis phase yet, but I feel I'm almost there. So what did I figure out?</p>
+<p>At this point, I'm in the camp that believes life has no meaning. No universal blueprint, no grand scheme that sets the stage of our lives, and no higher powers pulling the strings. We have no predetermined purpose. We are products of biological evolution; at some point, we became a thinking species. We started telling stories, creating myths, which led to large-scale cooperation and ultimately, us becoming the dominant species. We've developed enough to ask questions about our existence that other species don't. But at its core, we're just another species, and someday, extinction will happen.</p>
+<p>It’s a little grim, I know. But it's also liberating. No grand meaning means we get to decide what our own lives mean to us. We're free to choose what we want to do with our time here. This freedom does come with responsibility, so be mindful of that. </p>
+<hr />
+<p><strong>Three:</strong> In my late twenties, I realised so much joy comes from savouring the small things—the things that truly matter. Cooking for mum when she visits my home. Sharing a special meal with a friend and watching TV together. Making coffee. Obsessing over coffee. And silently judging those who add sugar to their coffee. Chatting with strangers. Staring at a tree. Playing with my nephews. Watching kids play cricket. Observing a couple holding hands. Listening to great music—with full attention. Reading great literature. Feeling seen through someone else's words. Going to the cinema and eating popcorn. Hiking. Dancing. Cleaning your room. Being there for your loved ones and knowing what they want without them having to say it. Mentoring someone without expecting anything in return. Daydreaming about a crush. (Sadly, I don't have one right now. Sigh.)</p>
+<p>An hour ago, my six-year-old nephew called to say he’s making me a homemade bourbon cake. “Chachu, do you like more chocolate or less?” he asked when he called a second time. And then around lunchtime, both my nephews—the second one turned twelve yesterday—joined us, and we cut into the absolutely delicious cake they’d made (with bhabhi's help, of course) with so much love. Life is full of suffering, but it's moments like these that make it worth living.</p>
+<hr />
+<p><strong>Four:</strong> I feel like I've reached a point where I don't want to tell anyone what they should or shouldn't do in life, at least not in a moralistic way. I'll do what I feel like, you do what you want to. As long as we don't restrict each other's freedoms, everything's cool.</p>
+<p>There's this silly status game where people look down on others based on their taste in music, movies, etc. It's so silly and so unnecessary. I fall into that trap sometimes too. And I think it's often a psychological game to feel good about ourselves and our choices—I mean, sometimes judging someone with a friend does feel absolutely amazing. Haha.</p>
+<p>But seriously, I'm done with all that. I hate passing instant judgements. I hate cancel culture. These pointless identity wars serve no purpose. We all live with fears and anxieties, desires and dreams—many of which we share. The world would be a better place if we spent more time talking and trying to understand each other.</p>
+<hr />
+<p><strong>Five:</strong> After writing that I don't want to tell anyone what they should do, I'm still going to suggest what I think you should consider doing. Can't help it. These are small things on how to deal with people who make our lives easier, so please bear with me.</p>
+<p>Please tip the Swiggy delivery guy generously. If you're a regular at ordering, thirty or fifty bucks are unlikely to make a big dent in your wallet.</p>
+<p>By extension, don't grumble if the auto driver asks for seventy bucks when the standard rate is sixty. It really doesn't make a difference.</p>
+<p>And say hello or namaste to Uber drivers. I find it odd that, in this gig economy, all communication is mediated through technology, to the point where we no longer care about acknowledging each other's existence because all the details are in the app. Greetings matter. At least, I think they do.</p>
+<p>As for your house help, your driver, or anyone else working for you, treat them as human beings, the way you'd want your boss to treat you. They're not your slaves. Every human being cares about dignity. Don't deny that to anyone, especially when you hold more power over them.</p>
+<hr />
+<p><strong>Six:</strong> More advice. If you like someone, find the courage to tell them. They deserve to know they're desired. If you admire an artist's work, drop them an email. Share why their work resonates with you. If you have mates or colleagues who inspire you, shoot them a text. Let them know their existence improves your life. If a teacher ever did something that changed your trajectory, find a way to contact them and share your gratitude. And don't hold back from telling those you love just how much they mean to you.</p>
+<p>None of this takes much time or effort. No essays required—a short message does the trick. What I've learnt is that it makes a world of difference. So many of us wrestle with self-doubt, feeling lost or questioning our worth—just a few words can reignite someone's spirits. You can't go wrong by spreading more love and kindness in this otherwise chaotic world. We all have more capacity for love than we think. Discover yours and share it freely. That's what I try to do, in my own small way.</p>
+<hr />
+<p><strong>Seven:</strong> One of the most sobering realisations I’ve had over the past decade is that some problems simply have no good solution. Ignore motivational speakers who claim that everything will turn out fine—it doesn't always, and sometimes it simply can't. </p>
+<p>Sometimes, despite best efforts, I am left choosing between a bad outcome and an even worse one. Especially in my personal life, there are instances where there's just no magic bullet for improvement. I just have to face what’s happening and deal with the reality at hand. You'll know exactly what I mean if you've ever been in one of these situations. </p>
+<p>Sometimes the best thing you can do for someone going through a tough time is to listen. Lend them your ear. Not every problem needs solving; sometimes they just need airing. Learn to listen. I am. </p>
+<hr />
+<p><strong>Eight:</strong> It is important to be kind to myself, treating myself the way I would my loved ones.</p>
+<p>It’s okay to do things that your rational mind advises against. It's alright to fall short of certain goals. It’s fine to wake up and spend an hour in bed, unsure of how time slipped away. Missing a workout isn't the end of the world. It's permissible to indulge in a cookie you didn't strictly need. It's okay to lose half an hour scrolling through someone's social media. Time can slip away while watching reels, and that's alright too. Ranting is okay. Seeking external validation isn't a sin. Failing to be the ideal son, brother, or partner is part of being human. Falling for a scam doesn't define you. Experiencing self-doubt is normal. Anger is a valid emotion. Having strange, weird, gross thoughts—don’t even ask—is part of the complexity of being human.</p>
+<p>All of this is okay. This is a note to myself, as I've berated myself for doing all these things. Most of us broadly understand what constitutes good habits, wise time management, and commendable behaviour. Yet, we sometimes falter. I'm striving to improve. As some say, life is a process of evolving from who we are to who we wish to become. My journal keeps me accountable in the long run, but I've learnt to forgive myself for everyday lapses.</p>
+<hr />
+<p><strong>Nine:</strong> Following up on the previous point, how do I know if I'm directionally going right, even if in the moment I feel like a failure?</p>
+<p>Let’s talk about this in the context of fitness. First, a small digression for a declaration: in my thirties, just once, I want to hit a 10% body fat percentage—and have those abs. I'm at 20-21% right now—nothing impressive about it. While my fitness goals are mainly for the sake of good health, this particular goal is just for vanity, for that one beach photo. Goals.</p>
+<p>Back to the point. When I'm going through a phase where I'm not regular at the gym or not eating clean, I look back at where I was a few years ago—just to see how much I've grown. I pat myself on the back and say: “You may not be at your best today, but you're significantly better than you were a few years ago, and you will get better.”</p>
+<p>Looking at old photos helps. Then I think about how I educated myself about exercise and nutrition, how I adopted the principles of eating well, became mindful of every meal, added movement to my daily life, and learned to listen to my body. How I made everyday swaps, pushed for that extra rep, ran the extra kilometre, gave up sugar for many months, taught myself to cook healthy meals, learned to buy groceries and plan meals, and started to take sleep seriously.</p>
+<p>This brings me a lot of sanity. I do the same for my writing—how I couldn't write 500 words in clean English when I started my first journalism job at The Hindu, and now I've written enough 5,000-word stories that many people enjoy reading.</p>
+<p>No, I'm not saying live in the past. It's just that sometimes, we're so focused on acquiring and achieving more that we forget to appreciate what we've already achieved. It helps to look back and assess.</p>
+<hr />
+<p><strong>Ten:</strong> Back in college, when Facebook was still a thing, I posted a cover image with a Bill Gates quote declaring he never took a day off in his twenties. I found that inspiring. This is who I thought I would be. For me, work was everything. I aimed to work hard and achieve something meaningful. </p>
+<p>I remember— and partly regret—skipping an outing with my IIT hostel wing, which housed 39 of us. Thirty-five managed to make it that night, but I opted out because I was busy working. (These friends of mine—all nutcases like me—ended up fighting on trivial matters like typical college kids, haha!)</p>
+<p>I am not that person anymore. While my professional life still matters to me, it no longer defines my identity. The people in my life have become increasingly important. As I recently told a friend, I don't want to engage in activities that make me unavailable to those I love when they need me the most.</p>
+<p>As I said, I wasn’t always like this. The journey of this transformation is an essay in itself. The short version is that for many years, I was obsessed with being independent, aiming to get through life all by myself and avoiding any help, even in tough times. I prepared for the worst-case scenarios, reading and journaling extensively to become that person.</p>
+<p>But when I almost reached that point, I realised... um, no—relationships matter. Life becomes so much more meaningful when you have deep relationships. We talk about dedicating our lives to big, abstract concepts like wealth, social justice, or science, which is commendable, but these are intangible ideas. People are tangible. You can hear their voices, understand their feelings, and take actions that improve their lives. Humans are social beings, we are interdependent on each other, and that’s not a sign of weakness. </p>
+<hr />
+<p>Okay, it’s 9:50 pm now. The day was great. I went to Bahrisons at Khan Market, my go-to bookshop in Delhi, and gifted myself <em>Swann’s Way</em>—yes folks, yes, Marcel Proust. I am getting into it. I will read one page today, just to say I started on my thirtieth birthday, and hope to finish all seven volumes of <em>In Search of Lost Time</em> in the coming years. </p>
+<p>Here's to good times ahead!</p>
+<hr />
+
+    </div>
+</article>
+
+        </main>
+    </div>
+</body>
+</html>

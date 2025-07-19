@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Note On Creator Mode - Samarth&#39;s Blog</title>
+    <meta name="description" content="A Note On Creator Mode">
+    <meta name="author" content="Samarth Bansal">
+    
+    <style>
+        :root {
+            --content-width: 600px;
+            --text-primary: rgb(17, 17, 17);
+            --text-secondary: rgb(82, 82, 82);
+            --date-color: rgb(138, 138, 138);
+            --link-color: rgb(93, 24, 220);
+            --subtle-hover: rgba(93, 24, 220, 0.05);
+            --border-light: rgba(0, 0, 0, 0.06);
+            --blockquote-border: rgb(230, 230, 230);
+            --code-bg: rgb(248, 248, 248);
+            --horizontal-rule: rgb(238, 238, 238);
+            --highlight-bg: rgba(93, 24, 220, 0.05);
+            --newsletter-bg: rgb(250, 250, 250);
+        }
+
+        /* Base Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            background-color: rgb(252, 252, 252);
+        }
+
+        .container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+
+        /* Navigation */
+        nav {
+            margin-bottom: 4rem;
+        }
+
+        nav a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-right: 1.5rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Back to home link */
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            transition: color 0.2s ease;
+        }
+
+        .back-home:hover {
+            color: var(--link-color);
+        }
+
+        .back-home::before {
+            content: '←';
+            margin-right: 0.5rem;
+        }
+
+        /* Page Title */
+        .page-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: var(--text-primary);
+            margin: 0 0 2rem;
+        }
+
+        /* Posts List */
+        .posts-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .post-item {
+            display: flex;
+            align-items: baseline;
+            margin: 0.35rem 0;
+            padding: 0.5rem 0.75rem;
+            margin-left: -0.75rem;
+            margin-right: -0.75rem;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .post-item:hover {
+            background-color: var(--subtle-hover);
+        }
+
+        .post-date {
+            flex: 0 0 5rem;
+            color: var(--date-color);
+            font-size: 0.875rem;
+            font-weight: 400;
+            font-feature-settings: "tnum";
+            font-variant-numeric: tabular-nums;
+            letter-spacing: 0.01em;
+        }
+
+        .post-title {
+            flex: 1;
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .post-title a {
+            color: var(--text-primary);
+            text-decoration: none;
+            position: relative;
+            transition: color 0.15s ease;
+        }
+
+        .post-title a::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .post-item:hover .post-title a {
+            color: var(--link-color);
+        }
+
+        .post-item:hover .post-title a::after {
+            transform: scaleX(1);
+        }
+
+        .external-link {
+            color: var(--date-color);
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+        }
+
+        /* Post Page Styles */
+        article .post-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin: 0 0 3rem;
+            color: var(--text-primary);
+        }
+
+        .post-meta {
+            color: var(--text-secondary);
+            margin: 2.5rem 0;
+            font-size: 0.95rem;
+            font-weight: 400;
+        }
+
+        .post-content {
+            font-size: 1.05rem;
+            font-weight: 400;
+            color: var(--text-primary);
+        }
+
+        .post-content p {
+            margin: 1.8em 0;
+        }
+
+        .post-content h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            margin: 2.5em 0 1em;
+            line-height: 1.3;
+        }
+
+        .post-content h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 2em 0 0.8em;
+            line-height: 1.4;
+        }
+
+        .post-content h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.8em 0 0.6em;
+        }
+
+        .post-content a {
+            color: var(--text-primary);
+            text-decoration: underline;
+            text-decoration-color: rgba(0, 0, 0, 0.3);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        .post-content a:hover {
+            text-decoration-color: var(--text-primary);
+        }
+
+        .post-content blockquote {
+            margin: 2em 0;
+            padding-left: 1.5em;
+            border-left: 2px solid var(--blockquote-border);
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        .post-content blockquote p {
+            margin: 0.8em 0;
+        }
+
+        .post-content code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9em;
+            background: var(--code-bg);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+
+        .post-content pre {
+            background: var(--code-bg);
+            padding: 1.2em;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 2em 0;
+        }
+
+        .post-content pre code {
+            background: none;
+            padding: 0;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .post-content hr {
+            margin: 3em 0;
+            border: none;
+            border-top: 1px solid var(--horizontal-rule);
+        }
+
+        .post-content img {
+            max-width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 600px;
+        }
+
+        /* Home page specific styles */
+        .intro-section {
+            margin-bottom: 3rem;
+        }
+
+        .work-section {
+            margin-bottom: 3rem;
+        }
+
+        .work-section h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .page-links {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .page-links li {
+            margin: 0.8rem 0;
+        }
+
+        .page-links a {
+            display: inline-block;
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+
+        .page-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--link-color);
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .page-links a:hover::after {
+            transform: scaleX(1);
+        }
+
+        /* View Toggle Styles */
+        .view-toggle {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .view-toggle button {
+            background: none;
+            border: none;
+            padding: 0.4rem 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            position: relative;
+            transition: color 0.2s ease;
+            font-family: inherit;
+        }
+
+        .view-toggle button:hover {
+            color: var(--link-color);
+        }
+
+        .view-toggle button.active {
+            color: var(--link-color);
+        }
+
+        .view-toggle button.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--link-color);
+        }
+
+        /* Category Section Styles */
+        .category-section {
+            margin: 2.5rem 0;
+        }
+
+        .category-title {
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin: 0 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-light);
+            position: relative;
+        }
+
+        .category-title::before {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 2rem;
+            height: 1px;
+            background-color: var(--link-color);
+            opacity: 0.6;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            :root {
+                --content-width: 100%;
+            }
+            
+            .container {
+                padding: 2.5rem 1.25rem;
+            }
+            
+            article .post-title {
+                font-size: 2rem;
+            }
+
+            .post-content h2 {
+                font-size: 1.6rem;
+            }
+
+            .post-content h3 {
+                font-size: 1.3rem;
+            }
+
+            .post-content blockquote {
+                margin: 1.5em 0;
+                padding-left: 1.2em;
+            }
+
+            .post-item {
+                gap: 1.25rem;
+            }
+
+            .post-date {
+                flex: 0 0 4.5rem;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <div class="container">
+        
+
+<a href="/blog/" class="back-home">Blog</a>
+
+
+        
+        <main>
+            
+<article>
+    <h1 class="post-title">A Note On Creator Mode</h1>
+    
+    
+    <div class="post-meta">
+        Published on October 21, 2024
+    </div>
+    
+    
+    <div class="post-content">
+        <p>You look at the world. Closely. Then very closely. You think. You
+feel. Something doesn’t look the way it should be. Or the way you want
+it to be. You see something different, something better, something more
+beautiful—or just something you want but can’t justify why. You just
+want it that way. It’s not about better or worse, right or wrong. It’s
+about taste. Your taste. How you want—or wish—things to be.Then comes the itch. Why shouldn’t it be the way I want it? Why
+should it be any other way? Who decided? Why? After all, everything is
+random—everything is meaningless. Any act of creation is an act of
+giving order to a universe that craves disorder.So, you infuse life into your imagination. If it can be anything, why
+not your thing? And once you have conviction in your vision, you can’t
+help yourself anymore. You <em>have</em> to bring it to life. Because
+you want to live in the world you see inside your head. It has to exist.
+It must.But how? Is it even possible? Is it worth it? How does anyone
+know?At that point, you have a choice: what to do? Keep thinking about its
+utility? Or your ability? Or its practicality? Or leave the paralysis
+behind and just try to create?You’ll be fine either way. The brain is a master storyteller—it’s
+easy to make peace with any story. You can let go of your imagined
+version and settle for the story of constrained reality. You won’t know
+what could have been. You can’t know whether you missed out or were
+better off not creating. All it takes to not create is a pinch of
+cynicism, a dash of hopelessness, and zero romanticism.I don’t have those. I’m not a cynic. I have a dwindling relationship
+with hope, but, at the moment—for reasons that demand deeper social
+investigation—I am full of it right now. And I’ve always been a
+romantic, high on life despite all its known delusions.And so, I am creating. I am living the only life I can imagine—a life
+of creation. In the last few months, everything has aligned to put me in
+peak creator mode. It’s different than anything that came before. In
+ambition, in imagination, in doing.I feel it in my work, in the ideas that wake me at night, in
+conversations that spark new possibilities. Every neuron seems to fire
+in sync. Every experience feels like fuel for creation.Will this state last? Or is it just a phase? Will I keep going when
+the going gets harder? Or will I change my story?I don’t know. I can’t know. And I don’t want to. Because now isn’t
+the time to think. It’s time to do.As I write this, I’m thinking of the first time I heard this Steve
+Jobs speech. I was in my hostel room, and his words hit me like
+lightning:&gt;
+When you grow up you tend to get told the world is the way it is
+and your life is just to live your life inside the world. Try not to
+bash into the walls too much. Try to have a nice family, have fun, save
+a little money. That’s a very limited life.
+Life can be much broader once you discover one simple fact:
+Everything around you that you call life was made up by people that were
+no smarter than you. And you can change it, you can influence it, you
+can build your own things that other people can use. Once you learn
+that, you’ll never be the same again.</p>
+<p>Jobs was right. That moment changed me forever. (I swear, I’m not
+exaggerating.) And now, years later, I understand why.This is what creator mode feels like—when nothing seems off-limits.
+There are no rules. Only possibilities. Infinite. The unknown is not a
+void; it’s a canvas.This journey can feel lonely—it often is. And it’s loaded with doubt.
+But when you read about the greatest creators, you realise something
+uncanny: they all say the same thing. Creation is a struggle—a battle
+between vision and ability, ambition and reality, taste and talent. The
+gap can seem impossible to close. But it’s this very gap that pulls you
+forward.So none of my struggles are unique; there’s no point in romanticising
+or resenting them.All the greats say the same: show up every day—do more, say less, and
+relentlessly bridge the gap between intent and action. That’s really
+it.Because you can’t predict the arc you will follow. You just can’t.
+All you can have is belief that the act of doing will lead somewhere.
+Where? You won’t know. But that uncertainty is part of the thrill.Somewhere, possibly, towards how you wanted things to be. And so, in
+a way, creation is about hope.Actually, no. Wait. I think creation is about love. I really mean
+it.This is the point where I’m reminded of that epic speech on love by
+the incomparable Andrew Scott—you know, the Hot Priest from Fleabag?
+Read it, but brace yourself:&gt;
+Love is awful. It’s awful. It’s painful. It’s frightening. It makes
+you doubt yourself, judge yourself, distance yourself from the other
+people in your life. It makes you selfish. It makes you creepy, makes
+you obsessed with your hair, makes you cruel, makes you say and do
+things you never thought you would do.
+It’s all any of us want, and it’s hell when we get there. So no
+wonder it’s something we don’t want to do on our own.
+I was taught if we’re born with love then life is about choosing the
+right place to put it. People talk about that a lot, feeling right, when
+it feels right it’s easy.
+But I’m not sure that’s true. It takes strength to know what’s right.
+And love isn’t something that weak people do. Being a romantic takes a
+hell of a lot of hope.
+I think what they mean is, when you find somebody that you love, it
+feels like hope.”</p>
+<p>Now, read that again—but replace every “love” with “creation.”</p>
+<p>Go on, do it, I’ll wait.</p>
+<p>…</p>
+<p>Did you feel it? If not, go create.</p>
+<p>Because I am. And oh, my dear reader, how freaking beautiful is
+that?</p>
+
+    </div>
+</article>
+
+        </main>
+    </div>
+</body>
+</html>

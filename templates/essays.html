@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Essays - {{ site_name }}{% endblock %}
+
+{% block navigation %}
+<a href="/" class="back-home">Home</a>
+{% endblock %}
+
+{% block content %}
+<h1 class="page-title">Essays</h1>
+
+{% if essays %}
+<ul class="posts-list">
+    {% for essay in essays %}
+    <li class="post-item">
+        <div class="post-date">{{ essay.date | short_date if essay.date else '' }}</div>
+        <div class="post-title">
+            {% if essay.external_url %}
+                <a href="{{ essay.external_url }}" target="_blank">{{ essay.title }}</a>
+                <span class="external-link">(External)</span>
+            {% else %}
+                <a href="{{ essay.url }}">{{ essay.title }}</a>
+            {% endif %}
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No essays yet. Check back soon!</p>
+{% endif %}
+{% endblock %}

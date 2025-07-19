@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block title %}Blog - {{ site_name }}{% endblock %}
+
+{% block navigation %}
+<a href="/" class="back-home">Home</a>
+{% endblock %}
+
+{% block content %}
+<h1 class="page-title">Blog</h1>
+
+{% if posts %}
+<!-- View Toggle -->
+<div class="view-toggle">
+    <button id="all-posts-btn" class="active">All Posts</button>
+    <button id="by-category-btn">By Category</button>
+</div>
+
+<!-- All Posts View -->
+<div id="all-posts-view">
+    <ul class="posts-list">
+        {% for post in posts %}
+        <li class="post-item">
+            <div class="post-date">{{ post.date | short_date if post.date else '' }}</div>
+            <div class="post-title">
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<!-- By Category View -->
+<div id="by-category-view" style="display: none;">
+    {% for category, category_posts in posts_by_category.items() %}
+    <div class="category-section">
+        <h2 class="category-title">{{ category.upper() }}</h2>
+        <ul class="posts-list">
+            {% for post in category_posts %}
+            <li class="post-item">
+                <div class="post-date">{{ post.date | short_date if post.date else '' }}</div>
+                <div class="post-title">
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+</div>
+
+{% else %}
+<p>No blog posts yet. Check back soon!</p>
+{% endif %}
+
+<!-- JavaScript for toggle functionality -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const allPostsBtn = document.getElementById('all-posts-btn');
+    const byCategoryBtn = document.getElementById('by-category-btn');
+    const allPostsView = document.getElementById('all-posts-view');
+    const byCategoryView = document.getElementById('by-category-view');
+    
+    allPostsBtn.addEventListener('click', function() {
+        // Switch to all posts view
+        allPostsView.style.display = 'block';
+        byCategoryView.style.display = 'none';
+        
+        // Update button states
+        allPostsBtn.classList.add('active');
+        byCategoryBtn.classList.remove('active');
+    });
+    
+    byCategoryBtn.addEventListener('click', function() {
+        // Switch to category view
+        allPostsView.style.display = 'none';
+        byCategoryView.style.display = 'block';
+        
+        // Update button states
+        byCategoryBtn.classList.add('active');
+        allPostsBtn.classList.remove('active');
+    });
+});
+</script>
+{% endblock %}

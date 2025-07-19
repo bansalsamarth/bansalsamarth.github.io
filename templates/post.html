@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}{{ post.title }} - {{ site_name }}{% endblock %}
+
+{% block description %}{{ post.metadata.description or post.title }}{% endblock %}
+
+{% block navigation %}
+{% if post.content_type == 'posts' %}
+<a href="/blog/" class="back-home">Blog</a>
+{% elif post.content_type == 'essays' %}
+<a href="/essays/" class="back-home">Essays</a>
+{% else %}
+<a href="/" class="back-home">Home</a>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+<article>
+    <h1 class="post-title">{{ post.title }}</h1>
+    
+    {% if post.date %}
+    <div class="post-meta">
+        Published on {{ post.formatted_date }}
+    </div>
+    {% endif %}
+    
+    <div class="post-content">
+        {{ post.content | safe }}
+    </div>
+</article>
+{% endblock %}

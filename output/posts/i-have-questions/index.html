@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Have Questions - Samarth&#39;s Blog</title>
+    <meta name="description" content="I Have Questions">
+    <meta name="author" content="Samarth Bansal">
+    
+    <style>
+        :root {
+            --content-width: 600px;
+            --text-primary: rgb(17, 17, 17);
+            --text-secondary: rgb(82, 82, 82);
+            --date-color: rgb(138, 138, 138);
+            --link-color: rgb(93, 24, 220);
+            --subtle-hover: rgba(93, 24, 220, 0.05);
+            --border-light: rgba(0, 0, 0, 0.06);
+            --blockquote-border: rgb(230, 230, 230);
+            --code-bg: rgb(248, 248, 248);
+            --horizontal-rule: rgb(238, 238, 238);
+            --highlight-bg: rgba(93, 24, 220, 0.05);
+            --newsletter-bg: rgb(250, 250, 250);
+        }
+
+        /* Base Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            background-color: rgb(252, 252, 252);
+        }
+
+        .container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+
+        /* Navigation */
+        nav {
+            margin-bottom: 4rem;
+        }
+
+        nav a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-right: 1.5rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Back to home link */
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            transition: color 0.2s ease;
+        }
+
+        .back-home:hover {
+            color: var(--link-color);
+        }
+
+        .back-home::before {
+            content: '←';
+            margin-right: 0.5rem;
+        }
+
+        /* Page Title */
+        .page-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: var(--text-primary);
+            margin: 0 0 2rem;
+        }
+
+        /* Posts List */
+        .posts-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .post-item {
+            display: flex;
+            align-items: baseline;
+            margin: 0.35rem 0;
+            padding: 0.5rem 0.75rem;
+            margin-left: -0.75rem;
+            margin-right: -0.75rem;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .post-item:hover {
+            background-color: var(--subtle-hover);
+        }
+
+        .post-date {
+            flex: 0 0 5rem;
+            color: var(--date-color);
+            font-size: 0.875rem;
+            font-weight: 400;
+            font-feature-settings: "tnum";
+            font-variant-numeric: tabular-nums;
+            letter-spacing: 0.01em;
+        }
+
+        .post-title {
+            flex: 1;
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .post-title a {
+            color: var(--text-primary);
+            text-decoration: none;
+            position: relative;
+            transition: color 0.15s ease;
+        }
+
+        .post-title a::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .post-item:hover .post-title a {
+            color: var(--link-color);
+        }
+
+        .post-item:hover .post-title a::after {
+            transform: scaleX(1);
+        }
+
+        .external-link {
+            color: var(--date-color);
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+        }
+
+        /* Post Page Styles */
+        article .post-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin: 0 0 3rem;
+            color: var(--text-primary);
+        }
+
+        .post-meta {
+            color: var(--text-secondary);
+            margin: 2.5rem 0;
+            font-size: 0.95rem;
+            font-weight: 400;
+        }
+
+        .post-content {
+            font-size: 1.05rem;
+            font-weight: 400;
+            color: var(--text-primary);
+        }
+
+        .post-content p {
+            margin: 1.8em 0;
+        }
+
+        .post-content h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            margin: 2.5em 0 1em;
+            line-height: 1.3;
+        }
+
+        .post-content h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 2em 0 0.8em;
+            line-height: 1.4;
+        }
+
+        .post-content h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.8em 0 0.6em;
+        }
+
+        .post-content a {
+            color: var(--text-primary);
+            text-decoration: underline;
+            text-decoration-color: rgba(0, 0, 0, 0.3);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        .post-content a:hover {
+            text-decoration-color: var(--text-primary);
+        }
+
+        .post-content blockquote {
+            margin: 2em 0;
+            padding-left: 1.5em;
+            border-left: 2px solid var(--blockquote-border);
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        .post-content blockquote p {
+            margin: 0.8em 0;
+        }
+
+        .post-content code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9em;
+            background: var(--code-bg);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+
+        .post-content pre {
+            background: var(--code-bg);
+            padding: 1.2em;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 2em 0;
+        }
+
+        .post-content pre code {
+            background: none;
+            padding: 0;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .post-content hr {
+            margin: 3em 0;
+            border: none;
+            border-top: 1px solid var(--horizontal-rule);
+        }
+
+        .post-content img {
+            max-width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 600px;
+        }
+
+        /* Home page specific styles */
+        .intro-section {
+            margin-bottom: 3rem;
+        }
+
+        .work-section {
+            margin-bottom: 3rem;
+        }
+
+        .work-section h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .page-links {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .page-links li {
+            margin: 0.8rem 0;
+        }
+
+        .page-links a {
+            display: inline-block;
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+
+        .page-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--link-color);
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .page-links a:hover::after {
+            transform: scaleX(1);
+        }
+
+        /* View Toggle Styles */
+        .view-toggle {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .view-toggle button {
+            background: none;
+            border: none;
+            padding: 0.4rem 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            position: relative;
+            transition: color 0.2s ease;
+            font-family: inherit;
+        }
+
+        .view-toggle button:hover {
+            color: var(--link-color);
+        }
+
+        .view-toggle button.active {
+            color: var(--link-color);
+        }
+
+        .view-toggle button.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--link-color);
+        }
+
+        /* Category Section Styles */
+        .category-section {
+            margin: 2.5rem 0;
+        }
+
+        .category-title {
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin: 0 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-light);
+            position: relative;
+        }
+
+        .category-title::before {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 2rem;
+            height: 1px;
+            background-color: var(--link-color);
+            opacity: 0.6;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            :root {
+                --content-width: 100%;
+            }
+            
+            .container {
+                padding: 2.5rem 1.25rem;
+            }
+            
+            article .post-title {
+                font-size: 2rem;
+            }
+
+            .post-content h2 {
+                font-size: 1.6rem;
+            }
+
+            .post-content h3 {
+                font-size: 1.3rem;
+            }
+
+            .post-content blockquote {
+                margin: 1.5em 0;
+                padding-left: 1.2em;
+            }
+
+            .post-item {
+                gap: 1.25rem;
+            }
+
+            .post-date {
+                flex: 0 0 4.5rem;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <div class="container">
+        
+
+<a href="/blog/" class="back-home">Blog</a>
+
+
+        
+        <main>
+            
+<article>
+    <h1 class="post-title">I Have Questions</h1>
+    
+    
+    <div class="post-meta">
+        Published on September 02, 2024
+    </div>
+    
+    
+    <div class="post-content">
+        <p>I turn 31 today. Unlike last year, when the reality of a
+twenty-something becoming a <a href="./turning-thirty.html">thirty-something</a> brought a big change in how
+I perceive myself, turning thirty-one brings no such change. This number
+doesn’t deserve dedicated musings. But the year does. Or even if it doesn’t, I just wanted an excuse to
+write through the day. (For myself.) So I turned my ritual of reading my
+diary entry as material for this blog—a few of the many questions I
+asked myself this year. Just questions. No answers. </p>
+<p><strong>One.</strong> </p>
+<p>Isn’t a slightly dysfunctional world with more individual freedom
+significantly better than a functional society—i.e., where basic
+survival needs are mostly met—with conformity as the norm? What’s the
+point of living for the sake of survival? To meet the objectives of the
+game of evolution? Huh!
+I don’t know if and how we can find a scientific objective answer to
+the most fundamental human wants. Maybe someone has already figured it
+out. I am not aware. But I’d bet among all the competing wants—known via
+all possible ways—freedom would be somewhere up there.
+And if that’s so, shouldn’t we build a society where freedom becomes
+the North Star? Why don’t we?</p>
+<p><strong>Two.</strong> </p>
+<p>There are those who keep writing capitalist critiques. To them, I
+ask: We know it already. What is your point?
+There are those who are blinded to the follies of capitalism. To
+them, I say… nothing.
+The ones that make me the most uncomfortable are those who are in the
+middle: those who know everything wrong with our capitalistic society
+but have chosen to believe this is the best among the competing
+alternatives. They will remind you of Lenin’s Russia and Mao’s China.
+They will tell you to go back to the time when the Berlin Wall fell.
+They will show stats on global progress. So they will tell you, this is
+the best we have found in hundreds of years, so why don’t you find a way
+to live with your values in the rules of capitalism?
+But because those who say things like these are the ones enjoying the
+fruits of capital, they will occasionally show guilt. But what for? What
+good is your privileged guilt doing to those who suffer—on whose
+exploits you have found your happiness?
+So, I ask: What does a society look like where my joy isn’t
+fundamentally rooted in someone else’s pain? Can we at least imagine it?
+Can writers and artists escape the traps of capitalism to never accept
+and keep imagining alternatives in their imagination? Is it too much to
+ask for?
+And wait, sir, I ask myself: what the fuck have you imagined? Do
+it.</p>
+<p><strong>Three.</strong></p>
+<p>Decades later, when Instagram will finally see its well-deserved
+death—nothing can escape death, except ideas—scholars of modernity will
+scratch their heads: how did those living in those times—referring to
+our time—deal with such a jarring mix of sensations? How did they
+process a photo of the state-sanctioned murder of kids in Gaza followed
+by a photo of their friend vacationing in Paris, followed by a comedian
+cracking a joke, followed by a rant on dating apps, followed by someone
+else doing whataboutery of the Gaza massacre with something else they
+care about more?
+This is not normal. Don’t we need time to pause and process the
+grief? Isn’t there some indecency backed into the transient nature of
+these ‘stories’? What does it say about our society?
+What kind of psychic numbing is happening? Are we becoming numb to
+inhumane tragedy? Is our ‘solidarity’ restricted to reposting ‘All Eyes
+on Gaza’ sticker because we don’t know what solidarity means
+anymore?
+What have we become? How will we come out of this?</p>
+<p><strong>Four.</strong> </p>
+<p>Language shapes thought. Why do we want to define multi-varied
+experiences into neat definitions? Why are there so many categories? We
+are so messy—why can’t we have fun in the chaos?
+Take relationships. Why do we have to define how we feel about
+someone else through established categories? What if some of them can’t
+have names? 
+Look who is speaking. Because I think this is not just about
+categories. It’s about writers—myself included—wanting to capture the
+vastness of human experience into some permutation and combination of 26
+letters. We want to describe life in words, but so much is lost in this
+translation. It’s possible, yes, but you have to get to Proustian level
+of detail to go beyond the ordinary. 
+Which is why I feel envious of those with the camera. How much does a
+properly-angled close-up shot reveal to those who have the emotional
+capacity to read faces? Nothing needs to be said. No categories
+needed. </p>
+<p><strong>Five.</strong> </p>
+<p>I don’t think I understand my country. But I want to. That’s why I do
+journalism. 
+But my lack of understanding leads to this perpetual dilemma: is it
+possible to know what kind of society we are living in while we are
+inside the society as a living being? Am I in Nazi Germany? I don’t
+think so—because I have read history, and I have stepped foot on a
+concentration camp outside Berlin, and it feels demeaning to compare
+modern India to the horrors of the holocaust. 
+But what if we are on the road to a tragedy of a similar kind? Even
+Jean-Paul Sartre and Simone De Beauvoir—my intellectual
+heroes—downplayed what was to come. Am I making the same mistake? Or are
+we exaggerating? 
+How am I supposed to know? And by the way, even if I do know, what
+material change will this understanding bring to my actions? What good
+does truth-seeking journalism for truth’s sake—as I believe is the right
+way to do journalism—do if it doesn’t bring any change? </p>
+<p><strong>Six.</strong> </p>
+<p>Oh. My. God. What do I do with the immorality of my imagination? </p>
+<p>I live two lives. One the world gets to see. Where—like everyone
+else—I am playing a character. And I diligently follow to the best of my
+ability rules for being a fairly decent co-existing human. Where certain
+ideas of morality—like don’t kill others—exist. 
+But my imagination knows no such rules. Because my imagination can do
+anything and no one will know anything and it won’t do good or bad to
+whatever I am imagining. Yet, what if some ideas in there are grossly
+immoral based on the real world’s morality? Does that make me a bad
+person?</p>
+<p><strong>Seven.</strong> </p>
+<p>Why do so many people live in a perpetual state of fear? How many of
+these fears are real and which ones are manufactured? What does it take
+for people to break free from it and experience freedom? What can
+writers do to help? What can I do? </p>
+<p><strong>Eight.</strong> </p>
+<p>Is there any point in trying to escape suffering? If there is no
+suffering, there is no life, right? Because only death can eliminate
+suffering. So why try to escape suffering at all? 
+Or is it actually possible that the idea of romanticising suffering
+is just another writerly delusion because they can’t imagine a society
+organised around joy? Do I just see things more clearly or am I falling
+for the trap?</p>
+<p><strong>Nine.</strong> </p>
+<p>Oh hello. Do those who don’t create (and mostly consume) ever realise
+how vulnerable creators are? Especially those who create art, especially
+those who create art by scratching the depths of their heart? Do they
+know the creator is mostly creating to ask:   
+“I have something to say… do you see what I am saying? Do you get
+it?”
+Do you know or you don’t? If you are friends with anyone who dares to
+create, is it really hard to hold them and tell them that you are proud
+of them? Can’t we as a society do that?</p>
+<p><strong>Ten.</strong> </p>
+<p>Falling in front of my own eyes often feels it’s (even though
+not-really-quantifiable) worse than falling in front of the world. Know
+what I mean? 
+Like I often ask: What kind of person do I want to be?</p>
+<p>Which reveals my values. That given I had full control over my
+actions and behaviours and motivations, this is who I would be. 
+But then real world is so messy and we can’t always be that person.
+And as someone said somewhere, the project of life is going from who you
+are to who you want to be. And so, in that process,
+repeatedly—endlessly—you have to meet yourself in the mirror on failing
+to live your values as you’d like to. 
+Because I am just another man, and I will probably repeat the follies
+the previous men have committed—who the fuck am I to think I’m
+different? 
+So should I just change the destination? No one has forced the values
+upon me. I can change it and pick the easy ones. But that sounds so
+cowardly. So I ask: Do I have the courage to stay on track? </p>
+<p><strong>Eleven.</strong></p>
+<p>I don’t understand why we as a society are obsessed with consuming
+knowledge and stuffing our brains with so much information. Were our
+brains designed for this? Did evolutionary forces know we will become an
+information species?
+We really need just a set of limited information to get through life.
+One can pack all of that in countable pages. For a good life, I
+mean. 
+Most information is anyway about problems that humans have
+manufactured. And then they created information around it. And then they
+complain of information overload. Right? Are these even real
+problems?
+Why obsess about understanding when you can just be? Or maybe I am in
+the wrong subset and people are just really being? 
+Is it really hard to know that wisdom isn’t neatly correlated with
+knowing more facts, more data or reading more books? </p>
+<p><strong>Twelve.</strong> </p>
+<p>Growth. Growth. Growth. Everywhere you see, everyone wants growth. A
+country wants economic growth. Employees want career growth.
+Well-meaning people want personal growth. And oh lord, lovers want love
+to grow and become the best version of themselves. 
+But why? What kind of ideology has hijacked us into believing that
+growth means progress? I mean… growth as a means to an end is
+acceptable. Economic growth as a necessary condition for global poverty
+is a fair (though debatable) premise. 
+But what about this continuous obsession with self-improvement? What
+is it for? What is the end goal there? A better society? But that’s
+weird because it’s hard for me to believe a good society would want
+people obsessed with improving themselves, always believing something
+requires fixing. Will it?
+What if I don’t want to fix things? What if I like things broken?
+What if don’t want my life to be efficient?
+Do you know what I mean? If you don’t, I am just asking: Can we
+please just have a little more fun in this one little life of ours?</p>
+<p><strong>Thirteen.</strong> </p>
+<p>What if the aims of art don’t align with what most people want? What
+if art isn’t really useful? What if art negates growth? Wait: does art
+need a justification to exist? And if it doesn’t, then are artists the
+most self-indulgent and selfish breed? 
+Can we imagine a world without artists? Has someone created art to
+help us imagine an artless world?</p>
+<p><strong>Fourteen.</strong> </p>
+<p>I am operating at the rate of one heartbreak per annum.
+(Optimal?)
+And so my diary is inked with questions. It’s book-length material,
+so we’ll skip it for today. But given the energy I have invested in
+capturing the depths of my feelings and remaining as clueless as I was
+before the capture began, I wonder: is love the greatest mystery of
+humankind? Can we ever figure it out? Is there any point in trying?
+“I think… if it is true that there are as many minds as there are
+heads, then there are as many kinds of love as there are hearts,”
+Tolstoy wrote in Anna Karenina. 
+What if he was right?</p>
+
+    </div>
+</article>
+
+        </main>
+    </div>
+</body>
+</html>
