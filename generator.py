@@ -17,8 +17,9 @@ import os
 import sys
 import shutil
 import argparse
+import json
 from datetime import datetime
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Set
 from pathlib import Path
 
 import jinja2
@@ -26,6 +27,114 @@ from jinja2 import Environment, FileSystemLoader
 
 from config import Config
 from content_processor import ContentProcessor, ContentItem
+
+
+class BuildTracker:
+    """
+    Simple build change tracker to show what content was added, updated, or deleted.
+    
+    Tracks content by comparing titles and dates from current build with previous build.
+    Stores minimal metadata in a JSON file to detect changes between builds.
+    """
+    
+    def __init__(self):
+        self.tracker_file = os.path.join(Config.BASE_DIR, '.build_tracker.json')
+        self.previous_content = self._load_previous_build()
+        self.current_content = {}
+        
+        # Track changes
+        self.added = []
+        self.updated = []
+        self.deleted = []
+    
+    def _load_previous_build(self) -> Dict[str, Dict]:
+        """Load previous build metadata from tracker file."""
+        if os.path.exists(self.tracker_file):
+            try:
+                with open(self.tracker_file, 'r', encoding='utf-8') as f:
+                    return json.load(f)
+            except (json.JSONDecodeError, FileNotFoundError):
+                pass
+        return {}
+    
+    def track_content(self, content_items: List[ContentItem]):
+        """Track current content and detect changes."""
+        # Build current content map
+        for item in content_items:
+            if item.external_url:  # Skip external links
+                continue
+                
+            key = f"{item.content_type}:{item.slug}"
+            
+            # Get file modification time for content change detection
+            file_mtime = None
+            if item.source_file and os.path.exists(item.source_file):
+                file_mtime = os.path.getmtime(item.source_file)
+            
+            self.current_content[key] = {
+                'title': item.title,
+                'date': item.date.isoformat() if item.date else None,
+                'url': item.url,
+                'type': item.content_type,
+                'file_mtime': file_mtime
+            }
+        
+        # Detect changes
+        current_keys = set(self.current_content.keys())
+        previous_keys = set(self.previous_content.keys())
+        
+        # New content
+        added_keys = current_keys - previous_keys
+        self.added = [self.current_content[key] for key in added_keys]
+        
+        # Deleted content  
+        deleted_keys = previous_keys - current_keys
+        self.deleted = [self.previous_content[key] for key in deleted_keys]
+        
+        # Updated content (same key but different title/date/content)
+        for key in current_keys & previous_keys:
+            current = self.current_content[key]
+            previous = self.previous_content[key]
+            
+            # Check for title, date, or file modification time changes
+            title_changed = current['title'] != previous.get('title')
+            date_changed = current['date'] != previous.get('date')
+            file_changed = (current.get('file_mtime') and 
+                          previous.get('file_mtime') and
+                          current['file_mtime'] != previous['file_mtime'])
+            
+            if title_changed or date_changed or file_changed:
+                self.updated.append(current)
+    
+    def save_current_build(self):
+        """Save current build metadata for next comparison."""
+        with open(self.tracker_file, 'w', encoding='utf-8') as f:
+            json.dump(self.current_content, f, indent=2)
+    
+    def print_changes(self):
+        """Print a summary of changes since last build."""
+        if not (self.added or self.updated or self.deleted):
+            print("✓ No content changes since last build")
+            return
+        
+        print("\n📋 Content Changes:")
+        
+        if self.added:
+            print(f"\n  ✨ Added ({len(self.added)}):")
+            for item in self.added:
+                print(f"     • {item['title']} ({item['type']})")
+        
+        if self.updated:
+            print(f"\n  📝 Updated ({len(self.updated)}):")
+            for item in self.updated:
+                print(f"     • {item['title']} ({item['type']})")
+        
+        if self.deleted:
+            print(f"\n  🗑️  Deleted ({len(self.deleted)}):")
+            for item in self.deleted:
+                print(f"     • {item['title']} ({item['type']})")
+        
+        print()  # Empty line for spacing
 
 
 class SiteGenerator:
@@ -40,6 +149,7 @@ class SiteGenerator:
     def __init__(self):
         """Initialize the site generator with content processor and template environment."""
         self.content_processor = ContentProcessor()
+        self.build_tracker = BuildTracker()
         
         # Set up Jinja2 template environment
         self.template_env = Environment(
@@ -53,6 +163,8 @@ class SiteGenerator:
         # Content storage
         self.posts: List[ContentItem] = []
         self.essays: List[ContentItem] = []
+        self.journalism: List[ContentItem] = []
+        self.evergreen: List[ContentItem] = []
         self.pages: List[ContentItem] = []
     
     def _setup_template_filters(self):
@@ -95,6 +207,18 @@ class SiteGenerator:
             Config.ESSAYS_DIR, 'essays'
         )
         print(f"Loaded {len(self.essays)} essays")
+        
+        # Load journalism
+        self.journalism = self.content_processor.process_directory(
+            Config.JOURNALISM_DIR, 'journalism'
+        )
+        print(f"Loaded {len(self.journalism)} journalism pieces")
+        
+        # Load evergreen content
+        self.evergreen = self.content_processor.process_directory(
+            Config.EVERGREEN_DIR, 'evergreen'
+        )
+        print(f"Loaded {len(self.evergreen)} evergreen documents")
         
         # Load pages
         self.pages = self.content_processor.process_directory(
@@ -143,7 +267,10 @@ class SiteGenerator:
         """Generate the index (home) page."""
         html = self.render_template(
             'index.html',
-            recent_posts=self.posts[:5]  # Show 5 most recent posts
+            recent_posts=self.posts[:5],  # Show 5 most recent posts
+            essays=self.essays,
+            journalism=self.journalism,
+            evergreen=self.evergreen
         )
         
         output_path = os.path.join(Config.OUTPUT_DIR, 'index.html')
@@ -223,9 +350,43 @@ class SiteGenerator:
         
         print("Generated essays page")
     
+    def generate_journalism_page(self):
+        """Generate the journalism listing page."""
+        html = self.render_template(
+            'journalism.html',
+            journalism=self.journalism
+        )
+        
+        # Create journalism directory and index file
+        journalism_dir = os.path.join(Config.OUTPUT_DIR, 'journalism')
+        os.makedirs(journalism_dir, exist_ok=True)
+        
+        output_path = os.path.join(journalism_dir, 'index.html')
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(html)
+        
+        print("Generated journalism page")
+    
+    def generate_evergreen_page(self):
+        """Generate the evergreen listing page."""
+        html = self.render_template(
+            'evergreen.html',
+            evergreen=self.evergreen
+        )
+        
+        # Create evergreen directory and index file
+        evergreen_dir = os.path.join(Config.OUTPUT_DIR, 'evergreen')
+        os.makedirs(evergreen_dir, exist_ok=True)
+        
+        output_path = os.path.join(evergreen_dir, 'index.html')
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(html)
+        
+        print("Generated evergreen page")
+    
     def generate_content_pages(self):
         """Generate individual pages for all content items."""
-        all_content = self.posts + self.essays + self.pages
+        all_content = self.posts + self.essays + self.journalism + self.evergreen + self.pages
         
         for item in all_content:
             # Skip external links (essays with external_url)
@@ -255,15 +416,20 @@ class SiteGenerator:
         
         This is the main build process that:
         1. Loads all content
-        2. Sets up output directory
-        3. Copies static files
-        4. Generates all pages
+        2. Tracks changes from previous build
+        3. Sets up output directory
+        4. Copies static files
+        5. Generates all pages
         """
         print("Starting site build...")
         start_time = datetime.now()
         
         # Load content from markdown files
         self.load_content()
+        
+        # Track content changes
+        all_content = self.posts + self.essays + self.journalism + self.evergreen + self.pages
+        self.build_tracker.track_content(all_content)
         
         # Prepare output directory
         self.ensure_output_directory()
@@ -275,7 +441,13 @@ class SiteGenerator:
         self.generate_index_page()
         self.generate_blog_page()
         self.generate_essays_page()
+        self.generate_journalism_page()
+        self.generate_evergreen_page()
         self.generate_content_pages()
+        
+        # Save current build state and show changes
+        self.build_tracker.save_current_build()
+        self.build_tracker.print_changes()
         
         # Build complete
         end_time = datetime.now()
@@ -303,11 +475,13 @@ def create_new_post(title: str, content_type: str = 'posts'):
     content_dirs = {
         'posts': Config.POSTS_DIR,
         'essays': Config.ESSAYS_DIR,
+        'journalism': Config.JOURNALISM_DIR,
+        'evergreen': Config.EVERGREEN_DIR,
         'pages': Config.PAGES_DIR
     }
     
     if content_type not in content_dirs:
-        print(f"Error: Unknown content type '{content_type}'. Use: posts, essays, pages")
+        print(f"Error: Unknown content type '{content_type}'. Use: posts, essays, journalism, evergreen, pages")
         return
     
     content_dir = content_dirs[content_type]
@@ -332,6 +506,10 @@ published: true
     
     if content_type == 'essays':
         frontmatter += "# external_url: \"https://example.com/my-essay\"\n"
+    elif content_type == 'journalism':
+        frontmatter += "external_url: \"https://example.com/my-article\"\n"
+    elif content_type == 'evergreen':
+        frontmatter += "# last_updated: 2025-07-19  # Update this when you modify the content\n"
     
     frontmatter += "---\n\n"
     
@@ -357,7 +535,7 @@ def main():
     
     # New content command
     new_parser = subparsers.add_parser('new', help='Create new content')
-    new_parser.add_argument('type', choices=['post', 'essay', 'page'], 
+    new_parser.add_argument('type', choices=['post', 'essay', 'journalism', 'evergreen', 'page'], 
                           help='Type of content to create')
     new_parser.add_argument('title', help='Title of the new content')
     

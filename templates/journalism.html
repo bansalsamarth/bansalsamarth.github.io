@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Journalism - {{ site_name }}{% endblock %}
+
+{% block navigation %}
+<a href="/" class="back-home">Home</a>
+{% endblock %}
+
+{% block content %}
+<h1 class="page-title">Journalism</h1>
+
+<ul class="posts-list">
+    {% for article in journalism %}
+    <li class="post-item">
+        <div class="post-date">{{ article.date | short_date }}</div>
+        <div class="post-title">
+            {% if article.external_url %}
+                <a href="{{ article.external_url }}" target="_blank">{{ article.title }}</a>
+                <span class="external-link">(External)</span>
+            {% else %}
+                <a href="{{ article.url }}">{{ article.title }}</a>
+            {% endif %}
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

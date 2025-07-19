@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Evergreen - {{ site_name }}{% endblock %}
+
+{% block navigation %}
+<a href="/" class="back-home">Home</a>
+{% endblock %}
+
+{% block content %}
+<h1 class="page-title">Evergreen</h1>
+
+<p style="color: var(--text-secondary); margin-bottom: 2rem; font-style: italic;">
+    Living documents that evolve with my thinking.
+</p>
+
+<ul class="posts-list">
+    {% for document in evergreen %}
+    <li class="post-item">
+        <div class="post-date">
+            {% if document.metadata.get('last_updated') %}
+                Updated {{ document.metadata.last_updated | short_date }}
+            {% else %}
+                {{ document.date | short_date }}
+            {% endif %}
+        </div>
+        <div class="post-title">
+            <a href="{{ document.url }}">{{ document.title }}</a>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
