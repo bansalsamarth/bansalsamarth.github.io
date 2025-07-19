@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+
+{% block title %}Contact - {{ site_name }}{% endblock %}
+
+{% block navigation %}
+<a href="/" class="back-home">Home</a>
+{% endblock %}
+
+{% block extra_head %}
+<style>
+    /* Contact page specific styles */
+    .contact-intro {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: var(--text-primary);
+        margin-bottom: 3rem;
+    }
+    
+    .contact-methods {
+        display: grid;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+    
+    .contact-method {
+        padding: 1.5rem 0;
+        border-bottom: 1px solid var(--border-light);
+    }
+    
+    .contact-method:last-child {
+        border-bottom: none;
+    }
+    
+    .contact-label {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--text-primary);
+        margin: 0 0 0.5rem;
+    }
+    
+    .contact-value {
+        color: var(--text-secondary);
+        font-size: 1rem;
+        margin: 0;
+    }
+    
+    .contact-value a {
+        color: var(--link-color);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s ease;
+    }
+    
+    .contact-value a:hover {
+        color: rgb(77, 20, 180);
+        text-decoration: underline;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .contact-intro {
+            font-size: 1.05rem;
+        }
+        
+        .contact-label {
+            font-size: 1.05rem;
+        }
+        
+        .contact-value {
+            font-size: 0.95rem;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<h1 class="page-title">Contact</h1>
+
+<div class="contact-intro">
+    <p>I'd love to hear from you. Whether you want to discuss ideas, collaborate on projects, or just say hello, feel free to reach out.</p>
+</div>
+
+<div class="contact-methods">
+    <div class="contact-method">
+        <div class="contact-label">Email</div>
+        <div class="contact-value">
+            <a href="mailto:samarth@example.com">samarth@example.com</a>
+        </div>
+    </div>
+    
+    <div class="contact-method">
+        <div class="contact-label">Twitter</div>
+        <div class="contact-value">
+            <a href="https://twitter.com/samarthbansal" target="_blank">@samarthbansal</a>
+        </div>
+    </div>
+    
+    <div class="contact-method">
+        <div class="contact-label">LinkedIn</div>
+        <div class="contact-value">
+            <a href="https://linkedin.com/in/samarthbansal" target="_blank">linkedin.com/in/samarthbansal</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

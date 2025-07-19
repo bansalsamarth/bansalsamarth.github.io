@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}Writing - {{ site_name }}{% endblock %}
+
+{% block navigation %}
+<a href="/" class="back-home">Home</a>
+{% endblock %}
+
+{% block extra_head %}
+<style>
+    /* Writing page specific styles */
+    .writing-intro {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: var(--text-primary);
+        margin-bottom: 3rem;
+    }
+    
+    .writing-intro a {
+        color: var(--link-color);
+        text-decoration: none;
+        font-weight: 600;
+        position: relative;
+        transition: color 0.2s ease;
+    }
+    
+    .writing-intro a::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: var(--link-color);
+        opacity: 0.4;
+        transition: opacity 0.2s ease;
+    }
+    
+    .writing-intro a:hover {
+        color: rgb(77, 20, 180);
+    }
+    
+    .writing-intro a:hover::after {
+        opacity: 0.8;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .writing-intro {
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<h1 class="page-title">Writing</h1>
+
+<div class="writing-intro">
+    <p>Hi. My writing is the clearest window into my mind. For routine reflections and experiences and commentary, go to <a href="/blog/">Blog</a>. For my long-form essays and crafted posts, go to <a href="/essays/">Essays</a>. For my reporting and published work, go to <a href="/journalism/">Journalism</a>. For ideas that I am building and advice and my principles, go to <a href="/evergreen/">Evergreen</a>. For my everyday micro thoughts, go to <a href="/micro/">Notes</a>.</p>
+</div>
+{% endblock %}

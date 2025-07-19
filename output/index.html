@@ -33,12 +33,69 @@
             -webkit-font-smoothing: antialiased;
             text-rendering: optimizeLegibility;
             background-color: rgb(252, 252, 252);
+            padding-top: 4rem;
+        }
+
+        /* Top Navigation Bar */
+        .top-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(252, 252, 252, 0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            z-index: 100;
+        }
+
+        .navbar-container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+            transition: color 0.2s ease;
+        }
+
+        .navbar-brand:hover {
+            color: var(--link-color);
+        }
+
+        .navbar-nav {
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            align-items: center;
+        }
+
+        .navbar-nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .navbar-nav a:hover {
+            color: var(--link-color);
         }
 
         .container {
             max-width: var(--content-width);
             margin: 0 auto;
-            padding: 4rem 1.5rem;
+            padding: 2rem 1.5rem 4rem;
         }
 
         /* Navigation */
@@ -395,8 +452,28 @@
                 --content-width: 100%;
             }
             
+            body {
+                padding-top: 3.5rem;
+            }
+            
+            .navbar-container {
+                padding: 0.75rem 1.25rem;
+            }
+            
+            .navbar-brand {
+                font-size: 1rem;
+            }
+            
+            .navbar-nav {
+                gap: 1.25rem;
+            }
+            
+            .navbar-nav a {
+                font-size: 0.875rem;
+            }
+            
             .container {
-                padding: 2.5rem 1.25rem;
+                padding: 1.5rem 1.25rem 2.5rem;
             }
             
             article .post-title {
@@ -429,16 +506,19 @@
     
 </head>
 <body>
+    <!-- Top Navigation Bar -->
+    <header class="top-navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-brand">Samarth Bansal</a>
+            <nav class="navbar-nav">
+                <a href="/writing/">Writing</a>
+                <a href="/micro/">Notes</a>
+                <a href="/contact/">Contact</a>
+            </nav>
+        </div>
+    </header>
+
     <div class="container">
-        
-        <nav>
-            <a href="/">Home</a>
-            <a href="/blog/">Blog</a>
-            <a href="/essays/">Essays</a>
-            <a href="/journalism/">Journalism</a>
-            <a href="/evergreen/">Evergreen</a>
-            <a href="/micro/">Micro</a>
-        </nav>
         
         
         <main>

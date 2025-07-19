@@ -408,6 +408,34 @@ class SiteGenerator:
         
         print("Generated microblog page")
     
+    def generate_writing_page(self):
+        """Generate the writing overview page."""
+        html = self.render_template('writing.html')
+        
+        # Create writing directory and index file
+        writing_dir = os.path.join(Config.OUTPUT_DIR, 'writing')
+        os.makedirs(writing_dir, exist_ok=True)
+        
+        output_path = os.path.join(writing_dir, 'index.html')
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(html)
+        
+        print("Generated writing page")
+    
+    def generate_contact_page(self):
+        """Generate the contact page."""
+        html = self.render_template('contact.html')
+        
+        # Create contact directory and index file
+        contact_dir = os.path.join(Config.OUTPUT_DIR, 'contact')
+        os.makedirs(contact_dir, exist_ok=True)
+        
+        output_path = os.path.join(contact_dir, 'index.html')
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(html)
+        
+        print("Generated contact page")
+    
     def generate_content_pages(self):
         """Generate individual pages for all content items."""
         all_content = self.posts + self.essays + self.journalism + self.evergreen + self.micro + self.pages
@@ -468,6 +496,8 @@ class SiteGenerator:
         self.generate_journalism_page()
         self.generate_evergreen_page()
         self.generate_microblog_page()
+        self.generate_writing_page()
+        self.generate_contact_page()
         self.generate_content_pages()
         
         # Save current build state and show changes
