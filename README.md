@@ -126,6 +126,8 @@ The site generates clean URLs:
 
 ## Migration from Existing Site
 
+### Markdown Files
+
 If you have existing markdown files, use the migration script:
 
 ```bash
@@ -137,6 +139,24 @@ This will:
 - Preserve original slugs and URLs
 - Handle multiple date formats
 - Auto-categorize based on content
+
+### HTML Files
+
+For HTML files (like Pandoc-generated posts), use the HTML migration script:
+
+```bash
+python migrate_html.py
+```
+
+Place your HTML files in `migrate_html/` directory first. The script will:
+- Extract titles from `<title>` or `<h1>` tags
+- Parse dates from `<span class="date">` elements
+- Convert HTML content to clean Markdown
+- Auto-categorize based on title keywords
+- Preserve original filenames as slugs
+- Generate proper YAML frontmatter
+
+The script handles common date formats like "22 June, 2021" and auto-detects categories (journalism, personal, tech, etc.).
 
 ## Customization
 
