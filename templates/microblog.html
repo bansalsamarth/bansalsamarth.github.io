@@ -1,0 +1,167 @@
+{% extends "base.html" %}
+
+{% block title %}Micro - {{ site_name }}{% endblock %}
+
+{% block navigation %}
+<a href="/" class="back-home">Home</a>
+{% endblock %}
+
+{% block extra_head %}
+<style>
+    /* Microblog-specific styles */
+    .micro-list {
+        margin: 2rem 0;
+    }
+    
+    .micro-item {
+        margin: 3rem 0;
+        position: relative;
+        padding: 1.5rem 0 2.5rem 0;
+        border-radius: 6px;
+        transition: all 0.2s ease;
+    }
+    
+    .micro-item:hover {
+        background-color: rgba(93, 24, 220, 0.02);
+        transform: translateY(-1px);
+    }
+    
+    .micro-item:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 1rem;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 1px;
+        background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.12), transparent);
+    }
+    
+    .micro-timestamp {
+        color: rgb(110, 110, 110);
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin-bottom: 0.75rem;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        font-feature-settings: "tnum";
+        transition: color 0.2s ease;
+    }
+    
+    .micro-item:hover .micro-timestamp {
+        color: rgb(93, 24, 220);
+    }
+    
+    .micro-content {
+        font-size: 1.05rem;
+        line-height: 1.65;
+        color: var(--text-primary);
+        max-width: none;
+    }
+    
+    .micro-content p {
+        margin: 0.8rem 0;
+    }
+    
+    .micro-content p:first-child {
+        margin-top: 0;
+    }
+    
+    .micro-content p:last-child {
+        margin-bottom: 0;
+    }
+    
+    .micro-content a {
+        color: var(--link-color);
+        text-decoration: none;
+        position: relative;
+        font-weight: 500;
+        transition: all 0.2s ease;
+    }
+    
+    .micro-content a::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: var(--link-color);
+        opacity: 0.4;
+        transform: scaleX(0.8);
+        transform-origin: left center;
+        transition: all 0.2s ease;
+    }
+    
+    .micro-content a:hover {
+        color: rgb(77, 20, 180);
+    }
+    
+    .micro-content a:hover::after {
+        opacity: 0.8;
+        transform: scaleX(1);
+    }
+    
+    .micro-content img {
+        max-width: 100%;
+        border-radius: 4px;
+        margin: 0.5rem 0;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .micro-item {
+            margin: 2rem 0;
+            padding: 1rem 0 1.5rem 0;
+        }
+        
+        .micro-item:hover {
+            transform: none;
+        }
+        
+        .micro-timestamp {
+            font-size: 0.75rem;
+            margin-bottom: 0.6rem;
+        }
+        
+        .micro-content {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        
+        .micro-item:not(:last-child)::after {
+            width: 60px;
+            bottom: 0.75rem;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<h1 class="page-title">Micro</h1>
+
+<p style="color: var(--text-secondary); margin-bottom: 2rem; font-style: italic;">
+    Quick thoughts, links, and moments.
+</p>
+
+{% if micro_posts %}
+<div class="micro-list">
+    {% for post in micro_posts %}
+    <article class="micro-item">
+        <time class="micro-timestamp" datetime="{{ post.date.isoformat() }}">
+            {{ post.date.strftime('%b %d, %Y • %I:%M %p') | upper }}
+        </time>
+        
+        <div class="micro-content">
+            {{ post.content | safe }}
+        </div>
+    </article>
+    {% endfor %}
+</div>
+{% else %}
+<p style="color: var(--text-secondary); text-align: center; margin: 3rem 0;">
+    No micro posts yet. <a href="#" style="color: var(--link-color);">Create your first one!</a>
+</p>
+{% endif %}
+{% endblock %}

@@ -147,9 +147,15 @@ class ContentProcessor:
             # Convert markdown to HTML
             html_content = self.markdown(markdown_content)
             
+            # Handle title for micro posts (no title required)
+            if content_type == 'micro':
+                title = frontmatter.get('title', '')  # Empty title for micro posts
+            else:
+                title = frontmatter.get('title', 'Untitled')
+            
             # Create ContentItem with parsed data
             item = ContentItem(
-                title=frontmatter.get('title', 'Untitled'),
+                title=title,
                 content=html_content,
                 date=self._parse_date(frontmatter.get('date')),
                 content_type=content_type,

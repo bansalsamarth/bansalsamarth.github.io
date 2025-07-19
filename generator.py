@@ -165,6 +165,7 @@ class SiteGenerator:
         self.essays: List[ContentItem] = []
         self.journalism: List[ContentItem] = []
         self.evergreen: List[ContentItem] = []
+        self.micro: List[ContentItem] = []
         self.pages: List[ContentItem] = []
     
     def _setup_template_filters(self):
@@ -219,6 +220,12 @@ class SiteGenerator:
             Config.EVERGREEN_DIR, 'evergreen'
         )
         print(f"Loaded {len(self.evergreen)} evergreen documents")
+        
+        # Load micro content
+        self.micro = self.content_processor.process_directory(
+            Config.MICRO_DIR, 'micro'
+        )
+        print(f"Loaded {len(self.micro)} micro posts")
         
         # Load pages
         self.pages = self.content_processor.process_directory(
@@ -384,9 +391,26 @@ class SiteGenerator:
         
         print("Generated evergreen page")
     
+    def generate_microblog_page(self):
+        """Generate the microblog listing page."""
+        html = self.render_template(
+            'microblog.html',
+            micro_posts=self.micro
+        )
+        
+        # Create microblog directory and index file
+        micro_dir = os.path.join(Config.OUTPUT_DIR, 'micro')
+        os.makedirs(micro_dir, exist_ok=True)
+        
+        output_path = os.path.join(micro_dir, 'index.html')
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(html)
+        
+        print("Generated microblog page")
+    
     def generate_content_pages(self):
         """Generate individual pages for all content items."""
-        all_content = self.posts + self.essays + self.journalism + self.evergreen + self.pages
+        all_content = self.posts + self.essays + self.journalism + self.evergreen + self.micro + self.pages
         
         for item in all_content:
             # Skip external links (essays with external_url)
@@ -428,7 +452,7 @@ class SiteGenerator:
         self.load_content()
         
         # Track content changes
-        all_content = self.posts + self.essays + self.journalism + self.evergreen + self.pages
+        all_content = self.posts + self.essays + self.journalism + self.evergreen + self.micro + self.pages
         self.build_tracker.track_content(all_content)
         
         # Prepare output directory
@@ -443,6 +467,7 @@ class SiteGenerator:
         self.generate_essays_page()
         self.generate_journalism_page()
         self.generate_evergreen_page()
+        self.generate_microblog_page()
         self.generate_content_pages()
         
         # Save current build state and show changes
@@ -464,12 +489,18 @@ def create_new_post(title: str, content_type: str = 'posts'):
         title: Title of the new post
         content_type: Type of content ('posts', 'essays', 'pages')
     """
-    # Generate filename from title
-    filename = title.lower().replace(' ', '-').replace('_', '-')
-    # Remove non-alphanumeric characters except hyphens
-    import re
-    filename = re.sub(r'[^a-zA-Z0-9\-]', '', filename)
-    filename = f"{filename}.md"
+    # Generate filename - timestamp-based for micro posts
+    if content_type == 'micro':
+        # Use timestamp for micro posts
+        timestamp = datetime.now().strftime('%Y-%m-%d-%H%M')
+        filename = f"{timestamp}.md"
+    else:
+        # Generate from title for other content types
+        filename = title.lower().replace(' ', '-').replace('_', '-')
+        # Remove non-alphanumeric characters except hyphens
+        import re
+        filename = re.sub(r'[^a-zA-Z0-9\-]', '', filename)
+        filename = f"{filename}.md"
     
     # Determine content directory
     content_dirs = {
@@ -477,11 +508,12 @@ def create_new_post(title: str, content_type: str = 'posts'):
         'essays': Config.ESSAYS_DIR,
         'journalism': Config.JOURNALISM_DIR,
         'evergreen': Config.EVERGREEN_DIR,
+        'micro': Config.MICRO_DIR,
         'pages': Config.PAGES_DIR
     }
     
     if content_type not in content_dirs:
-        print(f"Error: Unknown content type '{content_type}'. Use: posts, essays, journalism, evergreen, pages")
+        print(f"Error: Unknown content type '{content_type}'. Use: posts, essays, journalism, evergreen, micro, pages")
         return
     
     content_dir = content_dirs[content_type]
@@ -498,7 +530,15 @@ def create_new_post(title: str, content_type: str = 'posts'):
         return
     
     # Create frontmatter template
-    frontmatter = f"""---
+    if content_type == 'micro':
+        # Micro posts don't need titles and use full datetime
+        frontmatter = f"""---
+date: {datetime.now().isoformat()}
+published: true
+"""
+    else:
+        # Regular content with title
+        frontmatter = f"""---
 title: "{title}"
 date: {datetime.now().strftime('%Y-%m-%d')}
 published: true
@@ -510,14 +550,20 @@ published: true
         frontmatter += "external_url: \"https://example.com/my-article\"\n"
     elif content_type == 'evergreen':
         frontmatter += "# last_updated: 2025-07-19  # Update this when you modify the content\n"
+    elif content_type == 'micro':
+        frontmatter += "# tags: [thought, link]  # Optional tags\n"
     
     frontmatter += "---\n\n"
     
     # Create the file
     with open(file_path, 'w', encoding='utf-8') as f:
         f.write(frontmatter)
-        f.write(f"# {title}\n\n")
-        f.write("Write your content here...\n")
+        if content_type == 'micro':
+            # Micro posts don't need title headers
+            f.write(f"{title}\n")  # Use title as content
+        else:
+            f.write(f"# {title}\n\n")
+            f.write("Write your content here...\n")
     
     print(f"Created new {content_type[:-1]}: {file_path}")
 
@@ -535,7 +581,7 @@ def main():
     
     # New content command
     new_parser = subparsers.add_parser('new', help='Create new content')
-    new_parser.add_argument('type', choices=['post', 'essay', 'journalism', 'evergreen', 'page'], 
+    new_parser.add_argument('type', choices=['post', 'essay', 'journalism', 'evergreen', 'micro', 'page'], 
                           help='Type of content to create')
     new_parser.add_argument('title', help='Title of the new content')
     
@@ -550,7 +596,16 @@ def main():
         # TODO: Implement development server with auto-rebuild
     
     elif args.command == 'new':
-        content_type = args.type + 's'  # Convert 'post' to 'posts'
+        # Map CLI args to internal content type names
+        type_mapping = {
+            'post': 'posts',
+            'essay': 'essays', 
+            'journalism': 'journalism',
+            'evergreen': 'evergreen',
+            'micro': 'micro',
+            'page': 'pages'
+        }
+        content_type = type_mapping[args.type]
         create_new_post(args.title, content_type)
     
     else:

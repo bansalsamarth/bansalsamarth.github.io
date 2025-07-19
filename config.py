@@ -39,6 +39,7 @@ class Config:
     ESSAYS_DIR = os.path.join(CONTENT_DIR, "essays")       # Long-form crafted essays
     JOURNALISM_DIR = os.path.join(CONTENT_DIR, "journalism")  # Published journalism (external links)
     EVERGREEN_DIR = os.path.join(CONTENT_DIR, "evergreen")    # Living documents (principles, beliefs)
+    MICRO_DIR = os.path.join(CONTENT_DIR, "micro")         # Microblog posts (short, title-less)
     PAGES_DIR = os.path.join(CONTENT_DIR, "pages")         # Static pages
     
     # Build and formatting settings
