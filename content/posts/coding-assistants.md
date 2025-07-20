@@ -30,7 +30,7 @@ This is the context: I had a simple problem, did a messy job solving it, and her
 
 **1) Part of me feels lost.** I spent years learning to code, fight bugs, and build things with patience and persistence. Even when I started using Python libraries and felt like I was just "plumbing things together," at least I was writing code. Now I'm giving instructions in English and the computer does everything. I can't call myself a programmer doing this—it feels like identity loss.
 
-**2)** When I write buggy code that breaks, I feel like a real programmer. When AI writes flawless code that works, I feel like a fraud. What to make of this absurd contradiction?
+**2) The absurdity:** When I write buggy code that breaks, I feel like a real programmer. When AI writes flawless code that works, I feel like a fraud. What to make of this contradiction?
 
 **3) This was my initial feeling, but then another realization set in.** I'm actually not deeply attached to the identity of a programmer. That was my past. I'm a writer who _used_ to write code and can write code when needed—but no part of how I exist in the world is deeply attached to making computers do things. It's a nostalgic identity that I deeply adore because it makes me feel powerful, because I know I can build things. But not doing it is also okay. Compare that to writing words, which has an existential dimension for my being: I don't know how I can be in this world if I don't write—it's deeply attached to my sense of self. Working with Claude Code made me realize "programmer" isn't an identity I hold dearly, even though it's something I was holding onto.
 
