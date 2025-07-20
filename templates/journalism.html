@@ -7,21 +7,113 @@
 {% endblock %}
 
 {% block content %}
-<h1 class="page-title">Journalism</h1>
+<h1 class="page-title">Selected Journalism</h1>
 
-<ul class="posts-list">
+<div class="post-content">
+    <p>A curated selection of my journalism work spanning investigations, data analysis, and digital culture. The pieces below represent what I consider my most significant contributions to public discourse.</p>
+</div>
+
+<div class="journalism-list">
     {% for article in journalism %}
-    <li class="post-item">
-        <div class="post-date">{{ article.date | short_date }}</div>
-        <div class="post-title">
-            {% if article.external_url %}
-                <a href="{{ article.external_url }}" target="_blank">{{ article.title }}</a>
-                <span class="external-link">(External)</span>
-            {% else %}
-                <a href="{{ article.url }}">{{ article.title }}</a>
-            {% endif %}
+    <article class="journalism-item">
+        <div class="article-meta">
+            <span class="article-publication">{{ article.publication }}</span>
+            <span class="article-date">{{ article.date }}</span>
         </div>
-    </li>
+        
+        <h2 class="article-title">
+            <a href="{{ article.original_url }}" target="_blank" rel="noopener noreferrer">
+                {{ article.title }}
+            </a>
+        </h2>
+        
+        {% if article.excerpt %}
+        <p class="article-excerpt">{{ article.excerpt }}</p>
+        {% endif %}
+    </article>
     {% endfor %}
-</ul>
+</div>
+
+<style>
+    .journalism-list {
+        margin-top: 3rem;
+    }
+    
+    .journalism-item {
+        margin: 2.5rem 0;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--border-light);
+        transition: all 0.2s ease;
+    }
+    
+    .journalism-item:last-child {
+        border-bottom: none;
+    }
+    
+    .journalism-item:hover {
+        transform: translateX(2px);
+    }
+    
+    .article-meta {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 0.5rem;
+        font-size: 0.875rem;
+        color: var(--text-secondary);
+        font-weight: 500;
+    }
+    
+    .article-publication {
+        color: var(--link-color);
+        font-weight: 600;
+    }
+    
+    .article-date {
+        color: var(--date-color);
+    }
+    
+    .article-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1.4;
+        margin: 0 0 1rem;
+    }
+    
+    .article-title a {
+        color: var(--text-primary);
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+    
+    .article-title a:hover {
+        color: var(--link-color);
+    }
+    
+    .article-excerpt {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: var(--text-secondary);
+        margin: 0;
+    }
+    
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+        .journalism-item {
+            margin: 2rem 0;
+        }
+        
+        .article-meta {
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        
+        .article-title {
+            font-size: 1.1rem;
+        }
+        
+        .article-excerpt {
+            font-size: 0.95rem;
+        }
+    }
+</style>
 {% endblock %}
