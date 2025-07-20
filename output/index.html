@@ -10,10 +10,17 @@
     <style>
         :root {
             --content-width: 600px;
+        }
+
+        /* Light mode colors */
+        :root {
+            --bg-primary: #fefdfb;
+            --bg-secondary: #f8f7f5;
             --text-primary: rgb(17, 17, 17);
             --text-secondary: rgb(82, 82, 82);
             --date-color: rgb(138, 138, 138);
             --link-color: rgb(93, 24, 220);
+            --link-hover: rgb(77, 20, 180);
             --subtle-hover: rgba(93, 24, 220, 0.05);
             --border-light: rgba(0, 0, 0, 0.06);
             --blockquote-border: rgb(230, 230, 230);
@@ -21,6 +28,66 @@
             --horizontal-rule: rgb(238, 238, 238);
             --highlight-bg: rgba(93, 24, 220, 0.05);
             --newsletter-bg: rgb(250, 250, 250);
+            --navbar-bg: rgba(254, 253, 251, 0.95);
+        }
+
+        /* Dark mode colors */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1612;
+                --bg-secondary: #252118;
+                --text-primary: rgb(232, 232, 232);
+                --text-secondary: rgb(160, 160, 160);
+                --date-color: rgb(120, 120, 120);
+                --link-color: rgb(168, 132, 255);
+                --link-hover: rgb(190, 155, 255);
+                --subtle-hover: rgba(168, 132, 255, 0.1);
+                --border-light: rgba(255, 255, 255, 0.1);
+                --blockquote-border: rgb(60, 60, 60);
+                --code-bg: #2a251f;
+                --horizontal-rule: #3a342b;
+                --highlight-bg: rgba(168, 132, 255, 0.1);
+                --newsletter-bg: #201e1a;
+                --navbar-bg: rgba(26, 22, 18, 0.95);
+            }
+        }
+
+        /* Manual dark mode override */
+        [data-theme="dark"] {
+            --bg-primary: #1a1612;
+            --bg-secondary: #252118;
+            --text-primary: rgb(232, 232, 232);
+            --text-secondary: rgb(160, 160, 160);
+            --date-color: rgb(120, 120, 120);
+            --link-color: rgb(168, 132, 255);
+            --link-hover: rgb(190, 155, 255);
+            --subtle-hover: rgba(168, 132, 255, 0.1);
+            --border-light: rgba(255, 255, 255, 0.1);
+            --blockquote-border: rgb(60, 60, 60);
+            --code-bg: #2a251f;
+            --horizontal-rule: #3a342b;
+            --highlight-bg: rgba(168, 132, 255, 0.1);
+            --newsletter-bg: #201e1a;
+            --navbar-bg: rgba(26, 22, 18, 0.95);
+        }
+
+        /* Manual light mode override */
+        [data-theme="light"] {
+            --bg-primary: #fefdfb;
+            --bg-secondary: #f8f7f5;
+            --text-primary: rgb(17, 17, 17);
+            --text-secondary: rgb(82, 82, 82);
+            --date-color: rgb(138, 138, 138);
+            --link-color: rgb(93, 24, 220);
+            --link-hover: rgb(77, 20, 180);
+            --subtle-hover: rgba(93, 24, 220, 0.05);
+            --border-light: rgba(0, 0, 0, 0.06);
+            --blockquote-border: rgb(230, 230, 230);
+            --code-bg: rgb(248, 248, 248);
+            --horizontal-rule: rgb(238, 238, 238);
+            --highlight-bg: rgba(93, 24, 220, 0.05);
+            --newsletter-bg: rgb(250, 250, 250);
+            --navbar-bg: rgba(254, 253, 251, 0.95);
         }
 
         /* Base Styles */
@@ -32,8 +99,9 @@
             color: var(--text-primary);
             -webkit-font-smoothing: antialiased;
             text-rendering: optimizeLegibility;
-            background-color: rgb(252, 252, 252);
+            background-color: var(--bg-primary);
             padding-top: 4rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         /* Top Navigation Bar */
@@ -42,10 +110,11 @@
             top: 0;
             left: 0;
             right: 0;
-            background-color: rgba(252, 252, 252, 0.95);
+            background-color: var(--navbar-bg);
             backdrop-filter: blur(8px);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            border-bottom: 1px solid var(--border-light);
             z-index: 100;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
         }
 
         .navbar-container {
@@ -268,15 +337,17 @@
         }
 
         .post-content a {
-            color: var(--text-primary);
+            color: var(--link-color);
             text-decoration: underline;
-            text-decoration-color: rgba(0, 0, 0, 0.3);
+            text-decoration-color: rgba(93, 24, 220, 0.4);
             text-decoration-thickness: 1px;
             text-underline-offset: 2px;
+            transition: all 0.2s ease;
         }
 
         .post-content a:hover {
-            text-decoration-color: var(--text-primary);
+            color: var(--link-hover);
+            text-decoration-color: var(--link-hover);
         }
 
         .post-content blockquote {
@@ -297,6 +368,7 @@
             background: var(--code-bg);
             padding: 0.2em 0.4em;
             border-radius: 3px;
+            color: var(--text-primary);
         }
 
         .post-content pre {
@@ -305,6 +377,7 @@
             border-radius: 5px;
             overflow-x: auto;
             margin: 2em 0;
+            border: 1px solid var(--border-light);
         }
 
         .post-content pre code {
@@ -446,6 +519,22 @@
             opacity: 0.6;
         }
 
+        /* Dark mode toggle */
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 0.25rem;
+            transition: color 0.3s ease;
+            margin-left: 1rem;
+        }
+
+        .theme-toggle:hover {
+            color: var(--link-color);
+        }
+
         /* Responsive Styles */
         @media (max-width: 768px) {
             :root {
@@ -514,6 +603,9 @@
                 <a href="/writing/">Writing</a>
                 <a href="/micro/">Notes</a>
                 <a href="/contact/">Contact</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">💡</span>
+                </button>
             </nav>
         </div>
     </header>
@@ -523,30 +615,22 @@
         
         <main>
             
-<h1 class="page-title">Hey. This is Samarth.</h1>
+<h1 class="page-title">Hey. This is <span style="color: var(--link-color);">Samarth</span>.</h1>
 
 <div class="post-content">
     <div class="intro-section">
-        <p>I'm a journalist and writer based in Bombay, India, currently focused on building the future of information and journalism, and the future of food and health. Through my work, I'm trying to solve the most important problems in these two fields.</p>
+        <p>Hi. I'm a journalist and writer based in Bombay, though I'm still figuring out what that means exactly. I spend my days asking questions that don't have clean answers—about truth and power, and what it means to live meaningfully in a complex world. Writing, for me, is both craft and compulsion, the way I make sense of the eternal tension between wanting to enjoy life and feeling called to change it. (It's messier than it sounds, which is probably why I keep writing about it.)</p>
         
-        <p>I grew up in New Delhi and studied mathematics and scientific computing at IIT Kanpur. My journalism career began with reporting roles at <em>The Hindu</em> and <em>Hindustan Times</em>, followed by an investigative journalism fellowship at <em>The Wall Street Journal</em> in New York. I've since written for <em>The Atlantic</em>, <em>Mint</em>, <em>Rest of World</em> and others.</p>
+        <p>I lead content and community at <strong><a href="https://thewholetruthfoods.com/" target="_blank">The Whole Truth</a></strong>, a food brand built on the principle of radical transparency to rebuild the world's trust in its food. I'm also building <strong><a href="https://www.theplankmag.com" target="_blank">The Plank</a></strong>, a citizen-first magazine for readers who believe journalism should serve curiosity over conclusions. (The magazine is on a hiatus, and we will be back soon.) Both projects feel like small attempts to push back against a world that often feels designed to mislead.</p>
+        
+        <p>My journalism began with data and numbers at <em>The Hindu</em> and <em>Hindustan Times</em>, but I soon discovered that the most interesting stories happen in the spaces between disciplines. I moved into long-form writing and investigations, launched my own newsletters, and built a freelance practice that lets me follow curiosity wherever it leads—from the politics of food regulation to the psychology of misinformation to the economics of media itself. I did my investigative fellowship at <em>The Wall Street Journal</em> in New York and have written for <em>The Atlantic</em>, <em>Mint</em>, <em>Rest of World</em> and others. I've also written personal essays, because sometimes the most important journalism is the kind that starts with admitting what you don't know about yourself.</p>
     </div>
 
     <hr>
 
     <div class="work-section">
         <div style="margin-bottom: 2rem;">
-            <a href="/blog/" style="color: var(--link-color); text-decoration: none; font-weight: 500; font-size: 1.1rem;">Read my latest thoughts on my blog →</a>
-        </div>
-        
-        <h3>What I'm building</h3>
-        
-        <div style="margin-bottom: 2rem;">
-            <p><strong>1) <a href="https://www.theplankmag.com" target="_blank">The Plank</a></strong> — I'm the founder and editor-in-chief of a new magazine dedicated to truth-seeking journalism for curious citizens. We went live in December 2024. I'm building a sustainable new media institution in India with a razor-sharp focus on journalistic values and offering a platform for emerging and established writers to tell the stories that need to be told.</p>
-        </div>
-
-        <div style="margin-bottom: 2rem;">
-            <p><strong>2) Media Labs at <a href="https://thewholetruthfoods.com/" target="_blank">The Whole Truth Foods</a></strong> — I lead the media division at a clean-label food startup working to rebuild the world's trust in its food. I'm so proud of the work we do: yes, we are a brand, but we are a borderline moral crusade. We reveal the food industry's hidden truths and expose how Big Food has compromised our health for decades. Through our work, we're learning how an honest food brand built with love and care can thrive through conscious capitalism.</p>
+            <a href="/blog/" style="color: var(--link-color); text-decoration: none; font-weight: 500; font-size: 1.1rem;">Read my latest thoughts on my blog <span style="color: var(--link-color);">→</span></a>
         </div>
     </div>
 
@@ -568,7 +652,7 @@
                 id="bd-email" 
                 placeholder="Your email address" 
                 required
-                style="flex: 1; padding: 0.7rem 1rem; border: 1px solid var(--border-light); border-radius: 4px; font-size: 0.95rem;"
+                style="flex: 1; padding: 0.7rem 1rem; border: 1px solid var(--border-light); border-radius: 4px; font-size: 0.95rem; background-color: var(--bg-primary); color: var(--text-primary);"
             >
             <input 
                 type="submit" 
@@ -586,16 +670,16 @@
         <p>My two jobs keep me fully occupied, yet I always make time for my daily joys: a good cup of coffee, reading whatever catches my interest, and romanticising the city of Bombay.</p>
     </div>
 
-    <div class="links-section" style="margin-top: 3rem;">
+    <!-- <div class="links-section" style="margin-top: 3rem;">
         <h3>Explore</h3>
         <ul class="page-links">
             <li><a href="/blog/">Blog</a></li>
             <li><a href="/essays/">Essays</a></li>
             <li><a href="/journalism/">Journalism</a></li>
             <li><a href="/evergreen/">Evergreen</a></li>
-            <li><a href="/micro/">Micro</a></li>
+            <li><a href="/micro/">Notes</a></li>
         </ul>
-    </div>
+    </div> -->
 </div>
 
 <style>
@@ -612,5 +696,44 @@
 
         </main>
     </div>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.querySelector('.theme-icon');
+        const body = document.body;
+
+        // Check for saved theme preference or default to system preference
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        let currentTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+        
+        // Apply initial theme
+        body.setAttribute('data-theme', currentTheme);
+        updateThemeIcon(currentTheme);
+
+        // Theme toggle event listener
+        themeToggle.addEventListener('click', () => {
+            currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+            body.setAttribute('data-theme', currentTheme);
+            localStorage.setItem('theme', currentTheme);
+            updateThemeIcon(currentTheme);
+        });
+
+        // Update theme icon
+        function updateThemeIcon(theme) {
+            themeIcon.textContent = theme === 'light' ? '💡' : '🔅';
+        }
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                currentTheme = e.matches ? 'dark' : 'light';
+                body.setAttribute('data-theme', currentTheme);
+                updateThemeIcon(currentTheme);
+            }
+        });
+    </script>
 </body>
 </html>
