@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>31 December, 2023—On Writing - Samarth&#39;s Blog</title>
+    <meta name="description" content="31 December, 2023—On Writing">
+    <meta name="author" content="Samarth Bansal">
+    
+    <style>
+        :root {
+            --content-width: 600px;
+        }
+
+        /* Light mode colors */
+        :root {
+            --bg-primary: #fefdfb;
+            --bg-secondary: #f8f7f5;
+            --text-primary: rgb(17, 17, 17);
+            --text-secondary: rgb(82, 82, 82);
+            --date-color: rgb(138, 138, 138);
+            --link-color: rgb(93, 24, 220);
+            --link-hover: rgb(77, 20, 180);
+            --subtle-hover: rgba(93, 24, 220, 0.05);
+            --border-light: rgba(0, 0, 0, 0.06);
+            --blockquote-border: rgb(230, 230, 230);
+            --code-bg: rgb(248, 248, 248);
+            --horizontal-rule: rgb(238, 238, 238);
+            --highlight-bg: rgba(93, 24, 220, 0.05);
+            --newsletter-bg: rgb(250, 250, 250);
+            --navbar-bg: rgba(254, 253, 251, 0.95);
+        }
+
+        /* Dark mode colors */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1612;
+                --bg-secondary: #252118;
+                --text-primary: rgb(232, 232, 232);
+                --text-secondary: rgb(160, 160, 160);
+                --date-color: rgb(120, 120, 120);
+                --link-color: rgb(168, 132, 255);
+                --link-hover: rgb(190, 155, 255);
+                --subtle-hover: rgba(168, 132, 255, 0.1);
+                --border-light: rgba(255, 255, 255, 0.1);
+                --blockquote-border: rgb(60, 60, 60);
+                --code-bg: #2a251f;
+                --horizontal-rule: #3a342b;
+                --highlight-bg: rgba(168, 132, 255, 0.1);
+                --newsletter-bg: #201e1a;
+                --navbar-bg: rgba(26, 22, 18, 0.95);
+            }
+        }
+
+        /* Manual dark mode override */
+        [data-theme="dark"] {
+            --bg-primary: #1a1612;
+            --bg-secondary: #252118;
+            --text-primary: rgb(232, 232, 232);
+            --text-secondary: rgb(160, 160, 160);
+            --date-color: rgb(120, 120, 120);
+            --link-color: rgb(168, 132, 255);
+            --link-hover: rgb(190, 155, 255);
+            --subtle-hover: rgba(168, 132, 255, 0.1);
+            --border-light: rgba(255, 255, 255, 0.1);
+            --blockquote-border: rgb(60, 60, 60);
+            --code-bg: #2a251f;
+            --horizontal-rule: #3a342b;
+            --highlight-bg: rgba(168, 132, 255, 0.1);
+            --newsletter-bg: #201e1a;
+            --navbar-bg: rgba(26, 22, 18, 0.95);
+        }
+
+        /* Manual light mode override */
+        [data-theme="light"] {
+            --bg-primary: #fefdfb;
+            --bg-secondary: #f8f7f5;
+            --text-primary: rgb(17, 17, 17);
+            --text-secondary: rgb(82, 82, 82);
+            --date-color: rgb(138, 138, 138);
+            --link-color: rgb(93, 24, 220);
+            --link-hover: rgb(77, 20, 180);
+            --subtle-hover: rgba(93, 24, 220, 0.05);
+            --border-light: rgba(0, 0, 0, 0.06);
+            --blockquote-border: rgb(230, 230, 230);
+            --code-bg: rgb(248, 248, 248);
+            --horizontal-rule: rgb(238, 238, 238);
+            --highlight-bg: rgba(93, 24, 220, 0.05);
+            --newsletter-bg: rgb(250, 250, 250);
+            --navbar-bg: rgba(254, 253, 251, 0.95);
+        }
+
+        /* Base Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            background-color: var(--bg-primary);
+            padding-top: 4rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Top Navigation Bar */
+        .top-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--navbar-bg);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border-light);
+            z-index: 100;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .navbar-container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+            transition: color 0.2s ease;
+        }
+
+        .navbar-brand:hover {
+            color: var(--link-color);
+        }
+
+        .navbar-nav {
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            align-items: center;
+        }
+
+        .navbar-nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .navbar-nav a:hover {
+            color: var(--link-color);
+        }
+
+        .container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        /* Navigation */
+        nav {
+            margin-bottom: 4rem;
+        }
+
+        nav a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-right: 1.5rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Back to home link */
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            transition: color 0.2s ease;
+        }
+
+        .back-home:hover {
+            color: var(--link-color);
+        }
+
+        .back-home::before {
+            content: '←';
+            margin-right: 0.5rem;
+        }
+
+        /* Page Title */
+        .page-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: var(--text-primary);
+            margin: 0 0 2rem;
+        }
+
+        /* Posts List */
+        .posts-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .post-item {
+            display: flex;
+            align-items: baseline;
+            margin: 0.35rem 0;
+            padding: 0.5rem 0.75rem;
+            margin-left: -0.75rem;
+            margin-right: -0.75rem;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .post-item:hover {
+            background-color: var(--subtle-hover);
+        }
+
+        .post-date {
+            flex: 0 0 5rem;
+            color: var(--date-color);
+            font-size: 0.875rem;
+            font-weight: 400;
+            font-feature-settings: "tnum";
+            font-variant-numeric: tabular-nums;
+            letter-spacing: 0.01em;
+        }
+
+        .post-title {
+            flex: 1;
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .post-title a {
+            color: var(--text-primary);
+            text-decoration: none;
+            position: relative;
+            transition: color 0.15s ease;
+        }
+
+        .post-title a::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .post-item:hover .post-title a {
+            color: var(--link-color);
+        }
+
+        .post-item:hover .post-title a::after {
+            transform: scaleX(1);
+        }
+
+        .external-link {
+            color: var(--date-color);
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+        }
+
+        /* Post Page Styles */
+        article .post-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin: 0 0 3rem;
+            color: var(--text-primary);
+        }
+
+        .post-meta {
+            color: var(--text-secondary);
+            margin: 2.5rem 0;
+            font-size: 0.95rem;
+            font-weight: 400;
+        }
+        
+        .date-accent {
+            color: var(--link-color);
+            margin-right: 0.5rem;
+        }
+
+        .post-content {
+            font-size: 1.05rem;
+            font-weight: 400;
+            color: var(--text-primary);
+        }
+
+        .post-content p {
+            margin: 1.8em 0;
+        }
+
+        .post-content h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            margin: 2.5em 0 1em;
+            line-height: 1.3;
+        }
+
+        .post-content h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 2em 0 0.8em;
+            line-height: 1.4;
+        }
+
+        .post-content h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.8em 0 0.6em;
+        }
+
+        .post-content a {
+            color: var(--link-color);
+            text-decoration: underline;
+            text-decoration-color: rgba(93, 24, 220, 0.4);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+            transition: all 0.2s ease;
+        }
+
+        .post-content a:hover {
+            color: var(--link-hover);
+            text-decoration-color: var(--link-hover);
+        }
+
+        .post-content blockquote {
+            margin: 2em 0;
+            padding-left: 1.5em;
+            border-left: 2px solid var(--blockquote-border);
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        .post-content blockquote p {
+            margin: 0.8em 0;
+        }
+
+        .post-content code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9em;
+            background: var(--code-bg);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            color: var(--text-primary);
+        }
+
+        .post-content pre {
+            background: var(--code-bg);
+            padding: 1.2em;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 2em 0;
+            border: 1px solid var(--border-light);
+        }
+
+        .post-content pre code {
+            background: none;
+            padding: 0;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .post-content hr {
+            margin: 3em 0;
+            border: none;
+            border-top: 1px solid var(--horizontal-rule);
+        }
+
+        .post-content img {
+            max-width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 600px;
+        }
+
+        /* Home page specific styles */
+        .intro-section {
+            margin-bottom: 3rem;
+        }
+
+        .work-section {
+            margin-bottom: 3rem;
+        }
+
+        .work-section h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .page-links {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .page-links li {
+            margin: 0.8rem 0;
+        }
+
+        .page-links a {
+            display: inline-block;
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+
+        .page-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--link-color);
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .page-links a:hover::after {
+            transform: scaleX(1);
+        }
+
+        /* View Toggle Styles */
+        .view-toggle {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .view-toggle button {
+            background: none;
+            border: none;
+            padding: 0.4rem 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            position: relative;
+            transition: color 0.2s ease;
+            font-family: inherit;
+        }
+
+        .view-toggle button:hover {
+            color: var(--link-color);
+        }
+
+        .view-toggle button.active {
+            color: var(--link-color);
+        }
+
+        .view-toggle button.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--link-color);
+        }
+
+        /* Category Section Styles */
+        .category-section {
+            margin: 2.5rem 0;
+        }
+
+        .category-title {
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin: 0 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-light);
+            position: relative;
+        }
+
+        .category-title::before {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 2rem;
+            height: 1px;
+            background-color: var(--link-color);
+            opacity: 0.6;
+        }
+
+        /* Dark mode toggle */
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 0.25rem;
+            transition: color 0.3s ease;
+            margin-left: 1rem;
+        }
+
+        .theme-toggle:hover {
+            color: var(--link-color);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            :root {
+                --content-width: 100%;
+            }
+            
+            body {
+                padding-top: 3.5rem;
+            }
+            
+            .navbar-container {
+                padding: 0.75rem 1.25rem;
+            }
+            
+            .navbar-brand {
+                font-size: 1rem;
+            }
+            
+            .navbar-nav {
+                gap: 1.25rem;
+            }
+            
+            .navbar-nav a {
+                font-size: 0.875rem;
+            }
+            
+            .container {
+                padding: 1.5rem 1.25rem 2.5rem;
+            }
+            
+            article .post-title {
+                font-size: 2rem;
+            }
+
+            .post-content h2 {
+                font-size: 1.6rem;
+            }
+
+            .post-content h3 {
+                font-size: 1.3rem;
+            }
+
+            .post-content blockquote {
+                margin: 1.5em 0;
+                padding-left: 1.2em;
+            }
+
+            .post-item {
+                gap: 1.25rem;
+            }
+
+            .post-date {
+                flex: 0 0 4.5rem;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="top-navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-brand">Samarth Bansal</a>
+            <nav class="navbar-nav">
+                <a href="/writing/">Writing</a>
+                <a href="/micro/">Notes</a>
+                <a href="/contact/">Contact</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">💡</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        
+
+<a href="/blog/" class="back-home">Blog</a>
+
+
+        
+        <main>
+            
+<article>
+    <h1 class="post-title">31 December, 2023—On Writing</h1>
+    
+    
+    <div class="post-meta">
+        <span class="date-accent">•</span> December 31, 2023
+    </div>
+    
+    
+    <div class="post-content">
+        <p>It’s 1:30 pm. It’s the last day of the year. Woke up late this morning, around eight-thirty, had a cup of black coffee, heard the writer Benjamín Labatut talk about <a href="https://www.youtube.com/watch?v=E-OFnHwuTBg">how anything that comes out of a writer is fiction</a>, ate a three-egg sunny side up, spent an hour and half at the gym to train chest, shoulders, and triceps, had a chocolate-flavoured protein shake, indulged in half a poori and chole, showered, posted memes on Instagram story, and drove to Blue Tokai. </p>
+<p>Just finished my second cup of black coffee, just put my noise-cancelling headphones on, and as I listen to Martin Roth’s <a href="https://www.youtube.com/watch?v=OkQlrIQhUMQ">‘An Analog Guy In A Digital World’</a>, I feel like writing—about writing. </p>
+<p>Yesterday—a Saturday—I was supposed to spend my day writing code to fulfil a work commitment, but I didn’t. (And I’m not saying this with pride. It makes me feel like an unreliable co-worker, which isn’t great.)</p>
+<p>But I really did try: I dressed up, went to WeWork for focus, opened my code editor, opened Figma, started something, and then lost it all. I began dreaming about my new writing project (coming out in the next few weeks), started dumping this stream of ideas that came to me from who knows where—ideas I didn’t even know existed until they appeared on paper. It’s magic.</p>
+<p>“Stop, stop, stop,” I told myself, but I couldn’t. It was as if I had no control. I then sent voice notes to a friend—the one who gets it, who’s helping me craft a visual language for this project, describing the imagery that came out of nowhere. “What do you think? Seems doable?”</p>
+<p>More writing at the coffee shop, as I waited for a bright twenty-two-year-old who wanted to meet. And what did we do? We spoke about writing—the craft of writing. I often give monologues in these situations because there’s so much inside me that wants to come out, sometimes losing track of whether my thoughts make sense to the listener. I can only hope they do.</p>
+<p>At night, I reconnected on the phone with a school friend after years. And what did we talk about? Again—writing. Three more hours, on the same day, talking about writing. (What is this madness?)</p>
+<p>Right at the start, I told her she doesn’t know the person she’s talking to. I’m not who she knew. We became friends in the eleventh grade—the first woman I called a close friend—and our bonding was less about school and more about our lives, dreams, and families.</p>
+<p>Some things don’t change: our history shapes our memories and the stories we tell about ourselves, and teenage friendships preserve that part of us foundational to who we become as adults.</p>
+<p>Yet, something drastic has changed. I haven’t divorced my love for science—hey, math major here!—but my extra-marital affair with art has overtaken all other passions. My sensory experience of the world has sharpened: the flavours of food, the notes of music, the textures in paintings, objects in photographs, camera angles in cinema, and of course, words in a book. It’s not just about aesthetic pleasure anymore; it’s deeper engagement. I pay more attention. I feel things more intensely. It’s me, the art, and the artist—and I feel the artist asking: “Do you see what I see? Do you get it?”</p>
+<p>Sometimes, I do; sometimes, I don’t. But I’m perpetually in a conversation. Amid the banality of existence and the greed-driven actions of most humans, this secret conversation makes everything else bearable. </p>
+<p>That’s what I told her. That this is me, the new me. The one with a second life entirely in my head—so alone that no one can access it until I let it out through my words. There’s so much tension, so many unresolved questions, so many dilemmas.</p>
+<p>I don’t know what to do about it other than to work through it all by writing. It’s a never-ending process—I never run out of things to resolve, and I never stop wanting to write. I’m not in control anymore; writing has become an existential need. As much as I enjoy playing with the sound of sentences, it’s secondary—I have the need to write. I don’t know what I’d do if I couldn’t.</p>
+<p>“Welcome to my world,” said my friend who studied English literature in college. My life experience pales in comparison to hers, and I still can’t write prose as rich or beautiful as she could when we were seventeen. So she understands me in a way most people don’t—this freakishly lonely existence. </p>
+<p>That was yesterday. A beautiful day. Now, let’s look forward.</p>
+<p>One of my greatest anxieties is the mismatch between how I see myself and how the world sees me. I’m finding ways to deal with this—the trick lies in white lies—but I’ve also learned there’s an internal mismatch: who I want to be, who I really am, and how I see these two images of myself.</p>
+<p>For the longest time, the mismatch was rooted in societal labels: who is a journalist, a writer, an artist? Who gets to decide?</p>
+<p>I’ve learned it’s a stupid thing to worry about. No one gets to decide. I can’t let anyone decide. The hard part is owning the identity I want.</p>
+<p>And this year, I did. If 2022 was the year I found the courage to tell my diary—in capital letters—“I WANT TO BECOME A WRITER,” then 2023 is the year I was able to tell myself: “I AM A WRITER!”</p>
+<p>Me telling this to myself changes nothing for the world, but it’s a transformative act of self-acceptance.  And I am really proud of it. (Pinch me—did I just say something nice about myself?) </p>
+<p>For one, writing is the only space where I’m not performing for anyone. So much of our existence is a performance: at work, at parties, even at home. It’s never the whole of us. It can’t be. Maybe some manage, but as a high-empathy person, I can’t just say on a call, “I just fucking hate that I have to spend precious thirty minutes of my existence talking to you,” so I say, “Good chat, talk soon!”</p>
+<p>Sometimes the performance is pragmatic; sometimes, it’s anxiety-driven. But when I write, there’s no mask. Every word is an exact reflection of my feelings, as much as my language skills allow. It’s rooted in the intention to be authentic. I don’t self-censor, and I don’t write what I don’t believe. Honesty in words is sacred to me.</p>
+<p>I’ve also accepted that not everyone can do this. This bit might sound arrogant, but I now believe that being a writer is less about literary skills and more about the courage to speak the truth—about who you really are, revealed through your words.</p>
+<p>It’s an act of courage because honest writing exposes who you are. With the self-awareness that it’s highly unlikely I’d ever be able to say something radically original, that there is so much great writing about everything I think about, that I have not lived enough and know enough, I still go out and say what I am really thinking. It’s an act of courage because what you write, etched in black ink, archives your naivety. Looking back, you might cringe at your own words, but that’s the beauty of it.</p>
+<p>In that sense, this courage is the greatest expression of self-love—to archive the version of me that won’t exist. The self-acceptance that, yes, I could have been better read, more perceptive, stronger in language, but I’m not. I am what’s on paper today, and I’m fine with it. Read it, or don’t. But this is the real me.</p>
+<p>And you know what? Just after typing the words above, I feel so pretentious: What the fuck have I done in my life to use bold words like courage? What have I even written? Some journalism that made some noise? Some essay that a few people loved? And with just this, I have the audacity to pontificate about writing and art? What makes me believe all this about myself? What is this self-importance, this navel-gazing? Am I a closet narcissist?</p>
+<p>Like many things in life, I have accepted that I can’t answer these questions. There is just no way.</p>
+<p>As I wrote on my Instagram a few days ago, every time I’m stuck here, when I am confused and uncertain, when I feel stupid and lost, when I am unsure if the problem lies within me or the universe, I close my eyes, raise the middle finger (the world can go fuck itself), and remind myself of this quote from Rainer Maria Rilke’s Letters To a Young Poet, where he urges us to live the questions that breed despair:</p>
+<blockquote>
+<p>“Be patient toward all that is unsolved in your heart and try to love the questions themselves, like locked rooms and like books that are now written in a very foreign tongue. Do not now seek the answers, which cannot be given you because you would not be able to live them. And the point is, to live everything. Live the questions now. Perhaps you will then gradually, without noticing it, live along some distant day into the answer.”</p>
+</blockquote>
+<p>Yes—it’s not about the answers. It’s always about questions. Live the damn questions. And then, write. </p>
+<p>The difference, really, is one: at the back of all the anxiety-inducing mental gymnastics lies a huge responsibility. As I’ve learned from George Saunders, a writer must take responsibility for the work they put out. If you truly believe that words matter, you don’t just cast them into the universe carelessly. You care about them. It’s not a casual affair.</p>
+<p>And it’s only us, the ones who write, who know when we’ve fulfilled this duty. And perhaps, those who understand and embrace this are the ones who should unabashedly call themselves writers.</p>
+<p>This realisation resolved the mismatch in my internal identity crisis: I am a writer. And I feel so privileged to be one.</p>
+
+    </div>
+</article>
+
+        </main>
+    </div>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.querySelector('.theme-icon');
+        const body = document.body;
+
+        // Check for saved theme preference or default to system preference
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        let currentTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+        
+        // Apply initial theme
+        body.setAttribute('data-theme', currentTheme);
+        updateThemeIcon(currentTheme);
+
+        // Theme toggle event listener
+        themeToggle.addEventListener('click', () => {
+            currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+            body.setAttribute('data-theme', currentTheme);
+            localStorage.setItem('theme', currentTheme);
+            updateThemeIcon(currentTheme);
+        });
+
+        // Update theme icon
+        function updateThemeIcon(theme) {
+            themeIcon.textContent = theme === 'light' ? '💡' : '🔅';
+        }
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                currentTheme = e.matches ? 'dark' : 'light';
+                body.setAttribute('data-theme', currentTheme);
+                updateThemeIcon(currentTheme);
+            }
+        });
+    </script>
+</body>
+</html>
