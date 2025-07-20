@@ -540,6 +540,15 @@
             color: var(--link-color);
         }
 
+        /* Brand name responsive display */
+        .brand-short {
+            display: none;
+        }
+        
+        .brand-full {
+            display: inline;
+        }
+
         /* Responsive Styles */
         @media (max-width: 768px) {
             :root {
@@ -551,7 +560,7 @@
             }
             
             .navbar-container {
-                padding: 0.75rem 1.25rem;
+                padding: 0.75rem 1rem;
             }
             
             .navbar-brand {
@@ -559,12 +568,45 @@
             }
             
             .navbar-nav {
-                gap: 1.25rem;
+                gap: 0.75rem;
             }
             
             .navbar-nav a {
-                font-size: 0.875rem;
+                font-size: 0.8rem;
             }
+            
+            .theme-toggle {
+                margin-left: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .navbar-brand {
+                font-size: 0.95rem;
+            }
+            
+            .navbar-nav {
+                gap: 0.5rem;
+            }
+            
+            .navbar-nav a {
+                font-size: 0.75rem;
+            }
+            
+            .navbar-container {
+                padding: 0.75rem 0.75rem;
+            }
+            
+            /* Show short brand name on small screens */
+            .brand-full {
+                display: none;
+            }
+            
+            .brand-short {
+                display: inline;
+            }
+        }
             
             .container {
                 padding: 1.5rem 1.25rem 2.5rem;
@@ -733,7 +775,10 @@
     <!-- Top Navigation Bar -->
     <header class="top-navbar">
         <div class="navbar-container">
-            <a href="/" class="navbar-brand">Samarth Bansal</a>
+            <a href="/" class="navbar-brand">
+                <span class="brand-full">Samarth Bansal</span>
+                <span class="brand-short">Samarth</span>
+            </a>
             <nav class="navbar-nav">
                 <a href="/writing/">Writing</a>
                 <a href="/micro/">Notes</a>
