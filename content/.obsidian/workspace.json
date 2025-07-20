@@ -20,6 +20,16 @@
               "icon": "lucide-file",
               "title": "2025-07-19-1847"
             }
+          },
+          {
+            "id": "d41db8ad8be146ed",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
         ]
       }
@@ -40,7 +50,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "byModifiedTime",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -78,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "4cbc5a004065a9ba",
@@ -170,6 +181,7 @@
   },
   "active": "42f676e45c042c59",
   "lastOpenFiles": [
+    "posts/coding-assistants.md",
     "micro/2025-07-19-1847.md",
     "micro/2025-07-19-1445.md",
     "micro/2025-07-19-1430.md",
