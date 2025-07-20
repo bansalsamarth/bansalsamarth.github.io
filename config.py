@@ -32,7 +32,7 @@ class Config:
     CONTENT_DIR = os.path.join(BASE_DIR, "content")        # Source markdown files
     TEMPLATES_DIR = os.path.join(BASE_DIR, "templates")    # Jinja2 template files
     STATIC_DIR = os.path.join(BASE_DIR, "static")          # CSS, JS, images
-    OUTPUT_DIR = os.path.join(BASE_DIR, "output")          # Generated HTML files
+    OUTPUT_DIR = os.path.join(BASE_DIR, "docs")            # Generated HTML files
     
     # Content type subdirectories - different types of content
     POSTS_DIR = os.path.join(CONTENT_DIR, "posts")         # Blog posts
