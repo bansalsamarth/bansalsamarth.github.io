@@ -53,6 +53,28 @@ This is Samarth's personal blog/website built with a custom Python static site g
 4. GitHub Pages automatically deploys from `/docs` folder
 5. Live site: https://bansalsamarth.github.io
 
+## Preserving Custom Files During Build
+
+The generator automatically preserves certain files during rebuild:
+
+**Auto-preserved:**
+- `CNAME` (GitHub Pages custom domain)
+- Any `.html` files in `/docs` root (except `index.html`)
+
+**To preserve additional files manually:**
+Edit `generator.py` around line 242-248 and add your files to the list:
+```python
+files_to_preserve = [
+    'CNAME',  # GitHub Pages custom domain file
+    'your-custom-page.html',        # Your custom HTML pages
+    'special-landing.html',         # Any special pages
+    'assets/custom-styles.css',     # Custom CSS files
+    'robots.txt',                   # SEO files
+]
+```
+
+**Important:** Files in generated folders (`/posts/`, `/essays/`, etc.) are always regenerated and cannot be preserved.
+
 ## Coming Soon Sections
 
 Currently showing "coming soon" messages with original code commented out:
