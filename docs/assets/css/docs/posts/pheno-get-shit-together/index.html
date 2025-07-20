@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Toward a Phenomenology of Trying to Get My Shit Together - Samarth&#39;s Blog</title>
+    <meta name="description" content="Notes Toward a Phenomenology of Trying to Get My Shit Together">
+    <meta name="author" content="Samarth Bansal">
+    
+    <style>
+        :root {
+            --content-width: 600px;
+        }
+
+        /* Light mode colors */
+        :root {
+            --bg-primary: #fefdfb;
+            --bg-secondary: #f8f7f5;
+            --text-primary: rgb(17, 17, 17);
+            --text-secondary: rgb(82, 82, 82);
+            --date-color: rgb(138, 138, 138);
+            --link-color: rgb(93, 24, 220);
+            --link-hover: rgb(77, 20, 180);
+            --subtle-hover: rgba(93, 24, 220, 0.05);
+            --border-light: rgba(0, 0, 0, 0.06);
+            --blockquote-border: rgb(230, 230, 230);
+            --code-bg: rgb(248, 248, 248);
+            --horizontal-rule: rgb(238, 238, 238);
+            --highlight-bg: rgba(93, 24, 220, 0.05);
+            --newsletter-bg: rgb(250, 250, 250);
+            --navbar-bg: rgba(254, 253, 251, 0.95);
+        }
+
+        /* Dark mode colors */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1612;
+                --bg-secondary: #252118;
+                --text-primary: rgb(232, 232, 232);
+                --text-secondary: rgb(160, 160, 160);
+                --date-color: rgb(120, 120, 120);
+                --link-color: rgb(168, 132, 255);
+                --link-hover: rgb(190, 155, 255);
+                --subtle-hover: rgba(168, 132, 255, 0.1);
+                --border-light: rgba(255, 255, 255, 0.1);
+                --blockquote-border: rgb(60, 60, 60);
+                --code-bg: #2a251f;
+                --horizontal-rule: #3a342b;
+                --highlight-bg: rgba(168, 132, 255, 0.1);
+                --newsletter-bg: #201e1a;
+                --navbar-bg: rgba(26, 22, 18, 0.95);
+            }
+        }
+
+        /* Manual dark mode override */
+        [data-theme="dark"] {
+            --bg-primary: #1a1612;
+            --bg-secondary: #252118;
+            --text-primary: rgb(232, 232, 232);
+            --text-secondary: rgb(160, 160, 160);
+            --date-color: rgb(120, 120, 120);
+            --link-color: rgb(168, 132, 255);
+            --link-hover: rgb(190, 155, 255);
+            --subtle-hover: rgba(168, 132, 255, 0.1);
+            --border-light: rgba(255, 255, 255, 0.1);
+            --blockquote-border: rgb(60, 60, 60);
+            --code-bg: #2a251f;
+            --horizontal-rule: #3a342b;
+            --highlight-bg: rgba(168, 132, 255, 0.1);
+            --newsletter-bg: #201e1a;
+            --navbar-bg: rgba(26, 22, 18, 0.95);
+        }
+
+        /* Manual light mode override */
+        [data-theme="light"] {
+            --bg-primary: #fefdfb;
+            --bg-secondary: #f8f7f5;
+            --text-primary: rgb(17, 17, 17);
+            --text-secondary: rgb(82, 82, 82);
+            --date-color: rgb(138, 138, 138);
+            --link-color: rgb(93, 24, 220);
+            --link-hover: rgb(77, 20, 180);
+            --subtle-hover: rgba(93, 24, 220, 0.05);
+            --border-light: rgba(0, 0, 0, 0.06);
+            --blockquote-border: rgb(230, 230, 230);
+            --code-bg: rgb(248, 248, 248);
+            --horizontal-rule: rgb(238, 238, 238);
+            --highlight-bg: rgba(93, 24, 220, 0.05);
+            --newsletter-bg: rgb(250, 250, 250);
+            --navbar-bg: rgba(254, 253, 251, 0.95);
+        }
+
+        /* Base Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            background-color: var(--bg-primary);
+            padding-top: 4rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Top Navigation Bar */
+        .top-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--navbar-bg);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border-light);
+            z-index: 100;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .navbar-container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+            transition: color 0.2s ease;
+        }
+
+        .navbar-brand:hover {
+            color: var(--link-color);
+        }
+
+        .navbar-nav {
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            align-items: center;
+        }
+
+        .navbar-nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .navbar-nav a:hover {
+            color: var(--link-color);
+        }
+
+        .container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        /* Navigation */
+        nav {
+            margin-bottom: 4rem;
+        }
+
+        nav a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-right: 1.5rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Back to home link */
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            transition: color 0.2s ease;
+        }
+
+        .back-home:hover {
+            color: var(--link-color);
+        }
+
+        .back-home::before {
+            content: '←';
+            margin-right: 0.5rem;
+        }
+
+        /* Page Title */
+        .page-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: var(--text-primary);
+            margin: 0 0 2rem;
+        }
+
+        /* Posts List */
+        .posts-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .post-item {
+            display: flex;
+            align-items: baseline;
+            margin: 0.35rem 0;
+            padding: 0.5rem 0.75rem;
+            margin-left: -0.75rem;
+            margin-right: -0.75rem;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .post-item:hover {
+            background-color: var(--subtle-hover);
+        }
+
+        .post-date {
+            flex: 0 0 5rem;
+            color: var(--date-color);
+            font-size: 0.875rem;
+            font-weight: 400;
+            font-feature-settings: "tnum";
+            font-variant-numeric: tabular-nums;
+            letter-spacing: 0.01em;
+        }
+
+        .post-title {
+            flex: 1;
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .post-title a {
+            color: var(--text-primary);
+            text-decoration: none;
+            position: relative;
+            transition: color 0.15s ease;
+        }
+
+        .post-title a::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .post-item:hover .post-title a {
+            color: var(--link-color);
+        }
+
+        .post-item:hover .post-title a::after {
+            transform: scaleX(1);
+        }
+
+        .external-link {
+            color: var(--date-color);
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+        }
+
+        /* Post Page Styles */
+        article .post-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin: 0 0 3rem;
+            color: var(--text-primary);
+        }
+
+        .post-meta {
+            color: var(--text-secondary);
+            margin: 2.5rem 0;
+            font-size: 0.95rem;
+            font-weight: 400;
+        }
+        
+        .date-accent {
+            color: var(--link-color);
+            margin-right: 0.5rem;
+        }
+
+        .post-content {
+            font-size: 1.05rem;
+            font-weight: 400;
+            color: var(--text-primary);
+        }
+
+        .post-content p {
+            margin: 1.8em 0;
+        }
+
+        .post-content h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            margin: 2.5em 0 1em;
+            line-height: 1.3;
+        }
+
+        .post-content h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 2em 0 0.8em;
+            line-height: 1.4;
+        }
+
+        .post-content h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.8em 0 0.6em;
+        }
+
+        .post-content a {
+            color: var(--link-color);
+            text-decoration: underline;
+            text-decoration-color: rgba(93, 24, 220, 0.4);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+            transition: all 0.2s ease;
+        }
+
+        .post-content a:hover {
+            color: var(--link-hover);
+            text-decoration-color: var(--link-hover);
+        }
+
+        .post-content blockquote {
+            margin: 2em 0;
+            padding-left: 1.5em;
+            border-left: 2px solid var(--blockquote-border);
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        .post-content blockquote p {
+            margin: 0.8em 0;
+        }
+
+        .post-content code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9em;
+            background: var(--code-bg);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            color: var(--text-primary);
+        }
+
+        .post-content pre {
+            background: var(--code-bg);
+            padding: 1.2em;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 2em 0;
+            border: 1px solid var(--border-light);
+        }
+
+        .post-content pre code {
+            background: none;
+            padding: 0;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .post-content hr {
+            margin: 3em 0;
+            border: none;
+            border-top: 1px solid var(--horizontal-rule);
+        }
+
+        .post-content img {
+            max-width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 600px;
+        }
+
+        /* Home page specific styles */
+        .intro-section {
+            margin-bottom: 3rem;
+        }
+
+        .work-section {
+            margin-bottom: 3rem;
+        }
+
+        .work-section h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .page-links {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .page-links li {
+            margin: 0.8rem 0;
+        }
+
+        .page-links a {
+            display: inline-block;
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+
+        .page-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--link-color);
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .page-links a:hover::after {
+            transform: scaleX(1);
+        }
+
+        /* View Toggle Styles */
+        .view-toggle {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .view-toggle button {
+            background: none;
+            border: none;
+            padding: 0.4rem 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            position: relative;
+            transition: color 0.2s ease;
+            font-family: inherit;
+        }
+
+        .view-toggle button:hover {
+            color: var(--link-color);
+        }
+
+        .view-toggle button.active {
+            color: var(--link-color);
+        }
+
+        .view-toggle button.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--link-color);
+        }
+
+        /* Category Section Styles */
+        .category-section {
+            margin: 2.5rem 0;
+        }
+
+        .category-title {
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin: 0 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-light);
+            position: relative;
+        }
+
+        .category-title::before {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 2rem;
+            height: 1px;
+            background-color: var(--link-color);
+            opacity: 0.6;
+        }
+
+        /* Dark mode toggle */
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 0.25rem;
+            transition: color 0.3s ease;
+            margin-left: 1rem;
+        }
+
+        .theme-toggle:hover {
+            color: var(--link-color);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            :root {
+                --content-width: 100%;
+            }
+            
+            body {
+                padding-top: 3.5rem;
+            }
+            
+            .navbar-container {
+                padding: 0.75rem 1.25rem;
+            }
+            
+            .navbar-brand {
+                font-size: 1rem;
+            }
+            
+            .navbar-nav {
+                gap: 1.25rem;
+            }
+            
+            .navbar-nav a {
+                font-size: 0.875rem;
+            }
+            
+            .container {
+                padding: 1.5rem 1.25rem 2.5rem;
+            }
+            
+            article .post-title {
+                font-size: 2rem;
+            }
+
+            .post-content h2 {
+                font-size: 1.6rem;
+            }
+
+            .post-content h3 {
+                font-size: 1.3rem;
+            }
+
+            .post-content blockquote {
+                margin: 1.5em 0;
+                padding-left: 1.2em;
+            }
+
+            .post-item {
+                gap: 1.25rem;
+            }
+
+            .post-date {
+                flex: 0 0 4.5rem;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="top-navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-brand">Samarth Bansal</a>
+            <nav class="navbar-nav">
+                <a href="/writing/">Writing</a>
+                <a href="/micro/">Notes</a>
+                <a href="/contact/">Contact</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">💡</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        
+
+<a href="/blog/" class="back-home">Blog</a>
+
+
+        
+        <main>
+            
+<article>
+    <h1 class="post-title">Notes Toward a Phenomenology of Trying to Get My Shit Together</h1>
+    
+    
+    <div class="post-meta">
+        <span class="date-accent">•</span> April 02, 2025
+    </div>
+    
+    
+    <div class="post-content">
+        <p>I’m in one of those moods where I badly want to pontificate about life. But out of concerns for social approval and my own self-image—because I'm desperately trying not to be a bore (keyword: trying)—I’ve been resisting the urgent urge to philosophise.</p>
+<p>Because when you can’t get your shit together, you want justifications. And because writing is a skill that allows you to manipulate language into believing anything (like when I convinced myself last month how my “editor’s block” is a “this is what it takes to build something the world won’t let you” bs) you always—and I mean always—find a way to rationalise your imagined misery. (Fuck me.)</p>
+<p>I won’t engage in any of this. And in the tradition of the great existentialists—those unflinching chroniclers of raw human experience whose league I aspire to join through my published writing—I will pour down the phenomenological description of what I am really thinking. Fully unfiltered. (Okay, almost.) To get closer to figuring out exactly where this needless bourgeois melancholy comes from.</p>
+<hr />
+<p><strong>One:</strong> What I am going to say might just sound so wrong, so self-absorbed, so must-not-be-said, so arrogant (see how my brain is trying to forefront any potential criticism before even making the point… how cowardly) but my goodness, the moment I decide to shed away my self-flagellation and bouts of guilt, and accept that yeah, I am genuinely good at what I do, the stunning degree of mediocrity around me slaps my soul across the face.</p>
+<p>It makes me wonder: why, in this one precious life of mine (yes, Mary Oliver, always), am I forced to spend energy managing mediocrity when, you know, I could just… touch grass?</p>
+<p>What a tragedy to see someone who can’t do small things and yet lacks any self-awareness of their inadequacy, and then you—the reluctant empath—have to find sanitised ways to suggest “maybe have you considered this?” when what’s churning inside is far less diplomatic.</p>
+<p>I could clinically dissect the mediocrity around me, but that would reveal identities. Especially at work, where passable work is ignorantly celebrated as excellence. And when confronted with this, I really lose it internally, and yet, I pretend I haven't and go on with the charade.</p>
+<p>(I don’t mind describing it all, but I will restrain myself for now because my writing ethics haven’t yet configured how to account for my recent realisation that I am a deeply judgemental person who can—in most cases—pretend to hide his judgment for conflict avoidance and purposes of social harmony.)</p>
+<hr />
+<p><strong>Two:</strong> What happens in my family is a story I will tell if I live long enough to see where this story takes me. But, I kid you not, being in the thick of things, it's frustratingly fascinating how four different people from the same family can narrate four wildly different truths about what's really happening—each version constructed by lived experience and cemented by repetition.</p>
+<p>In the last week alone, my sister, my mother and my father have each told me their versions. All three are convinced their perception is reality. None of their stories match up with each other, and none match with the one I am telling myself. And there is no one <em>(</em>in the family) to hear my version (elder kid problems) and tell me where I am responsible for whatever is going on. (The peculiar burden of a parentified firstborn, uff.)</p>
+<p>And weirdly, this is yet again—the bane of my life situation—where my physical reality and imagination are meeting in an unplanned way: I am living right inside a Rashomon maze in the visible world, simultaneously character and analyst in my own drama, while dreaming of an ambiguous political fiction where the Prime Minister dies and everyone constructs a different story where everything is true and nothing is wrong—and yet nobody knows what actually happened, only that something must be figured out from these colliding narratives. (Congratulations, if I ever write this book, the creative inspiration might just be the lived experience of a dysfunctional Indian family.)</p>
+<hr />
+<p><strong>Three:</strong> I have been wondering if my fundamental nature prefers losing as an idealist over winning as a pragmatist. Because there is a chasm between how I think and how I behave—and the uncomfortable truths this reveals leave me naked before my own limitations.</p>
+<p>See, I’m not a moralist and I don’t want to tell anyone—just no one—how they should live their life. But I have a vision for a good life for myself, and the running theme across that sketch is a deep immersion in ideas, in thoughts, deeply soaked in the physical sensations of the world, in a state of high awareness of being. All of which require so much resistance against the current, and I know how, anyday I want, I could just turn off all the knobs and recede to this state which feels like home to me.</p>
+<p>This doesn’t gel with the good quests I have chosen. This is not an entrepreneurial mindset. This is not a sign of good leadership. You don’t <em>do</em> things in the world if this is how you think. Or at least I am not able to reconcile the two.</p>
+<p>What my behaviour reveals when no one is watching—when I’ve met just enough worldly commitments to quiet my guilt—is the state of being of a romantic writer wanting to marinate on observations, slow-cooking what feels like stories worth telling. That’s it.</p>
+<p>I experience reality through an infinity of low-resolution narratives and I can’t help but sharpen them into focus, filling gaps in what’s unclear, until multiple threads emerge together, invisible to everyone until I decide to release them (which is exactly the reason why I write).</p>
+<p>And so I get lost, in my own thoughts, and something emerges.</p>
+<p>And I <em>want</em> to get lost, because I want to be surprised—I want to know where my mind can take me to if I let it, what can come out of me if I really sustain attention to where it’s going, and the possibility if I can stick with a single thought for hours and days and watch—through my own hands—layers unfold I didn’t even know existed.</p>
+<p><em>This is me.</em></p>
+<p>And here I am, trying to diagnose what’s wrong with me, how can I be so disorganised to not have published a single article in <em>The Plank</em>—a journo magazine I launched with so much conviction—for four straight weeks.</p>
+<p>I exactly know what’s happening, which is I am fighting my mind’s natural rhythm and the way it craves to exist, trying to force it to comply with the organised resource allocation that a healthy consistent publication demands. I don’t have anyone to go for advice because there is no right or wrong. It just is what it is. I have made a choice, and I want to see how this plays out.</p>
+<p>It’s just that I don’t understand what to do with this gap between aspiration and limitation. I can almost, always, at my own call, abstract away everything to nothingness—but that doesn’t take away the angst of how I see myself and what my behavior is revealing to me: is it a journey to go on and complete (but for what?) or a reality to accept and embrace (but for what?)</p>
+<p>Whatever it is, at this point—as in, at the point of me writing what you are reading—I just don't care. I only care about the world in my head—and preserving the quality of attention needed to see clearly, in high-resolution, what my mind is up to, and then using language, as Wittgenstein said, to share that image with whoever gives two little fucks enough to look.</p>
+<hr />
+<p><strong>Four:</strong> A friend—who is genuinely brilliant, possibly one of the smartest living beings I know—often says:</p>
+<blockquote>
+<p><em>इक आग का दरिया है और डूब के जाना है</em></p>
+</blockquote>
+<p>The path to close the gap. He has crossed it. He is still crossing it.</p>
+<p>Perhaps that’s how you get your shit together? <em>This</em> dariya crossing is what it takes?</p>
+<p>But I kid you not, being on this river of fire sucks—and I often wonder why I'm putting myself through it. I might just drown spectacularly, and then justify it as evidence for fighting the “good” fight.</p>
+<p>Maybe we find meaning only in pain—because happiness tends to bring guilt? Because contentment feels like treachery to our ambitions?</p>
+<hr />
+<p><strong>Five:</strong> This is the point where I have to alert you, my dear reader, that I am committing journalistic folly in zooming down to the small parts of a broken system and not looking at the whole. It’s hard to look at the whole and grasp the system—and it’s exponentially harder when that system is self. Just be alert. My thoughts which insist on surfacing are biased towards my existential angst. Which has made me aware that I simply can’t not have these—and I simply just need to exist with multiple states of being in my head.</p>
+<p>The angst can’t be resolved. It can either be carried along, like a companion in my attempt to bridge what I am and what I aspire to be. Or I can submit to it and forget it, which leads to despair. And despair is for the bores, which as I said, I am desperately trying not to be.</p>
+<hr />
+<p>***PS:** The existence of this piece is the clearest example of my angst. There was no reason to write this. I have important writing to do. Deliverables. Responsibilities. And yet what you just read is me dressing up my angst—giving it form, substance, life. Proof.*</p>
+
+    </div>
+</article>
+
+        </main>
+    </div>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.querySelector('.theme-icon');
+        const body = document.body;
+
+        // Check for saved theme preference or default to system preference
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        let currentTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+        
+        // Apply initial theme
+        body.setAttribute('data-theme', currentTheme);
+        updateThemeIcon(currentTheme);
+
+        // Theme toggle event listener
+        themeToggle.addEventListener('click', () => {
+            currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+            body.setAttribute('data-theme', currentTheme);
+            localStorage.setItem('theme', currentTheme);
+            updateThemeIcon(currentTheme);
+        });
+
+        // Update theme icon
+        function updateThemeIcon(theme) {
+            themeIcon.textContent = theme === 'light' ? '💡' : '🔅';
+        }
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                currentTheme = e.matches ? 'dark' : 'light';
+                body.setAttribute('data-theme', currentTheme);
+                updateThemeIcon(currentTheme);
+            }
+        });
+    </script>
+</body>
+</html>

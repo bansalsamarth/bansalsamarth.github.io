@@ -61,15 +61,21 @@ The generator automatically preserves certain files during rebuild:
 - `CNAME` (GitHub Pages custom domain)
 - Any `.html` files in `/docs` root (except `index.html`)
 
-**To preserve additional files manually:**
-Edit `generator.py` around line 242-248 and add your files to the list:
+**To preserve additional files/folders manually:**
+Edit `generator.py` around line 242-268 and add your items to the lists:
 ```python
 files_to_preserve = [
     'CNAME',  # GitHub Pages custom domain file
     'your-custom-page.html',        # Your custom HTML pages
-    'special-landing.html',         # Any special pages
-    'assets/custom-styles.css',     # Custom CSS files
     'robots.txt',                   # SEO files
+    'sitemap.xml',                  # Sitemap
+]
+
+folders_to_preserve = [
+    'assets',                       # Custom assets folder (already included)
+    'uploads',                      # Upload directory
+    'media',                        # Media files
+    'custom-folder',                # Any custom directories
 ]
 ```
 

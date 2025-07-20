@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thoughts and observations on data journalism in India - Samarth&#39;s Blog</title>
+    <meta name="description" content="Thoughts and observations on data journalism in India">
+    <meta name="author" content="Samarth Bansal">
+    
+    <style>
+        :root {
+            --content-width: 600px;
+        }
+
+        /* Light mode colors */
+        :root {
+            --bg-primary: #fefdfb;
+            --bg-secondary: #f8f7f5;
+            --text-primary: rgb(17, 17, 17);
+            --text-secondary: rgb(82, 82, 82);
+            --date-color: rgb(138, 138, 138);
+            --link-color: rgb(93, 24, 220);
+            --link-hover: rgb(77, 20, 180);
+            --subtle-hover: rgba(93, 24, 220, 0.05);
+            --border-light: rgba(0, 0, 0, 0.06);
+            --blockquote-border: rgb(230, 230, 230);
+            --code-bg: rgb(248, 248, 248);
+            --horizontal-rule: rgb(238, 238, 238);
+            --highlight-bg: rgba(93, 24, 220, 0.05);
+            --newsletter-bg: rgb(250, 250, 250);
+            --navbar-bg: rgba(254, 253, 251, 0.95);
+        }
+
+        /* Dark mode colors */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1612;
+                --bg-secondary: #252118;
+                --text-primary: rgb(232, 232, 232);
+                --text-secondary: rgb(160, 160, 160);
+                --date-color: rgb(120, 120, 120);
+                --link-color: rgb(168, 132, 255);
+                --link-hover: rgb(190, 155, 255);
+                --subtle-hover: rgba(168, 132, 255, 0.1);
+                --border-light: rgba(255, 255, 255, 0.1);
+                --blockquote-border: rgb(60, 60, 60);
+                --code-bg: #2a251f;
+                --horizontal-rule: #3a342b;
+                --highlight-bg: rgba(168, 132, 255, 0.1);
+                --newsletter-bg: #201e1a;
+                --navbar-bg: rgba(26, 22, 18, 0.95);
+            }
+        }
+
+        /* Manual dark mode override */
+        [data-theme="dark"] {
+            --bg-primary: #1a1612;
+            --bg-secondary: #252118;
+            --text-primary: rgb(232, 232, 232);
+            --text-secondary: rgb(160, 160, 160);
+            --date-color: rgb(120, 120, 120);
+            --link-color: rgb(168, 132, 255);
+            --link-hover: rgb(190, 155, 255);
+            --subtle-hover: rgba(168, 132, 255, 0.1);
+            --border-light: rgba(255, 255, 255, 0.1);
+            --blockquote-border: rgb(60, 60, 60);
+            --code-bg: #2a251f;
+            --horizontal-rule: #3a342b;
+            --highlight-bg: rgba(168, 132, 255, 0.1);
+            --newsletter-bg: #201e1a;
+            --navbar-bg: rgba(26, 22, 18, 0.95);
+        }
+
+        /* Manual light mode override */
+        [data-theme="light"] {
+            --bg-primary: #fefdfb;
+            --bg-secondary: #f8f7f5;
+            --text-primary: rgb(17, 17, 17);
+            --text-secondary: rgb(82, 82, 82);
+            --date-color: rgb(138, 138, 138);
+            --link-color: rgb(93, 24, 220);
+            --link-hover: rgb(77, 20, 180);
+            --subtle-hover: rgba(93, 24, 220, 0.05);
+            --border-light: rgba(0, 0, 0, 0.06);
+            --blockquote-border: rgb(230, 230, 230);
+            --code-bg: rgb(248, 248, 248);
+            --horizontal-rule: rgb(238, 238, 238);
+            --highlight-bg: rgba(93, 24, 220, 0.05);
+            --newsletter-bg: rgb(250, 250, 250);
+            --navbar-bg: rgba(254, 253, 251, 0.95);
+        }
+
+        /* Base Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            background-color: var(--bg-primary);
+            padding-top: 4rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Top Navigation Bar */
+        .top-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--navbar-bg);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border-light);
+            z-index: 100;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .navbar-container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+            transition: color 0.2s ease;
+        }
+
+        .navbar-brand:hover {
+            color: var(--link-color);
+        }
+
+        .navbar-nav {
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            align-items: center;
+        }
+
+        .navbar-nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .navbar-nav a:hover {
+            color: var(--link-color);
+        }
+
+        .container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        /* Navigation */
+        nav {
+            margin-bottom: 4rem;
+        }
+
+        nav a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-right: 1.5rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Back to home link */
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            transition: color 0.2s ease;
+        }
+
+        .back-home:hover {
+            color: var(--link-color);
+        }
+
+        .back-home::before {
+            content: '←';
+            margin-right: 0.5rem;
+        }
+
+        /* Page Title */
+        .page-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: var(--text-primary);
+            margin: 0 0 2rem;
+        }
+
+        /* Posts List */
+        .posts-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .post-item {
+            display: flex;
+            align-items: baseline;
+            margin: 0.35rem 0;
+            padding: 0.5rem 0.75rem;
+            margin-left: -0.75rem;
+            margin-right: -0.75rem;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .post-item:hover {
+            background-color: var(--subtle-hover);
+        }
+
+        .post-date {
+            flex: 0 0 5rem;
+            color: var(--date-color);
+            font-size: 0.875rem;
+            font-weight: 400;
+            font-feature-settings: "tnum";
+            font-variant-numeric: tabular-nums;
+            letter-spacing: 0.01em;
+        }
+
+        .post-title {
+            flex: 1;
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .post-title a {
+            color: var(--text-primary);
+            text-decoration: none;
+            position: relative;
+            transition: color 0.15s ease;
+        }
+
+        .post-title a::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .post-item:hover .post-title a {
+            color: var(--link-color);
+        }
+
+        .post-item:hover .post-title a::after {
+            transform: scaleX(1);
+        }
+
+        .external-link {
+            color: var(--date-color);
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+        }
+
+        /* Post Page Styles */
+        article .post-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin: 0 0 3rem;
+            color: var(--text-primary);
+        }
+
+        .post-meta {
+            color: var(--text-secondary);
+            margin: 2.5rem 0;
+            font-size: 0.95rem;
+            font-weight: 400;
+        }
+        
+        .date-accent {
+            color: var(--link-color);
+            margin-right: 0.5rem;
+        }
+
+        .post-content {
+            font-size: 1.05rem;
+            font-weight: 400;
+            color: var(--text-primary);
+        }
+
+        .post-content p {
+            margin: 1.8em 0;
+        }
+
+        .post-content h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            margin: 2.5em 0 1em;
+            line-height: 1.3;
+        }
+
+        .post-content h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 2em 0 0.8em;
+            line-height: 1.4;
+        }
+
+        .post-content h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.8em 0 0.6em;
+        }
+
+        .post-content a {
+            color: var(--link-color);
+            text-decoration: underline;
+            text-decoration-color: rgba(93, 24, 220, 0.4);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+            transition: all 0.2s ease;
+        }
+
+        .post-content a:hover {
+            color: var(--link-hover);
+            text-decoration-color: var(--link-hover);
+        }
+
+        .post-content blockquote {
+            margin: 2em 0;
+            padding-left: 1.5em;
+            border-left: 2px solid var(--blockquote-border);
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        .post-content blockquote p {
+            margin: 0.8em 0;
+        }
+
+        .post-content code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9em;
+            background: var(--code-bg);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            color: var(--text-primary);
+        }
+
+        .post-content pre {
+            background: var(--code-bg);
+            padding: 1.2em;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 2em 0;
+            border: 1px solid var(--border-light);
+        }
+
+        .post-content pre code {
+            background: none;
+            padding: 0;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .post-content hr {
+            margin: 3em 0;
+            border: none;
+            border-top: 1px solid var(--horizontal-rule);
+        }
+
+        .post-content img {
+            max-width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 600px;
+        }
+
+        /* Home page specific styles */
+        .intro-section {
+            margin-bottom: 3rem;
+        }
+
+        .work-section {
+            margin-bottom: 3rem;
+        }
+
+        .work-section h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .page-links {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .page-links li {
+            margin: 0.8rem 0;
+        }
+
+        .page-links a {
+            display: inline-block;
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+
+        .page-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--link-color);
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .page-links a:hover::after {
+            transform: scaleX(1);
+        }
+
+        /* View Toggle Styles */
+        .view-toggle {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .view-toggle button {
+            background: none;
+            border: none;
+            padding: 0.4rem 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            position: relative;
+            transition: color 0.2s ease;
+            font-family: inherit;
+        }
+
+        .view-toggle button:hover {
+            color: var(--link-color);
+        }
+
+        .view-toggle button.active {
+            color: var(--link-color);
+        }
+
+        .view-toggle button.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--link-color);
+        }
+
+        /* Category Section Styles */
+        .category-section {
+            margin: 2.5rem 0;
+        }
+
+        .category-title {
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin: 0 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-light);
+            position: relative;
+        }
+
+        .category-title::before {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 2rem;
+            height: 1px;
+            background-color: var(--link-color);
+            opacity: 0.6;
+        }
+
+        /* Dark mode toggle */
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 0.25rem;
+            transition: color 0.3s ease;
+            margin-left: 1rem;
+        }
+
+        .theme-toggle:hover {
+            color: var(--link-color);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            :root {
+                --content-width: 100%;
+            }
+            
+            body {
+                padding-top: 3.5rem;
+            }
+            
+            .navbar-container {
+                padding: 0.75rem 1.25rem;
+            }
+            
+            .navbar-brand {
+                font-size: 1rem;
+            }
+            
+            .navbar-nav {
+                gap: 1.25rem;
+            }
+            
+            .navbar-nav a {
+                font-size: 0.875rem;
+            }
+            
+            .container {
+                padding: 1.5rem 1.25rem 2.5rem;
+            }
+            
+            article .post-title {
+                font-size: 2rem;
+            }
+
+            .post-content h2 {
+                font-size: 1.6rem;
+            }
+
+            .post-content h3 {
+                font-size: 1.3rem;
+            }
+
+            .post-content blockquote {
+                margin: 1.5em 0;
+                padding-left: 1.2em;
+            }
+
+            .post-item {
+                gap: 1.25rem;
+            }
+
+            .post-date {
+                flex: 0 0 4.5rem;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="top-navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-brand">Samarth Bansal</a>
+            <nav class="navbar-nav">
+                <a href="/writing/">Writing</a>
+                <a href="/micro/">Notes</a>
+                <a href="/contact/">Contact</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">💡</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        
+
+<a href="/blog/" class="back-home">Blog</a>
+
+
+        
+        <main>
+            
+<article>
+    <h1 class="post-title">Thoughts and observations on data journalism in India</h1>
+    
+    
+    <div class="post-meta">
+        <span class="date-accent">•</span> January 01, 2020
+    </div>
+    
+    
+    <div class="post-content">
+        <p>Today, I complete five years in journalism: one year at <em>The Hindu</em> (my first job, straight out of university), two years at the <em>Hindustan Times</em> —which overlapped with a five-month fellowship at the <em>Wall Street Journal</em> —and two years as a freelancer.</p>
+<p>‘Data journalist’ was my official job description in full-time roles. But I find that term redundant and I don’t like to use it anymore. All journalism should be data-informed and evidence-based. I prefer calling myself just a ‘reporter’. This identity shift—primarily in my head, I doubt if anyone else cares—is a reflection of the changing nature of <a href="http://samarthbansal.com/work/">my work</a>. I have moved from writing newsy analytical stories to a mix of investigative and narrative reportage. Data and empirical thinking continue to be at the center of my work, but it’s no longer defined by it.</p>
+<p>This post is about data journalism in the way most people understand it: journalists who specialise in producing data-driven stories, a task that includes everything from collecting data to analysing and presenting it visually.</p>
+<p>Here are some thoughts and observations on data work in Indian newsrooms.</p>
+<p><strong>1. Data journalism is an umbrella term which means different things to different people:</strong> adding data-backed context in daily news coverage; analysis of issues dominating the news cycle; making infographics with interesting data factoids; narrating stories and explaining complex concepts using visual graphics; using hard data for investigations, highlighting previously unreported trends and throwing light on specific incidents; empirical coverage of big-ticket events like elections and budgets.</p>
+<p>I have done all of this. It’s useful to think of them as different tasks as the skill sets vary widely. A lot of stuff can be done without writing a single line of code or making pivot tables in spreadsheets. But the fanciest stuff we do gets the most attention, making regular data work appear more complicated than it is.</p>
+<p><strong>2. Data journalism is not just about data visualisation or interactive stories:</strong> I categorically mention this as a separate point because I used to conflate the two when I started. Back in 2015, data journalism for me was the visual stuff the <em>New York Times</em> published. I would browse their interactive stories, think about how we can take inspiration for telling similar stories in India, rant about the technical restrictions our archaic online publishing systems posed, and ultimately make peace with the baby steps we took in creating an ecosystem that valued interactive storytelling.</p>
+<p>I learnt my lesson soon. I was getting too attached to the form. Yes, charts are nice. Interactives, when thoughtfully designed, can help tell brilliant stories. But that should not divert our focus from the fundamentals, which is the data itself and the meaning it’s adding to the story. Once you get past that stage, you can figure out how to stitch words and visuals to communicate your findings to the world. Sometimes, one small static chart can tell a story that no words can capture, and in other cases, data leads you to nuanced explanations where clear prose becomes crucial.</p>
+<p><strong>3. Visual journalism in India can wait:</strong> If a newsroom has infinite resources, sure, they can—should—hire a team of a dozen or two coder-journalists with excellent programming and design skills. Let them work on exciting special projects, fully leveraging the interactive nature of the internet to tell relevant and compelling stories. From mid-2016 to mid-2018, our small data and visuals team at the <em>Hindustan Times</em> —synonymous in journalism circles with bylines of <a href="http://www.gurmanbhatia.com/">Gurman Bhatia</a> and <a href="http://harryjstevens.com/">Harry Stevens</a>—did just that. I loved the work we did, and I learnt a lot. Bhatia has since moved to work for <em>Reuters</em> in Singapore and Stevens is at the <em>Washington Post.</em></p>
+<p>But over these years, as I have been thinking more broadly about Indian journalism, I am increasingly convinced that we are not yet ready to institutionalise this kind of work. Cash-constrained Indian newsrooms neither have the resources to hire that talent nor the imagination to nurture it. Yes, things have to start somewhere, but I don’t see that time is now.</p>
+<p>Instead, we should be prioritising work that produces original reporting and boosts collective news-gathering efforts. Newsrooms should hire journalists who can code and ask them to think creatively and build original datasets, ideate on innovative ways to use statistics in identifying ignored trends, invest in long investigative projects. While the focus remains on sharp data reporting, newsroom nerds can occasionally produce visually appealing journalism.</p>
+<p>Journalists should still make simple, effective and aesthetically pleasing charts using simple tools like <a href="https://www.datawrapper.de/">DataWrapper</a>, which have evolved significantly in terms of capabilities over the last few years. But for now, a dedicated focus on building a culture of interactive and visual journalism can wait.</p>
+<p><strong>4. Data as a tool for independent assessment:</strong> It is empowering to work with raw data and not relying solely on the findings of government committees, think tanks and academics, especially when the data is easily available, the analysis work is easy and the issue is hot in the news cycle. It also allows journalists take a fresh look at things and have more informed discussions with domain experts about their work, understand the analytical frameworks that form the backbone of their arguments, and get to the core of disputes when experts disagree on the interpretation of the same data. Doing this work made me appreciate the limitations of data work and a more mindful consumer of numbers in a world where a high-degree of bullshit comes packaged with charts and figures.</p>
+<p><strong>5. Context is king:</strong> Every data analyst knows this. Having data is not enough. You need to ask interesting and meaningful questions to interrogate the data, place it in context, devoid of which you get meaningless number-heavy stories produced for the sake of filling newspaper pages. That’s also the reason I enjoy collaborating with reporters who have strong domain knowledge of their beats.</p>
+<p><strong>6. Data journalism is not objective journalism:</strong> Data is objective? Haha. I can narrate multiple stories from the same underlying dataset. It’s easy. Context introduces subjectivity in interpretation, from the questions you ask to what you consider significant. Data journalism should not occupy any special place in the larger philosophical discussions about objectivity in journalism. The same arguments are applicable.</p>
+<p><strong>7. Data is not the solution to misinformation:</strong> Many solutions aiming to solve the internet-driven deluge of misinformation ignore how communication technology has evolved over centuries, how mediums impact how we learn about the world, the cognitive processes that drive how humans process and consume information, and the complexities of our chaotic and polluted information ecosystem. Ignoring that leads to an incomplete diagnosis of the problem and diverts attention to misguided solutions.</p>
+<p>‘Data journalism as an antidote to fake news’ is one of those. It is not. We are confronting a much larger epistemic problem and data-based articles are not going to solve it.</p>
+<p><strong>8. It’s important to know what you know and don’t know, what you can know and can’t know:</strong> numbers, many think, offer divine certainty. In the wake of controversial issues dominating the news cycle, data journalists are asked to wave their magic wands to offer authoritative data-backed answers.</p>
+<p>There is some merit in that expectation. It is, in fact, the fundamental premise of evidence-based journalism. But it’s not always possible and we must acknowledge the limitations of data. Reasons vary from lack of data to important caveats which can’t simply be left as an asterisk.</p>
+<p>Maybe the best answer an analysis can produce is: “we don’t know for sure what the hell is happening. But we do know that A and B are likely false, C and D may be true, and not enough is known about E and F”.</p>
+<p>This is a perfectly reasonable outcome of a meaningful data analysis. But this doesn’t satisfy our deep desire for instant explanations and catchy headlines. In some cases, I see that a version of the story I skipped and filed in my trash—because it was not meeting rigorous standards—appeared in another publication. They let it through. This is especially true for reporting on non-scientific public opinion surveys. There is not much I can do about it, other than adding it to my long list of rants on how journalists do their work.</p>
+<p><strong>9. Supporting data work with non-data work, and vice versa:</strong> A solid authoritative story is one where your key point is backed by quantitative data, qualitative evidence and theoretical arguments. If you find contradictions, the easy way is to leave it there, and write a version based on the ‘he said, she said’ reporting template. The other option—which requires more work, and time—is to dig in further to reconcile what is happening and explaining those contradictions. If the data is good enough, it must reflect on something real that is happening.</p>
+<p><strong>10. Data as an entry point into a story:</strong> A key journalistic lesson I have learnt in the last two years is that getting access to a novel dataset or documents is not the end. Great stories emerge when you look at data as a lead in to a story, and not the story itself. Think about data as a human source, who came and told you something interesting, which makes you curious and raises questions, and you go on with a reporter’s mindset to find answers. This is the data journalism I would like to see more of.</p>
+<p><strong>11. Newsroom collaborations:</strong> Many journalists treat data reporters as members of a data desk. They say: “I am working on this article, can you give me some data?”; “Can you make a chart for my story?”.</p>
+<p>I haven’t yet figured out polite ways to communicate that this is not our job. This is not the way to collaborate.</p>
+<p>Some journalists are just lazy, not even making the effort to find relevant data reports or call their sources to ask for directions, assuming they can just dump it on the data team. They are the ones who think of numbers and charts as an afterthought, a thing to strike off their to-do list.</p>
+<p>Some make the effort and reach out for help when they get stuck. A few see our skills as complementary and want to collaborate in telling a good story, right from ideation to production. These are folks I like to work with.</p>
+<p><strong>12. Correlation is not causation:</strong> If you have read this far about data journalism, you have probably heard this phrase a zillion times. Yet, analysis pieces continue to attribute cause-effect relationships based on correlations alone. Correlations are important as they help in generating a possible set of hypothesis. But we must be careful in drawing inferences based on correlations.</p>
+<p><strong>13. So what is causation?</strong> I also see a reverse trend. People say ‘correlation is not causation’ and feel smart. Yet, many of the same folks will casually make causal claims in other places without hard evidence.</p>
+<p>Lack of causal explanations hinders our ability to answer important “why” questions. But thinking about causation, if done methodically and rigorously, is not trivial. I don’t have any meaningful insight to offer here than just highlighting that this is also a problem I confront and currently in the process of thinking and reading more on causality.</p>
+<p><strong>14. Lack of transparency:</strong> One of my major concerns that goes in tandem with my excitement looking at the rise of data journalism is the lack of transparency and openness—in sharing raw data, conveying analytical techniques, assumptions and calculation methods used in the analysis process.</p>
+<p>Editors don’t have the time or ability to question the methods that end up generating a summary table. Readers don’t have the relevant details or access to raw data to replicate the findings or test the conclusion for themselves. This is problematic.</p>
+<p>That’s my general observation. There are exceptions. <em>Mint,</em> for instance, does a good job of adding explanations on their calculations in chart descriptions. But as a community, we can do a better job of being more open and sharing more data.</p>
+<p>At the <em>Hindustan Times</em> , we started a GitHub repository for making all our data public, but the practice that didn’t last beyond a few stories. There is no incentive apart from individual motivation. It’s not that hard if we place it high on priority. We should.</p>
+<p><strong>15. Editorial filters:</strong> A common problem across newsrooms is the lack of senior editors who understand data. Every reporter—irrespective of how good or experienced they are—needs an editor who looks critically at their work. An editor’s job is an important part of the machinery that makes journalism different from other forms of communication. But if editors are not equipped to edit and question data stories, the filter becomes weak and garbage is guaranteed. I am not immune to this either and guilty of having let some bullshit through in my writing—sorry about that—retrospectively hoping that an editor had spotted that stuff at the time of publishing.</p>
+<p><strong>16</strong>. <strong>Data literacy in the newsroom:</strong> While I always wish that more journalists appreciate the value in learning spreadsheets and put consistent efforts to get used to it, there is a deeper problem—the lack of data literacy. We don’t emphasise enough on empirical thinking as a foundational element for understanding the world when we talk about data in journalism. You don’t need any number-crunching skills to find relevant data for a story. What comes first is asking the right empirical questions and having a frame to evaluate claims.</p>
+<p>Data literacy is different from data analysis. It’s a skill in itself. You don’t need a math degree to assess the quality of data and think about possible errors and biases in sampling or measurement process or to gauge the limitations of proxy statistics. If someone sends you a survey report or a press release, you need to run basic sanity checks before referring it in your story.</p>
+<p>Data often misleads. To guard themselves, journalists need to become data literate and regularly fine-tune their bullshit detector.</p>
+<hr />
+<p>I repeat: All journalism should be data-informed. To get a better understanding of data, I recommend the following books:</p>
+<ul>
+<li><a href="https://towcenter.gitbooks.io/curious-journalist-s-guide-to-data/content/">The Curious Journalist’s Guide to Data</a> by Jonathan Stray (available as free online ebook)</li>
+<li><a href="https://www.callingbullshit.org/">Calling Bullshit: The Art of Scepticism in a Data-Driven World</a> by Carl T. Bergstrom and Jevin D. West</li>
+</ul>
+<p>It’s never too late to start learning new things.</p>
+
+    </div>
+</article>
+
+        </main>
+    </div>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.querySelector('.theme-icon');
+        const body = document.body;
+
+        // Check for saved theme preference or default to system preference
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        let currentTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+        
+        // Apply initial theme
+        body.setAttribute('data-theme', currentTheme);
+        updateThemeIcon(currentTheme);
+
+        // Theme toggle event listener
+        themeToggle.addEventListener('click', () => {
+            currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+            body.setAttribute('data-theme', currentTheme);
+            localStorage.setItem('theme', currentTheme);
+            updateThemeIcon(currentTheme);
+        });
+
+        // Update theme icon
+        function updateThemeIcon(theme) {
+            themeIcon.textContent = theme === 'light' ? '💡' : '🔅';
+        }
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                currentTheme = e.matches ? 'dark' : 'light';
+                body.setAttribute('data-theme', currentTheme);
+                updateThemeIcon(currentTheme);
+            }
+        });
+    </script>
+</body>
+</html>

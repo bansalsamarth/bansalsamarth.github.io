@@ -238,7 +238,7 @@ class SiteGenerator:
         preserved_files = []
         
         if os.path.exists(Config.OUTPUT_DIR):
-            # Files to preserve during rebuild - ADD YOUR CUSTOM FILES HERE
+            # Files and folders to preserve during rebuild - ADD YOUR CUSTOM FILES HERE
             files_to_preserve = [
                 'CNAME',  # GitHub Pages custom domain file
                 # Existing custom HTML pages (preserve these legacy articles)
@@ -251,10 +251,20 @@ class SiteGenerator:
                 'five-books-clear-thinking.html',
                 'thirty-thriving.html',
                 'india-food-politics-half-truths.html',
+                'romantic-idiot.html',
                 # Add any NEW custom files you want to preserve:
                 # 'your-custom-page.html',
                 # 'special-landing.html',
                 # 'assets/custom-file.css',
+            ]
+            
+            # Folders to preserve during rebuild - ADD YOUR CUSTOM FOLDERS HERE
+            folders_to_preserve = [
+                'assets',  # Custom assets folder with images, CSS, etc.
+                # Add any NEW folders you want to preserve:
+                # 'uploads',
+                # 'media',
+                # 'custom-folder',
             ]
             
             # Auto-detect custom HTML files in root (not in generated folders)
@@ -265,33 +275,55 @@ class SiteGenerator:
                     file not in files_to_preserve):  # Already in manual list
                     files_to_preserve.append(file)
             
-            # Backup preserved files
+            # Backup preserved files and folders
             temp_dir = os.path.join(Config.BASE_DIR, '.temp_preserve')
-            if files_to_preserve:
+            all_items_to_preserve = files_to_preserve + folders_to_preserve
+            
+            if all_items_to_preserve:
                 os.makedirs(temp_dir, exist_ok=True)
+                
+                # Backup files
                 for file_path in files_to_preserve:
                     full_path = os.path.join(Config.OUTPUT_DIR, file_path)
-                    if os.path.exists(full_path):
+                    if os.path.exists(full_path) and os.path.isfile(full_path):
                         temp_path = os.path.join(temp_dir, file_path)
                         os.makedirs(os.path.dirname(temp_path), exist_ok=True)
                         shutil.copy2(full_path, temp_path)
                         preserved_files.append(file_path)
+                
+                # Backup folders
+                for folder_path in folders_to_preserve:
+                    full_path = os.path.join(Config.OUTPUT_DIR, folder_path)
+                    if os.path.exists(full_path) and os.path.isdir(full_path):
+                        temp_path = os.path.join(temp_dir, folder_path)
+                        shutil.copytree(full_path, temp_path)
+                        preserved_files.append(f"{folder_path}/ (folder)")
             
             # Clean existing output directory
             shutil.rmtree(Config.OUTPUT_DIR)
             
-            # Restore preserved files
+            # Restore preserved files and folders
             if preserved_files:
                 os.makedirs(Config.OUTPUT_DIR, exist_ok=True)
-                for file_path in preserved_files:
+                
+                # Restore files
+                for file_path in files_to_preserve:
                     temp_path = os.path.join(temp_dir, file_path)
-                    full_path = os.path.join(Config.OUTPUT_DIR, file_path)
-                    os.makedirs(os.path.dirname(full_path), exist_ok=True)
-                    shutil.copy2(temp_path, full_path)
+                    if os.path.exists(temp_path):
+                        full_path = os.path.join(Config.OUTPUT_DIR, file_path)
+                        os.makedirs(os.path.dirname(full_path), exist_ok=True)
+                        shutil.copy2(temp_path, full_path)
+                
+                # Restore folders
+                for folder_path in folders_to_preserve:
+                    temp_path = os.path.join(temp_dir, folder_path)
+                    if os.path.exists(temp_path):
+                        full_path = os.path.join(Config.OUTPUT_DIR, folder_path)
+                        shutil.copytree(temp_path, full_path)
                 
                 # Clean up temp directory
                 shutil.rmtree(temp_dir)
-                print(f"✅ Preserved files: {', '.join(preserved_files)}")
+                print(f"✅ Preserved: {', '.join(preserved_files)}")
         
         os.makedirs(Config.OUTPUT_DIR, exist_ok=True)
         print(f"Output directory ready: {Config.OUTPUT_DIR}")
