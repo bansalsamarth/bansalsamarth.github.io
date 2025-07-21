@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes on Growth - Samarth&#39;s Blog</title>
+    <meta name="description" content="Notes on Growth">
+    <meta name="author" content="Samarth Bansal">
+    
+    <style>
+        :root {
+            --content-width: 600px;
+        }
+
+        /* Light mode colors */
+        :root {
+            --bg-primary: #fefdfb;
+            --bg-secondary: #f8f7f5;
+            --text-primary: rgb(17, 17, 17);
+            --text-secondary: rgb(82, 82, 82);
+            --date-color: rgb(138, 138, 138);
+            --link-color: rgb(93, 24, 220);
+            --link-hover: rgb(77, 20, 180);
+            --subtle-hover: rgba(93, 24, 220, 0.05);
+            --border-light: rgba(0, 0, 0, 0.06);
+            --blockquote-border: rgb(230, 230, 230);
+            --code-bg: rgb(248, 248, 248);
+            --horizontal-rule: rgb(238, 238, 238);
+            --highlight-bg: rgba(93, 24, 220, 0.05);
+            --newsletter-bg: rgb(250, 250, 250);
+            --navbar-bg: rgba(254, 253, 251, 0.95);
+        }
+
+        /* Dark mode colors */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1612;
+                --bg-secondary: #252118;
+                --text-primary: rgb(232, 232, 232);
+                --text-secondary: rgb(160, 160, 160);
+                --date-color: rgb(120, 120, 120);
+                --link-color: rgb(168, 132, 255);
+                --link-hover: rgb(190, 155, 255);
+                --subtle-hover: rgba(168, 132, 255, 0.1);
+                --border-light: rgba(255, 255, 255, 0.1);
+                --blockquote-border: rgb(60, 60, 60);
+                --code-bg: #2a251f;
+                --horizontal-rule: #3a342b;
+                --highlight-bg: rgba(168, 132, 255, 0.1);
+                --newsletter-bg: #201e1a;
+                --navbar-bg: rgba(26, 22, 18, 0.95);
+            }
+        }
+
+        /* Manual dark mode override */
+        [data-theme="dark"] {
+            --bg-primary: #1a1612;
+            --bg-secondary: #252118;
+            --text-primary: rgb(232, 232, 232);
+            --text-secondary: rgb(160, 160, 160);
+            --date-color: rgb(120, 120, 120);
+            --link-color: rgb(168, 132, 255);
+            --link-hover: rgb(190, 155, 255);
+            --subtle-hover: rgba(168, 132, 255, 0.1);
+            --border-light: rgba(255, 255, 255, 0.1);
+            --blockquote-border: rgb(60, 60, 60);
+            --code-bg: #2a251f;
+            --horizontal-rule: #3a342b;
+            --highlight-bg: rgba(168, 132, 255, 0.1);
+            --newsletter-bg: #201e1a;
+            --navbar-bg: rgba(26, 22, 18, 0.95);
+        }
+
+        /* Manual light mode override */
+        [data-theme="light"] {
+            --bg-primary: #fefdfb;
+            --bg-secondary: #f8f7f5;
+            --text-primary: rgb(17, 17, 17);
+            --text-secondary: rgb(82, 82, 82);
+            --date-color: rgb(138, 138, 138);
+            --link-color: rgb(93, 24, 220);
+            --link-hover: rgb(77, 20, 180);
+            --subtle-hover: rgba(93, 24, 220, 0.05);
+            --border-light: rgba(0, 0, 0, 0.06);
+            --blockquote-border: rgb(230, 230, 230);
+            --code-bg: rgb(248, 248, 248);
+            --horizontal-rule: rgb(238, 238, 238);
+            --highlight-bg: rgba(93, 24, 220, 0.05);
+            --newsletter-bg: rgb(250, 250, 250);
+            --navbar-bg: rgba(254, 253, 251, 0.95);
+        }
+
+        /* Base Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            background-color: var(--bg-primary);
+            padding-top: 4rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Top Navigation Bar */
+        .top-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--navbar-bg);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border-light);
+            z-index: 100;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .navbar-container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+            transition: color 0.2s ease;
+        }
+
+        .navbar-brand:hover {
+            color: var(--link-color);
+        }
+
+        .navbar-nav {
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            align-items: center;
+        }
+
+        .navbar-nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .navbar-nav a:hover {
+            color: var(--link-color);
+        }
+
+        .container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        /* Navigation */
+        nav {
+            margin-bottom: 4rem;
+        }
+
+        nav a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-right: 1.5rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Back to home link */
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            transition: color 0.2s ease;
+        }
+
+        .back-home:hover {
+            color: var(--link-color);
+        }
+
+        .back-home::before {
+            content: '←';
+            margin-right: 0.5rem;
+        }
+
+        /* Page Title */
+        .page-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: var(--text-primary);
+            margin: 0 0 2rem;
+        }
+
+        /* Posts List */
+        .posts-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .post-item {
+            display: flex;
+            align-items: baseline;
+            margin: 0.35rem 0;
+            padding: 0.5rem 0.75rem;
+            margin-left: -0.75rem;
+            margin-right: -0.75rem;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .post-item:hover {
+            background-color: var(--subtle-hover);
+        }
+
+        .post-date {
+            flex: 0 0 5rem;
+            color: var(--date-color);
+            font-size: 0.875rem;
+            font-weight: 400;
+            font-feature-settings: "tnum";
+            font-variant-numeric: tabular-nums;
+            letter-spacing: 0.01em;
+        }
+
+        .post-title {
+            flex: 1;
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .post-title a {
+            color: var(--text-primary);
+            text-decoration: none;
+            position: relative;
+            transition: color 0.15s ease;
+        }
+
+        .post-title a::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .post-item:hover .post-title a {
+            color: var(--link-color);
+        }
+
+        .post-item:hover .post-title a::after {
+            transform: scaleX(1);
+        }
+
+        .external-link {
+            color: var(--date-color);
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+        }
+
+        /* Post Page Styles */
+        article .post-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin: 0 0 3rem;
+            color: var(--text-primary);
+        }
+
+        .post-meta {
+            color: var(--text-secondary);
+            margin: 2.5rem 0;
+            font-size: 0.95rem;
+            font-weight: 400;
+        }
+        
+        .date-accent {
+            color: var(--link-color);
+            margin-right: 0.5rem;
+        }
+
+        .post-content {
+            font-size: 1.05rem;
+            font-weight: 400;
+            color: var(--text-primary);
+        }
+
+        .post-content p {
+            margin: 1.8em 0;
+        }
+
+        .post-content h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            margin: 2.5em 0 1em;
+            line-height: 1.3;
+        }
+
+        .post-content h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 2em 0 0.8em;
+            line-height: 1.4;
+        }
+
+        .post-content h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.8em 0 0.6em;
+        }
+
+        .post-content a {
+            color: var(--link-color);
+            text-decoration: underline;
+            text-decoration-color: rgba(93, 24, 220, 0.4);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+            transition: all 0.2s ease;
+        }
+
+        .post-content a:hover {
+            color: var(--link-hover);
+            text-decoration-color: var(--link-hover);
+        }
+
+        .post-content blockquote {
+            margin: 2em 0;
+            padding-left: 1.5em;
+            border-left: 2px solid var(--blockquote-border);
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        .post-content blockquote p {
+            margin: 0.8em 0;
+        }
+
+        .post-content code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9em;
+            background: var(--code-bg);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            color: var(--text-primary);
+        }
+
+        .post-content pre {
+            background: var(--code-bg);
+            padding: 1.2em;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 2em 0;
+            border: 1px solid var(--border-light);
+        }
+
+        .post-content pre code {
+            background: none;
+            padding: 0;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .post-content hr {
+            margin: 3em 0;
+            border: none;
+            border-top: 1px solid var(--horizontal-rule);
+        }
+
+        .post-content img {
+            max-width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 600px;
+        }
+
+        /* Home page specific styles */
+        .intro-section {
+            margin-bottom: 3rem;
+        }
+
+        .work-section {
+            margin-bottom: 3rem;
+        }
+
+        .work-section h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .page-links {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .page-links li {
+            margin: 0.8rem 0;
+        }
+
+        .page-links a {
+            display: inline-block;
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+
+        .page-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--link-color);
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .page-links a:hover::after {
+            transform: scaleX(1);
+        }
+
+        /* View Toggle Styles */
+        .view-toggle {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .view-toggle button {
+            background: none;
+            border: none;
+            padding: 0.4rem 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            position: relative;
+            transition: color 0.2s ease;
+            font-family: inherit;
+        }
+
+        .view-toggle button:hover {
+            color: var(--link-color);
+        }
+
+        .view-toggle button.active {
+            color: var(--link-color);
+        }
+
+        .view-toggle button.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--link-color);
+        }
+
+        /* Category Section Styles */
+        .category-section {
+            margin: 2.5rem 0;
+        }
+
+        .category-title {
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin: 0 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-light);
+            position: relative;
+        }
+
+        .category-title::before {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 2rem;
+            height: 1px;
+            background-color: var(--link-color);
+            opacity: 0.6;
+        }
+
+        /* Dark mode toggle */
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 0.25rem;
+            transition: color 0.3s ease;
+            margin-left: 1rem;
+        }
+
+        .theme-toggle:hover {
+            color: var(--link-color);
+        }
+
+        /* Brand name responsive display */
+        .brand-short {
+            display: none;
+        }
+        
+        .brand-full {
+            display: inline;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            :root {
+                --content-width: 100%;
+            }
+            
+            body {
+                padding-top: 3.5rem;
+            }
+            
+            .navbar-container {
+                padding: 0.75rem 1rem;
+            }
+            
+            .navbar-brand {
+                font-size: 1rem;
+            }
+            
+            .navbar-nav {
+                gap: 0.75rem;
+            }
+            
+            .navbar-nav a {
+                font-size: 0.8rem;
+            }
+            
+            .theme-toggle {
+                margin-left: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .navbar-brand {
+                font-size: 0.95rem;
+            }
+            
+            .navbar-nav {
+                gap: 0.5rem;
+            }
+            
+            .navbar-nav a {
+                font-size: 0.75rem;
+            }
+            
+            .navbar-container {
+                padding: 0.75rem 0.75rem;
+            }
+            
+            /* Show short brand name on small screens */
+            .brand-full {
+                display: none;
+            }
+            
+            .brand-short {
+                display: inline;
+            }
+        }
+            
+            .container {
+                padding: 1.5rem 1.25rem 2.5rem;
+            }
+            
+            article .post-title {
+                font-size: 2rem;
+            }
+
+            .post-content h2 {
+                font-size: 1.6rem;
+            }
+
+            .post-content h3 {
+                font-size: 1.3rem;
+            }
+
+            .post-content blockquote {
+                margin: 1.5em 0;
+                padding-left: 1.2em;
+            }
+
+            .post-item {
+                gap: 1.25rem;
+            }
+
+            .post-date {
+                flex: 0 0 4.5rem;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="top-navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-brand">
+                <span class="brand-full">Samarth Bansal</span>
+                <span class="brand-short">Samarth</span>
+            </a>
+            <nav class="navbar-nav">
+                <a href="/writing/">Writing</a>
+                <a href="/micro/">Notes</a>
+                <a href="/contact/">Contact</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">💡</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        
+
+<a href="/blog/" class="back-home">Blog</a>
+
+
+        
+        <main>
+            
+<article>
+    <h1 class="post-title">Notes on Growth</h1>
+    
+    
+    <div class="post-meta">
+        <span class="date-accent">•</span> July 21, 2025
+    </div>
+    
+    
+    <div class="post-content">
+        <p><em>I hear about “growth” constantly—personal growth, professional growth, the need to keep growing. Almost like a secular religion. Treated as obviously good. Which made me ask: what exactly is growth, and why does it matter? And does it? Writing this to think it through.</em></p>
+<hr />
+<p><strong>1) What is growth?</strong></p>
+<p>Growth means becoming able to do more than you can do today. It's expanding your capacity to handle life's complexities with greater wisdom and skill.</p>
+<p>Growing up biologically—or simply spending more time alive—doesn't guarantee actual growth. That's just the natural course of life. You can be chronologically 50 while remaining developmentally where you were at 20. You might have experienced many things, but if these experiences haven't changed how you think, feel, or act, you haven't grown.</p>
+<p>Real growth shows up practically: problems that once overwhelmed you now seem manageable. Situations that once confused you now make sense. Work that once seemed impossible now feels within reach.</p>
+<hr />
+<p><strong>2) Is growth needed?</strong></p>
+<p>That’s not quite the right question. Because there are two ways to think about growth—and both will lead to a different answer.</p>
+<p>First, growth as a process that matters in itself. What matters here is the journey of capacity expansion—you value that, regardless of where it leads. You grow for the sake of growing—the experience of growing makes it feel meaningful and aligned with how you want to live.</p>
+<p>Second is growth as a means to an end. In this view, we grow to get to somewhere specific. You get on this challenging journey to get somewhere which feels meaningful, which is more aligned with your imagination of a life well lived, and your place in the world. That’s what makes everything worthwhile.</p>
+<p>If you don’t have clarity on which view you hold, you might either push through growth without knowing why (and not be sure why you are even doing this) or focus way too much on distant outcomes (that may or may not come) to completely sideline the experiential value of what this process offers.</p>
+<p>Which is why it matters to know your relationship with growth and shape your choices that deserve your attention.</p>
+<hr />
+<p><strong>3) If growth is a means to an end, what might that end be?</strong></p>
+<p>Let's look at three possibilities.</p>
+<p>First, a material lens— more money and more status. Money is objective: you either have it or you don't. Status is different: you can't just simply take it: the world around has to give it to you. Both, in their own ways, are visible markers for external world to see you have grown. And both are tangible ends you can measurably see. You can objectively know it if you have grown in these areas.</p>
+<p>The thing about material growth is that it doesn't <em>necessarily</em> require growth in your inner life to grow here. Don't get me wrong—it's not easy in the sense that money comes easy, but it may not always involve the crushing work of examining yourself.</p>
+<p>The second lens is more about having the practical ability to do things effectively in the world. If you want to lead organizations, build systems or scale impact, you need capacities beyond your current abilities. You might execute one project well today, but managing ten or handling 10x complexity requires increased ability—both technical skills and people skills. This is capacity expansion to handle complexity.</p>
+<p>Which brings me to the third lens: growth as inner growth, in your relationship with yourself. The more you work on your inner life, the better you can deal with increasing complexity while maintaining peace within. You discover that deep contentment and doing more aren't in competition with each other. This aspect of growth often gets overlooked, but without it, longevity is hard.​​​​​​​​​​​​​​​​</p>
+<hr />
+<p><strong>4) Is growth worth it?</strong></p>
+<p>The thing is... growth doesn't come easy. You can get used to the process, but it never truly becomes effortless. Your baseline may be significantly better than others, but when you're growing, that doesn't matter. You are daily confronting your limitations—what you can't yet do. And with that comes a haunting sense of inability.</p>
+<p>It crushes you at times—and then you just learn to live with it. You face embarrassment because you &quot;put yourself out there&quot; knowing this isn't your best work and that something much better is possible. But that's the growth process. You do and then you grow. It's this tension you have to navigate constantly.</p>
+<p>Which is why external growth in terms of ambition can lead to consistent turmoil if inner growth isn't happening in parallel. In fact, inner work becomes more important for playing the long game—for staying in it over years, not just months. When you develop both simultaneously, your capacity expands in unexpected ways. Things emerge which you didn't plan. That's what's so seductive about growth. That's why even people who struggle with the pressures find it hard to step away.</p>
+<p>This is the truth that's rarely acknowledged: growth hurts. It demands confronting inadequacy, embracing uncertainty, and being willing to be bad at things before you get good at them. Not everyone wants to pay this price, and that's perfectly valid.</p>
+<hr />
+<p><strong>5) What really matters?</strong></p>
+<p>The point, at its core, is that <em>external</em> growth is not essential for fulfilment and happiness. We should reject the idea that doing more things in the world—leading organisations or creating visible impact—is objectively necessary. These are largely societal constructs, not universal truths about what makes a life well-lived.</p>
+<p>What does matter—irrespective of whatever else you do—is <em>inner</em> growth. Which means expanded self-awareness, emotional capacity, and wisdom. That certainly leads to a better life—regardless of external circumstances or growth-led achievements.</p>
+<p>Inner growth means suffering less from the same problems. It means developing the skills to handle what once overwhelmed you. It means seeing options where you once saw only obstacles. And in that sense, growth leads to freedom—where you can respond to life with wisdom instead of just reacting from habit.</p>
+<p>Growing in this way doesn't require founding companies, accumulating wealth, or gaining status. It simply requires the willingness to look honestly at yourself, to learn from your experiences, and to expand your capacity to be present with whatever life brings. And <em>this</em> is hard. But it matters.</p>
+
+    </div>
+</article>
+
+        </main>
+    </div>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.querySelector('.theme-icon');
+        const body = document.body;
+
+        // Check for saved theme preference or default to system preference
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        let currentTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+        
+        // Apply initial theme
+        body.setAttribute('data-theme', currentTheme);
+        updateThemeIcon(currentTheme);
+
+        // Theme toggle event listener
+        themeToggle.addEventListener('click', () => {
+            currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+            body.setAttribute('data-theme', currentTheme);
+            localStorage.setItem('theme', currentTheme);
+            updateThemeIcon(currentTheme);
+        });
+
+        // Update theme icon
+        function updateThemeIcon(theme) {
+            themeIcon.textContent = theme === 'light' ? '💡' : '🔅';
+        }
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                currentTheme = e.matches ? 'dark' : 'light';
+                body.setAttribute('data-theme', currentTheme);
+                updateThemeIcon(currentTheme);
+            }
+        });
+    </script>
+</body>
+</html>
