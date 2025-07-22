@@ -1,7 +1,7 @@
 ---
-title: "Notes on Growth"
+title: Notes on Growth
 date: 2025-07-21
-published: true
+published: false
 ---
 *I hear about “growth” constantly—personal growth, professional growth, the need to keep growing. Almost like a secular religion. Treated as obviously good. Which made me ask: what exactly is growth, and why does it matter? And does it? Writing this to think it through.*
 
