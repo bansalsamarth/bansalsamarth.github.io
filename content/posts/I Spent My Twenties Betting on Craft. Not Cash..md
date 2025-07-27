@@ -69,7 +69,7 @@ In short, the enoughness of my model which denied me luxury goods bought me the 
 
 I hadn't yet tasted what a really high income meant, or what it enabled, so I didn't feel the FOMO of what money could buy. Now that I do make more money (well, a *lot* more), I treat every new "moneyed" habit as a transient luxury—just rented indulgence, not a lifestyle upgrade. When I return to full-time journalism (and I will), I can easily handle a >50% cut. 
 
-(Let me just say it: I took my current gig at *The Whole Truth* without knowing exactly how much money I will get paid. I had a number in mind, and I knew I would get it, but that discussion fell off, so I just moved to Bombay, started doing what required doing, and in a couple weeks, I had this chat. I was offered more than what I had anticipated, so yeah.)
+(Let me just say it: I took my current gig at *The Whole Truth* without knowing exactly how much money I will get paid. I had a number in mind, and I knew I would get it, but that discussion fell off, so I just moved to Bombay, started doing what required doing, and in a couple weeks, I closed the money chat. So yeah.)
 
 ---
 
