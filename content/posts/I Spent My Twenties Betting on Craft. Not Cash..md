@@ -5,9 +5,9 @@ published: true
 ---
 I didn't create any wealth in my twenties. I possibly made poor financial choices. But all of that was intentional—and I just want to share how I thought about money in my twenties for buying creative freedom.
 
-For starters, in case there is any misconception, journalism doesn't pay well. We lose so much talent because this profession sucks at pay. Even the best of newsrooms are *kanjoos* at best and exploitative at worst. A few do really well, but that few is so few to not generalise.
+For starters, in case there is any misconception, journalism doesn't pay well. We lose so much talent because this profession sucks at pay. Even the best newsrooms are *kanjoos* at best, exploitative at worst. I got lucky—maybe the highest-paid 21-year-old journo in India when I was hired. Because I went to IIT Kanpur and my generous editor made a strong case for my data skills which the newsroom needed. 
 
-I'm pretty sure I was the highest-paid 21-year-old journalist in India by a mile. Because I went to IIT Kanpur and my editor made a case for my skills. And then I made almost the same amount (inflation adjusted) for the next seven years. To give the financial delta, at 28, my friend at BCG who studied with me at IITK made 8x what I did.
+But then my income plateaued for the rest of the decade. By design. To give the financial delta, my batchmate at BCG made 8x what I did at 28. 
 
 This is not a sob post. Neither is this a post on righteous sacrifice to pursue journalism. Perhaps what I did in my twenties is a textbook case of financial irresponsibility. I don't know. But I want to share what I did. And why I wouldn't change a single decision.
 
@@ -27,9 +27,9 @@ I didn't create any wealth in my twenties. This isn't even a conversation in mos
 
 Which is why I've always felt that the greatest privilege of my life is having a family house in Delhi. As much as I imagined myself living next to Khan Market (and not in NW Delhi), as a journalist, I know what a blessing it is to never worry about rent.
 
-An elite degree, a family house, an upper-middle-class background—yes, middle class enough to still bargain with the *sabziwala* and do cheap tricks to get discounts, and rich enough to travel abroad. You get the drift. It's massive privilege. 
+An elite degree, a family house, an upper-middle-class background—yes, middle class enough to still bargain with the *sabziwala* and do cheap tricks to get discounts, and rich enough to travel abroad. 
 
-I remind myself of that often. It's an insane insurance policy. It meant I never had to imagine or save for a house. I have no interest in cars. My biggest spends today are on books—I don't check prices for ones I really want—and on health. Which is opex, not capex.
+It's massive privilege. I remind myself of that often. It's an insane insurance policy. It meant I never had to imagine or save for a house. I have no interest in cars. My biggest spends today are on books—I don't check prices for ones I really want—and on health. Which is opex, not capex. (Or money spent to live, not to acquire assets.)
 
 ---
 
@@ -37,7 +37,7 @@ I remind myself of that often. It's an insane insurance policy. It meant I never
 
 This mindset is liberating. When I went freelance at 25, I worked backwards: what's the amount of money that'll fulfil all my needs (and most wants)?
 
-I did the math and fuck... I realised that while that number wasn't exactly low, it wasn't too high either. Just enough my journo income could sustain it. 
+I did the math and fuck... turns out I could live a full life with a number that I could easily make. I am not going to share that number, but while that number isn't exactly low, it wasn't too high either. Just enough my journo income could sustain it. 
 
 This realisation freed me up. Which is why I did my best writing for free. On my blog. On my newsletter. For small publications. 
 
@@ -55,7 +55,11 @@ Because I didn't have to justify the financial viability of my journalistic idea
 
 I left Delhi and lived in Landour for three years. My living expenses crashed. I had the pride of renting my own cottage. I was financially independent and deeply content. 
 
-I wrote about health and bureaucracy and law and tech and policy and food and media and dating well... anything that I wanted to. I experimented with forms. So much of this just required creative vulnerability to attempt and throw something out in the world—do you know the anxiety it comes with?—but the more I did it, the more I got used to that rhythm, and the more things started working, the more this low-stakes risk-taking started feeling amazing and worthwhile, until it became an upward-trending cycle (from my lens) which I didn't know it would become.
+I wrote about health and bureaucracy and law and tech and policy and food and media and dating well... anything that I wanted to. I experimented with forms. So much of this required creative vulnerability—to attempt something and throw it out in the world. You know the anxiety it comes with? (I once described it to a friend as the feeling shy men feel when asking out a crush. Nuf said.)
+
+But the more I did it, the more I got used to that rhythm. Experiment, and then experiment more. Some things will fall flat. Some stories will land like no one in the world noticed. *This is what it takes*.
+
+But the more I started subjecting my work to worldly judgement, and started seeing it resonating, the more this low-stakes risk-taking started feeling amazing and worthwhile. *Doing* became the single most important input for me to get over my impostor syndrome. 
 
 In short, the enoughness of my model which denied me luxury goods bought me the luxury to write freely.
 
@@ -63,31 +67,39 @@ In short, the enoughness of my model which denied me luxury goods bought me the 
 
 **#5: FOMO-proof by design.** 
 
-I hadn't yet tasted what a really high income meant, or what it enabled, so I didn't feel the FOMO of what money could buy. And now that I do make fairly more money, I make sure my new "moneyed" habits are understood by my brain as transient luxuries. When I return to full-time journalism (and I will), I can easily handle a >50% cut. 
+I hadn't yet tasted what a really high income meant, or what it enabled, so I didn't feel the FOMO of what money could buy. Now that I do make more money (well, a *lot* more), I treat every new "moneyed" habit as a transient luxury—just rented indulgence, not a lifestyle upgrade. When I return to full-time journalism (and I will), I can easily handle a >50% cut. 
 
-Because that is all I need.
+(Let me just say it: I took my current gig at *The Whole Truth* without knowing exactly how much money I will get paid. I had a number in mind, and I knew I would get it, but that discussion fell off, so I just moved to Bombay, started doing what required doing, and in a couple weeks, I had this chat. I was offered more than what I had anticipated, so yeah.)
 
 ---
 
 **#6: The personal finance scam.**
 
-I have often felt—and yes, this is a feeling, not a journalist speaking facts—that the world of personal finance and ideas on how to be is scammy. I haven't understood why it is assumed that we have to progressively make more money every year (beyond keeping up for inflation)? Yes it makes sense if life context and needs have changed. But what if context hasn't changed? Why keep climbing? For what?
+I have often felt—and yes, this is a feeling, not a journalist speaking facts—that the world of personal finance and ideas on how to be is scammy. They create a default goal: more. More income, more optimisation, more compounding. And it never ends. 
+
+I haven't understood why it is assumed that we have to progressively make more money every year (beyond keeping up for inflation)? Yes it makes sense if life context and needs have changed. But what if that hasn't changed? Why keep climbing? For what? 
 
 I just ensure I have the right calibration of my "enough" number with some margin of error. Put a percentage in Index Funds, get health/life insurance, and done. 
 
-Beyond that, I just couldn't keep up with financial optimisation—be it through saving money via a dozen credit cards or the right investment schemes or whatever else smart people do. I basically suck at that, because there are so many other things I don't want to suck at which eat away my time and attention.
+Beyond that, I just couldn't keep up with financial optimisation—be it through saving money via a dozen credit cards or the right investment schemes or whatever else smart people do. I basically suck at that, and one has to suck at a few things to not suck at others.
 
 ---
 
-**#7: Betting on craft. Not cash.**
+**#7: Betting on craft. Not cash**
 
-As I write this, I am obsessing over _The Godfather_, which I saw for the first time last month. Francis Ford Coppola was broke in his early thirties, and then ended up making... _The Godfather_. Give me a break. I would die to even do one thing in my entire life which is as artistically genius as that cinematic beauty. That's the game I want to play.
+As I write this, I am obsessing over _The Godfather_, which I saw for the first time last month. 
+
+And gosh... I learnt Francis Ford Coppola was broke in his early thirties when he made this. (And he had three kids.) He didn't even enjoy the novel as much, and one reason for doing this movie was making money. But Coppola has said that while he may take a gig for money, once he owns it, he goes after his creative vision. He fought with the production house and was almost fired multiple times. 
+
+All that and then this guy ended up making... _The Godfather_. Give me a break. I would die to even do one thing in my entire life which is as artistically genius as that cinematic beauty. That's the game I want to play.
 
 And looking back, I realise I was essentially betting on myself—that I will make things work as they come. In action, that meant deep devotion to my craft, building relationships, doing my work with integrity and earning trust, and really deeply caring for what I do.
 
-I am—and was—fully aware of the tail risks of this model. This wasn't naive optimism. The conviction of choosing means leaving something consciously on the table, and that forces you to do the right thing for your conviction. 
+I am—and was—fully aware of the tail risks of this model. This wasn't naive optimism. Real conviction means leaving something on the table—consciously, eyes open. That cost is part of the deal.
 
-Fuck careerism. I have decades of creative runway lying ahead of me with so many possibilities.
+*Fuck careerism.* 
+
+I have decades of creative runway lying ahead of me with so many possibilities.
 
 ---
 
