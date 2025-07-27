@@ -1,5 +1,5 @@
 ---
-title: craft-not-cash
+title: I Spent My Twenties Betting on Craft. Not Cash.
 date: 2025-07-27
 published: true
 ---
