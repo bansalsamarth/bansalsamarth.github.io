@@ -3,13 +3,15 @@ title: I Spent My Twenties Betting on Craft. Not Cash.
 date: 2025-07-27
 published: true
 ---
-I didn't create any wealth in my twenties. I possibly made poor financial choices. But all of that was intentional—and I just want to share how I thought about money in my twenties for buying creative freedom.
+I made what many would call poor financial choices in my twenties. But all of that was intentional—and I am writing to share how I thought about money in my twenties for buying creative freedom.
 
-For starters, in case there is any misconception, journalism doesn't pay well. We lose so much talent because this profession sucks at pay. Even the best newsrooms are *kanjoos* at best, exploitative at worst. I got lucky—maybe the highest-paid 21-year-old journo in India when I was hired. Because I went to IIT Kanpur and my generous editor made a strong case for my data skills which the newsroom needed. 
+For starters, in case there is any misconception, journalism doesn't pay well. We lose so much talent because this profession sucks at pay. Even the best newsrooms are *kanjoos* at best, exploitative at worst. I got lucky—maybe the highest-paid 21-year-old journo when I was hired. Because I went to IIT Kanpur and my generous editor made a strong case for my data skills which the newsroom needed. 
 
-But then my income plateaued for the rest of the decade. By design. To give the financial delta, my batchmate at BCG made 8x what I did at 28. 
+But then I let my income plateau for the rest of the decade. By design. To give the financial delta, my batchmate at BCG made 8x what I did at 28. 
 
-This is not a sob post. Neither is this a post on righteous sacrifice to pursue journalism. Perhaps what I did in my twenties is a textbook case of financial irresponsibility. I don't know. But I want to share what I did. And why I wouldn't change a single decision.
+This is not a sob post. Neither is this a post on righteous sacrifice to pursue journalism. 
+
+Perhaps what I did was textbook financial irresponsibility, but I want to share what I did and why I wouldn't change a single decision.
 
 ---
 
@@ -23,29 +25,29 @@ When you make that choice—consciously, with full awareness of leaving cash beh
 
 **#2: Wealth? What wealth?**
 
-I didn't create any wealth in my twenties. This isn't even a conversation in most journo circles. You are happy to get finances going—not much about what happens in far future.
+Wealth creation isn't even a conversation in most journo circles. You're happy to get finances going—not much concern about the far future.
 
-Which is why I've always felt that the greatest privilege of my life is having a family house in Delhi. As much as I imagined myself living next to Khan Market (and not in NW Delhi), as a journalist, I know what a blessing it is to never worry about rent.
+My greatest privilege has been having a family house in Delhi, which meant never worrying about rent or saving for property. My parents aren't financially dependent on me, I'm single with no dependents, and I have zero interest in cars. My biggest spends are books (I don't check prices for ones I really want) and health—operational expenses, not asset acquisition.
 
-An elite degree, a family house, an upper-middle-class background—yes, middle class enough to still bargain with the *sabziwala* and do cheap tricks to get discounts, and rich enough to travel abroad. 
+This comes with massive privilege: an elite degree, upper-middle-class background (middle class enough to bargain with the _sabziwala_, rich enough to travel abroad), plus the lottery of being an English-speaking, city-dwelling, upper-caste Hindu man.
 
-It's massive privilege. I remind myself of that often. It's an insane insurance policy. It meant I never had to imagine or save for a house. I have no interest in cars. My biggest spends today are on books—I don't check prices for ones I really want—and on health. Which is opex, not capex. (Or money spent to live, not to acquire assets.)
+Much of this wasn't my doing—it was an insane lottery I won at birth. Which serves as an insurance policy. I remind myself of this often to never take it for granted, because this privilege is crucial to my freedom-centric optimisation.
 
 ---
 
-**#3: This opex mindset.**
+**#3: This OpEx mindset.**
 
-This mindset is liberating. When I went freelance at 25, I worked backwards: what's the amount of money that'll fulfil all my needs (and most wants)?
+Thinking operationally rather than about assets is liberating. When I went freelance at 25, I worked backwards: what's the amount of money that'll fulfill all my needs (and most wants)?
 
-I did the math and fuck... turns out I could live a full life with a number that I could easily make. I am not going to share that number, but while that number isn't exactly low, it wasn't too high either. Just enough my journo income could sustain it. 
+I did the math and fuck... turns out I could live a full life with a number that I could easily make. I am not going to share that number, but while that number isn't exactly low, it wasn't too high either. Just enough for my income to sustain it. 
 
-This realisation freed me up. Which is why I did my best writing for free. On my blog. On my newsletter. For small publications. 
+This realisation freed me up to do my best writing for free: on my blog, newsletter, and for small publications that couldn't pay but published what I wanted to write.
 
 Again, bullshit financially, but how the fuck do I make money when I can't find publications who want to publish what I want to write and won't pay? And oh, when you do find one, you spend more than a month on a piece and get paid 25k. That was our worth? So fuck you!
 
-So I cross-subsidised. I'd first hit my bucket of needs—based on my definition of "enough"—then go creatively free. In the middle of this, occasional coding gigs funded the freedom. And one generous grant came through my way. Once I got on this, things happened and kept me afloat.
+So I cross-subsidised. I'd first hit my bucket of needs—based on my definition of "enough"—then go creatively free. Occasional coding gigs funded this freedom, and a grant helped sustain it. 
 
-And I did this for years. Doubled down on my craft. Because once the bucket was full, once needs were met, I was free to write for free. And write I did.
+I did this for years. Doubled down on my craft. Once the bucket was full and needs were met, I was free to write for free. And write I did.
 
 ---
 
@@ -55,9 +57,11 @@ Because I didn't have to justify the financial viability of my journalistic idea
 
 I left Delhi and lived in Landour for three years. My living expenses crashed. I had the pride of renting my own cottage. I was financially independent and deeply content. 
 
-I wrote about health and bureaucracy and law and tech and policy and food and media and dating well... anything that I wanted to. I experimented with forms. So much of this required creative vulnerability—to attempt something and throw it out in the world. You know the anxiety it comes with? (I once described it to a friend as the feeling shy men feel when asking out a crush. Nuf said.)
+I wrote about health and bureaucracy and law and tech and policy and food and media and dating... well, anything that I wanted to. I experimented with forms. So much of this required creative vulnerability—to attempt something and throw it out in the world. 
 
-But the more I did it, the more I got used to that rhythm. Experiment, and then experiment more. Some things will fall flat. Some stories will land like no one in the world noticed. *This is what it takes*.
+You know the anxiety it comes with? I once told a friend it felt like the vulnerability of asking out a crush. (Yes, that mix of hope and terror.)
+
+But the more I did it, the more I got used to that rhythm. Experiment, and then experiment more. Some things will fall flat. Some stories will disappear into the void. *This is what it takes*.
 
 But the more I started subjecting my work to worldly judgement, and started seeing it resonating, the more this low-stakes risk-taking started feeling amazing and worthwhile. *Doing* became the single most important input for me to get over my impostor syndrome. 
 
@@ -67,33 +71,37 @@ In short, the enoughness of my model which denied me luxury goods bought me the 
 
 **#5: FOMO-proof by design.** 
 
-I hadn't yet tasted what a really high income meant, or what it enabled, so I didn't feel the FOMO of what money could buy. Now that I do make more money (well, a *lot* more), I treat every new "moneyed" habit as a transient luxury—just rented indulgence, not a lifestyle upgrade. When I return to full-time journalism (and I will), I can easily handle a >50% cut. 
+Without having tasted high income in my twenties, I felt no FOMO about what money could buy.
 
-(Let me just say it: I took my current gig at *The Whole Truth* without knowing exactly how much money I will get paid. I had a number in mind, and I knew I would get it, but that discussion fell off, so I just moved to Bombay, started doing what required doing, and in a couple weeks, I closed the money chat. So yeah.)
+Now that I do make more money (well, a _lot_ more), I treat every new "moneyed" habit as transient luxury—rented indulgence, not lifestyle upgrade. When I return to full-time journalism (and I will), I can easily handle a >50% cut.
+
+(Let me just say it: I took my current gig at *The Whole Truth* without knowing my exact salary. I had a number in mind, was pretty sure I'd get it, so not really a big deal, but that discussion fell off, and I just moved to Bombay, started doing what needed doing, and closed the money chat a couple weeks after starting work. So yeah.)
 
 ---
 
 **#6: The personal finance scam.**
 
-I have often felt—and yes, this is a feeling, not a journalist speaking facts—that the world of personal finance and ideas on how to be is scammy. They create a default goal: more. More income, more optimisation, more compounding. And it never ends. 
+I have often felt—and yes, this is a feeling, not a journalist speaking facts—that the personal finance culture is scammy. They create a default goal: more. More income, more optimisation, more compounding. And it never ends. 
 
-I haven't understood why it is assumed that we have to progressively make more money every year (beyond keeping up for inflation)? Yes it makes sense if life context and needs have changed. But what if that hasn't changed? Why keep climbing? For what? 
+I haven't understood why it's assumed we have to progressively make more money every year (beyond keeping up with inflation)? Yes, it makes sense if life context and needs have changed. But what if they haven't? Why keep climbing? For what?
 
-I just ensure I have the right calibration of my "enough" number with some margin of error. Put a percentage in Index Funds, get health/life insurance, and done. 
+I just ensure I have the right calibration of my "enough" number with some margin of error. Put a percentage in index funds, get health/life insurance, and done.
 
-Beyond that, I just couldn't keep up with financial optimisation—be it through saving money via a dozen credit cards or the right investment schemes or whatever else smart people do. I basically suck at that, and one has to suck at a few things to not suck at others.
+Beyond that, I have no interest in financial optimisation—saving money via a dozen credit cards or complex investment schemes or whatever else smart people do. I basically suck at that, and one has to suck at a few things to not suck at others.
+
+(PS: I have read *Psychology of Money*. Thanks.)
 
 ---
 
 **#7: Betting on craft. Not cash**
 
-As I write this, I am obsessing over _The Godfather_, which I saw for the first time last month. 
+As I write this, I am obsessing over _The Godfather_, which I saw for the first time last month.
 
-And gosh... I learnt Francis Ford Coppola was broke in his early thirties when he made this. (And he had three kids.) He didn't even enjoy the novel as much, and one reason for doing this movie was making money. But Coppola has said that while he may take a gig for money, once he owns it, he goes after his creative vision. He fought with the production house and was almost fired multiple times. 
+I learned Francis Ford Coppola was broke in his early thirties when he made this. (And he had three kids.) He wasn't even that fond of the novel, and one reason for doing this movie was making money. But Coppola has said that while he may take a gig for money, once he owns it, he goes after his creative vision. He fought with the production house and was almost fired multiple times.
 
-All that and then this guy ended up making... _The Godfather_. Give me a break. I would die to even do one thing in my entire life which is as artistically genius as that cinematic beauty. That's the game I want to play.
+All that and then this guy ended up making... _The Godfather_. Give me a break. I would die to do even one thing in my entire life that's as artistically genius as that cinematic beauty. That's the game I want to play.
 
-And looking back, I realise I was essentially betting on myself—that I will make things work as they come. In action, that meant deep devotion to my craft, building relationships, doing my work with integrity and earning trust, and really deeply caring for what I do.
+On a much, much smaller scale, I've been trying something similar. A bet on myself—that I would make things work as they came. In action, that meant deep devotion to my craft, building relationships, doing my work with integrity and earning trust, and really deeply caring for what I do.
 
 I am—and was—fully aware of the tail risks of this model. This wasn't naive optimism. Real conviction means leaving something on the table—consciously, eyes open. That cost is part of the deal.
 
