@@ -7,9 +7,9 @@ I often don’t like to share what I’m reading. Or even that I’m reading at 
 
 Because reading often gets unnecessary weight as a virtuous act, it lends itself easily to performance. On the number of books one reads in a year. On reading classics. On reading as an input to professional growth. On reading as a sign of discipline through systems. On replacing books with summaries. On the “wow” one gets because how are you able to do “this” while working.
 
-There’s no malintent in any of this. And yet, it alienates so many readers like myself—people for whom reading is not something to get through. I don’t read every day. I rarely finish most books I start. I don’t open a book expecting to extract “value.”
+There’s no malintent in any of this. And yet, it alienates so many readers like myself—people for whom reading is not something to get through. I don’t read every day. I don’t finish most books I start. I don’t open a book expecting to extract “value.”
 
-Reading—being with words and books—simply makes me feel more present in this hurried world. I don’t have a transactional relationship with books written with care. I just feel joyful hanging in the company of words from a writer who has really written to express, to say what they want to say, to share what they have understood, to document what they spent their life on. It is a conversation. From them to me. 
+Reading—being with words and books—simply makes me feel more present in this hurried world. I don’t have a transactional relationship with books written with care. I just feel joyful hanging in the company of words from a writer who has really written to express, to say what they want to say, to share what they have understood. It is a conversation. From them to me. 
 
 And this conversation needs quality attention—not quantified time. The intimate kind of attention that isn’t for the world to know, unless there’s a conscious choice to share it. Sometimes it’s built through ten-minute coffee chats. Sometimes through entire days together. Like old friends, long silences aren’t signs of neglect. It’s just that sometimes, life is asking something else of me, and I don’t have what it takes to give a book the attention it deserves. But wandering away doesn’t make me less of a reader.
 
