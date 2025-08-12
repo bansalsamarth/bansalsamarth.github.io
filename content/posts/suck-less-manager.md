@@ -9,7 +9,7 @@ published: true
 
 ---
 
-I became a first-time manager in June 2024, when I [joined]((/posts/how-twt/) *The Whole Truth* to lead the content team. From the outside, this was no big deal: just another 30-year-old making a move into startup leadership to experience what it's *really* like. 
+I became a first-time manager in June 2024, when I [joined](/posts/how-twt/) *The Whole Truth* to lead the content team. From the outside, this was no big deal: just another 30-year-old making a move into startup leadership to experience what it's *really* like. 
 
 But it was a big deal, because just before that, I had spent half a decade [actively rejecting](/posts/i-spent-my-twenties-betting-on-craft-not-cash/) everything this role represents: the bulk of my twenties as a freelance journalist-writer, three years in the mountains of Mussoorie. 
 
