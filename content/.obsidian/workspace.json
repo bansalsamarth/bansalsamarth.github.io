@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300.5024719238281,
-    "collapsed": true
+    "width": 300.5024719238281
   },
   "right": {
     "id": "4cbc5a004065a9ba",
@@ -181,8 +180,9 @@
   },
   "active": "42f676e45c042c59",
   "lastOpenFiles": [
-    "posts/how-we-talk-about-death.md",
+    "how-twt.md",
     "posts/suck-less-manager.md",
+    "posts/how-we-talk-about-death.md",
     "Pasted image 20250811213432.png",
     "posts/reading-is-not-a-performance.md",
     "posts/I Spent My Twenties Betting on Craft. Not Cash..md",

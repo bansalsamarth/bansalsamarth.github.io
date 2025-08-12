@@ -9,13 +9,13 @@ published: true
 
 ---
 
-I became a first-time manager in June 2024, when I joined The Whole Truth to lead the content team. From the outside, this was no big deal: just another 30-year-old making a move into startup leadership to experience what it's *really* like. 
+I became a first-time manager in June 2024, when I joined [The Whole Truth](/posts/how-twt/) to lead the content team. From the outside, this was no big deal: just another 30-year-old making a move into startup leadership to experience what it's *really* like. 
 
 But it was a big deal, because just before that, I had spent half a decade actively rejecting everything this role represents: the bulk of my twenties as a freelance journalist-writer, three years in the mountains of Mussoorie. I was the guy who silently smirked at those obsessed with Google calendar schedules, who felt so alienated by the ladder-climbing, appraisal-obsessed, CTC-LPA world that I chose intentional solitude over institutional belonging—as far as possible from the world of manufactured anxieties and tone-deaf ideas of the privileged few. 
 
 But the mission drove me to leave all that and come to Bombay. To make an honest attempt to build an honest food brand in a messy regulatory ecosystem and a stupidly polluted information environment. To solve a problem I care about. With near-infinite agency—I can work as I wish, on exactly my terms, when and where I want, with the simplest expectation of getting work done. 
 
-But this work demanded management. Which I had never done before. My CEO—also my friend—knew this. He called out that leading a team is something I'd have to learn if I care about making change at scale, trusting I'd figure it out as I went. 
+But this work demanded management. Which I had never done before. My [boss](https://www.linkedin.com/posts/bansalsamarth_shashank-mehta-turns-40-today-perhaps-the-activity-7346385270197391361-nnl9)—also my friend—knew this. He called out that leading a team is something I'd have to learn if I care about making change at scale, trusting I'd figure it out as I went. 
 
 The only problem? I wasn't warned how *hard*  this is: the crushing weight of what power—even the small, corporate kind—does to a person who never wanted it.  Or realising that the only way to learn is by sticking with the discomfort of sucking long enough to suck less. 
 
@@ -54,10 +54,6 @@ This continues to be a constant negotiation with myself. Some days I make peace 
 # II. 
 
 How am I supposed to feel when I learn there's this Michael Corleone energy in me.
-
-*This.* 
-![[Pasted image 20250811213432.png]]
-![[Pasted image 20250811213432.png]]
 
 I have little tolerance for half-measures, for those who bring amateur energy to serious business (yes, I take the smallest bits of my work *very* seriously), for those who don't understand the stakes, for those who don't respect the time and energy of others, for those who are okay with "good enough". 
 
