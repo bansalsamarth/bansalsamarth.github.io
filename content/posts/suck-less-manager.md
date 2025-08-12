@@ -9,17 +9,19 @@ published: true
 
 ---
 
-I became a first-time manager in June 2024, when I joined [The Whole Truth](/posts/how-twt/) to lead the content team. From the outside, this was no big deal: just another 30-year-old making a move into startup leadership to experience what it's *really* like. 
+I became a first-time manager in June 2024, when I [joined]((/posts/how-twt/) *The Whole Truth* to lead the content team. From the outside, this was no big deal: just another 30-year-old making a move into startup leadership to experience what it's *really* like. 
 
-But it was a big deal, because just before that, I had spent half a decade actively rejecting everything this role represents: the bulk of my twenties as a freelance journalist-writer, three years in the mountains of Mussoorie. I was the guy who silently smirked at those obsessed with Google calendar schedules, who felt so alienated by the ladder-climbing, appraisal-obsessed, CTC-LPA world that I chose intentional solitude over institutional belonging—as far as possible from the world of manufactured anxieties and tone-deaf ideas of the privileged few. 
+But it was a big deal, because just before that, I had spent half a decade [actively rejecting](/posts/i-spent-my-twenties-betting-on-craft-not-cash/) everything this role represents: the bulk of my twenties as a freelance journalist-writer, three years in the mountains of Mussoorie. 
 
-But the mission drove me to leave all that and come to Bombay. To make an honest attempt to build an honest food brand in a messy regulatory ecosystem and a stupidly polluted information environment. To solve a problem I care about. With near-infinite agency—I can work as I wish, on exactly my terms, when and where I want, with the simplest expectation of getting work done. 
+I was the guy who silently smirked at those obsessed with Google calendar schedules. Who felt so alienated by the ladder-climbing, appraisal-obsessed, CTC-LPA world that I chose intentional solitude over institutional belonging—as far as possible from manufactured anxieties. 
 
-But this work demanded management. Which I had never done before. My [boss](https://www.linkedin.com/posts/bansalsamarth_shashank-mehta-turns-40-today-perhaps-the-activity-7346385270197391361-nnl9)—also my friend—knew this. He called out that leading a team is something I'd have to learn if I care about making change at scale, trusting I'd figure it out as I went. 
+TWT's mission got me to Bombay: to make an honest attempt to build an honest food brand in a market rigged by ultra-processed products, shaped by a messy regulatory ecosystem and drowned in a stupidly polluted information environment. With near-infinite agency, I can work as I wish, on exactly my terms, when and where I want, with minimal obligations: move things, care for our consumers, and stay true to our mission. 
 
-The only problem? I wasn't warned how *hard*  this is: the crushing weight of what power—even the small, corporate kind—does to a person who never wanted it.  Or realising that the only way to learn is by sticking with the discomfort of sucking long enough to suck less. 
+But this work demanded management. Something I had never done before. My [boss](https://www.linkedin.com/posts/bansalsamarth_shashank-mehta-turns-40-today-perhaps-the-activity-7346385270197391361-nnl9)—also a friend—knew this. He made it clear that if I cared about making change at scale, I'd have to learn to lead a team. (In fact, _this_ learning was part of his lure for me to take the gig, because leadership is step one to building organisations, and organisations are what make scaled impact possible.)
 
-This essay is about that discomfort. A messy look at what happens when someone who rejects authority now has to hold it. When ideals meet reality. From a boy trying to suck less at his job.
+The only problem? I wasn't warned how *hard*  this is: the crushing weight of what power—even the small, corporate kind—does to a person who never wanted it.  
+
+This essay is about that discomfort. A messy look at what happens when someone who rejects authority now has to hold it. From a boy trying to suck less at his job.
 
 ---  
 
@@ -29,7 +31,7 @@ This essay is about that discomfort. A messy look at what happens when someone w
 
 That's what I was told. 
 
-Oh. How easy it is to utter this D-word. It's impossible for any management guru to not repeat it—until they are sure it's tattooed permanently in every neuron involved in leadership behaviour. 
+Oh. How easy it is to utter this D-word. It's impossible for any management guru to not repeat it—until they're sure it's tattooed permanently into every neuron wired for leadership behaviour. 
 
 So let's talk about my delegation behaviour as a manager. But first, the working behaviour of me, the maker.
 
@@ -37,23 +39,21 @@ I love making things. Myself. With the motion of my hands. With the imagination 
 
 That is what I am used to. But the delegation-gang tells you this is not your job. Because you are no longer expected to "do your best work"—the ask is "enabling others to do their best work" or "creating conditions for great work to happen". 
 
-I often have this feeling that managers who love delegation are probably those who never excelled as makers. Because this transition from doing the work to getting work done is a psychological nightmare: it's grief disguised as growth, because you lose what you hold so closely—the fingerprints over the work you ship. (Such a private, quiet loss that there is no funeral to mourn it.)
+I often have this feeling that managers who love delegation are probably those who never excelled as makers. Because this transition from doing the work to getting work done is a psychological nightmare: it's grief disguised as growth, because you lose what you hold so closely—the fingerprints over the work you ship. 
 
-You spend days in meetings giving developmental feedback to your team. Reviewing work from another team waiting for your input. Looking at submissions and questioning whoever hired these people. But then the day ends, and it's 7:30pm, you're on the Metro, blazing Ghazals inside your noise-cancelling headphones to feel the feeling of not having done any work (and only judging) the whole day. 
+You spend days in meetings giving developmental feedback to your team. Reviewing work from another team waiting for your input. Looking at submissions and questioning whoever hired these people. And then the day ends: It's 7:30pm, you're on the Metro, blasting Ghazals through your noise-cancelling headphones just to feel the feeling of having done no real work all day (and only judging).  
 
 I wasn't prepared for this crisis of identity. I had to struggle through this for months before—somehow, I don't know how—accepting that managing people _is_ work. Meetings _are_ work. And I can't be a manager if I don't rebuild my models of what meaningful work looks like. 
 
-Through weeks and months of mental and practical iterations, I am now in the headspace where I have kind-of made peace with it. 
+Through weeks and months of mental and practical iterations, and thanks to Paul Graham's remarkable essay [*Maker's Schedule, Manager's Schedule*](https://paulgraham.com/makersschedule.html), I found a way to rhythmically balance my two selves: maker and manager. I now intentionally structure my weeks to protect both modes, switching between peak-manager days and leave-me-alone IC days so neither gets lost to the extreme. 
 
-And thanks to Paul Graham's remarkable essay [*Maker's Schedule, Manager's Schedule*](https://paulgraham.com/makersschedule.html), I found a method to rhythmically balance between my two selves of maker and manager. So I don't lose either bits to the extreme and intentionally structure my weeks to operate in peak-manager mode and the leave-me-alone IC mode. 
-
-This continues to be a constant negotiation with myself. Some days I make peace with it. Other days I sit and wonder what the hell I've become—how I've let down a generation of investigative journalists by choosing to write mid-year performance reviews instead of writing explainers on voter fraud allegations by India's leading opposition party. Welcome to my life!
+This continues to be a constant negotiation. Some days I make peace with it. Other days I sit and wonder what the hell I've become—how I've let down a generation of investigative journalists by choosing to write mid-year performance reviews instead of writing explainers on voter fraud allegations by India's leading opposition party. Welcome to my life!
 
 ---
 
 # II. 
 
-How am I supposed to feel when I learn there's this Michael Corleone energy in me.
+*How am I supposed to feel when I learn there's this Michael Corleone energy in me?*
 
 I have little tolerance for half-measures, for those who bring amateur energy to serious business (yes, I take the smallest bits of my work *very* seriously), for those who don't understand the stakes, for those who don't respect the time and energy of others, for those who are okay with "good enough". 
 
@@ -61,23 +61,23 @@ I have little tolerance for half-measures, for those who bring amateur energy to
 
 No. *Nahi chalta hai.* 
 
-All of these are the clearest signs of mediocrity. And the carefree-ignorance of mediocre people activates a brand of cold-don't-fuck-with-me energy inside me. Because I love people who try and fail—because failure has honesty to it. Mediocrity is for insecure idiots who don't know they're fucking up someone else's attempt to do good.
+All of these are, to me, the clearest signs of mediocrity. And there’s something about the carefree ignorance of mediocre people that flips a switch in me and sparks a cold, don’t-fuck-with-me energy. I have endless patience for people who try and fail; failure has honesty. Mediocrity, on the other hand, belongs to the quietly complacent who don’t even realise they’re sabotaging someone else’s attempt to do good.
 
 *Yes, I realise how unhinged this sounds. Like a LinkedIn influencer having a breakdown about that obnoxious font choice, the missing comma and the crime of not-meeting-deadlines as if I am playing a startup sociopath in an Aaron Sorkin drama.*
 
-The problem is, now I'm a leader in an org, and so this energy has nowhere to go except into the most delicate part of my job: managing actual human beings with their own struggles, fears, and limitations. So I am stuck. 
+The problem is, now I'm a leader in an org, and so this energy has nowhere to go except into the most delicate part of my job: managing actual human beings with their own struggles, fears, and limitations. 
 
-In the dualities I live with, I also care deeply about people and I can read people's faces when they show insecurity, anxiety, that lack of worthiness when judgement on work becomes judgement on self, and so the empath in me struggles to navigate my want for standards and the supposed "niceness" to people around me.
+I care deeply about people, and I can read the insecurity or anxiety on their faces when judgement on work starts to feel like judgement on self. Which leaves the empath in me constantly negotiating between my standards and the "niceness" I think I owe them.
 
-Which creates a managerial tension. In the ideal world, I have now "delegated" work and my default assumption is delivery will happen as per my standards. Competent people crave autonomy, give it. Tell them what you expect and then leave for them to figure. I do this, and I think I've done my job.
+This creates a managerial tension. In the ideal world, I have now "delegated" work and my default assumption is delivery will happen as per my standards. Competent people crave autonomy, give it. Tell them what you expect and then leave for them to figure. I do this, and I think I've done my job.
 
 But then, someone's mom falls sick, someone is having a low week (because heartbreak) and someone is waiting on something they never followed up on. And so something—the thing that's on me to get done—doesn't happen or happens at a standard I can't deal with.
 
 But hey, I am the boss, so I am responsible for team outcomes. If the work didn't happen, I didn't lead it right. (*It's me, hi, I'm the problem it's me* zone all again.)
 
-This is so exhausting—the worst part of management. You're the cucumber crushed inside the three-layered sandwich, managing upstream organisational commitments while trying to be kind to your reports. And becoming a manager doesn't immediately make me Captain Cool Dhoni who doesn't get irritated. I do. In that zone, blaming someone else is the easiest route to self-explain the problem. 
+This is so exhausting—the worst part of management. You're the cucumber crushed inside the three-layered sandwich, managing upstream organisational commitments while trying to be kind to your reports. And becoming a manager doesn't immediately make me *Captain Cool Dhoni* who doesn't get irritated. I do. In that zone, blaming someone else is the easiest route to self-explain the problem. 
 
-I know exactly how things fall apart when people aren't in control, how messy personal realities play spoilsport. I can see that on people's faces and voices. But when exactly do legit concerns start becoming bullshit excuses is a tough one. I don't want to be the person wanting to make these judgment calls. Really. So what do I do?
+I know exactly how things fall apart when people aren't in control, how messy personal realities play spoilsport. I can see that on people's faces and voices. But when exactly legit concerns start becoming bullshit excuses is a tough one. I don't want to be the person wanting to make these judgment calls. Really. So what do I do?
 
 The strategy I have fallen back on—and consciously, not out of resigned acceptance—is to… trust.
 
@@ -119,17 +119,17 @@ You'll practice for hours. You'll try to find the tone that lands softly. And th
 
 And then you have to tell yourself… *bhai, you have to because this is your job.* 
 
-But that's just the nuclear option—the everyday stuff is almost worse. Think "feedback conversations" and "performance reviews" with this harsh thing of giving living human beings a number at the end of the year to decide their appraisal... I sometimes wonder if people inside this system realise the inhumanness of the structures we have created which run as if this is how things are supposed to be? 
+But that's just the nuclear option—the everyday stuff is almost worse. Think "feedback conversations" and "performance reviews" with this harsh thing of giving living human beings a rating at the end of the year to decide their raise... I sometimes wonder if people inside this system realise the inhumanness of the structures we have created which run as if this is how things are supposed to be? 
 
 I've never had—and refuse to have—this done to me. I just can't participate in this vulgar corporate dance. So I refused to have this rating chat with my own manager. (He gets me, and was chill about this.)
 
 But I have to do this as a manager. And when I am doing it, going in with the intent to show them the mirror, I can read the unspoken accusation on their face: "are you doing this HR type of talk to me to justify an outcome I would not appreciate?" 
 
-But my ego isn't cool with that, so I roleplay the confident well-prepped manager. Even though I am just winging it. 
+But my ego isn't cool with that, so I roleplay the confident manager. Even though I might just be winging it. 
 
 *Who tells you about this when you take up this role???*
 
-The more you find yourself in this situation, the more you learn that management is not just a job but an ethical responsibility. Management is power. And as a journalist whose work centred around unsealing the invisibility of power in everyday life, I am here now, feeling the weight of exactly the thing I never wanted.
+The more you find yourself in this situation, the more you learn that management is not just a job but an ethical responsibility. Management is power. And as a journalist whose work centred around unsealing the invisibility of power in everyday life, I am here now, feeling the weight of exactly the thing I investigated.
 
 This is hard. And it is not obvious until you do it. Leadership, no matter how human you try to make it, confronts you with trade-offs: between what you want to say and what you have to. Between wanting to care for people and wanting to deliver on organisational outcomes, because people matter, and work matters, and it's your job to ensure both stay in sync.
 
@@ -157,19 +157,19 @@ Which has led me to acknowledge this to myself: *"Yes, Samarth, you are an imper
 
 I rather just accept it, because I don't have it in me to perform a persona. I can only show up as who I am—say what I can do, and what I can't.
 
-The one thing I am proud of—or one thing where I have tried my best to do better, because it's in my full control—is to offer as much clarity my sanity allows. Which starts by revealing who I am, what I value, what I expect and what I'm trying to build and how.  On the advice of a colleague, I wrote an email to my team introducing myself so they really know who they are reporting to. I once wrote a "Things Are Not Working" memo where I spelled out what is not working for me in the way we work together. I have tried sharing a few mental models of storytelling so my team can apply that lens in the next feedback session. I have made explicit—repeatedly—how I like to communicate and what to expect from me. 
+The one thing I am proud of—or one thing where I have tried my best to do better, because it's in my full control—is to offer as much clarity as my sanity allows. Which starts by revealing who I am, what I value, what I expect and what I'm trying to build and how.  On the advice of a colleague, I wrote an email to my team introducing myself so they really know who they are reporting to. I once wrote a "Things Are Not Working" memo where I spelled out what is not working for me in the way we work together. I have tried sharing a few mental models of storytelling so my team can apply that lens in the next feedback session. I have made explicit—repeatedly—how I like to communicate and what to expect from me. 
 
 This is the easiest part of management. To just treat adults as adults—and let them decide how to navigate the situations once they know where they really are. And who they are with. Who has said that management has to be paternalistic?
 
 And—you saw this was coming—this also takes *work*. The will to communicate is a discipline that requires consistency for it to really land. Because anger is easy. Explaining is not. Vague feedback is easy. Getting specific is not. Emotional dump is easy. Clarity is not.
 
-So I don't go in a 1-1 without prepping what I really have to say—and with a free mind to first fully listen. If I have not thought about feedback, I won't wing it—I will say feedback will come later. If I know they want clarity on something from me, I will take my time, think through it and tell them. Sometimes these are hard—very hard—conversations. And it's exactly there when vagueness is just cruelty. 
+So now I don't go in a 1-on-1 without prepping what I really have to say—and with a free mind to first fully listen. If I have not thought about feedback, I won't wing it—I will say feedback will come later. If I know they want clarity on something from me, I will take my time, think through it and tell them. Sometimes these are hard—very hard—conversations. And it's exactly there when vagueness is just cruelty. 
 
 Because again... adults. Just face the damn reality. If you are not performing, it's my job to say it. Or if someone has expectations that just don't work in the org context, and when I know anything less will probably lead to disappointment, I still have to bite the bullet and be the unfair guy in the room. Which is simply alignment. But often feels like confrontation. 
 
-I know there are moments where I slip and my face reveals I am so pissed off—why can't you just understand the situation? Why do I have to explain it all? 
+I know there are moments where I slip and my face reveals I am so pissed off: why can't you just understand the situation? Why do I have to explain it all? 
 
-But there are also moments where it just clicks. Especially after the 1-on-1s—when people open up, when truth gets room to breathe. When someone who's been guarded suddenly tells you what's really going on. When they start a sentence with 'Can I be honest?' and actually mean it. When you see that spark of recognition in their eyes as feedback finally lands. When you see they grow into something they didn't know they could be.
+But there are also moments when it just clicks. Especially after the 1-on-1s when people open up, when someone who’s been guarded suddenly tells you what’s really going on, when they start a sentence with “Can I be honest?” and actually mean it, when you see that spark of recognition in their eyes as feedback finally lands, when you see them grow into something they didn’t know they could be.
 
 And in that opening, you feel it: they trust you enough to speak. They feel safe enough to drop the performance. And maybe that means something.
 
@@ -189,7 +189,7 @@ The truth is... I am trying to hold two things together: actually giving a shit 
 
 I am still figuring it out. My team has been patient with my learning curve—though they probably don't know how much I notice and appreciate it. They've watched me fumble through feedback, overthink simple decisions, oscillate between too much involvement and not enough. They've been part of my education to try this thing out. 
 
-I don't know how it's really going. Maybe I am just another asshole in training, masquerading my reluctant manager self behind the facade of system-demanded cruelties. Maybe I'm just fooling myself on my way to becoming... someone. Or maybe all these hyper-masculine models of leadership fuelled with war-like metaphors are just convenient fictions and there's a way for those who deeply feel the weight to survive in power.
+I don't know how it's really going. Maybe I am just another asshole in training, masquerading my reluctant manager self behind the facade of system-demanded cruelties. Maybe I'm just fooling myself on my way to becoming... someone. Or maybe all these hyper-masculine models of leadership fuelled with war-like metaphors are just convenient fictions and there's a way for those of us who deeply feel the weight to survive in power.
 
 One thing I've learned is that you can't suck less at this job while resenting its existence. The work—coordinating human action, holding the tensions, being in the relationship—has to matter to you. Not the title, not the money, but the actual work of it.
 
