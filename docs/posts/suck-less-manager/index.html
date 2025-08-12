@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Suck Less as a Manager - Samarth&#39;s Blog</title>
+    <meta name="description" content="How to Suck Less as a Manager">
+    <meta name="author" content="Samarth Bansal">
+    
+    <style>
+        :root {
+            --content-width: 600px;
+        }
+
+        /* Light mode colors */
+        :root {
+            --bg-primary: #fefdfb;
+            --bg-secondary: #f8f7f5;
+            --text-primary: rgb(17, 17, 17);
+            --text-secondary: rgb(82, 82, 82);
+            --date-color: rgb(138, 138, 138);
+            --link-color: rgb(93, 24, 220);
+            --link-hover: rgb(77, 20, 180);
+            --subtle-hover: rgba(93, 24, 220, 0.05);
+            --border-light: rgba(0, 0, 0, 0.06);
+            --blockquote-border: rgb(230, 230, 230);
+            --code-bg: rgb(248, 248, 248);
+            --horizontal-rule: rgb(238, 238, 238);
+            --highlight-bg: rgba(93, 24, 220, 0.05);
+            --newsletter-bg: rgb(250, 250, 250);
+            --navbar-bg: rgba(254, 253, 251, 0.95);
+        }
+
+        /* Dark mode colors */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1612;
+                --bg-secondary: #252118;
+                --text-primary: rgb(232, 232, 232);
+                --text-secondary: rgb(160, 160, 160);
+                --date-color: rgb(120, 120, 120);
+                --link-color: rgb(168, 132, 255);
+                --link-hover: rgb(190, 155, 255);
+                --subtle-hover: rgba(168, 132, 255, 0.1);
+                --border-light: rgba(255, 255, 255, 0.1);
+                --blockquote-border: rgb(60, 60, 60);
+                --code-bg: #2a251f;
+                --horizontal-rule: #3a342b;
+                --highlight-bg: rgba(168, 132, 255, 0.1);
+                --newsletter-bg: #201e1a;
+                --navbar-bg: rgba(26, 22, 18, 0.95);
+            }
+        }
+
+        /* Manual dark mode override */
+        [data-theme="dark"] {
+            --bg-primary: #1a1612;
+            --bg-secondary: #252118;
+            --text-primary: rgb(232, 232, 232);
+            --text-secondary: rgb(160, 160, 160);
+            --date-color: rgb(120, 120, 120);
+            --link-color: rgb(168, 132, 255);
+            --link-hover: rgb(190, 155, 255);
+            --subtle-hover: rgba(168, 132, 255, 0.1);
+            --border-light: rgba(255, 255, 255, 0.1);
+            --blockquote-border: rgb(60, 60, 60);
+            --code-bg: #2a251f;
+            --horizontal-rule: #3a342b;
+            --highlight-bg: rgba(168, 132, 255, 0.1);
+            --newsletter-bg: #201e1a;
+            --navbar-bg: rgba(26, 22, 18, 0.95);
+        }
+
+        /* Manual light mode override */
+        [data-theme="light"] {
+            --bg-primary: #fefdfb;
+            --bg-secondary: #f8f7f5;
+            --text-primary: rgb(17, 17, 17);
+            --text-secondary: rgb(82, 82, 82);
+            --date-color: rgb(138, 138, 138);
+            --link-color: rgb(93, 24, 220);
+            --link-hover: rgb(77, 20, 180);
+            --subtle-hover: rgba(93, 24, 220, 0.05);
+            --border-light: rgba(0, 0, 0, 0.06);
+            --blockquote-border: rgb(230, 230, 230);
+            --code-bg: rgb(248, 248, 248);
+            --horizontal-rule: rgb(238, 238, 238);
+            --highlight-bg: rgba(93, 24, 220, 0.05);
+            --newsletter-bg: rgb(250, 250, 250);
+            --navbar-bg: rgba(254, 253, 251, 0.95);
+        }
+
+        /* Base Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            background-color: var(--bg-primary);
+            padding-top: 4rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Top Navigation Bar */
+        .top-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--navbar-bg);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border-light);
+            z-index: 100;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .navbar-container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+            transition: color 0.2s ease;
+        }
+
+        .navbar-brand:hover {
+            color: var(--link-color);
+        }
+
+        .navbar-nav {
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            align-items: center;
+        }
+
+        .navbar-nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .navbar-nav a:hover {
+            color: var(--link-color);
+        }
+
+        .container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        /* Navigation */
+        nav {
+            margin-bottom: 4rem;
+        }
+
+        nav a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-right: 1.5rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Back to home link */
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            transition: color 0.2s ease;
+        }
+
+        .back-home:hover {
+            color: var(--link-color);
+        }
+
+        .back-home::before {
+            content: '←';
+            margin-right: 0.5rem;
+        }
+
+        /* Page Title */
+        .page-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: var(--text-primary);
+            margin: 0 0 2rem;
+        }
+
+        /* Posts List */
+        .posts-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .post-item {
+            display: flex;
+            align-items: baseline;
+            margin: 0.35rem 0;
+            padding: 0.5rem 0.75rem;
+            margin-left: -0.75rem;
+            margin-right: -0.75rem;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .post-item:hover {
+            background-color: var(--subtle-hover);
+        }
+
+        .post-date {
+            flex: 0 0 5rem;
+            color: var(--date-color);
+            font-size: 0.875rem;
+            font-weight: 400;
+            font-feature-settings: "tnum";
+            font-variant-numeric: tabular-nums;
+            letter-spacing: 0.01em;
+        }
+
+        .post-title {
+            flex: 1;
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .post-title a {
+            color: var(--text-primary);
+            text-decoration: none;
+            position: relative;
+            transition: color 0.15s ease;
+        }
+
+        .post-title a::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .post-item:hover .post-title a {
+            color: var(--link-color);
+        }
+
+        .post-item:hover .post-title a::after {
+            transform: scaleX(1);
+        }
+
+        .external-link {
+            color: var(--date-color);
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+        }
+
+        /* Post Page Styles */
+        article .post-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin: 0 0 3rem;
+            color: var(--text-primary);
+        }
+
+        .post-meta {
+            color: var(--text-secondary);
+            margin: 2.5rem 0;
+            font-size: 0.95rem;
+            font-weight: 400;
+        }
+        
+        .date-accent {
+            color: var(--link-color);
+            margin-right: 0.5rem;
+        }
+
+        .post-content {
+            font-size: 1.05rem;
+            font-weight: 400;
+            color: var(--text-primary);
+        }
+
+        .post-content p {
+            margin: 1.8em 0;
+        }
+
+        .post-content h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            margin: 2.5em 0 1em;
+            line-height: 1.3;
+        }
+
+        .post-content h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 2em 0 0.8em;
+            line-height: 1.4;
+        }
+
+        .post-content h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.8em 0 0.6em;
+        }
+
+        .post-content a {
+            color: var(--link-color);
+            text-decoration: underline;
+            text-decoration-color: rgba(93, 24, 220, 0.4);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+            transition: all 0.2s ease;
+        }
+
+        .post-content a:hover {
+            color: var(--link-hover);
+            text-decoration-color: var(--link-hover);
+        }
+
+        .post-content blockquote {
+            margin: 2em 0;
+            padding-left: 1.5em;
+            border-left: 2px solid var(--blockquote-border);
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        .post-content blockquote p {
+            margin: 0.8em 0;
+        }
+
+        .post-content code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9em;
+            background: var(--code-bg);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            color: var(--text-primary);
+        }
+
+        .post-content pre {
+            background: var(--code-bg);
+            padding: 1.2em;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 2em 0;
+            border: 1px solid var(--border-light);
+        }
+
+        .post-content pre code {
+            background: none;
+            padding: 0;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .post-content hr {
+            margin: 3em 0;
+            border: none;
+            border-top: 1px solid var(--horizontal-rule);
+        }
+
+        .post-content img {
+            max-width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 600px;
+        }
+
+        /* Home page specific styles */
+        .intro-section {
+            margin-bottom: 3rem;
+        }
+
+        .work-section {
+            margin-bottom: 3rem;
+        }
+
+        .work-section h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .page-links {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .page-links li {
+            margin: 0.8rem 0;
+        }
+
+        .page-links a {
+            display: inline-block;
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+
+        .page-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--link-color);
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .page-links a:hover::after {
+            transform: scaleX(1);
+        }
+
+        /* View Toggle Styles */
+        .view-toggle {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .view-toggle button {
+            background: none;
+            border: none;
+            padding: 0.4rem 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            position: relative;
+            transition: color 0.2s ease;
+            font-family: inherit;
+        }
+
+        .view-toggle button:hover {
+            color: var(--link-color);
+        }
+
+        .view-toggle button.active {
+            color: var(--link-color);
+        }
+
+        .view-toggle button.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--link-color);
+        }
+
+        /* Category Section Styles */
+        .category-section {
+            margin: 2.5rem 0;
+        }
+
+        .category-title {
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin: 0 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-light);
+            position: relative;
+        }
+
+        .category-title::before {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 2rem;
+            height: 1px;
+            background-color: var(--link-color);
+            opacity: 0.6;
+        }
+
+        /* Dark mode toggle */
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 0.25rem;
+            transition: color 0.3s ease;
+            margin-left: 1rem;
+        }
+
+        .theme-toggle:hover {
+            color: var(--link-color);
+        }
+
+        /* Brand name responsive display */
+        .brand-short {
+            display: none;
+        }
+        
+        .brand-full {
+            display: inline;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            :root {
+                --content-width: 100%;
+            }
+            
+            body {
+                padding-top: 3.5rem;
+            }
+            
+            .navbar-container {
+                padding: 0.75rem 1rem;
+            }
+            
+            .navbar-brand {
+                font-size: 1rem;
+            }
+            
+            .navbar-nav {
+                gap: 0.75rem;
+            }
+            
+            .navbar-nav a {
+                font-size: 0.8rem;
+            }
+            
+            .theme-toggle {
+                margin-left: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .navbar-brand {
+                font-size: 0.95rem;
+            }
+            
+            .navbar-nav {
+                gap: 0.5rem;
+            }
+            
+            .navbar-nav a {
+                font-size: 0.75rem;
+            }
+            
+            .navbar-container {
+                padding: 0.75rem 0.75rem;
+            }
+            
+            /* Show short brand name on small screens */
+            .brand-full {
+                display: none;
+            }
+            
+            .brand-short {
+                display: inline;
+            }
+        }
+            
+            .container {
+                padding: 1.5rem 1.25rem 2.5rem;
+            }
+            
+            article .post-title {
+                font-size: 2rem;
+            }
+
+            .post-content h2 {
+                font-size: 1.6rem;
+            }
+
+            .post-content h3 {
+                font-size: 1.3rem;
+            }
+
+            .post-content blockquote {
+                margin: 1.5em 0;
+                padding-left: 1.2em;
+            }
+
+            .post-item {
+                gap: 1.25rem;
+            }
+
+            .post-date {
+                flex: 0 0 4.5rem;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="top-navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-brand">
+                <span class="brand-full">Samarth Bansal</span>
+                <span class="brand-short">Samarth</span>
+            </a>
+            <nav class="navbar-nav">
+                <a href="/writing/">Writing</a>
+                <a href="/micro/">Notes</a>
+                <a href="/contact/">Contact</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">💡</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        
+
+<a href="/blog/" class="back-home">Blog</a>
+
+
+        
+        <main>
+            
+<article>
+    <h1 class="post-title">How to Suck Less as a Manager</h1>
+    
+    
+    <div class="post-meta">
+        <span class="date-accent">•</span> August 12, 2025
+    </div>
+    
+    
+    <div class="post-content">
+        <p><em>It's 9:30 pm. I should be on my IKEA couch in my rented Juhu apartment, zoning out to whatever Spotify calls &quot;Classic Jazz&quot; or thinking about the woman I didn't match with or returning to my quarter-finished Brothers Karamazov or just entering the scandalously secretive world inside my head with only one inhabitant: me.</em></p>
+<p><em>Instead, I'm sitting with this anxious knot in my chest, wondering if a simple work update will come through from my direct report so I can actually relax—but also wondering if texting them at 9:30 pm makes me the boundary-crossing asshole boss I never wanted to become.</em></p>
+<hr />
+<p>I became a first-time manager in June 2024, when I joined The Whole Truth to lead the content team. From the outside, this was no big deal: just another 30-year-old making a move into startup leadership to experience what it's <em>really</em> like.</p>
+<p>But it was a big deal, because just before that, I had spent half a decade actively rejecting everything this role represents: the bulk of my twenties as a freelance journalist-writer, three years in the mountains of Mussoorie. I was the guy who silently smirked at those obsessed with Google calendar schedules, who felt so alienated by the ladder-climbing, appraisal-obsessed, CTC-LPA world that I chose intentional solitude over institutional belonging—as far as possible from the world of manufactured anxieties and tone-deaf ideas of the privileged few.</p>
+<p>But the mission drove me to leave all that and come to Bombay. To make an honest attempt to build an honest food brand in a messy regulatory ecosystem and a stupidly polluted information environment. To solve a problem I care about. With near-infinite agency—I can work as I wish, on exactly my terms, when and where I want, with the simplest expectation of getting work done.</p>
+<p>But this work demanded management. Which I had never done before. My CEO—also my friend—knew this. He called out that leading a team is something I'd have to learn if I care about making change at scale, trusting I'd figure it out as I went.</p>
+<p>The only problem? I wasn't warned how <em>hard</em>  this is: the crushing weight of what power—even the small, corporate kind—does to a person who never wanted it.  Or realising that the only way to learn is by sticking with the discomfort of sucking long enough to suck less.</p>
+<p>This essay is about that discomfort. A messy look at what happens when someone who rejects authority now has to hold it. When ideals meet reality. From a boy trying to suck less at his job.</p>
+<hr />
+<h1>I.</h1>
+<p><em>Good managers delegate. Bad ones hoard.</em></p>
+<p>That's what I was told.</p>
+<p>Oh. How easy it is to utter this D-word. It's impossible for any management guru to not repeat it—until they are sure it's tattooed permanently in every neuron involved in leadership behaviour.</p>
+<p>So let's talk about my delegation behaviour as a manager. But first, the working behaviour of me, the maker.</p>
+<p>I love making things. Myself. With the motion of my hands. With the imagination of my mind. My writing starts with hours immersing myself in the thought-chain of my ideas, thinking through the wild connections it is making, dumping whatever noisy garbled world that's emerging, and then crafting things with it: to tweak the sound of a sentence, play with action verbs, mess around with the punctuation for rhythm, identify narrative breaks... and fix them.</p>
+<p>That is what I am used to. But the delegation-gang tells you this is not your job. Because you are no longer expected to &quot;do your best work&quot;—the ask is &quot;enabling others to do their best work&quot; or &quot;creating conditions for great work to happen&quot;.</p>
+<p>I often have this feeling that managers who love delegation are probably those who never excelled as makers. Because this transition from doing the work to getting work done is a psychological nightmare: it's grief disguised as growth, because you lose what you hold so closely—the fingerprints over the work you ship. (Such a private, quiet loss that there is no funeral to mourn it.)</p>
+<p>You spend days in meetings giving developmental feedback to your team. Reviewing work from another team waiting for your input. Looking at submissions and questioning whoever hired these people. But then the day ends, and it's 7:30pm, you're on the Metro, blazing Ghazals inside your noise-cancelling headphones to feel the feeling of not having done any work (and only judging) the whole day.</p>
+<p>I wasn't prepared for this crisis of identity. I had to struggle through this for months before—somehow, I don't know how—accepting that managing people <em>is</em> work. Meetings <em>are</em> work. And I can't be a manager if I don't rebuild my models of what meaningful work looks like.</p>
+<p>Through weeks and months of mental and practical iterations, I am now in the headspace where I have kind-of made peace with it.</p>
+<p>And thanks to Paul Graham's remarkable essay <a href="https://paulgraham.com/makersschedule.html"><em>Maker's Schedule, Manager's Schedule</em></a>, I found a method to rhythmically balance between my two selves of maker and manager. So I don't lose either bits to the extreme and intentionally structure my weeks to operate in peak-manager mode and the leave-me-alone IC mode.</p>
+<p>This continues to be a constant negotiation with myself. Some days I make peace with it. Other days I sit and wonder what the hell I've become—how I've let down a generation of investigative journalists by choosing to write mid-year performance reviews instead of writing explainers on voter fraud allegations by India's leading opposition party. Welcome to my life!</p>
+<hr />
+<h1>II.</h1>
+<p>How am I supposed to feel when I learn there's this Michael Corleone energy in me.</p>
+<p><em>This.</em>
+![[Pasted image 20250811213432.png]]
+![[Pasted image 20250811213432.png]]</p>
+<p>I have little tolerance for half-measures, for those who bring amateur energy to serious business (yes, I take the smallest bits of my work <em>very</em> seriously), for those who don't understand the stakes, for those who don't respect the time and energy of others, for those who are okay with &quot;good enough&quot;.</p>
+<p><em>Chalta hai?</em></p>
+<p>No. <em>Nahi chalta hai.</em></p>
+<p>All of these are the clearest signs of mediocrity. And the carefree-ignorance of mediocre people activates a brand of cold-don't-fuck-with-me energy inside me. Because I love people who try and fail—because failure has honesty to it. Mediocrity is for insecure idiots who don't know they're fucking up someone else's attempt to do good.</p>
+<p><em>Yes, I realise how unhinged this sounds. Like a LinkedIn influencer having a breakdown about that obnoxious font choice, the missing comma and the crime of not-meeting-deadlines as if I am playing a startup sociopath in an Aaron Sorkin drama.</em></p>
+<p>The problem is, now I'm a leader in an org, and so this energy has nowhere to go except into the most delicate part of my job: managing actual human beings with their own struggles, fears, and limitations. So I am stuck.</p>
+<p>In the dualities I live with, I also care deeply about people and I can read people's faces when they show insecurity, anxiety, that lack of worthiness when judgement on work becomes judgement on self, and so the empath in me struggles to navigate my want for standards and the supposed &quot;niceness&quot; to people around me.</p>
+<p>Which creates a managerial tension. In the ideal world, I have now &quot;delegated&quot; work and my default assumption is delivery will happen as per my standards. Competent people crave autonomy, give it. Tell them what you expect and then leave for them to figure. I do this, and I think I've done my job.</p>
+<p>But then, someone's mom falls sick, someone is having a low week (because heartbreak) and someone is waiting on something they never followed up on. And so something—the thing that's on me to get done—doesn't happen or happens at a standard I can't deal with.</p>
+<p>But hey, I am the boss, so I am responsible for team outcomes. If the work didn't happen, I didn't lead it right. (<em>It's me, hi, I'm the problem it's me</em> zone all again.)</p>
+<p>This is so exhausting—the worst part of management. You're the cucumber crushed inside the three-layered sandwich, managing upstream organisational commitments while trying to be kind to your reports. And becoming a manager doesn't immediately make me Captain Cool Dhoni who doesn't get irritated. I do. In that zone, blaming someone else is the easiest route to self-explain the problem.</p>
+<p>I know exactly how things fall apart when people aren't in control, how messy personal realities play spoilsport. I can see that on people's faces and voices. But when exactly do legit concerns start becoming bullshit excuses is a tough one. I don't want to be the person wanting to make these judgment calls. Really. So what do I do?</p>
+<p>The strategy I have fallen back on—and consciously, not out of resigned acceptance—is to… trust.</p>
+<p>They miss a deadline. They say they tried and it didn't land, and I believe them. They say they are feeling low and want WFH, and I say &quot;take care&quot; and move on. Or the work comes in below expectations, and I simply say &quot;this needs revisions and why don't you try XYZ&quot; without doubting intent and first asking if I can help eliminate any blockers.</p>
+<p>This, then, becomes the job. Now make no mistake: I have a great team. This might feel like public flagellation of these youngsters, but it's not that. The toll comes from the unacknowledged frictions in the everyday micro-behaviours which can shadow out the macro-movements and outcomes.</p>
+<p>This requires work I didn't know I'd have to do—the kind of emotional labour that sits in your body all the time.</p>
+<p>Like when there's a thing that needs to be done over the weekend. But you don't want to ask because you have told them to relax on weekends and you're trying to protect boundaries. But this needs doing. So you stand still, and you hope they volunteer, not because you forced them, but because you want them to feel the stakes like you do. And you wait. Maybe someone will. Maybe they won't. And you carry that quiet tension in your body.</p>
+<p>Or managing your own moods around them. My bad days. When I'm feeling low. The days when I don't feel like working. When I'm fucking stressed out and all I want to do is type on the team WhatsApp group: 'You know what guys? I don't know anything about this either. I'm just trying to not suck.'</p>
+<p>Or when my personal life is on fire. And I have to walk into a meeting pretending everything is okay after an emotionally draining call at home because that's what the role demands.</p>
+<p>So I've built my own rituals. When I feel off, I let it out—but never in front of my team. I call someone and rant. Or I write through it. I imagine alternate explanations. I story-tell my way out of the frustration. And often, I end up thinking: &quot;Ah, yeah, this could just be that.&quot;</p>
+<p>And wait, it's not yet over. I have created this wannabe image of a &quot;kind manager&quot; in my head and then confront the fear—the very real fear—of being taken advantage of: what if I get played? Which cracks something personal inside me. What do I really do?</p>
+<p>Every time I'm here, I come back to the same starting point: choosing to trust should stay default. Because trust doesn't get established unless the person with more power offers it first. It's asymmetrical by design. If I want trust in the room, I have to seed it first. Not just in words, but in actions. So it has to start with me.</p>
+<p>And I've made peace with the risk. I've chosen—consciously—that I'd rather trust ten people and be wrong about one who disappointed me, than never give the nine a real chance to surprise me.</p>
+<p>And with this acceptance, I told myself, it's not naïveté if it's a choice made with eyes open. It's just… a bet. On people.</p>
+<p>This doesn't solve my immediate problem of not being able to deliver the work I am expected to deliver at its highest. Or my frustrations of my output not meeting my own standards. This is my constant beef. And I am still figuring how to reconcile it all.</p>
+<p>For now, I own this as a personal responsibility—of sucking at delivering outcomes. Whether that makes me a less sucky manager is something I'll discover, but trusting fellow humans makes me feel better as a fellow human.</p>
+<p>The image of Michael Corleone haunts me because I don't want to be him.</p>
+<hr />
+<h1>III.</h1>
+<p>No one tells you how heavy some conversations are until you're the one who has to walk into the room and say some version of, &quot;We can't work together anymore.&quot;</p>
+<p>You'll practice for hours. You'll try to find the tone that lands softly. And then you'll have to sit across from someone, their face holding a zillion emotions at once, to say those lines in some convoluted way, and you'll scream inside: <em>Why am I the one who has to do this?</em></p>
+<p>And then you have to tell yourself… <em>bhai, you have to because this is your job.</em></p>
+<p>But that's just the nuclear option—the everyday stuff is almost worse. Think &quot;feedback conversations&quot; and &quot;performance reviews&quot; with this harsh thing of giving living human beings a number at the end of the year to decide their appraisal... I sometimes wonder if people inside this system realise the inhumanness of the structures we have created which run as if this is how things are supposed to be?</p>
+<p>I've never had—and refuse to have—this done to me. I just can't participate in this vulgar corporate dance. So I refused to have this rating chat with my own manager. (He gets me, and was chill about this.)</p>
+<p>But I have to do this as a manager. And when I am doing it, going in with the intent to show them the mirror, I can read the unspoken accusation on their face: &quot;are you doing this HR type of talk to me to justify an outcome I would not appreciate?&quot;</p>
+<p>But my ego isn't cool with that, so I roleplay the confident well-prepped manager. Even though I am just winging it.</p>
+<p><em>Who tells you about this when you take up this role???</em></p>
+<p>The more you find yourself in this situation, the more you learn that management is not just a job but an ethical responsibility. Management is power. And as a journalist whose work centred around unsealing the invisibility of power in everyday life, I am here now, feeling the weight of exactly the thing I never wanted.</p>
+<p>This is hard. And it is not obvious until you do it. Leadership, no matter how human you try to make it, confronts you with trade-offs: between what you want to say and what you have to. Between wanting to care for people and wanting to deliver on organisational outcomes, because people matter, and work matters, and it's your job to ensure both stay in sync.</p>
+<p>I never knew that being a manager meant it's not about machine-like task allocation or TED-talk inspiration. It entails all the beauty and messiness any human relationship involves—and you can't escape it, if you want to suck less at this job.</p>
+<p>Which is the thing I learnt: <em>this is the job</em>—and adapting to these new dimensions of my emotional life is what's needed if I want to be good at this.</p>
+<p>Which is why some days I sit in silence wondering if I'm cut out for this. Most days, I don't know. But I keep showing up anyway.</p>
+<hr />
+<h1>IV.</h1>
+<p>No one prepared me for how lonely this job is. I walk into the office, masking my inability to sort out problems that competent leaders supposedly spot and fix effortlessly. But who can I tell this to? I can't tell my team I'm figuring it out as I go—they need to believe I know what I'm doing. I can't tell my CEO about every micro-struggle because he's not supposed to know the day-to-day reality of my function.</p>
+<p>So I'm caught between levels: my team doesn't know the macro context I'm dealing with, and my boss doesn't know the micro-reality. When it comes to trade-offs, I'm making these calls alone.</p>
+<p>I'm always reading cues from people's faces and gestures (imagining them as characters in a novel I'll write someday), spotting moments of disappointment or confusion, but I can't really talk to them about what I'm seeing. Because that would be voyeuristic. As if crossing some guarded boundary.</p>
+<p>And the leadership coach types would say these are all my problems—why am I loaded with so much work, why haven't I hired better, why can't I just...ugh... delegate? But they don't understand: you can't delegate the isolation.</p>
+<p>So I hold all of this inside, and these layers of complications come out in flattened corporate speak of accountability and deadlines and standards on one side and &quot;we are doing our best in the given constraints&quot; on the other.</p>
+<p>Which has led me to acknowledge this to myself: <em>&quot;Yes, Samarth, you are an imperfect manager and a so-so leader.&quot;</em></p>
+<p>I rather just accept it, because I don't have it in me to perform a persona. I can only show up as who I am—say what I can do, and what I can't.</p>
+<p>The one thing I am proud of—or one thing where I have tried my best to do better, because it's in my full control—is to offer as much clarity my sanity allows. Which starts by revealing who I am, what I value, what I expect and what I'm trying to build and how.  On the advice of a colleague, I wrote an email to my team introducing myself so they really know who they are reporting to. I once wrote a &quot;Things Are Not Working&quot; memo where I spelled out what is not working for me in the way we work together. I have tried sharing a few mental models of storytelling so my team can apply that lens in the next feedback session. I have made explicit—repeatedly—how I like to communicate and what to expect from me.</p>
+<p>This is the easiest part of management. To just treat adults as adults—and let them decide how to navigate the situations once they know where they really are. And who they are with. Who has said that management has to be paternalistic?</p>
+<p>And—you saw this was coming—this also takes <em>work</em>. The will to communicate is a discipline that requires consistency for it to really land. Because anger is easy. Explaining is not. Vague feedback is easy. Getting specific is not. Emotional dump is easy. Clarity is not.</p>
+<p>So I don't go in a 1-1 without prepping what I really have to say—and with a free mind to first fully listen. If I have not thought about feedback, I won't wing it—I will say feedback will come later. If I know they want clarity on something from me, I will take my time, think through it and tell them. Sometimes these are hard—very hard—conversations. And it's exactly there when vagueness is just cruelty.</p>
+<p>Because again... adults. Just face the damn reality. If you are not performing, it's my job to say it. Or if someone has expectations that just don't work in the org context, and when I know anything less will probably lead to disappointment, I still have to bite the bullet and be the unfair guy in the room. Which is simply alignment. But often feels like confrontation.</p>
+<p>I know there are moments where I slip and my face reveals I am so pissed off—why can't you just understand the situation? Why do I have to explain it all?</p>
+<p>But there are also moments where it just clicks. Especially after the 1-on-1s—when people open up, when truth gets room to breathe. When someone who's been guarded suddenly tells you what's really going on. When they start a sentence with 'Can I be honest?' and actually mean it. When you see that spark of recognition in their eyes as feedback finally lands. When you see they grow into something they didn't know they could be.</p>
+<p>And in that opening, you feel it: they trust you enough to speak. They feel safe enough to drop the performance. And maybe that means something.</p>
+<hr />
+<h1>V.</h1>
+<p>Sometimes I think being a first-time manager is like being a first-time boyfriend. You go from the simplicity of managing only yourself to suddenly being responsible for others' experience of their work life. You make mistakes. You learn that impact matters more than intent.</p>
+<p>So my single biggest attempt at sucking less is asking myself: am I ready to be fully in this messy relationship? Am I okay with accepting that part of holding power means I'll hurt people with it—even when I try not to. And perhaps the only conscientious thing is to hold this power more responsibly.</p>
+<p>Especially when not every relationship sparks joy. Sometimes you're managing someone who, frankly, you'd never grab coffee with voluntarily. Their work is fine, not great. But at 3 PM on a Tuesday, they're sitting across from you, anxious about their performance review, and you see their need to be valued, their want to be trusted, and suddenly, you're responsible for this person you never chose, running a relationship maintained entirely by duty and decency.</p>
+<p>It is in those conversations that you realise the practice of management is not a one-time job of declarations and rules. It's a continuous negotiation. You have to be at it. They have to be at it. And you can only do it together.</p>
+<p>The truth is... I am trying to hold two things together: actually giving a shit about the work quality (don't want to be the beloved manager of a mediocre team) AND actually giving a shit about the humans doing it (don't want to be the asshole who burns through people).</p>
+<p>I am still figuring it out. My team has been patient with my learning curve—though they probably don't know how much I notice and appreciate it. They've watched me fumble through feedback, overthink simple decisions, oscillate between too much involvement and not enough. They've been part of my education to try this thing out.</p>
+<p>I don't know how it's really going. Maybe I am just another asshole in training, masquerading my reluctant manager self behind the facade of system-demanded cruelties. Maybe I'm just fooling myself on my way to becoming... someone. Or maybe all these hyper-masculine models of leadership fuelled with war-like metaphors are just convenient fictions and there's a way for those who deeply feel the weight to survive in power.</p>
+<p>One thing I've learned is that you can't suck less at this job while resenting its existence. The work—coordinating human action, holding the tensions, being in the relationship—has to matter to you. Not the title, not the money, but the actual work of it.</p>
+<p>Maybe that's why I'm still at it. Maybe I actually want to lead. I don't have answers. Just following Rilke's <a href="https://www.themarginalian.org/2012/06/01/rilke-on-questions/">advice</a>: don't strive for answers. Live the damn questions.</p>
+
+    </div>
+</article>
+
+        </main>
+    </div>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.querySelector('.theme-icon');
+        const body = document.body;
+
+        // Check for saved theme preference or default to system preference
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        let currentTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+        
+        // Apply initial theme
+        body.setAttribute('data-theme', currentTheme);
+        updateThemeIcon(currentTheme);
+
+        // Theme toggle event listener
+        themeToggle.addEventListener('click', () => {
+            currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+            body.setAttribute('data-theme', currentTheme);
+            localStorage.setItem('theme', currentTheme);
+            updateThemeIcon(currentTheme);
+        });
+
+        // Update theme icon
+        function updateThemeIcon(theme) {
+            themeIcon.textContent = theme === 'light' ? '💡' : '🔅';
+        }
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                currentTheme = e.matches ? 'dark' : 'light';
+                body.setAttribute('data-theme', currentTheme);
+                updateThemeIcon(currentTheme);
+            }
+        });
+    </script>
+</body>
+</html>
