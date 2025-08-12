@@ -47,7 +47,7 @@ I wasn't prepared for this crisis of identity. I had to struggle through this fo
 
 Through weeks and months of mental and practical iterations, and thanks to Paul Graham's remarkable essay [*Maker's Schedule, Manager's Schedule*](https://paulgraham.com/makersschedule.html), I found a way to rhythmically balance my two selves: maker and manager. I now intentionally structure my weeks to protect both modes, switching between peak-manager days and leave-me-alone IC days so neither gets lost to the extreme. 
 
-This continues to be a constant negotiation. Some days I make peace with it. Other days I sit and wonder what the hell I've become—how I've let down a generation of investigative journalists by choosing to write mid-year performance reviews instead of writing explainers on voter fraud allegations by India's leading opposition party. Welcome to my life!
+This continues to be a constant negotiation. Some days I make peace with it. Other days I sit and wonder what the hell I've become—how I've let down a generation of investigative journalists by choosing to write mid-year performance reviews instead of writing explainers on [voter fraud allegations](https://x.com/RahulGandhi/status/1953648975816388982) by India's leading opposition party. Welcome to my life!
 
 ---
 
@@ -83,25 +83,23 @@ The strategy I have fallen back on—and consciously, not out of resigned accept
 
 They miss a deadline. They say they tried and it didn't land, and I believe them. They say they are feeling low and want WFH, and I say "take care" and move on. Or the work comes in below expectations, and I simply say "this needs revisions and why don't you try XYZ" without doubting intent and first asking if I can help eliminate any blockers. 
 
-This, then, becomes the job. Now make no mistake: I have a great team. This might feel like public flagellation of these youngsters, but it's not that. The toll comes from the unacknowledged frictions in the everyday micro-behaviours which can shadow out the macro-movements and outcomes. 
-
-This requires work I didn't know I'd have to do—the kind of emotional labour that sits in your body all the time.
+This, then, becomes the job. Now make no mistake: I have a great team. This might feel like public flagellation of these youngsters, but it's not that. The toll comes from the unacknowledged frictions in the everyday micro-behaviours which can shadow out the macro-movements and outcomes—the emotional labour that sits in your body all the time.
 
 Like when there's a thing that needs to be done over the weekend. But you don't want to ask because you have told them to relax on weekends and you're trying to protect boundaries. But this needs doing. So you stand still, and you hope they volunteer, not because you forced them, but because you want them to feel the stakes like you do. And you wait. Maybe someone will. Maybe they won't. And you carry that quiet tension in your body.
 
-Or managing your own moods around them. My bad days. When I'm feeling low. The days when I don't feel like working. When I'm fucking stressed out and all I want to do is type on the team WhatsApp group: 'You know what guys? I don't know anything about this either. I'm just trying to not suck.'
+Or managing your own moods around them. My bad days. When I'm feeling low. The days when I don't feel like working. When I'm fucking stressed out and all I want to do is type on the team WhatsApp group: "You know what guys? I don't know anything about this either. I'm just trying to not suck."
 
 Or when my personal life is on fire. And I have to walk into a meeting pretending everything is okay after an emotionally draining call at home because that's what the role demands.
 
-So I've built my own rituals. When I feel off, I let it out—but never in front of my team. I call someone and rant. Or I write through it. I imagine alternate explanations. I story-tell my way out of the frustration. And often, I end up thinking: "Ah, yeah, this could just be that."
+So I've built my own rituals. When I feel off, I let it out—but never in front of my team. I call someone and rant. Or I write through it and story-tell my way out of the frustration. 
 
-And wait, it's not yet over. I have created this wannabe image of a "kind manager" in my head and then confront the fear—the very real fear—of being taken advantage of: what if I get played? Which cracks something personal inside me. What do I really do?
+You do this, and then confront the fear—the very real fear—of being taken advantage of: what if I get played? Which cracks something personal inside me. 
 
 Every time I'm here, I come back to the same starting point: choosing to trust should stay default. Because trust doesn't get established unless the person with more power offers it first. It's asymmetrical by design. If I want trust in the room, I have to seed it first. Not just in words, but in actions. So it has to start with me. 
 
 And I've made peace with the risk. I've chosen—consciously—that I'd rather trust ten people and be wrong about one who disappointed me, than never give the nine a real chance to surprise me.
 
-And with this acceptance, I told myself, it's not naïveté if it's a choice made with eyes open. It's just… a bet. On people.
+And with this acceptance, I told myself, it's not naivety if it's a choice made with eyes open. It's just… a bet. On people.
 
 This doesn't solve my immediate problem of not being able to deliver the work I am expected to deliver at its highest. Or my frustrations of my output not meeting my own standards. This is my constant beef. And I am still figuring how to reconcile it all. 
 
@@ -133,7 +131,7 @@ The more you find yourself in this situation, the more you learn that management
 
 This is hard. And it is not obvious until you do it. Leadership, no matter how human you try to make it, confronts you with trade-offs: between what you want to say and what you have to. Between wanting to care for people and wanting to deliver on organisational outcomes, because people matter, and work matters, and it's your job to ensure both stay in sync.
 
-I never knew that being a manager meant it's not about machine-like task allocation or TED-talk inspiration. It entails all the beauty and messiness any human relationship involves—and you can't escape it, if you want to suck less at this job. 
+I never knew that being a manager meant it's not about machine-like task allocation or TED-talk inspiration. It entails all the beauty and messiness any human relationship involves. And you can't escape it. 
 
 Which is the thing I learnt: *this is the job*—and adapting to these new dimensions of my emotional life is what's needed if I want to be good at this. 
 
