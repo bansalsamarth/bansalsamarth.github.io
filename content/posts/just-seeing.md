@@ -48,9 +48,9 @@ That's about it, I guess. Just surprised (or maybe not?) on how much peace lives
 
 **3.**
 
-Art as birthday companion: I'm five episodes into a [podcast](https://www.audible.in/pd/The-Godfather-A-Film-We-Cant-Refuse-Audiobook/B0D98W7815) discussing _The Godfather_ —because yes, I think about Michael Corleone a lot, about this film a lot. This movie meets you at a certain stage in life and means something to you, and before I go watch the trilogy on the big screen as PVR has decided to re-release it, I want to keep exploring what this movie really means to me.
+Art as birthday companion: I'm five episodes into a [podcast](https://www.audible.in/pd/The-Godfather-A-Film-We-Cant-Refuse-Audiobook/B0D98W7815) discussing _The Godfather_—because yes, I think about Michael Corleone a lot, about this film a lot. This movie meets you at a certain stage in life and means something to you, and before I go watch the trilogy on the big screen as PVR has decided to re-release it, I want to keep exploring what this movie really means to me.
 
-I'm 32 pages into Ursula Le Guin's _The Dispossessed_, which feels like a levelling up because my first attempt at reading this failed. I was unable to imagine the world she was creating, but now that I'm past that, I'm already thrilled to have my assumptions of "this is how the world works" shaken apart. (If you haven't read anything from her, start [here](https://shsdavisapes.pbworks.com/f/Omelas.pdf.).)
+I'm 32 pages into Ursula Le Guin's _The Dispossessed_, which feels like a levelling up because my first attempt at reading this failed. I was unable to imagine the world she was creating, but now that I'm past that, I'm already thrilled to have my assumptions of "this is how the world works" shaken apart. (If you haven't read anything from her, start [here](https://shsdavisapes.pbworks.com/f/Omelas.pdf).)
 
 I watched _Annie Hall_ for the fourth time yesterday (more on that later) and _Portrait of a Lady on Fire_ for the first time this morning, and now I want to spend at least one day thinking about this magnificent film, where you get to see with emotional granularity how two people fall in love and desire each other, without the modern burden of compatibility as a prerequisite. 
 
