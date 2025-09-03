@@ -8,9 +8,9 @@ published: true
 ![Alt text](/assets/images/thirty-two/top.png)
 
 
-*What follows is what's on my mind right now, when I've carved out the space to just be and think. It may not reflect what was on my mind over the last 365 days—a duration that has nothing to do with how minds construct memory and meaning. 
+*What follows is what's on my mind right now, when I've carved out the space to just be and think. It may not reflect what was on my mind over the last 365 days—a duration that has nothing to do with how minds construct memory and meaning.*
 
-And yet, despite this awareness, my writer self needs to give this day significance, as one anchor among many others, to impose meaning on an otherwise meaningless life and force significance onto events that don't matter, because the alternative is too dark, and because I've travelled there to see the shade, I don't want to ever return. So I prefer to stay in a known illusion.*
+*And yet, despite this awareness, my writer self needs to give this day significance, as one anchor among many others, to impose meaning on an otherwise meaningless life and force significance onto events that don't matter, because the alternative is too dark, and because I've travelled there to see the shade, I don't want to ever return. So I prefer to stay in a known illusion.*
 
 *On that note, happy 32nd to me, and what follows is an indulgence—the one day of the year when I write only, and only, for myself. Reflections on art, writing, love and more. Maybe there's something for you too, dear reader.*
 
