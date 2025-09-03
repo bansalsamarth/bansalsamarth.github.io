@@ -3,7 +3,7 @@ title: My Gym Has a Courtyard (And Good Coffee)
 date: 2025-09-04
 published: true
 ---
-I took a trial class at [The Space](https://www.thespacefitness.in/) on June 10. Honestly, I knew I was extending my subscription that very first day, because three things stood out
+I took a trial class at [The Space](https://www.thespacefitness.in/) on June 10. Honestly, I knew I was extending my subscription that very first day, because three things stood out. 
 
 First, I was offered coffee. As a borderline coffee snob, I had to ask: "Do you guys serve good coffee?" The horrendous auto-machine brew at my previous gym still haunted me. They confidently said yes, and the coffee was genuinely good. Green flag number one.
 
