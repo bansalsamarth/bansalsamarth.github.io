@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/just-seeing.md",
+                "file": "posts/my-gym-has-a-courtyard-and-good-coffee.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "just-seeing"
+              "title": "my-gym-has-a-courtyard-and-good-coffee"
             }
           },
           {
@@ -185,9 +185,10 @@
   },
   "active": "a5d61c5973a9d7b4",
   "lastOpenFiles": [
+    "posts/just-seeing.md",
+    "posts/my-gym-has-a-courtyard-and-good-coffee.md",
     "shawshank-rain 1.png",
     "posts/how-twt.md",
-    "posts/just-seeing.md",
     "shawshank-rain.png",
     "Pasted image 20250719184823.png",
     "Pasted image 20250811213432.png",
