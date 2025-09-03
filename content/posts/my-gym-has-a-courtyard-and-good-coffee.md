@@ -37,7 +37,7 @@ X had a great first impression after the trial. I started going three days a wee
 
 The programming was so random. I categorically signed up for strength, only to see the workouts didn't lean heavily on that front. There was instructor drama and pushiness to sell me bootcamps, one trainer promoting bullshit fat loss supplements on her IG, and once, after a post-run Boojee breakfast, this guy told me he paid ₹20k a month to one of the coaches for a fat loss plan—which made me go completely bonkers. And no, this didn't include meals—just consultation. Yet this guy had no clue on nutrition when I was talking to him.
 
-This is the classic problem with gyms and studios: customers are vulnerable, confused, and anxious about their bodies, and they trust you. This creates massive information asymmetry. Wherever that exists, someone can exploit it. (At *The Whole Truth*, we're constantly fighting exactly this kind of BS, so I exactly know how this plays out(). But studios are supposed to be different: they sell community alongside fitness, which makes the trust violation feel even worse.
+This is the classic problem with gyms and studios: customers are vulnerable, confused, and anxious about their bodies, and they trust you. This creates massive information asymmetry. Wherever that exists, someone can exploit it. (At *The Whole Truth*, we're constantly fighting exactly this kind of BS, so I exactly know how this plays out.) But studios are supposed to be different: they sell community alongside fitness, which makes the trust violation feel even worse.
 
 All of this made me feel... these are not my people.
 
