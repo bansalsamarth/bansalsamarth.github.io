@@ -5,6 +5,9 @@ published: true
 ---
 *Birthday writing is a misnomer. It suggests reflections on the year gone by, when they're really not.*
 
+![Alt text](/assets/images/thirty-two/top.png)
+
+
 *What follows is what's on my mind right now, when I've carved out the space to think deeply. It may not reflect what was on my mind over the last 365 days, a duration which is just a human construct we've defined to measure time, and has nothing to do with how minds construct memory and meaning. And yet, despite this awareness, my writer self needs to give this day significance, as one anchor among many others, to impose meaning on an otherwise meaningless world and force significance onto events that don't matter, because the alternative is too dark, and because I've travelled there to see the shade, I don't want to ever return. So I prefer to stay in a known illusion.*
 
 *On that note, happy 32nd to me, and what follows is an indulgence—the one day of the year when I write only, and only, for myself. Reflections on art, writing, love and more. Maybe there's something for you too, dear reader.*
@@ -17,6 +20,8 @@ I wonder if there's a revelation of snobbery in saying it, but I like to spend m
 
 Around 5:20 this evening, I was sitting in the middle of the private waterfall on this five-acre farmland—a gift to myself to be close to nature—on a day when I was the only guest with no one else around. My legs were half-dipped at the spot between rocks where I'd found secure footing, and when it started raining, slowly and then madly, I took my T-shirt off and recreated the _Shawshank Redemption_ rain scene.
 
+![Alt text](/assets/images/thirty-two/samarth-rain.jpg)
+
 These are the moments I live for—I did exactly this at my house in Landour two years ago—because this is the feeling of freedom, of surrendering my smallness to the grandiosity of the world, and feeling fully in sync. That's exactly how I am feeling today, and these days in general.
 
 ---
@@ -25,7 +30,7 @@ These are the moments I live for—I did exactly this at my house in Landour two
 
 Life seems so simple. I wonder what my wants really are. My health—eating well, working out five or six days a week, getting good sleep. My work, about which I give so many fucks, which makes me obsessed with the everyday in the best way. Ensuring my family and closest friends stay well. Then there's my need to read and experience art—literature and cinema—and talk about it with people, or read and listen to how others experienced what I did. And finally, this journalistic magazine I've put out in the world.
 
-It's ridiculous that it takes just these many words to capture what felt like such gigantic complexity, especially after the turbulence of living through it all: a few months of emotional chaos at home, a battle with my identity as I went all in at _The Whole Truth Foods_ and paused my magazine journalism, that stupid lifestyle of writing at midnight at Starbucks, downing caffeine to fight off sleep, because I had way too much to do.
+It's ridiculous that it takes so few words to capture what felt like such gigantic complexity, especially after the turbulence of living through it all: a few months of emotional chaos at home, a battle with my identity as I went all in at _The Whole Truth Foods_ and paused my magazine journalism, that stupid lifestyle of writing at midnight at Starbucks, downing caffeine to fight off sleep, because I had way too much to do.
 
 Even though I enjoyed what I was doing, this wasn't the life I wanted, and as a natural consequence, my fitness went for a toss, and everything felt disorienting for a while.
 
@@ -39,7 +44,7 @@ I sometimes wonder if I'll fall in love, and that sense of occasional longing am
 
 *Art as birthday companion*
 
-I'm five episodes into _The Godfather_ [podcast](https://www.audible.in/pd/The-Godfather-A-Film-We-Cant-Refuse-Audiobook/B0D98W7815)—because yes, I think about Michael Corleone a lot, about this film a lot. This movie meets you at a certain stage in life and means something to you, and before I go watch the trilogy on the big screen as PVR has decided to re-release it, I want to keep going deep on what this movie means to me.
+I'm five episodes into _The Godfather_ [podcast](https://www.audible.in/pd/The-Godfather-A-Film-We-Cant-Refuse-Audiobook/B0D98W7815)—because yes, I think about Michael Corleone a lot, about this film a lot. This movie meets you at a certain stage in life and means something to you, and before I go watch the trilogy on the big screen as PVR has decided to re-release it, I want to keep exploring what this movie means to me.
 
 I'm 32 pages into Ursula Le Guin's _The Dispossessed_, which feels like a levelling up because my first attempt at reading this failed. I was unable to imagine the world she was creating, but now that I'm past that, I'm already thrilled to have my assumptions of "this is how the world works" shaken apart.
 
@@ -47,11 +52,16 @@ I watched _Annie Hall_ for the fourth time yesterday (more on that later) and _P
 
 For no good reason, I've been listening to _La La Land_'s score on repeat, and then other things Justin Hurwitz has created.
 
+
 ---
 
 **4.** 
 
 As I was reading my journal today, there seems to be a pattern where much of what I'm thinking through reveals the two fundamental problems of human existence. 
+
+
+![Alt text](/assets/images/thirty-two/journal.jpg)
+
 
 One, just dealing with the finiteness of time and the finality of death. No hard choices would need to be made if there wasn't a constraint on time. And yet, we don't acknowledge this because it seems like a dark thought, and in that ignorance or avoidance, we delude ourselves and don't choose—or we choose but fall for meaningless things like "legacy."
 
@@ -68,6 +78,11 @@ I've moved on from the stage of life where calling myself a capital-W Writer fel
 And yet, the more I live (I mean... birthdays?), the more I see what the writing life is really asking of me, which isn't much, because all it's asking me is to keep seeing: to observe and document things as they are, to get really precise with the details that make up the momentary texture where life is lived, to not fall for the made-up eventification that signposts time for the sake of narrative coherence, to challenge my assumptions of human nature by looking at what people actually do.
 
 All the writing life is asking of me, I now understand, is to pay attention. Not too much.
+
+---
+
+![Alt text](/assets/images/thirty-two/tea.jpg)
+
 
 ---
 
@@ -97,7 +112,9 @@ Ah. The curse of living inside your head.
 
 Which brings me to *Annie Hall.* 
 
-I keep returning to this film, and like all great films, every rewatch hits me with something I previously didn't notice. This time, my tender heart almost melted when I saw that Annie's apartment was still decorated with photos she'd taken from the hilarious lobster scene, long after she and Alvy had broken up. And how Alvy tries to recreate the silliness of the moment with another date, and fails so badly.
+I keep returning to this film, and like all great films, every rewatch hits me with something I previously didn't notice. This time, my tender heart almost melted when I saw that Annie's apartment was still decorated with photos she'd taken from the hilarious [lobster scene](https://www.youtube.com/watch?v=iLBL-XeNrRI), long after she and Alvy had broken up. And how Alvy tries to recreate the silliness of the moment with another date, and fails so badly.
+
+![Alt text](/assets/images/thirty-two/annie-lobster.jpg)
 
 The most banal moment—the one which has no significance apart from these two sharing something meaningful—says so much about the subjectivity of human experience. Especially in intimate relationships where two people allow themselves to laugh with each other about their own insecurities.
 
@@ -109,7 +126,7 @@ I felt so much, knowing Alvy loves Annie and Annie loves Alvy, and yet no amount
 
 Maybe all this immersion will lead to something and maybe not. Maybe the way I process the world will speak to others or maybe it doesn't. But what I've understood so far is that what I can truly offer is showing the world what I see—and for that, first I need to see.
 
-Make it really personal. Process politics or romance from how I'm looking around. I don't enjoy grand theories and abstractions. I want to understand them, but they don't inform my work. I want to get into the micro texture of how things feel and how things actually happen—which is so messy, so confusing. That's where I like to play and find my way. Using the craft of language to shape what my mind has processed, obsessing over the right words and not falling for lazy clichés, and then release it into the world, and then let it be. Surrender.
+Make it really personal. Process politics or romance from how I'm looking around. I don't enjoy grand theories and abstractions. I want to understand them, but they don't inform my work. I want to get into the micro texture of how things feel and how things actually happen. It is so messy, so confusing. That's where I like to play and find my way. Using the craft of language to shape what my mind has processed, obsessing over the right words and not falling for lazy clichés, and then release it into the world, and then let it be. Surrender.
 
 The point is the seeing itself—staying awake to what's actually happening around me and inside me. That's the way of being a writer. Whether "successful" or not... I can't know and that's not even the point.
 
@@ -117,7 +134,7 @@ The point is the seeing itself—staying awake to what's actually happening arou
 
 **9.**
 
-I'm deeply influenced by the ideas of writer Benjamín Labatut, who says the heart of literature is paradox because humans are contradictory beings. And so what distinguishes literature from other things is that it's bound up with melancholy and sadness. "I don't know if there is a good reader who doesn't know what it's like to be alone," says Labatut.
+I'm deeply influenced by the ideas of writer Benjamín Labatut, who [says](https://www.youtube.com/watch?v=1ujf8rqAqU8&pp=ygUQYmVuamFtaW0gbGFiYXR1dA%3D%3D) the heart of literature is paradox because humans are contradictory beings. And so what distinguishes literature from other things is that it's bound up with melancholy and sadness. "I don't know if there is a good reader who doesn't know what it's like to be alone," says Labatut.
 
 As a writer, Labatut says he's searching for things he doesn't understand—he's looking for mystery. He's not a scientist, so he's not looking for truth.
 
