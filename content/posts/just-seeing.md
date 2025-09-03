@@ -1,0 +1,169 @@
+---
+title: Another Year of Just Seeing
+date: 2025-09-02
+published: true
+---
+*Birthday writing is a misnomer. It suggests reflections on the year gone by, when they're really not.*
+
+*What follows is what's on my mind right now, when I've carved out the space to think deeply. It may not reflect what was on my mind over the last 365 days, a duration which is just a human construct we've defined to measure time, and has nothing to do with how minds construct memory and meaning. And yet, despite this awareness, my writer self needs to give this day significance, as one anchor among many others, to impose meaning on an otherwise meaningless world and force significance onto events that don't matter, because the alternative is too dark, and because I've travelled there to see the shade, I don't want to ever return. So I prefer to stay in a known illusion.*
+
+*On that note, happy 32nd to me, and what follows is an indulgence—the one day of the year when I write only, and only, for myself. Reflections on art, writing, love and more. Maybe there's something for you too, dear reader.*
+
+---
+
+**1.**
+
+I wonder if there's a revelation of snobbery in saying it, but I like to spend my birthday completely alone, because I really like my own company—no one else even comes close to how I make myself feel: loved and cared for. And that's not because my loved ones don't care for me. It's just that over the last many years, I've given the deepest attention to my relationship with myself. So here we are.
+
+Around 5:20 this evening, I was sitting in the middle of the private waterfall on this five-acre farmland—a gift to myself to be close to nature—on a day when I was the only guest with no one else around. My legs were half-dipped at the spot between rocks where I'd found secure footing, and when it started raining, slowly and then madly, I took my T-shirt off and recreated the _Shawshank Redemption_ rain scene.
+
+These are the moments I live for—I did exactly this at my house in Landour two years ago—because this is the feeling of freedom, of surrendering my smallness to the grandiosity of the world, and feeling fully in sync. That's exactly how I am feeling today, and these days in general.
+
+---
+
+**2.**
+
+Life seems so simple. I wonder what my wants really are. My health—eating well, working out five or six days a week, getting good sleep. My work, about which I give so many fucks, which makes me obsessed with the everyday in the best way. Ensuring my family and closest friends stay well. Then there's my need to read and experience art—literature and cinema—and talk about it with people, or read and listen to how others experienced what I did. And finally, this journalistic magazine I've put out in the world.
+
+It's ridiculous that it takes just these many words to capture what felt like such gigantic complexity, especially after the turbulence of living through it all: a few months of emotional chaos at home, a battle with my identity as I went all in at _The Whole Truth Foods_ and paused my magazine journalism, that stupid lifestyle of writing at midnight at Starbucks, downing caffeine to fight off sleep, because I had way too much to do.
+
+Even though I enjoyed what I was doing, this wasn't the life I wanted, and as a natural consequence, my fitness went for a toss, and everything felt disorienting for a while.
+
+Those moments are gone now. There's no gigantic sob story here—just another guy trying to do things in the world, falling through, then holding himself up, and finding his ground again. But now that the ground doesn't feel perpetually shaky, these few focus areas anchor my attention. Everything else must justify its claim on my time.
+
+I sometimes wonder if I'll fall in love, and that sense of occasional longing amid my chosen aloneness creates a tender tension, but one that makes me feel alive. That's about it. I can't think of anything else.
+
+---
+
+**3.**
+
+*Art as birthday companion*
+
+I'm five episodes into _The Godfather_ [podcast](https://www.audible.in/pd/The-Godfather-A-Film-We-Cant-Refuse-Audiobook/B0D98W7815)—because yes, I think about Michael Corleone a lot, about this film a lot. This movie meets you at a certain stage in life and means something to you, and before I go watch the trilogy on the big screen as PVR has decided to re-release it, I want to keep going deep on what this movie means to me.
+
+I'm 32 pages into Ursula Le Guin's _The Dispossessed_, which feels like a levelling up because my first attempt at reading this failed. I was unable to imagine the world she was creating, but now that I'm past that, I'm already thrilled to have my assumptions of "this is how the world works" shaken apart.
+
+I watched _Annie Hall_ for the fourth time yesterday (more on that later) and _Portrait of a Lady on Fire_ for the first time this morning, and now I want to spend at least one day thinking about this magnificent film, where you get to see with emotional granularity how two people fall in love and desire each other, with no modern burden of compatibility as a prerequisite.
+
+For no good reason, I've been listening to _La La Land_'s score on repeat, and then other things Justin Hurwitz has created.
+
+---
+
+**4.** 
+
+As I was reading my journal today, there seems to be a pattern where much of what I'm thinking through reveals the two fundamental problems of human existence. 
+
+One, just dealing with the finiteness of time and the finality of death. No hard choices would need to be made if there wasn't a constraint on time. And yet, we don't acknowledge this because it seems like a dark thought, and in that ignorance or avoidance, we delude ourselves and don't choose—or we choose but fall for meaningless things like "legacy."
+
+Second, the meaninglessness of life itself. And so, as a true existentialist, I have to live every day with the truth of my cosmic insignificance and the absurdist rebellion of giving it meaning through everyday choices.
+
+---
+
+**5.**
+
+What does it mean to be a writer?
+
+I've moved on from the stage of life where calling myself a capital-W Writer felt pretentious. I write—and I write better than most people I know. Denying this is stupid. There's no humility in being an impostor.
+
+And yet, the more I live (I mean... birthdays?), the more I see what the writing life is really asking of me, which isn't much, because all it's asking me is to keep seeing: to observe and document things as they are, to get really precise with the details that make up the momentary texture where life is lived, to not fall for the made-up eventification that signposts time for the sake of narrative coherence, to challenge my assumptions of human nature by looking at what people actually do.
+
+All the writing life is asking of me, I now understand, is to pay attention. Not too much.
+
+---
+
+**6.**
+
+This also implies that what makes my writing _mine_ is what catches _my_ attention. And that... is changing.
+
+I will share three examples. 
+
+— What exactly is happening at the moment when the woman I went on a date with is now at my home for the second date, and we're sitting on the couch talking, and then there's this tension building up, just around the time a hand "accidentally" touches the other, and a charge is on. Both know what's about to happen, yet both pretend nothing is. So what happens? Why is neither of them bold?
+
+— I like to observe how there's a man at the cafe whose face is in my line of sight and whose table is next to this (hot) girl, and how he wants to look at her, but he doesn't want anyone else to know he's looking at her, so he first glances at her momentarily, and then looks around, which is when our eyes meet, and shame makes him look away. No words are exchanged—and yet communication is happening, which I find fascinating.
+
+— At my group fitness class, I often see this average-fit guy wanting to be perceived as above-average fit, so he'll try to be the fastest to complete the reps, and sure he does, but then I know for sure he's skipped his reps, and you see right through his performance, which is ironic because it's hurting no one and impressing no one either.
+
+It's situations like these that occupy my headspace. Not because they're objectively important. Not because there's some new revelation of human psychology emerging from these banal observations. I'm just sharing what catches my attention. And I don't want to ascribe grand significance or meaning to these when there may not be any.
+
+This is what's getting through to me now, so I let it. I don't tell myself "the world is burning, democracy is in danger, and you're spending precious mental bandwidth on primal moments of sexuality?" Because while the world does need clarity on complex macro issues—and I think about those too—the writing life is also embedded in these micro-interactions.
+
+I'm a deeply feeling person, so these moments just get inside me. It's part of my neurosis—I'll torture myself wondering whether that woman I ran into at the gym coffee bar thinks of me at all (I may have developed a tiny crush), creating 27 scenarios about what she might think of me, when she probably doesn't think of me at all.
+
+Ah. The curse of living inside your head. 
+
+---
+
+**7.**
+
+Which brings me to *Annie Hall.* 
+
+I keep returning to this film, and like all great films, every rewatch hits me with something I previously didn't notice. This time, my tender heart almost melted when I saw that Annie's apartment was still decorated with photos she'd taken from the hilarious lobster scene, long after she and Alvy had broken up. And how Alvy tries to recreate the silliness of the moment with another date, and fails so badly.
+
+The most banal moment—the one which has no significance apart from these two sharing something meaningful—says so much about the subjectivity of human experience. Especially in intimate relationships where two people allow themselves to laugh with each other about their own insecurities.
+
+I felt so much, knowing Alvy loves Annie and Annie loves Alvy, and yet no amount of "la-di-das" could bring them together, and there's a cruel melancholy to this.
+
+---
+
+**8.**
+
+Maybe all this immersion will lead to something and maybe not. Maybe the way I process the world will speak to others or maybe it doesn't. But what I've understood so far is that what I can truly offer is showing the world what I see—and for that, first I need to see.
+
+Make it really personal. Process politics or romance from how I'm looking around. I don't enjoy grand theories and abstractions. I want to understand them, but they don't inform my work. I want to get into the micro texture of how things feel and how things actually happen—which is so messy, so confusing. That's where I like to play and find my way. Using the craft of language to shape what my mind has processed, obsessing over the right words and not falling for lazy clichés, and then release it into the world, and then let it be. Surrender.
+
+The point is the seeing itself—staying awake to what's actually happening around me and inside me. That's the way of being a writer. Whether "successful" or not... I can't know and that's not even the point.
+
+---
+
+**9.**
+
+I'm deeply influenced by the ideas of writer Benjamín Labatut, who says the heart of literature is paradox because humans are contradictory beings. And so what distinguishes literature from other things is that it's bound up with melancholy and sadness. "I don't know if there is a good reader who doesn't know what it's like to be alone," says Labatut.
+
+As a writer, Labatut says he's searching for things he doesn't understand—he's looking for mystery. He's not a scientist, so he's not looking for truth.
+
+This captures so much of where I am in my thinking and writing journey right now. I don't write to be right. Not anymore. I write to understand—and mostly stuff that makes no sense, or is riddled with complex trade-offs and moral ambiguity.
+
+Which exactly mirrors my life. I want to see and experience—and let it take me wherever it takes me. I'm not looking for active resolution or forcing clarity when it doesn't exist. I want to live inside the tension and let the direction emerge from within it.
+
+I don't have the benchmark of having my name on a book as a North Star for my writing life anymore—this thing I'm doing now, right now, on the page, _this_ for me is my writing life. And I don't want to let this go.
+
+---
+
+**10.**
+
+*Hold. Hold. Just hold on to it. Follow. Okay there. No, no, don't look there. Just stay. Push. More. Yes, this. Going somewhere. Track. Keep it alive. No, don't analyse. Stay. Here, now. Pause. Okay, right here. Done. Let it out.*
+
+This is the flow of thought inside a writer's head—me trying to pay attention and figuring out what it really is, until it can come onto the page.
+
+And in that sense, writing isn't just about clarity of ideas. It's about mirroring the feeling of an idea, so the reader can experience how the mind really thinks, how thoughts actually move.
+
+And this progression... this, again, is uniquely me. How it flows through my nerves won't be the same for anyone else, because if I capture it well, I'm capturing the texture of consciousness. 
+
+---
+
+**11.**
+
+As writers, we have a way of making things sound beautiful—or finding ideas and amplifying them. Giving them weight. This feels aspirational because not everyone can do it, and we're responsible for some of the stories people remember.
+
+Yet, this ability should never make us feel special. That's a trap. If anything, one should be wary of those who romanticise any kind of artistic creation more than the real doing in the world. It's one thing to reveal what it feels like to almost see your child killed and be saved by a doctor. But it's not comparable to being the doctor who does the saving. The writer with the poignant prose may be the celebrated one. The doctor could be just... anybody.
+
+This isn't about art not having value. It's about NOT romanticising to the extent where we forget that while so many of us live inside our heads, life is always going on—things happening, things needing doing—always more gigantic than the tiny worlds of artistic creation.
+
+---
+
+**12.**
+
+I wonder how is it that my sensitivity to emotions is growing as I age? So I often find myself thinking of this Ingmar Bergman quote:
+
+> I'll tell you something banal. We're emotional illiterates. And not only you and I—practically everybody, that's the depressing thing.
+> 
+> We're taught everything about the body and about agriculture in Madagascar and about the square root of pi, or whatever the hell it's called, but not a word about the soul. We're abysmally ignorant, about both ourselves and others. 
+> 
+> There's a lot of loose talk nowadays to the effect that children should be brought up to know all about brotherhood and understanding and coexistence and equality and everything else that's all the rage just now.
+> 
+> But it doesn't dawn on anyone that we must first learn something about ourselves and our own feelings. Our own fear and loneliness and anger. We're left without a chance, ignorant and remorseful among the ruins of our ambitions. To make a child aware of it's soul is something almost indecent.
+> 
+> You're regarded as a dirty old man. How can you understand other people if you don't know anything about yourself? 
+
+---
+
