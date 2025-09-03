@@ -118,7 +118,7 @@ Ah. The curse of living inside your head.
 
 Which brings me to *Annie Hall.* 
 
-I keep returning to this film, and like all great films, every rewatch hits me with something I previously didn't notice. This time, I felt this ache when I saw that Annie's apartment was still decorated with Alvy's photos she'd taken from the hilarious [lobster scene](https://www.youtube.com/watch?v=iLBL-XeNrRI), long after she and Alvy had broken up. And how, when Alvy tries to recreate the silliness of the moment with another date, he fails so badly.
+I keep returning to this film, and like all great films, every rewatch hits me with something I previously didn't notice. This time, I felt this ache when I saw that Annie's apartment was still decorated with photos she'd taken from the hilarious [lobster scene](https://www.youtube.com/watch?v=iLBL-XeNrRI), long after she and Alvy had broken up. And how, when Alvy tries to recreate the silliness of the moment with another date, he fails so badly.
 
 ![Alt text](/assets/images/thirty-two/annie-lobster.jpg)
 
@@ -190,7 +190,7 @@ I wonder how is it that my sensitivity to emotions is growing as I age? So I oft
 > 
 > There's a lot of loose talk nowadays to the effect that children should be brought up to know all about brotherhood and understanding and coexistence and equality and everything else that's all the rage just now.
 > 
-> But it doesn't dawn on anyone that we must first learn something about ourselves and our own feelings. Our own fear and loneliness and anger. We're left without a chance, ignorant and remorseful among the ruins of our ambitions. To make a child aware of it's soul is something almost indecent.
+> But it doesn't dawn on anyone that we must first learn something about ourselves and our own feelings. Our own fear and loneliness and anger. We're left without a chance, ignorant and remorseful among the ruins of our ambitions. To make a child aware of its soul is something almost indecent.
 > 
 > You're regarded as a dirty old man. How can you understand other people if you don't know anything about yourself? 
 
