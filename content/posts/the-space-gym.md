@@ -64,17 +64,21 @@ Reading that made our hearts warm, and for me, it was the final nudge I needed t
 
 In the first two weeks after starting, I trained with all coaches at different slots to test it out. I figured the 8:30 slot is what worked for me—because there's a fastest-fingers first competition (LOL) for the 7:15 batch, which I didn't want to engage in. And showing up for 8:30 gave me time for deep reading and writing in the morning, when the world hasn't exerted its demands yet.
 
-It's been three months now. I haven't missed a single day except when traveling, on Mondays (9:30 meeting at work), or rare urgent early morning work. I've shown up at The Space even when Mumbai monsoons offer you a good reason to skip, because my day starts well if I visit the studio. 
+It's been three months now. I don't skip workouts except when I'm not in town, or on Mondays when I have a 9:30 meeting, or if some genuinely urgent work requires me. I love cycling to the studio even when Mumbai monsoons offer me a good reason to skip, jus because my day starts well if I am there.
 
-Looking back now, I can pinpoint exactly what hooked me about The Space. 
+Looking back now, I can pinpoint exactly what I like about this place.  
 
-The coaches, for starters. There's no one-upmanship happening between them, and all of them seem to have fun being there, and they show up as a team, which says something about the warmth the staff creates. The energy is noticeable. Specifically for Apoorv, who takes the 8:30 on Monday Wednesday Friday, there are two underrated qualities: his warm up on most days is so sharply customised to the specific movements we'll do that day, a clear sign of expertise. And second, I kid you not, there's not one second of the hour-long class where Apoorv is not fully present in the class. Even Personal Trainers I've hired previously get lost in their phones, or group class instructors lose interest midway.
+The coaches, for starters. There's no one-upmanship happening between them, and all of them seem to have fun being there, and they show up as a team, which says something about the warmth the staff creates. The energy is noticeable. 
 
-Beyond the people, their philosophy clicked with me. The Space is vocally a studio which says it wants you to be stronger—and their fairly consistent approach to muscle mass (and not just weight loss) is a sign of the kind of space this place is. Turning attention to this requires education. This is slow burn work. It's not intuitive, this is still not the common language, and there's always the easy dream of weight loss to be sold. When Gigi—the other co-founder—told me the story of how they started, and what their goal is, it checked out with what I was experiencing. Both founders are so knowledgeable and yet so grounded, and I genuinely root for them to make this a business success.
+Specifically for Apoorv, who takes the 8:30 on Monday Wednesday Friday, there is one distinctively underrated quality: there's not one second of the hour-long class where Apoorv is not fully present in the class. Not exaggerating. Even Personal Trainers I've hired previously get lost in their phones momentarily, or group class instructors drift to daydreaming or whatever. But Apporv is always just there, with you. 
+
+Beyond the people, the approach clicked with me. The Space is vocally a studio which says it wants you to be stronger—and their fairly consistent approach to muscle mass (and not just weight loss) is a sign of the kind of space this place is. Turning attention to this requires education. 
+
+This is slow burn work. It's not intuitive, this is still not the common language, and there's always the easy dream of weight loss to be sold. When Gigi—the other co-founder—told me the story of how they started, and what their goal is, it checked out with what I was experiencing. Both founders are so knowledgeable and yet so grounded, and I genuinely root for them to make this a business success.
 
 And then there's the community they've built. The single biggest factor for a group class to work is that you need to know this is not a competition—all are at different fitness levels, and all are there to get better at their baseline, and no one is judging how much you lift. This partly comes from the sensibility of the people, but also from how the coaches conduct the class, and how you accommodate and make everyone feel at home. The studio does that so well. 
 
-Of course, I'm singing praises because I've been so consistent, and finally, after this long, the novelty-seeking monkey inside me is not asking for any change, because the hit is coming from genuine progress—both on the scale (I was on mild calorie deficit), how my body feels, and the visible growth in my strength.
+Of course, I'm singing praises because finally, after this long, the novelty-seeking monkey inside me is not asking for any change, and add-whataver-hormone hit is coming from progress: on what is visible on the scale (I am on a mild calorie deficit) and how my body feels. 
 
 But it's more than just the physical progress. A few days ago I [posted](https://www.linkedin.com/posts/bansalsamarth_almost-a-cliche-to-say-this-but-it-really-activity-7366716033245597697-OhRA) on LinkedIn about how much of my everyday learning about enduring discomfort and getting things done comes from my fitness routine.
 
@@ -86,11 +90,13 @@ But it's more than just the physical progress. A few days ago I [posted](https:/
 > 
 > This is also what happens at work: everyday discomfort about just so many tiny things, but you just shut that mind up, and do what needs doing, because you've learned that enduring will make you feel great afterwards.
 
-That's what I find at The Space: no judgment, just "let's try again tomorrow." Which is why I love this studio. I get why that woman wrote us that email. 
+That's what I find at The Space: no judgment, just "let's try again tomorrow." 
 
-The Space gets what most people building in health and fitness often miss: our bodies aren't machines that need drilling to hit some optimum measurements—they need care. Especially for average-fit people like me, where fitness serves both the aesthetic purpose of wanting to look good in the mirror (vanity... never goes away, sigh!) and the meditative purpose of knowing I'm doing my bit to care for the body that's held me all this while.
+I get why that woman wrote us that email. 
 
-If only more studios had less testosterone-infused energy and more gentle care, more of us would show up feeling joy instead of reluctant torture.
+This team gets what most people building in health and fitness often miss: our bodies aren't machines that need drilling to hit some optimum Huberman-esque measurements. They need care. Especially for average-fit people like me, where fitness serves both the aesthetic purpose of wanting to look good in the mirror (vanity... never goes away, sigh!) and the meditative purpose of knowing I'm doing my bit to care for the body that's held me all this while.
+
+If only more studios had less testosterone-infused energy and more gentle care, more of us would show up feeling joy instead of reluctant torture, which absolutely nobody deserves. 
 
 P.S. Wrote all this, and I wonder if I'm jinxing it, because I need at least six months of consistency for the compounding math to do its thing and get me to my aspirational baseline. Let's see. But honestly, this is the Jerry Maguire moment where I have to say they just had me at good coffee. And I was a hundred percent right about the coffee. The studio now proudly has a coffee shop, with an actual barista, and you can pay and get a solid Americano before your workout. See ya!
 
