@@ -1,5 +1,5 @@
 ---
-title: What Most Gyms Get Wrong (And This Studio Gets Right)
+title: What Most Gyms Get Wrong (And The Space Gets Right)
 date: 2025-09-04
 published: true
 ---
@@ -92,6 +92,6 @@ The Space gets what most people building in health and fitness often miss: our b
 
 If only more studios had less testosterone-infused energy and more gentle care, more of us would show up feeling joy instead of reluctant torture.
 
-P.S. Wrote all this, but honestly, this is the Jerry Maguire moment where I have to say they just had me at good coffee. And I was hundred percent right about the coffee. The studio now proudly has a coffee shop, with an actual barista, and you can pay and get a solid Americano before your workout. See ya!
+P.S. Wrote all this, and I wonder if I'm jinxing it, because I need at least six months of consistency for the compounding math to do its thing and get me to my aspirational baseline. Let's see. But honestly, this is the Jerry Maguire moment where I have to say they just had me at good coffee. And I was a hundred percent right about the coffee. The studio now proudly has a coffee shop, with an actual barista, and you can pay and get a solid Americano before your workout. See ya!
 
 ---
