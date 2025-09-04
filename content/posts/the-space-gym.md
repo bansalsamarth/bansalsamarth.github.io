@@ -64,7 +64,7 @@ Reading that made our hearts warm, and for me, it was the final nudge I needed t
 
 In the first two weeks after starting, I trained with all coaches at different slots to test it out. I figured the 8:30 slot is what worked for me—because there's a fastest-fingers first competition (LOL) for the 7:15 batch, which I didn't want to engage in. And showing up for 8:30 gave me time for deep reading and writing in the morning, when the world hasn't exerted its demands yet.
 
-It's been three months now. I don't skip workouts except when I'm not in town, or on Mondays when I have a 9:30 meeting, or if some genuinely urgent work requires me. I love cycling to the studio even when Mumbai monsoons offer me a good reason to skip, jus because my day starts well if I am there.
+It's been three months now. I don't skip workouts except when I'm not in town, or on Mondays when I have a 9:30 meeting, or if some genuinely urgent work requires me. I love cycling to the studio even when Mumbai monsoons offer me a good reason to skip, just because my day starts well if I am there.
 
 Looking back now, I can pinpoint exactly what I like about this place.  
 
@@ -78,7 +78,7 @@ This is slow burn work. It's not intuitive, this is still not the common languag
 
 And then there's the community they've built. The single biggest factor for a group class to work is that you need to know this is not a competition—all are at different fitness levels, and all are there to get better at their baseline, and no one is judging how much you lift. This partly comes from the sensibility of the people, but also from how the coaches conduct the class, and how you accommodate and make everyone feel at home. The studio does that so well. 
 
-Of course, I'm singing praises because finally, after this long, the novelty-seeking monkey inside me is not asking for any change, and add-whataver-hormone hit is coming from progress: on what is visible on the scale (I am on a mild calorie deficit) and how my body feels. 
+Of course, I'm singing praises because finally, after this long, the novelty-seeking monkey inside me is not asking for any change, and add-whatever-hormone hit is coming from progress: on what is visible on the scale (I am on a mild calorie deficit) and how my body feels. 
 
 But it's more than just the physical progress. A few days ago I [posted](https://www.linkedin.com/posts/bansalsamarth_almost-a-cliche-to-say-this-but-it-really-activity-7366716033245597697-OhRA) on LinkedIn about how much of my everyday learning about enduring discomfort and getting things done comes from my fitness routine.
 
