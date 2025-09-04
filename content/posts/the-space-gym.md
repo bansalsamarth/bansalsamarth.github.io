@@ -1,5 +1,5 @@
 ---
-title: My Gym Has a Courtyard (And Good Coffee)
+title: What Most Gyms Get Wrong (And This Studio Gets Right)
 date: 2025-09-04
 published: true
 ---
