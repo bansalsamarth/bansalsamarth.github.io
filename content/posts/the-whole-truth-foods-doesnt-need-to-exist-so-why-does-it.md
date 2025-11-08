@@ -39,7 +39,7 @@ Now I _could_ become that cook myself—spend an hour each day planning and prep
 
 This is where whey comes in—to fill the protein gap created by that trade-off. And no, I'm not being lazy: I eat protein in almost every meal, and yet there's a gap that persists despite conscious effort.
 
-So my need for protein powder comes from a real nutritional gap, not from the manufactured trend of protein-washing everything. (Please, for lord's sake, say fuck you to Protein Water!)
+So my need for whey protein comes from a real nutritional gap, not from the manufactured trend of protein-washing everything. (Please, for lord's sake, say fuck you to Protein Water!)
 
 The real problem is that the supplement industry runs on broken incentives. I’ve never fully trusted what most brands are selling, and for the longest time, I wasn’t even sure if whey solved a real problem for me. It became a conflicted relationship: something I thought I needed, but never felt entirely comfortable with.
 
@@ -83,7 +83,9 @@ Same with dates and sugar. If you’re someone who thinks dates are no better th
 
 And that’s my barometer of transparency for TWT: are we offering enough information for some people to consciously reject us? If not, we’re not building a truly transparent brand—we are just spitting shallow words to "perform" transparency. And performance doesn’t build a generational brand. Real transparency does.
 
-What I’ve learnt building TWT is that when you treat consumers with genuine care and respect for their agency, it shows. And when you don’t, that shows too. Because eventually, at some point in the chain, the facade will crack, and scale will amplify the chaos, and all the wow-ness will decay into business death. The logic of capitalism has rewarded our honesty, and we have to stay with it for that logic to survive—not for the virtuous selves of any individual leaders.
+What I’ve learnt building TWT is that when you treat consumers with genuine care and respect for their agency, it shows. And when you don’t, that shows too. Because eventually, at some point in the chain, the facade will crack, and scale will amplify the chaos, and all the wow-ness will decay into business death. 
+
+The logic of capitalism has rewarded our honesty. We have to stay with it for that logic to survive. Not for the virtuous selves of any individual leaders.
 
 I say this with full awareness that most consumers aren’t thinking deeply about their needs (how I wish they would). Often, they look for trusted brands as cognitive shortcuts—because life can get hard, and they’re busy, with no bandwidth to make every small decision with rigour. So they place trust in us to do the right thing. 
 
