@@ -3,25 +3,27 @@ title: "The Whole Truth Foods doesn't need to exist. So why does it?"
 date: 2025-11-08
 published: true
 ---
-I work at The Whole Truth Foods, a packaged food company, and the whole truth is that you don't actually "need" packaged food. Including all the stuff we make and sell.
+I work at The Whole Truth Foods, a packaged food company. And here's the whole truth: you don't actually need packaged food. Not even the stuff we make and sell.
 
-So then why do we do what we do? Here's the paradox I live with every day, and how I've come to think about it.
+So why do we exist? Here's the paradox I live with every day, and how I think about the purpose of our work—why we do what we do. 
 
 ---
 
 **1. We make protein bars. But you don't need them. You need nutritious snacks.**
 
-I have our protein bar every day. Depending on the day, I have half before my 8:30am workout, or at 11am if I’ve skipped breakfast, or at 4pm when I need an energy boost, or I carry one while travelling.
+I have the TWT protein bar almost every day. Sometimes half before my 8:30am workout, sometimes at 11am when I've skipped breakfast, sometimes at 4pm for that energy slump. And always one in my bag when I travel.
 
-But none of this is needed. I can always have a banana for pre-workout, or veggies and hummus in the evening, or mixed sprouts with vegetables, or carry home-made trail mix for my flight.
+But none of this is needed. I could have a banana before workouts, or veggies and hummus in the evening, or sprouts with vegetables, or home-made trail mix for flights.
 
-And yet, I choose our Rs 90 bar every day. Why? First, because I genuinely love it—food must always bring joy. And second, it solves for convenience in a life where I've chosen not to spend two hours meal prepping every Sunday. And in the absence of that, gaps remain in my everyday nutrition for which I need easily-accessible packaged food.
+And yet, I choose our Rs 90 bar every day. Why? Because I genuinely love it—food must bring joy. But also because it solves for convenience in a life where I've chosen not to spend Sunday afternoons meal-prepping. And in the absence of that, gaps appear in my everyday nutrition. These gaps need solutions—that's where packaged food has the reason to exist. 
 
-Now I _could_ restructure my life to avoid packaged food entirely, but I've consciously made this trade-off for convenience. So I outsource this to a TWT bar because it fits what I need, and the ingredients are so good that my body loves it. Because I am not going to feed my body junk in the name of convenience—this is where I draw the line.
+Now I _could_ restructure my life to avoid packaged food entirely, but I've consciously chosen convenience. It's a trade-off. I outsource this need to a TWT bar—one with ingredients so good that my body loves it. Because I won't feed my body junk in the name of convenience. That's where I draw the line.
 
-Because the real problem with packaged food isn’t that it comes out of a packet—it’s that most of it is made of things that don’t deserve to be called "food": long, synthetic ingredient lists that mimic food but aren’t food. We solved for that with the simplest food philosophy there is: good food is made of good ingredients, and good ingredients aren’t made in a chemistry lab. That’s it.
+Because the real problem with packaged food isn’t that it comes out of a packet—it’s that most of it is made of things that don’t deserve to be called "food". They often have long, synthetic ingredient lists that mimic food but aren’t food. We solved for that with the simplest food philosophy there is: good food is made of good ingredients, and good ingredients aren’t made in a chemistry lab. That’s it.
 
-In short, you lose nothing in your life if you don't eat our bar. I don't even want to sell it to you if you don't need us. But if you've made trade-offs in your life that lead you to packaged food, we will make the best damn thing you can have. And if you see that value, you will pay for it, which is the signal to us—and the market—that this is _real_ value creation, which incentivises us to do more of this in other packaged food categories. And that's how the self-serving logic of capitalism works.
+In short, you lose nothing in your life if you don't eat our bar. I don't even want to sell it to you if you don't need us. But if you've made trade-offs in your life that lead you to packaged food, we will make the cleanest and tastiest thing you can have. 
+
+And if you see that value, you will pay for it. That payment is the signal—to us and the market—that this is _real_ value creation. Which incentivises us to do more of this in other categories. And that's how the self-serving logic of capitalism works.
 
 ---
 
