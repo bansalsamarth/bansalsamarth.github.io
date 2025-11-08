@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Whole Truth Foods doesn&#39;t need to exist. So why does it? - Samarth&#39;s Blog</title>
+    <meta name="description" content="The Whole Truth Foods doesn&#39;t need to exist. So why does it?">
+    <meta name="author" content="Samarth Bansal">
+    
+    <style>
+        :root {
+            --content-width: 600px;
+        }
+
+        /* Light mode colors */
+        :root {
+            --bg-primary: #fefdfb;
+            --bg-secondary: #f8f7f5;
+            --text-primary: rgb(17, 17, 17);
+            --text-secondary: rgb(82, 82, 82);
+            --date-color: rgb(138, 138, 138);
+            --link-color: rgb(93, 24, 220);
+            --link-hover: rgb(77, 20, 180);
+            --subtle-hover: rgba(93, 24, 220, 0.05);
+            --border-light: rgba(0, 0, 0, 0.06);
+            --blockquote-border: rgb(230, 230, 230);
+            --code-bg: rgb(248, 248, 248);
+            --horizontal-rule: rgb(238, 238, 238);
+            --highlight-bg: rgba(93, 24, 220, 0.05);
+            --newsletter-bg: rgb(250, 250, 250);
+            --navbar-bg: rgba(254, 253, 251, 0.95);
+        }
+
+        /* Dark mode colors */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1612;
+                --bg-secondary: #252118;
+                --text-primary: rgb(232, 232, 232);
+                --text-secondary: rgb(160, 160, 160);
+                --date-color: rgb(120, 120, 120);
+                --link-color: rgb(168, 132, 255);
+                --link-hover: rgb(190, 155, 255);
+                --subtle-hover: rgba(168, 132, 255, 0.1);
+                --border-light: rgba(255, 255, 255, 0.1);
+                --blockquote-border: rgb(60, 60, 60);
+                --code-bg: #2a251f;
+                --horizontal-rule: #3a342b;
+                --highlight-bg: rgba(168, 132, 255, 0.1);
+                --newsletter-bg: #201e1a;
+                --navbar-bg: rgba(26, 22, 18, 0.95);
+            }
+        }
+
+        /* Manual dark mode override */
+        [data-theme="dark"] {
+            --bg-primary: #1a1612;
+            --bg-secondary: #252118;
+            --text-primary: rgb(232, 232, 232);
+            --text-secondary: rgb(160, 160, 160);
+            --date-color: rgb(120, 120, 120);
+            --link-color: rgb(168, 132, 255);
+            --link-hover: rgb(190, 155, 255);
+            --subtle-hover: rgba(168, 132, 255, 0.1);
+            --border-light: rgba(255, 255, 255, 0.1);
+            --blockquote-border: rgb(60, 60, 60);
+            --code-bg: #2a251f;
+            --horizontal-rule: #3a342b;
+            --highlight-bg: rgba(168, 132, 255, 0.1);
+            --newsletter-bg: #201e1a;
+            --navbar-bg: rgba(26, 22, 18, 0.95);
+        }
+
+        /* Manual light mode override */
+        [data-theme="light"] {
+            --bg-primary: #fefdfb;
+            --bg-secondary: #f8f7f5;
+            --text-primary: rgb(17, 17, 17);
+            --text-secondary: rgb(82, 82, 82);
+            --date-color: rgb(138, 138, 138);
+            --link-color: rgb(93, 24, 220);
+            --link-hover: rgb(77, 20, 180);
+            --subtle-hover: rgba(93, 24, 220, 0.05);
+            --border-light: rgba(0, 0, 0, 0.06);
+            --blockquote-border: rgb(230, 230, 230);
+            --code-bg: rgb(248, 248, 248);
+            --horizontal-rule: rgb(238, 238, 238);
+            --highlight-bg: rgba(93, 24, 220, 0.05);
+            --newsletter-bg: rgb(250, 250, 250);
+            --navbar-bg: rgba(254, 253, 251, 0.95);
+        }
+
+        /* Base Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            background-color: var(--bg-primary);
+            padding-top: 4rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Top Navigation Bar */
+        .top-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--navbar-bg);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border-light);
+            z-index: 100;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .navbar-container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+            transition: color 0.2s ease;
+        }
+
+        .navbar-brand:hover {
+            color: var(--link-color);
+        }
+
+        .navbar-nav {
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            align-items: center;
+        }
+
+        .navbar-nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .navbar-nav a:hover {
+            color: var(--link-color);
+        }
+
+        .container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        /* Navigation */
+        nav {
+            margin-bottom: 4rem;
+        }
+
+        nav a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-right: 1.5rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Back to home link */
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            transition: color 0.2s ease;
+        }
+
+        .back-home:hover {
+            color: var(--link-color);
+        }
+
+        .back-home::before {
+            content: '←';
+            margin-right: 0.5rem;
+        }
+
+        /* Page Title */
+        .page-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: var(--text-primary);
+            margin: 0 0 2rem;
+        }
+
+        /* Posts List */
+        .posts-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .post-item {
+            display: flex;
+            align-items: baseline;
+            margin: 0.35rem 0;
+            padding: 0.5rem 0.75rem;
+            margin-left: -0.75rem;
+            margin-right: -0.75rem;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .post-item:hover {
+            background-color: var(--subtle-hover);
+        }
+
+        .post-date {
+            flex: 0 0 5rem;
+            color: var(--date-color);
+            font-size: 0.875rem;
+            font-weight: 400;
+            font-feature-settings: "tnum";
+            font-variant-numeric: tabular-nums;
+            letter-spacing: 0.01em;
+        }
+
+        .post-title {
+            flex: 1;
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .post-title a {
+            color: var(--text-primary);
+            text-decoration: none;
+            position: relative;
+            transition: color 0.15s ease;
+        }
+
+        .post-title a::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .post-item:hover .post-title a {
+            color: var(--link-color);
+        }
+
+        .post-item:hover .post-title a::after {
+            transform: scaleX(1);
+        }
+
+        .external-link {
+            color: var(--date-color);
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+        }
+
+        /* Post Page Styles */
+        article .post-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin: 0 0 3rem;
+            color: var(--text-primary);
+        }
+
+        .post-meta {
+            color: var(--text-secondary);
+            margin: 2.5rem 0;
+            font-size: 0.95rem;
+            font-weight: 400;
+        }
+        
+        .date-accent {
+            color: var(--link-color);
+            margin-right: 0.5rem;
+        }
+
+        .post-content {
+            font-size: 1.05rem;
+            font-weight: 400;
+            color: var(--text-primary);
+        }
+
+        .post-content p {
+            margin: 1.8em 0;
+        }
+
+        .post-content h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            margin: 2.5em 0 1em;
+            line-height: 1.3;
+        }
+
+        .post-content h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 2em 0 0.8em;
+            line-height: 1.4;
+        }
+
+        .post-content h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.8em 0 0.6em;
+        }
+
+        .post-content a {
+            color: var(--link-color);
+            text-decoration: underline;
+            text-decoration-color: rgba(93, 24, 220, 0.4);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+            transition: all 0.2s ease;
+        }
+
+        .post-content a:hover {
+            color: var(--link-hover);
+            text-decoration-color: var(--link-hover);
+        }
+
+        .post-content blockquote {
+            margin: 2em 0;
+            padding-left: 1.5em;
+            border-left: 2px solid var(--blockquote-border);
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        .post-content blockquote p {
+            margin: 0.8em 0;
+        }
+
+        .post-content code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9em;
+            background: var(--code-bg);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            color: var(--text-primary);
+        }
+
+        .post-content pre {
+            background: var(--code-bg);
+            padding: 1.2em;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 2em 0;
+            border: 1px solid var(--border-light);
+        }
+
+        .post-content pre code {
+            background: none;
+            padding: 0;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .post-content hr {
+            margin: 3em 0;
+            border: none;
+            border-top: 1px solid var(--horizontal-rule);
+        }
+
+        .post-content img {
+            max-width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 600px;
+        }
+
+        /* Home page specific styles */
+        .intro-section {
+            margin-bottom: 3rem;
+        }
+
+        .work-section {
+            margin-bottom: 3rem;
+        }
+
+        .work-section h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .page-links {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .page-links li {
+            margin: 0.8rem 0;
+        }
+
+        .page-links a {
+            display: inline-block;
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+
+        .page-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--link-color);
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .page-links a:hover::after {
+            transform: scaleX(1);
+        }
+
+        /* View Toggle Styles */
+        .view-toggle {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .view-toggle button {
+            background: none;
+            border: none;
+            padding: 0.4rem 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            position: relative;
+            transition: color 0.2s ease;
+            font-family: inherit;
+        }
+
+        .view-toggle button:hover {
+            color: var(--link-color);
+        }
+
+        .view-toggle button.active {
+            color: var(--link-color);
+        }
+
+        .view-toggle button.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--link-color);
+        }
+
+        /* Category Section Styles */
+        .category-section {
+            margin: 2.5rem 0;
+        }
+
+        .category-title {
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin: 0 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-light);
+            position: relative;
+        }
+
+        .category-title::before {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 2rem;
+            height: 1px;
+            background-color: var(--link-color);
+            opacity: 0.6;
+        }
+
+        /* Dark mode toggle */
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 0.25rem;
+            transition: color 0.3s ease;
+            margin-left: 1rem;
+        }
+
+        .theme-toggle:hover {
+            color: var(--link-color);
+        }
+
+        /* Brand name responsive display */
+        .brand-short {
+            display: none;
+        }
+        
+        .brand-full {
+            display: inline;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            :root {
+                --content-width: 100%;
+            }
+            
+            body {
+                padding-top: 3.5rem;
+            }
+            
+            .navbar-container {
+                padding: 0.75rem 1rem;
+            }
+            
+            .navbar-brand {
+                font-size: 1rem;
+            }
+            
+            .navbar-nav {
+                gap: 0.75rem;
+            }
+            
+            .navbar-nav a {
+                font-size: 0.8rem;
+            }
+            
+            .theme-toggle {
+                margin-left: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .navbar-brand {
+                font-size: 0.95rem;
+            }
+            
+            .navbar-nav {
+                gap: 0.5rem;
+            }
+            
+            .navbar-nav a {
+                font-size: 0.75rem;
+            }
+            
+            .navbar-container {
+                padding: 0.75rem 0.75rem;
+            }
+            
+            /* Show short brand name on small screens */
+            .brand-full {
+                display: none;
+            }
+            
+            .brand-short {
+                display: inline;
+            }
+        }
+            
+            .container {
+                padding: 1.5rem 1.25rem 2.5rem;
+            }
+            
+            article .post-title {
+                font-size: 2rem;
+            }
+
+            .post-content h2 {
+                font-size: 1.6rem;
+            }
+
+            .post-content h3 {
+                font-size: 1.3rem;
+            }
+
+            .post-content blockquote {
+                margin: 1.5em 0;
+                padding-left: 1.2em;
+            }
+
+            .post-item {
+                gap: 1.25rem;
+            }
+
+            .post-date {
+                flex: 0 0 4.5rem;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="top-navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-brand">
+                <span class="brand-full">Samarth Bansal</span>
+                <span class="brand-short">Samarth</span>
+            </a>
+            <nav class="navbar-nav">
+                <a href="/writing/">Writing</a>
+                <a href="/micro/">Notes</a>
+                <a href="/contact/">Contact</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">💡</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        
+
+<a href="/blog/" class="back-home">Blog</a>
+
+
+        
+        <main>
+            
+<article>
+    <h1 class="post-title">The Whole Truth Foods doesn&#39;t need to exist. So why does it?</h1>
+    
+    
+    <div class="post-meta">
+        <span class="date-accent">•</span> November 08, 2025
+    </div>
+    
+    
+    <div class="post-content">
+        <p>I work at The Whole Truth Foods, a packaged food company, and the whole truth is that you don't actually &quot;need&quot; packaged food. Including all the stuff we make and sell.</p>
+<p>So then why do we do what we do? Here's the paradox I live with every day, and how I've come to think about it.</p>
+<hr />
+<p><strong>1. We make protein bars. But you don't need them. You need nutritious snacks.</strong></p>
+<p>I have our protein bar every day. Depending on the day, I have half before my 8:30am workout, or at 11am if I’ve skipped breakfast, or at 4pm when I need an energy boost, or I carry one while travelling.</p>
+<p>But none of this is needed. I can always have a banana for pre-workout, or veggies and hummus in the evening, or mixed sprouts with vegetables, or carry home-made trail mix for my flight.</p>
+<p>And yet, I choose our Rs 90 bar every day. Why? First, because I genuinely love it—food must always bring joy. And second, it solves for convenience in a life where I've chosen not to spend two hours meal prepping every Sunday. And in the absence of that, gaps remain in my everyday nutrition for which I need easily-accessible packaged food.</p>
+<p>Now I <em>could</em> restructure my life to avoid packaged food entirely, but I've consciously made this trade-off for convenience. So I outsource this to a TWT bar because it fits what I need, and the ingredients are so good that my body loves it. Because I am not going to feed my body junk in the name of convenience—this is where I draw the line.</p>
+<p>TWT falls on the right side of this trade-off equation, and so I eat it.</p>
+<p>In short, you lose nothing in your life if you don't eat our bar. I don't even want to sell it to you if you don't need us. But if you've made trade-offs in your life that lead you to packaged food, we will make the best damn thing you can have. And if you see that value, you will pay for it, which is the signal to us—and the market—that this is <em>real</em> value creation, which incentivises us to do more of this in other packaged food categories. And that's how the self-serving logic of capitalism works.</p>
+<hr />
+<p><strong>2. We make whey protein powder. But you don't need whey. You need protein.</strong></p>
+<p>Depending on your body and needs, you need anywhere from 0.8g protein per kg of body weight to 2g/kg. (If you're 70kg and moderately active, that's 56-140g daily—harder than it sounds for vegetarians.)</p>
+<p>As a vegetarian myself, when I do my protein math, I do see ways in which I can actually get all my protein needs without whey. It's hard when I'm trying to consciously add more muscle, but for maintenance phases, it's doable.</p>
+<p>In a world where I had an insanely good cook who can make me food exactly how I want it, with the right portions and macros, I could hit my protein goals every day without whey. But I don't have that luxury.</p>
+<p>Now I <em>could</em> become that cook myself—spend an hour each day planning and preparing perfectly portioned meals. Or I could hire someone for that. But I've chosen not to. Again, trade-off.</p>
+<p>This is where whey comes in handy—to help me conveniently fill the protein gap created by that trade-off. And no, I am not being lazy: I eat protein in almost every meal, and yet there’s a gap—one that persists despite conscious effort.</p>
+<p>So my need for whey comes from a real nutritional gap, not from the manufactured trend of protein-washing everything. (Please, for lord's sake, say fuck you to Protein Water!)</p>
+<p>And that is the problem: the supplement industry has such problematic incentives that I neither trust what they are selling me, nor have I understood for the longest time if whey even solved any problem for me. So I had a tenuous relationship with whey: something I felt I needed, but also something I didn't feel comfortable with.</p>
+<p>Now time for magic. Need awareness meets TWT. Boom. Once we at TWT understood what exactly makes consumers hesitate from having whey—and yes, this consumer is us, ourselves—we built a recipe with the cleanest ingredients, crafted a supply chain to procure the highest quality whey, made it in the cleanest facility with rigorous safety protocols, and quality tested repeatedly to sell it with pride. And showed all of this transparently.</p>
+<p>So if you, like me, have made the trade-off that leads you to whey, our powder is the attempt to bring you the best. And give you all the information you need to make the most informed choice. For example, if you are totally cool with artificial sweeteners and caking agents and synthetic red-velvet flavours in your everyday shake, please buy our competitor—in that specific context, they offer you much better value. But if you value real-food ingredients, choose us. Else, don't.</p>
+<hr />
+<p><strong>3. We make dark chocolate. But you don't need that for your health. You need a nutritious sweet treat.</strong></p>
+<p>Our chocolate is my favourite product of everything we make. And I am so proud of it. I have three squares every day, often after dinner, or one small square with my coffee, because it is one of the sources of sweet joy I look forward to every day.</p>
+<p>But again, you do not need chocolate. There are so many other sources of dessert. You could have fruit, or fruit-based desserts, or even make ice cream at home, or simply choose not to have anything sweet. But most of us have chosen to keep sweetness as part of our daily joy, and most of us can't make sweet treats, especially chocolate.</p>
+<p>The industry's actions have polluted the narrative by making all sweetness the enemy, when the real problem is too much sugar, hidden sugar, and refined sugar. The packaged food industry made it sound like this is inevitable, and so made sweet treats guilty. But that's not how it should be—convenience sometimes means not holding on to our ideals of who we want to be, but it shouldn't mean trading off nourishing our body well.</p>
+<p>If your life choices lead you to wanting a sweet treat from a packet, we will give you a super-tasty date-sweetened chocolate. And no, this is not &quot;date-sweetened&quot; just because it sounds &quot;healthy&quot;—it takes a mad level of production effort to make this possible, with conching machines that take 10x more time to smoothen the mix that goes in the mold, and then a solid cold-chain supply chain that actually delivers this to your home. Purpose takes pain. And you take pain when the purpose is felt, not manufactured.</p>
+<hr />
+<p>All of this is to say... there is a world in which TWT is not needed—a world where everyone has time, resources, and inclination to make whole food from scratch. But we don't live in that world, and most of us have made trade-offs that mean we won't. And so TWT has the right to exist, and that gives me so much meaning when I show up to work every day.</p>
+<p>And honestly, there is no virtue here. You don't need any of the top TWT leadership to feel righteous—because humans are fallible, and the unforgiving reality of the market demands more</p>
+<p>What is that &quot;more&quot;?</p>
+<p>In the case of TWT, that is the promise of radical transparency. We give you all the information you need to make a choice about whether you need our product or not.</p>
+<p>Which also means that there will be people who will read our ingredients and say, &quot;Gosh, this bar has 250 calories, and it is too much for 12g protein, and so I am not having it.&quot; Every time someone tells me that, I say, that is totally cool. Love it that you make such conscious choices about what you eat.</p>
+<p>Same with dates and sugar. If you are someone who thinks dates are no better than refined sugar, my first urge is to offer you scientific facts and explain our thinking, but if you have a different interpretation of the facts, totally cool—my job is to offer you the information to make a choice, even if that means making you walk away.</p>
+<p>And so that becomes my barometer of transparency for TWT: am I offering enough information to consumers that some of them can actually choose to reject us? If we are not doing that, we are not building a transparent brand—it is just shallow words. And one day, this will fail.</p>
+<p>Because what I have learnt building TWT is that when you treat consumers with deep care and respect for their agency, it shows. And it also shows if you are performing care—because at some point in the chain, the facade will break, and scale will take care of the rest of the chaos, and all the wow-ness will decay into business death. The logic of capitalism has rewarded our honesty, and we have to be at it for the logic to survive—not the virtuous selves of any individual leaders.</p>
+<p>And I am saying this with full awareness that most consumers are not doing deep thinking around their needs (how I wish they would). And often, they look for trusted brands as cognitive shortcuts to make choices on their behalf because life is hard and they can't be making each tiny decision with rigour. So they place trust in us to do the right thing, and this is the part where responsibility towards consumers becomes a matter of values.</p>
+<hr />
+<p>The more I understand how simple TWT's fundamentals are, the more I feel one of our primary jobs is to keep drilling this idea into every corner of the org. To repeat in every room, again and again, what our why is, how we think about food, and the hard trade-offs consumers make to buy from us—and never take it for granted. As we scale, maybe what we really need is to stay put. To stand still.</p>
+
+    </div>
+</article>
+
+        </main>
+    </div>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.querySelector('.theme-icon');
+        const body = document.body;
+
+        // Check for saved theme preference or default to system preference
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        let currentTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+        
+        // Apply initial theme
+        body.setAttribute('data-theme', currentTheme);
+        updateThemeIcon(currentTheme);
+
+        // Theme toggle event listener
+        themeToggle.addEventListener('click', () => {
+            currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+            body.setAttribute('data-theme', currentTheme);
+            localStorage.setItem('theme', currentTheme);
+            updateThemeIcon(currentTheme);
+        });
+
+        // Update theme icon
+        function updateThemeIcon(theme) {
+            themeIcon.textContent = theme === 'light' ? '💡' : '🔅';
+        }
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                currentTheme = e.matches ? 'dark' : 'light';
+                body.setAttribute('data-theme', currentTheme);
+                updateThemeIcon(currentTheme);
+            }
+        });
+    </script>
+</body>
+</html>
