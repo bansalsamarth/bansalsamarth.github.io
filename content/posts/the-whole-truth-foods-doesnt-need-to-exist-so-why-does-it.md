@@ -31,19 +31,19 @@ And if you see that value, you will pay for it. That payment is the signal—to 
 
 Depending on your body and needs, you need anywhere from 0.8g protein per kg of body weight to 2g/kg. (If you're 70kg and moderately active, that's 56-140g daily—harder than it sounds for vegetarians.)
 
-As a vegetarian myself, when I do my protein math, I do see ways in which I can actually get all my protein needs without whey. It's hard when I'm trying to consciously add more muscle, but for maintenance phases, it's doable.
+As a vegetarian myself, when I do my protein math, I can see how to hit my targets without whey. It's hard when I'm trying to consciously add muscle, but for maintenance phases, it's doable.
 
-In a world where I had an insanely good cook who can make me food exactly how I want it, with the right portions and macros, I could hit my protein goals every day without whey. But I don't have that luxury.
+In a world where I had an insanely good cook who could make me food exactly how I want it, with the right portions and macros, I could hit my protein goals every day without whey. But I don't have that luxury.
 
 Now I _could_ become that cook myself—spend an hour each day planning and preparing perfectly portioned meals. Or I could hire someone for that. But I've chosen not to. Again, trade-off.
 
-This is where whey comes in handy—to help me conveniently fill the protein gap created by that trade-off. And no, I am not being lazy: I eat protein in almost every meal, and yet there’s a gap—one that persists despite conscious effort.
+This is where whey comes in—to fill the protein gap created by that trade-off. And no, I'm not being lazy: I eat protein in almost every meal, and yet there's a gap that persists despite conscious effort.
 
-So my need for whey comes from a real nutritional gap, not from the manufactured trend of protein-washing everything. (Please, for lord's sake, say fuck you to Protein Water!)
+So my need for protein powder comes from a real nutritional gap, not from the manufactured trend of protein-washing everything. (Please, for lord's sake, say fuck you to Protein Water!)
 
 The real problem is that the supplement industry runs on broken incentives. I’ve never fully trusted what most brands are selling, and for the longest time, I wasn’t even sure if whey solved a real problem for me. It became a conflicted relationship: something I thought I needed, but never felt entirely comfortable with.
 
-And then... need met awareness, and both met TWT. Once we understood why people hesitate to have whey—and yes, we were also those *people*—we built the cleanest version of whey possible. We sourced the highest-quality whey, made it in the safest facility, tested it rigorously, and now showing all of this transparently.
+And then... need met awareness, and both met TWT. Once we understood why people hesitate to have whey—and yes, we were also those _people_—we built the cleanest version possible. We sourced the highest-quality whey, made it in the safest facility, tested it rigorously, and now show all of this transparently.
 
 So if you, like me, have made the trade-off that leads you to whey, our powder is our attempt to bring you the best. And give you all the information you need to make an informed choice.
 
@@ -53,13 +53,19 @@ If you’re perfectly fine with artificial sweeteners, caking agents, and synthe
 
 **3. We make dark chocolate. But you don't need that for your health. You need a nutritious sweet treat.**
 
-Our chocolate is my favourite product of everything we make. And I am so proud of it. I have three squares every day, often after dinner, or one small square with my coffee, because it is one of the sources of sweet joy I look forward to every day.
+Our chocolate is my favourite product of everything we make. I'm so proud of it. I have three squares every day—often after dinner, or one small square with my coffee—because it's one of the sources of sweet joy I look forward to.
 
-But again, you do not need chocolate. There are so many other sources of dessert. You could have fruit, or fruit-based desserts, or even make ice cream at home, or simply choose not to have anything sweet. But most of us have chosen to keep sweetness as part of our daily joy, and most of us can't make sweet treats, especially chocolate.
+But again, you do not need chocolate. You could have fruit after dinner, or make ice-creams at home, or simply skip dessert. But I love 70%+ dark chocolate, especially that balance of bitterness and sweetness that only real cocoa gives you. And I can't make that myself.
 
-The industry has polluted the narrative by making all sweetness the enemy, when the real problem is too much sugar, hidden sugar, and refined sugar. Packaged food brands made this seem inevitable, and in doing so, turned sweet treats into something to feel guilty about. But it shouldn’t be that way. Convenience may mean letting go of some ideals, but it shouldn’t mean compromising on how we nourish our bodies.
+The problem is it's just hard to find real cocoa in most chocolates. 
 
-If your choices lead you to a sweet treat from a packet, we'll give you a genuinely good one—a date-sweetened chocolate that’s super tasty. And no, it’s not “date-sweetened” because it sounds healthy. It takes a mad level of effort to make it: conching machines that run 10x longer to smoothen the mix, and a cold-chain that keeps it stable till it reaches your home. Purpose takes pain. And you take pain only when the purpose is felt, not manufactured.
+The chocolates you often get are mostly just refined sugar and chocolate "flavour" or chocolate compound—they don't have actual cocoa. Or it will have cocoa plus flavour, plus whatever the food scientist thinks belongs in what should be such a simple food: cocoa and a sweetener—two ingredients, that is it. But because this is hardly available, and so much packaged food is candy, chocolates get a bad rep. 
+
+And oh, let me just say this: sweet things are not the problem. The problem has always been too much sugar, hidden sugar, and refined sugar. And I refuse to accept that our only choices are this junk or home-made dessert. There is space for real chocolate. So we make ours with just two ingredients: cocoa and dates... and nothing else.
+
+If your choices lead you to a sweet treat from a packet, we'll give you a genuinely good one—date-sweetened chocolate that's properly tasty. We chose dates not because it sounds healthy, but because they're real food. This takes mad effort: conching machines that run 10x longer to smoothen the mix and a cold-chain to keep it stable till it reaches your home. 
+
+We haven't done a good job of showing the pain this takes—we should, and I will—but the point is, purpose takes pain. And you take pain only when the purpose is felt, not manufactured.
 
 ---
 
