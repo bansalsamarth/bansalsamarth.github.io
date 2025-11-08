@@ -19,7 +19,7 @@ And yet, I choose our Rs 90 bar every day. Why? First, because I genuinely love 
 
 Now I _could_ restructure my life to avoid packaged food entirely, but I've consciously made this trade-off for convenience. So I outsource this to a TWT bar because it fits what I need, and the ingredients are so good that my body loves it. Because I am not going to feed my body junk in the name of convenience—this is where I draw the line.
 
-TWT falls on the right side of this trade-off equation, and so I eat it.
+Because the real problem with packaged food isn’t that it comes out of a packet—it’s that most of it is made of things that don’t deserve to be called "food": long, synthetic ingredient lists that mimic food but aren’t food. We solved for that with the simplest food philosophy there is: good food is made of good ingredients, and good ingredients aren’t made in a chemistry lab. That’s it.
 
 In short, you lose nothing in your life if you don't eat our bar. I don't even want to sell it to you if you don't need us. But if you've made trade-offs in your life that lead you to packaged food, we will make the best damn thing you can have. And if you see that value, you will pay for it, which is the signal to us—and the market—that this is _real_ value creation, which incentivises us to do more of this in other packaged food categories. And that's how the self-serving logic of capitalism works.
 
