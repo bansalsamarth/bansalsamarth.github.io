@@ -3,9 +3,11 @@ title: "The Whole Truth Foods doesn't need to exist. So why does it?"
 date: 2025-11-08
 published: true
 ---
-I work at The Whole Truth Foods, a packaged food company. And here's the whole truth: you don't actually need packaged food. Not even the stuff we make and sell.
+I work at The Whole Truth Foods, a packaged food company, and the whole truth is that you don't actually need packaged food. Not even the stuff we make and sell. In an ideal world, none of this needs to exist—not our protein bars, not our chocolate, not our whey. You'd make everything at home from real ingredients. 
 
-So why do we exist? Here's the paradox I live with every day, and how I think about the purpose of our work—why we do what we do. 
+So why do we exist? And why do I, someone who believes this, show up to work every day building a packaged food company?
+
+Here's how I think about the purpose of our work—why we do what we do. 
 
 ---
 
