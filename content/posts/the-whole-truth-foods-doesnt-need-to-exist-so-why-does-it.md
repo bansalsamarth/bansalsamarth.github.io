@@ -49,7 +49,7 @@ And then... need met awareness, and both met TWT. Once we understood why people 
 
 So if you, like me, have made the trade-off that leads you to whey, our powder is our attempt to bring you the best. And give you all the information you need to make an informed choice.
 
-If you’re perfectly fine with artificial sweeteners, caking agents, and synthetic red-velvet flavours in your daily shake, please buy our competitor. Because for your context, they offer better value. But if you value real-food ingredients, choose us. If not, don’t.
+If you’re perfectly fine with artificial sweeteners, caking agents, and synthetic red-velvet flavours in your daily shake, please buy our competitor. Because for your context, they offer better value. But if you value real-food ingredients, choose us. 
 
 ---
 
@@ -96,5 +96,3 @@ That’s where responsibility towards consumers stops being just a business choi
 ---
 
 The more I understand how simple TWT’s fundamentals are, the more I feel one of our primary jobs is to keep drilling this idea into every corner of the org—to repeat in every room, again and again, what our why is, how we think about food, and the hard trade-offs consumers make to buy from us. And never take it for granted.
-
-As we scale, maybe what we really need is to stay put. And stand still.
