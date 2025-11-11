@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300.5024719238281
+    "width": 300.5024719238281,
+    "collapsed": true
   },
   "right": {
     "id": "4cbc5a004065a9ba",
@@ -171,15 +172,15 @@
   },
   "active": "acc26724f62c137b",
   "lastOpenFiles": [
-    "posts/how-twt.md",
+    "posts/the-space-gym.md",
     "posts/the-whole-truth-foods-doesnt-need-to-exist-so-why-does-it.md",
+    "posts/how-twt.md",
     "micro/2025-07-19-1430.md",
     "posts/reading-is-not-a-performance.md",
     "posts/suck-less-manager.md",
     "posts/some-notes-on-how-i-think-and-what-i-value.md",
     "posts/just-seeing.md",
     "posts/turning-thirty.md",
-    "posts/the-space-gym.md",
     "shawshank-rain 1.png",
     "shawshank-rain.png",
     "Pasted image 20250719184823.png",
