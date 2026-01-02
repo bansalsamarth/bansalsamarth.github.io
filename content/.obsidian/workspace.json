@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/the-whole-truth-foods-doesnt-need-to-exist-so-why-does-it.md",
+                "file": "posts/what-i-want-in-2026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "the-whole-truth-foods-doesnt-need-to-exist-so-why-does-it"
+              "title": "what-i-want-in-2026"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300.5024719238281,
-    "collapsed": true
+    "width": 300.5024719238281
   },
   "right": {
     "id": "4cbc5a004065a9ba",
@@ -172,8 +171,9 @@
   },
   "active": "acc26724f62c137b",
   "lastOpenFiles": [
-    "posts/the-space-gym.md",
+    "posts/how-i-organise-my-week.md",
     "posts/the-whole-truth-foods-doesnt-need-to-exist-so-why-does-it.md",
+    "posts/the-space-gym.md",
     "posts/how-twt.md",
     "micro/2025-07-19-1430.md",
     "posts/reading-is-not-a-performance.md",
@@ -204,7 +204,6 @@
     "micro/2025-07-19-1445.md",
     "micro",
     "micro/2025-07-19-1845.md",
-    "posts/montaigne-and-the-invention-of-personal-essay.md",
     "evergreen",
     "journalism",
     "special_essays"

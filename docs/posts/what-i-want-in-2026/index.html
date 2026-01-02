@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What I Want In 2026 - Samarth&#39;s Blog</title>
+    <meta name="description" content="What I Want In 2026">
+    <meta name="author" content="Samarth Bansal">
+    
+    <style>
+        :root {
+            --content-width: 600px;
+        }
+
+        /* Light mode colors */
+        :root {
+            --bg-primary: #fefdfb;
+            --bg-secondary: #f8f7f5;
+            --text-primary: rgb(17, 17, 17);
+            --text-secondary: rgb(82, 82, 82);
+            --date-color: rgb(138, 138, 138);
+            --link-color: rgb(93, 24, 220);
+            --link-hover: rgb(77, 20, 180);
+            --subtle-hover: rgba(93, 24, 220, 0.05);
+            --border-light: rgba(0, 0, 0, 0.06);
+            --blockquote-border: rgb(230, 230, 230);
+            --code-bg: rgb(248, 248, 248);
+            --horizontal-rule: rgb(238, 238, 238);
+            --highlight-bg: rgba(93, 24, 220, 0.05);
+            --newsletter-bg: rgb(250, 250, 250);
+            --navbar-bg: rgba(254, 253, 251, 0.95);
+        }
+
+        /* Dark mode colors */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1612;
+                --bg-secondary: #252118;
+                --text-primary: rgb(232, 232, 232);
+                --text-secondary: rgb(160, 160, 160);
+                --date-color: rgb(120, 120, 120);
+                --link-color: rgb(168, 132, 255);
+                --link-hover: rgb(190, 155, 255);
+                --subtle-hover: rgba(168, 132, 255, 0.1);
+                --border-light: rgba(255, 255, 255, 0.1);
+                --blockquote-border: rgb(60, 60, 60);
+                --code-bg: #2a251f;
+                --horizontal-rule: #3a342b;
+                --highlight-bg: rgba(168, 132, 255, 0.1);
+                --newsletter-bg: #201e1a;
+                --navbar-bg: rgba(26, 22, 18, 0.95);
+            }
+        }
+
+        /* Manual dark mode override */
+        [data-theme="dark"] {
+            --bg-primary: #1a1612;
+            --bg-secondary: #252118;
+            --text-primary: rgb(232, 232, 232);
+            --text-secondary: rgb(160, 160, 160);
+            --date-color: rgb(120, 120, 120);
+            --link-color: rgb(168, 132, 255);
+            --link-hover: rgb(190, 155, 255);
+            --subtle-hover: rgba(168, 132, 255, 0.1);
+            --border-light: rgba(255, 255, 255, 0.1);
+            --blockquote-border: rgb(60, 60, 60);
+            --code-bg: #2a251f;
+            --horizontal-rule: #3a342b;
+            --highlight-bg: rgba(168, 132, 255, 0.1);
+            --newsletter-bg: #201e1a;
+            --navbar-bg: rgba(26, 22, 18, 0.95);
+        }
+
+        /* Manual light mode override */
+        [data-theme="light"] {
+            --bg-primary: #fefdfb;
+            --bg-secondary: #f8f7f5;
+            --text-primary: rgb(17, 17, 17);
+            --text-secondary: rgb(82, 82, 82);
+            --date-color: rgb(138, 138, 138);
+            --link-color: rgb(93, 24, 220);
+            --link-hover: rgb(77, 20, 180);
+            --subtle-hover: rgba(93, 24, 220, 0.05);
+            --border-light: rgba(0, 0, 0, 0.06);
+            --blockquote-border: rgb(230, 230, 230);
+            --code-bg: rgb(248, 248, 248);
+            --horizontal-rule: rgb(238, 238, 238);
+            --highlight-bg: rgba(93, 24, 220, 0.05);
+            --newsletter-bg: rgb(250, 250, 250);
+            --navbar-bg: rgba(254, 253, 251, 0.95);
+        }
+
+        /* Base Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            background-color: var(--bg-primary);
+            padding-top: 4rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Top Navigation Bar */
+        .top-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--navbar-bg);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border-light);
+            z-index: 100;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .navbar-container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+            transition: color 0.2s ease;
+        }
+
+        .navbar-brand:hover {
+            color: var(--link-color);
+        }
+
+        .navbar-nav {
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            align-items: center;
+        }
+
+        .navbar-nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .navbar-nav a:hover {
+            color: var(--link-color);
+        }
+
+        .container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        /* Navigation */
+        nav {
+            margin-bottom: 4rem;
+        }
+
+        nav a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-right: 1.5rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Back to home link */
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            transition: color 0.2s ease;
+        }
+
+        .back-home:hover {
+            color: var(--link-color);
+        }
+
+        .back-home::before {
+            content: '←';
+            margin-right: 0.5rem;
+        }
+
+        /* Page Title */
+        .page-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: var(--text-primary);
+            margin: 0 0 2rem;
+        }
+
+        /* Posts List */
+        .posts-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .post-item {
+            display: flex;
+            align-items: baseline;
+            margin: 0.35rem 0;
+            padding: 0.5rem 0.75rem;
+            margin-left: -0.75rem;
+            margin-right: -0.75rem;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .post-item:hover {
+            background-color: var(--subtle-hover);
+        }
+
+        .post-date {
+            flex: 0 0 5rem;
+            color: var(--date-color);
+            font-size: 0.875rem;
+            font-weight: 400;
+            font-feature-settings: "tnum";
+            font-variant-numeric: tabular-nums;
+            letter-spacing: 0.01em;
+        }
+
+        .post-title {
+            flex: 1;
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .post-title a {
+            color: var(--text-primary);
+            text-decoration: none;
+            position: relative;
+            transition: color 0.15s ease;
+        }
+
+        .post-title a::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .post-item:hover .post-title a {
+            color: var(--link-color);
+        }
+
+        .post-item:hover .post-title a::after {
+            transform: scaleX(1);
+        }
+
+        .external-link {
+            color: var(--date-color);
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+        }
+
+        /* Post Page Styles */
+        article .post-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin: 0 0 3rem;
+            color: var(--text-primary);
+        }
+
+        .post-meta {
+            color: var(--text-secondary);
+            margin: 2.5rem 0;
+            font-size: 0.95rem;
+            font-weight: 400;
+        }
+        
+        .date-accent {
+            color: var(--link-color);
+            margin-right: 0.5rem;
+        }
+
+        .post-content {
+            font-size: 1.05rem;
+            font-weight: 400;
+            color: var(--text-primary);
+        }
+
+        .post-content p {
+            margin: 1.8em 0;
+        }
+
+        .post-content h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            margin: 2.5em 0 1em;
+            line-height: 1.3;
+        }
+
+        .post-content h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 2em 0 0.8em;
+            line-height: 1.4;
+        }
+
+        .post-content h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.8em 0 0.6em;
+        }
+
+        .post-content a {
+            color: var(--link-color);
+            text-decoration: underline;
+            text-decoration-color: rgba(93, 24, 220, 0.4);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+            transition: all 0.2s ease;
+        }
+
+        .post-content a:hover {
+            color: var(--link-hover);
+            text-decoration-color: var(--link-hover);
+        }
+
+        .post-content blockquote {
+            margin: 2em 0;
+            padding-left: 1.5em;
+            border-left: 2px solid var(--blockquote-border);
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        .post-content blockquote p {
+            margin: 0.8em 0;
+        }
+
+        .post-content code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9em;
+            background: var(--code-bg);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            color: var(--text-primary);
+        }
+
+        .post-content pre {
+            background: var(--code-bg);
+            padding: 1.2em;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 2em 0;
+            border: 1px solid var(--border-light);
+        }
+
+        .post-content pre code {
+            background: none;
+            padding: 0;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .post-content hr {
+            margin: 3em 0;
+            border: none;
+            border-top: 1px solid var(--horizontal-rule);
+        }
+
+        .post-content img {
+            max-width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 600px;
+        }
+
+        /* Home page specific styles */
+        .intro-section {
+            margin-bottom: 3rem;
+        }
+
+        .work-section {
+            margin-bottom: 3rem;
+        }
+
+        .work-section h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .page-links {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .page-links li {
+            margin: 0.8rem 0;
+        }
+
+        .page-links a {
+            display: inline-block;
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+
+        .page-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--link-color);
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .page-links a:hover::after {
+            transform: scaleX(1);
+        }
+
+        /* View Toggle Styles */
+        .view-toggle {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .view-toggle button {
+            background: none;
+            border: none;
+            padding: 0.4rem 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            position: relative;
+            transition: color 0.2s ease;
+            font-family: inherit;
+        }
+
+        .view-toggle button:hover {
+            color: var(--link-color);
+        }
+
+        .view-toggle button.active {
+            color: var(--link-color);
+        }
+
+        .view-toggle button.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--link-color);
+        }
+
+        /* Category Section Styles */
+        .category-section {
+            margin: 2.5rem 0;
+        }
+
+        .category-title {
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin: 0 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-light);
+            position: relative;
+        }
+
+        .category-title::before {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 2rem;
+            height: 1px;
+            background-color: var(--link-color);
+            opacity: 0.6;
+        }
+
+        /* Dark mode toggle */
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 0.25rem;
+            transition: color 0.3s ease;
+            margin-left: 1rem;
+        }
+
+        .theme-toggle:hover {
+            color: var(--link-color);
+        }
+
+        /* Brand name responsive display */
+        .brand-short {
+            display: none;
+        }
+        
+        .brand-full {
+            display: inline;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            :root {
+                --content-width: 100%;
+            }
+            
+            body {
+                padding-top: 3.5rem;
+            }
+            
+            .navbar-container {
+                padding: 0.75rem 1rem;
+            }
+            
+            .navbar-brand {
+                font-size: 1rem;
+            }
+            
+            .navbar-nav {
+                gap: 0.75rem;
+            }
+            
+            .navbar-nav a {
+                font-size: 0.8rem;
+            }
+            
+            .theme-toggle {
+                margin-left: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .navbar-brand {
+                font-size: 0.95rem;
+            }
+            
+            .navbar-nav {
+                gap: 0.5rem;
+            }
+            
+            .navbar-nav a {
+                font-size: 0.75rem;
+            }
+            
+            .navbar-container {
+                padding: 0.75rem 0.75rem;
+            }
+            
+            /* Show short brand name on small screens */
+            .brand-full {
+                display: none;
+            }
+            
+            .brand-short {
+                display: inline;
+            }
+        }
+            
+            .container {
+                padding: 1.5rem 1.25rem 2.5rem;
+            }
+            
+            article .post-title {
+                font-size: 2rem;
+            }
+
+            .post-content h2 {
+                font-size: 1.6rem;
+            }
+
+            .post-content h3 {
+                font-size: 1.3rem;
+            }
+
+            .post-content blockquote {
+                margin: 1.5em 0;
+                padding-left: 1.2em;
+            }
+
+            .post-item {
+                gap: 1.25rem;
+            }
+
+            .post-date {
+                flex: 0 0 4.5rem;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="top-navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-brand">
+                <span class="brand-full">Samarth Bansal</span>
+                <span class="brand-short">Samarth</span>
+            </a>
+            <nav class="navbar-nav">
+                <a href="/writing/">Writing</a>
+                <a href="/micro/">Notes</a>
+                <a href="/contact/">Contact</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">💡</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        
+
+<a href="/blog/" class="back-home">Blog</a>
+
+
+        
+        <main>
+            
+<article>
+    <h1 class="post-title">What I Want In 2026</h1>
+    
+    
+    <div class="post-meta">
+        <span class="date-accent">•</span> January 02, 2026
+    </div>
+    
+    
+    <div class="post-content">
+        <p>I wrote this list for myself. Thinking on page how I want to organise my life right now. What matters to me. Sharing it as is. (It's not advice.)</p>
+<p><strong>1.</strong> I want to try and become a genuinely excellent leader. Which means consistently delivering on organisational outcomes while building and nurturing an incredible team—a team that finds meaning and happiness in the work we do together.</p>
+<p><strong>2.</strong> I want to push ourselves at <a href="https://thewholetruthfoods.com/">The Whole Truth</a> (TWT) to continue setting new standards in radical transparency.</p>
+<p><strong>3.</strong> I want to understand the food industry more deeply. I want to translate that understanding into how we operate at TWT and how we educate consumers about the system.</p>
+<p><strong>4.</strong> I want to actively block time every week to meet prospective hires—both for my team and across TWT. This is high-leverage work I tend to under-prioritise, and I want to make it unavoidable in my calendar.</p>
+<p><strong>5.</strong> I want to work 6 days a week. And then, on Sunday, after 6 fully planned days, I don't plan anything. Can do whatever. Read or write or watch a play or do whatever the fuck. I want to give myself 52 days full of serendipity.</p>
+<p><strong>6.</strong> I want to have 2 full dedicated <a href="https://paulgraham.com/makersschedule.html">Maker Days</a> in the 6 days of work. Where I am fully immersed in creation and writing and imagination and important–but-not-urgent strategic work for TWT. I want to be ruthless in protecting this time.</p>
+<p><strong>7.</strong> I want to plan my days at 80% capacity, so when something urgent comes—and it always does—I'm not firefighting, and I have the bandwidth to engage fully.</p>
+<p><strong>8.</strong> I want to review my week every Saturday. And right then plan the week ahead. Block calendars. And then say no to everything that is not fitting in my finiteness.</p>
+<p><strong>9.</strong> I want to cut off work messages from 8:30pm to 9:30am.</p>
+<p><strong>10.</strong> I want to log every single TODO list item—in that very moment—on my <em><a href="https://culturedcode.com/things/">Things 3</a></em> app. From &quot;send Aadhaar details to AirBnB guy&quot; to &quot;order a stapler&quot; to &quot;visit the TWT factory to research X&quot;. Everything, small or big, so my mind is never loaded.</p>
+<p><strong>11.</strong> I want to be fully present in every meeting I attend, and end each one with clear takeaways and action items.</p>
+<p><strong>12.</strong> I want to read for 60 minutes every day before going to bed.</p>
+<p><strong>13.</strong> I want to do personal writing every morning for 90 minutes.</p>
+<p><strong>14.</strong> I want to publish four long-form essays that I am proud of. I want to make my first attempt at short fiction.</p>
+<p><strong>15.</strong> I want to capture all the ideas my writer brain comes up with—especially the weird ones that appear at odd times.</p>
+<p><strong>16.</strong> I want to listen to 5 songs every week with intention.</p>
+<p><strong>17.</strong> I want to watch 1 movie every fortnight.</p>
+<p><strong>18.</strong> I want to workout 5 days a week.</p>
+<p><strong>19.</strong> I want to eat better. Of the 21 meals I eat in a week, I want 7 to be salads, 7 just eggs and toast, 5 simple macro-counted protein-rich meals, and 2 whatever I feel like—for joy. In addition, on a daily basis, two scoops of whey, one scoop creatine monohydrate and one cup of fruit.</p>
+<p><strong>20.</strong> I want to have a well-rested 7 hours of sleep.</p>
+<p><strong>21.</strong> I want to be better groomed. I want a beard trim every four days. I want to decide whether I want my curls—and if the answer is yes, take proper care of them. I want a monthly deep-tissue massage. I want to follow my three-step morning skincare routine.</p>
+<p><strong>22.</strong> I want to make 5 week-long trips to Delhi. To be at home.</p>
+<p><strong>23.</strong> I want to host my mom really well when she visits me in Mumbai. I want to fully support my sister in whatever she wants to do. I want to keep reassuring my dad that I'm doing well financially. I want to do a small family party for my dad's 60th. I want to take mom for a 3-day vacation on her 60th. I want to ensure all remain healthy. I want to keep communicating with my parents so they worry less about their 32-year-old unmarried son—and that it is not a problem.</p>
+<p><strong>24.</strong> I want to check in and meet and speak with my close friends—regularly and intentionally.</p>
+<p><strong>25.</strong> I want to act on attraction without overthinking—taking the risk to ask out, and staying more yes than no to promising dates.</p>
+<p><strong>26.</strong> I want to stop being apologetic when saying no to social meetups, coffee catch-ups, &quot;can we get on a call&quot;, and other asks that aren't from my family, close friends, or work colleagues.</p>
+<p><strong>27.</strong> I want to continue holding my boundaries to protect my needs—especially my need for solitude and freedom (of both thought and being).</p>
+<p><strong>28.</strong> I want to get better at handling relational discomfort—to sit with it longer, have harder conversations, and make small adjustments instead of avoiding friction.</p>
+<p><strong>29.</strong> I want to have some time in the week where I sit and do nothing.</p>
+<p><strong>30.</strong> I want to laugh more.</p>
+<p><strong>31.</strong> I want to redo my bedroom aesthetics, buy artwork, frame artists I admire, and ensure my plants don't die.</p>
+<p><strong>32.</strong> I want to order one experimental coffee from a new roaster every month.</p>
+<p><strong>33.</strong> I want to fully immerse myself in Paris in my planned two-week trip.</p>
+<p><strong>34.</strong> I want to donate 10% of my annual salary for causes I care about.</p>
+<p><strong>35.</strong> I want to keep seeing the systems of exploitation that a comfortable life in Bombay makes easy to unsee. I want to witness.</p>
+<p><strong>36.</strong> I want love to be the central anchor of my life—through attention, care, and presence in the smallest things. I want to push myself to give more, knowing I have far more capacity to love than I acknowledge. And I want to let my guard down enough to receive it, too. Because in a meaningless life where nothing really matters, love is, after all, the point of it all.</p>
+
+    </div>
+</article>
+
+        </main>
+    </div>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.querySelector('.theme-icon');
+        const body = document.body;
+
+        // Check for saved theme preference or default to system preference
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        let currentTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+        
+        // Apply initial theme
+        body.setAttribute('data-theme', currentTheme);
+        updateThemeIcon(currentTheme);
+
+        // Theme toggle event listener
+        themeToggle.addEventListener('click', () => {
+            currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+            body.setAttribute('data-theme', currentTheme);
+            localStorage.setItem('theme', currentTheme);
+            updateThemeIcon(currentTheme);
+        });
+
+        // Update theme icon
+        function updateThemeIcon(theme) {
+            themeIcon.textContent = theme === 'light' ? '💡' : '🔅';
+        }
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                currentTheme = e.matches ? 'dark' : 'light';
+                body.setAttribute('data-theme', currentTheme);
+                updateThemeIcon(currentTheme);
+            }
+        });
+    </script>
+</body>
+</html>
