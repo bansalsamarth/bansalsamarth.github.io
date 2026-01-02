@@ -53,7 +53,7 @@ I wrote this list for myself. Thinking on page how I want to organise my life ri
 
 **24.** I want to check in and meet and speak with my close friends—regularly and intentionally. 
 
-**25.** I want to act on attraction without overthinking—taking the risk to ask out, and staying more yes than no to promising dates.
+**25.** I want to act on attraction without overthinking—taking the risk to ask out, and saying more yes than no to promising dates.
 
 **26.** I want to stop being apologetic when saying no to social meetups, coffee catch-ups, "can we get on a call", and other asks that aren't from my family, close friends, or work colleagues.
 
