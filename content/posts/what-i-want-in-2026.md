@@ -41,7 +41,7 @@ I wrote this list for myself. Thinking on page how I want to organise my life ri
 
 **18.** I want to workout 5 days a week.
 
-**19.** I want to eat better. Of the 21 meals I eat in a week, I want 7 to be salads, 7 just eggs and toast, 5 simple macro-counted protein-rich meals, and 2 whatever I feel like—for joy. In addition, on a daily basis, two scoops of whey, one scoop creatine monohydrate and one cup of fruit. 
+**19.** I want to eat better. Of the 21 meals I eat in a week, I want 7 to be salads, 7 just eggs and toast, 5 simple macro-counted protein-rich meals, and 2 whatever I feel like—for joy. In addition, on a daily basis, two bytes of dark chocolate, one cup of fruit, three cups of black coffee, two scoops of whey, and one scoop creatine monohydrate. 
 
 **20.** I want to have a well-rested 7 hours of sleep.
 
