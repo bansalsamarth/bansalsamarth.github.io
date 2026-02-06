@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragments from a January at The Whole Truth - Samarth&#39;s Blog</title>
+    <meta name="description" content="Fragments from a January at The Whole Truth">
+    <meta name="author" content="Samarth Bansal">
+    
+    <style>
+        :root {
+            --content-width: 600px;
+        }
+
+        /* Light mode colors */
+        :root {
+            --bg-primary: #fefdfb;
+            --bg-secondary: #f8f7f5;
+            --text-primary: rgb(17, 17, 17);
+            --text-secondary: rgb(82, 82, 82);
+            --date-color: rgb(138, 138, 138);
+            --link-color: rgb(93, 24, 220);
+            --link-hover: rgb(77, 20, 180);
+            --subtle-hover: rgba(93, 24, 220, 0.05);
+            --border-light: rgba(0, 0, 0, 0.06);
+            --blockquote-border: rgb(230, 230, 230);
+            --code-bg: rgb(248, 248, 248);
+            --horizontal-rule: rgb(238, 238, 238);
+            --highlight-bg: rgba(93, 24, 220, 0.05);
+            --newsletter-bg: rgb(250, 250, 250);
+            --navbar-bg: rgba(254, 253, 251, 0.95);
+        }
+
+        /* Dark mode colors */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1612;
+                --bg-secondary: #252118;
+                --text-primary: rgb(232, 232, 232);
+                --text-secondary: rgb(160, 160, 160);
+                --date-color: rgb(120, 120, 120);
+                --link-color: rgb(168, 132, 255);
+                --link-hover: rgb(190, 155, 255);
+                --subtle-hover: rgba(168, 132, 255, 0.1);
+                --border-light: rgba(255, 255, 255, 0.1);
+                --blockquote-border: rgb(60, 60, 60);
+                --code-bg: #2a251f;
+                --horizontal-rule: #3a342b;
+                --highlight-bg: rgba(168, 132, 255, 0.1);
+                --newsletter-bg: #201e1a;
+                --navbar-bg: rgba(26, 22, 18, 0.95);
+            }
+        }
+
+        /* Manual dark mode override */
+        [data-theme="dark"] {
+            --bg-primary: #1a1612;
+            --bg-secondary: #252118;
+            --text-primary: rgb(232, 232, 232);
+            --text-secondary: rgb(160, 160, 160);
+            --date-color: rgb(120, 120, 120);
+            --link-color: rgb(168, 132, 255);
+            --link-hover: rgb(190, 155, 255);
+            --subtle-hover: rgba(168, 132, 255, 0.1);
+            --border-light: rgba(255, 255, 255, 0.1);
+            --blockquote-border: rgb(60, 60, 60);
+            --code-bg: #2a251f;
+            --horizontal-rule: #3a342b;
+            --highlight-bg: rgba(168, 132, 255, 0.1);
+            --newsletter-bg: #201e1a;
+            --navbar-bg: rgba(26, 22, 18, 0.95);
+        }
+
+        /* Manual light mode override */
+        [data-theme="light"] {
+            --bg-primary: #fefdfb;
+            --bg-secondary: #f8f7f5;
+            --text-primary: rgb(17, 17, 17);
+            --text-secondary: rgb(82, 82, 82);
+            --date-color: rgb(138, 138, 138);
+            --link-color: rgb(93, 24, 220);
+            --link-hover: rgb(77, 20, 180);
+            --subtle-hover: rgba(93, 24, 220, 0.05);
+            --border-light: rgba(0, 0, 0, 0.06);
+            --blockquote-border: rgb(230, 230, 230);
+            --code-bg: rgb(248, 248, 248);
+            --horizontal-rule: rgb(238, 238, 238);
+            --highlight-bg: rgba(93, 24, 220, 0.05);
+            --newsletter-bg: rgb(250, 250, 250);
+            --navbar-bg: rgba(254, 253, 251, 0.95);
+        }
+
+        /* Base Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            background-color: var(--bg-primary);
+            padding-top: 4rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Top Navigation Bar */
+        .top-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--navbar-bg);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border-light);
+            z-index: 100;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .navbar-container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+            transition: color 0.2s ease;
+        }
+
+        .navbar-brand:hover {
+            color: var(--link-color);
+        }
+
+        .navbar-nav {
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            align-items: center;
+        }
+
+        .navbar-nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .navbar-nav a:hover {
+            color: var(--link-color);
+        }
+
+        .container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        /* Navigation */
+        nav {
+            margin-bottom: 4rem;
+        }
+
+        nav a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-right: 1.5rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Back to home link */
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            transition: color 0.2s ease;
+        }
+
+        .back-home:hover {
+            color: var(--link-color);
+        }
+
+        .back-home::before {
+            content: '←';
+            margin-right: 0.5rem;
+        }
+
+        /* Page Title */
+        .page-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: var(--text-primary);
+            margin: 0 0 2rem;
+        }
+
+        /* Posts List */
+        .posts-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .post-item {
+            display: flex;
+            align-items: baseline;
+            margin: 0.35rem 0;
+            padding: 0.5rem 0.75rem;
+            margin-left: -0.75rem;
+            margin-right: -0.75rem;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .post-item:hover {
+            background-color: var(--subtle-hover);
+        }
+
+        .post-date {
+            flex: 0 0 5rem;
+            color: var(--date-color);
+            font-size: 0.875rem;
+            font-weight: 400;
+            font-feature-settings: "tnum";
+            font-variant-numeric: tabular-nums;
+            letter-spacing: 0.01em;
+        }
+
+        .post-title {
+            flex: 1;
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .post-title a {
+            color: var(--text-primary);
+            text-decoration: none;
+            position: relative;
+            transition: color 0.15s ease;
+        }
+
+        .post-title a::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .post-item:hover .post-title a {
+            color: var(--link-color);
+        }
+
+        .post-item:hover .post-title a::after {
+            transform: scaleX(1);
+        }
+
+        .external-link {
+            color: var(--date-color);
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+        }
+
+        /* Post Page Styles */
+        article .post-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin: 0 0 3rem;
+            color: var(--text-primary);
+        }
+
+        .post-meta {
+            color: var(--text-secondary);
+            margin: 2.5rem 0;
+            font-size: 0.95rem;
+            font-weight: 400;
+        }
+        
+        .date-accent {
+            color: var(--link-color);
+            margin-right: 0.5rem;
+        }
+
+        .post-content {
+            font-size: 1.05rem;
+            font-weight: 400;
+            color: var(--text-primary);
+        }
+
+        .post-content p {
+            margin: 1.8em 0;
+        }
+
+        .post-content h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            margin: 2.5em 0 1em;
+            line-height: 1.3;
+        }
+
+        .post-content h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 2em 0 0.8em;
+            line-height: 1.4;
+        }
+
+        .post-content h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.8em 0 0.6em;
+        }
+
+        .post-content a {
+            color: var(--link-color);
+            text-decoration: underline;
+            text-decoration-color: rgba(93, 24, 220, 0.4);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+            transition: all 0.2s ease;
+        }
+
+        .post-content a:hover {
+            color: var(--link-hover);
+            text-decoration-color: var(--link-hover);
+        }
+
+        .post-content blockquote {
+            margin: 2em 0;
+            padding-left: 1.5em;
+            border-left: 2px solid var(--blockquote-border);
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        .post-content blockquote p {
+            margin: 0.8em 0;
+        }
+
+        .post-content code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9em;
+            background: var(--code-bg);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            color: var(--text-primary);
+        }
+
+        .post-content pre {
+            background: var(--code-bg);
+            padding: 1.2em;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 2em 0;
+            border: 1px solid var(--border-light);
+        }
+
+        .post-content pre code {
+            background: none;
+            padding: 0;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .post-content hr {
+            margin: 3em 0;
+            border: none;
+            border-top: 1px solid var(--horizontal-rule);
+        }
+
+        .post-content img {
+            max-width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 600px;
+        }
+
+        /* Home page specific styles */
+        .intro-section {
+            margin-bottom: 3rem;
+        }
+
+        .work-section {
+            margin-bottom: 3rem;
+        }
+
+        .work-section h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .page-links {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .page-links li {
+            margin: 0.8rem 0;
+        }
+
+        .page-links a {
+            display: inline-block;
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+
+        .page-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--link-color);
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .page-links a:hover::after {
+            transform: scaleX(1);
+        }
+
+        /* View Toggle Styles */
+        .view-toggle {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .view-toggle button {
+            background: none;
+            border: none;
+            padding: 0.4rem 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            position: relative;
+            transition: color 0.2s ease;
+            font-family: inherit;
+        }
+
+        .view-toggle button:hover {
+            color: var(--link-color);
+        }
+
+        .view-toggle button.active {
+            color: var(--link-color);
+        }
+
+        .view-toggle button.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--link-color);
+        }
+
+        /* Category Section Styles */
+        .category-section {
+            margin: 2.5rem 0;
+        }
+
+        .category-title {
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin: 0 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-light);
+            position: relative;
+        }
+
+        .category-title::before {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 2rem;
+            height: 1px;
+            background-color: var(--link-color);
+            opacity: 0.6;
+        }
+
+        /* Dark mode toggle */
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 0.25rem;
+            transition: color 0.3s ease;
+            margin-left: 1rem;
+        }
+
+        .theme-toggle:hover {
+            color: var(--link-color);
+        }
+
+        /* Brand name responsive display */
+        .brand-short {
+            display: none;
+        }
+        
+        .brand-full {
+            display: inline;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            :root {
+                --content-width: 100%;
+            }
+            
+            body {
+                padding-top: 3.5rem;
+            }
+            
+            .navbar-container {
+                padding: 0.75rem 1rem;
+            }
+            
+            .navbar-brand {
+                font-size: 1rem;
+            }
+            
+            .navbar-nav {
+                gap: 0.75rem;
+            }
+            
+            .navbar-nav a {
+                font-size: 0.8rem;
+            }
+            
+            .theme-toggle {
+                margin-left: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .navbar-brand {
+                font-size: 0.95rem;
+            }
+            
+            .navbar-nav {
+                gap: 0.5rem;
+            }
+            
+            .navbar-nav a {
+                font-size: 0.75rem;
+            }
+            
+            .navbar-container {
+                padding: 0.75rem 0.75rem;
+            }
+            
+            /* Show short brand name on small screens */
+            .brand-full {
+                display: none;
+            }
+            
+            .brand-short {
+                display: inline;
+            }
+        }
+            
+            .container {
+                padding: 1.5rem 1.25rem 2.5rem;
+            }
+            
+            article .post-title {
+                font-size: 2rem;
+            }
+
+            .post-content h2 {
+                font-size: 1.6rem;
+            }
+
+            .post-content h3 {
+                font-size: 1.3rem;
+            }
+
+            .post-content blockquote {
+                margin: 1.5em 0;
+                padding-left: 1.2em;
+            }
+
+            .post-item {
+                gap: 1.25rem;
+            }
+
+            .post-date {
+                flex: 0 0 4.5rem;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="top-navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-brand">
+                <span class="brand-full">Samarth Bansal</span>
+                <span class="brand-short">Samarth</span>
+            </a>
+            <nav class="navbar-nav">
+                <a href="/writing/">Writing</a>
+                <a href="/micro/">Notes</a>
+                <a href="/contact/">Contact</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">💡</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        
+
+<a href="/blog/" class="back-home">Blog</a>
+
+
+        
+        <main>
+            
+<article>
+    <h1 class="post-title">Fragments from a January at The Whole Truth</h1>
+    
+    
+    <div class="post-meta">
+        <span class="date-accent">•</span> February 06, 2026
+    </div>
+    
+    
+    <div class="post-content">
+        <h2>I.</h2>
+<p>My new year started a day before the new year. I took a week-long unplanned <em>chutti</em> to be at home—zoning out, zooming out. Shashank had returned from a week-long planned <em>chutti</em>, and he texted for a coffee catchup with no agenda but one: where I'd landed with my todo-list-ing and note-taking systems.</p>
+<p>We met at Subko. And spoke about everything but my systems.</p>
+<p>He talked about his renewed inspiration from Patagonia and the audacity of their mission after reading <em>Let My People Go Surfing</em>. We (again) spoke about <em>Creativity Inc</em>, the book on the making of Pixar that has shaped our thinking on nurturing the creative culture at The Whole Truth.</p>
+<p>I told him about an Emma Watson interview that gave me language for a question we'd been sitting with: how do we become big AND beautiful?</p>
+<p>How do we ensure that the consumers who found us in 2020 still recognise the brand they fell in love with? That as we become <em>badi company</em>, they don't start feeling like we've drifted away? We want to double down on who we are. And be even more transparent, even more beautiful, in everything we do. How?</p>
+<p>So when Watson described intimacy as an incremental revelation of self—where the more you reveal, the more you risk sharing exactly what the beloved might dislike, giving them every reason to walk away—she was defining intimacy as the willingness to be fully known. It is peak vulnerability, but then, that is the only way to truly love.</p>
+<p>This is us. This is how we think about transparency at TWT. And trust. And beauty. So, does that mean we are trying to scale intimacy? Is that even possible?</p>
+<p>That led us to talk about art. About films. And Taylor Swift. Shashank had seen a couple of episodes of <em>The End of an Era</em> and seeing the org behind the tour and the leader in Swift—not the Swift of the Swifties—he hit on my single biggest learning at TWT: that big things take an org, and org-building is a fundamentally different state of being than creating personal art.</p>
+<p>What we realised right there is that while so much of our time goes to running the org, we must calendar one block every week where we get together, write something or shoot something, and just ship it. He named it: <em>Artists Ship</em>.</p>
+<p>Today, he is travelling and not in town. So I am sitting down in our natural-light-flooded beauty-in-every-corner office to ship what you are reading. Fragments of a January at The Whole Truth.</p>
+<hr />
+<h2>II.</h2>
+<p>For the first content shoot of the year—or as we like to call it, &quot;trust shoot&quot;—we planned to make five videos with Shashank on a Saturday. I only learnt we were shooting this many—a first for us—when Shreya shared the plan in the creative review that week.</p>
+<p>Ambitious, I thought. But I trust her meticulous planning, and all I needed to do in the review was sit in the Broad Room, review the visual narrative arcs as the team presented their storyboards, and find that sweet spot between the joy of artistic imagination (mad ambition) and the joy of disciplined shipping (read: constraints).</p>
+<p><em>It’s insane how I have to play the constraints guy</em>.</p>
+<p>The shoots happened smoothly. Quite smoothly. We started a bit late and wrapped up a bit early (ahhh… the underrated joy of thorough prep).</p>
+<p>Once the shoot was done, my team showed Shashank a video we'd been working on for a while—one of the seven educational videos to launch a madly exciting new range. What we'd created was a big level up from anything we'd made before. I knew it. Shashank didn’t.</p>
+<p>And because I like watching people watch the things we make, so I just observed. We pressed play. I felt the acknowledgement less in his words (a reflexive “love it!”) and more in the shift in his body. It was in his eyes, which revealed the simulations he was running, imagining exactly how this one beautiful brick fits into the house of TWT the world is about to see.</p>
+<p>This is how the creation started for me this year. And looking back made me think:</p>
+<blockquote>
+<p><em>“Good job, bhai! All the five things shot today and this video… you wrote them.</em></p>
+<p><em>Does the world even know what it takes to write a 350 word script for a 2.5 minute video? How this “brand story” feels like the craft of journalism, where I first need to understand our product choices, then understand the market scene from the BD team, then work with my researcher to answer unclear questions, and then go back and forth to arrive at a fact-based narrative, and then finding a through line that fully captures the story while making the brutal choices for the sake of brevity?</em></p>
+<p>Does the world even need to know? Isn’t getting to do it… enough?&quot;*</p>
+</blockquote>
+<p>And then, also:</p>
+<blockquote>
+<p><em>”And bhai, you built this wonderful team that crafts these visual narratives with technicalities I don’t even fully understand—the logic of a cut and the physics of light. But then… that’s the whole point. We make this thing together!”</em></p>
+</blockquote>
+<p>Every time this happens—and it happens more often than I acknowledge—it gives me so much joy.</p>
+<p><em>Isn’t joy the whole point of it all?</em></p>
+<hr />
+<h2>III.</h2>
+<p>Few months ago, when I was wondering what makes me lead teams and do these management thingy, I asked myself: what's my selfish answer for doing this? I could simply enjoy my creative freedom and write what I want? No? Write, and then write more, and then just keep writing? Why am I leading a team and building an org?</p>
+<p><em>Actually, why am I not writing that book?</em></p>
+<p>I’m so done with the self-righteousness of corporate theater. I refused to accept any grandiose, self-serving answers about “nurturing talent” and “giving back”—they may be true, but they give me the ick. I wanted the real answer. What’s in it for me?</p>
+<p>Turns out, the answer is simple: org-building is a force multiplier. I am in this because leadership allows me to put more things into the world than I could ever do alone. I get to create beautiful things at a scale that is hard for one person, and I do it with people who share the same thrill of creation.</p>
+<p>When I moved from the ego of “I made this” to the collective “WE made this,” and finally to the pure, vicarious pride of “MY TEAM MADE THIS”—that's when I knew I'm in the job for exactly what it asks of me.</p>
+<p>I don't want this to be a monthly log. I’m not going to list every piece of creation that happened in January, or every seed sowed for the future. Just know that so much creation happened—across three different formats, involving internal and external teams, with budgets and ambitions that vary wildly. This is why I do this.</p>
+<p><em>This is play. And I play to play.</em></p>
+<hr />
+<h2>IV.</h2>
+<p>I finally named it. Hiring has to be my top priority. I entered January with razor-sharp clarity on the why, what, and how of my responsibilities for the year, and I want the team set by March so we can simply focus on driving outcomes.</p>
+<p>It became so visible that by the end of the month, colleagues were asking “how are the interviews going?” just because they often saw me with new faces in our glass-walled meeting rooms.</p>
+<p>I took it unusually seriously. I mean... I matched with someone on Hinge, went on a date, had a great time, and then spent an inappropriate number of minutes wondering if I should just hire her at TWT because she’d be such a perfect culture fit. (I did not hire her at TWT.)</p>
+<p>My proudest moment, however, was a rejection. I ended an interview with this design guy from a quick-commerce giant in exactly 18 minutes. He was so far off the mark that I felt zero guilt in calling it: “This won't work.” I took the saved time to help a colleague think through a transparency page for our lab-test reports.</p>
+<p>I’ve made decent progress. But the visible outcomes—hires closed and how fast—hide so much of what actually happens during hiring.</p>
+<p>Like this, in my inbox:</p>
+<blockquote>
+<p>“For the last three years, I’ve worked in the [redacted] industry, one of the largest contributors to unmanaged landfill waste. We tried very hard to build better products for the planet. A product that makes an actual difference. However, revenue and investor value overrides all.  What I’ve seen repeatedly is how quickly intent gives way to trade-offs once scale, margins, investor expectations, and regulatory constraints enter the room. Agency erodes, even at senior levels.  Without ‘purpose’ being nailed into the DNA of an organization, it is difficult to let it flourish.”</p>
+</blockquote>
+<p>In short: this thoughtful person’s success at their job meant making the world a slightly worse place. They want to join TWT because they’re hopeful that work that pays the bills doesn't have to cost personal values.</p>
+<p>Then I hear stories of dysfunction: talented people frustrated because no one tells them why they’re doing what they’re doing. It makes me think of our latest townhall, where we presented the 2026 org strategy using the exact same deck we’d shown our Board two days before. Our values—“share all context,” “start with trust”—now feel so normal to us, but they are clearly so aspirational elsewhere.</p>
+<p>I am borderline obsessed with why organisations are dysfunctional, just as I was once obsessed with why families are. It all comes down to the same thing: people struggling to find ways to be together, and refusing to make enough effort that this absurd level of being together demands.</p>
+<p><em>All happy orgs are alike. Each unhappy org is unhappy in its own way?</em></p>
+<hr />
+<h2>V.</h2>
+<p>Yesterday, I met one of the candidates I'd shortlisted from my “read a book and get hired” LinkedIn post—for which I read more than 100 emails and as many book review submissions, and responded to schedule chats with the ones I enjoyed. (It's as laboriously nuts as it sounds.)</p>
+<p>This guy's submission was okay-ish—I'd read many better ones—but his email was full of heart and I wanted to at least speak.</p>
+<p>He was based in a different city. I said we could speak on Google Meet. But he insisted he wanted to meet in person. He'd come to Mumbai. I was torn. How in good conscience could I meet him? He'd travel across cities for a job he most likely won't get. I asked Sriram for advice and he said just tell him the whole truth. I did. I wrote back saying that the chances of this working out are low, so he should factor that in before deciding.</p>
+<p>But he came anyway to meet at the TWT office.</p>
+<p>I heard his story. This guy, 34, making a switch from a higher-paying profession to a lower-paying one—writing—simply because he wanted to. He wanted to work with me and TWT because he wants to write and believes in the org.</p>
+<p>I gave him all the context I could to communicate two things that are both true: I can't possibly hire him because I have a specific requirement to unlock my personal bandwidth, for which I needed a higher-order skill—and that yet, I was genuinely impressed because it's hard to find people with this level of drive and conviction.</p>
+<p>I showed him around the TWT office and did what I could to make his trip of some value. He had ideas on what TWT can do to reach the masses. I shared we are currently focused on building for the health-seeking rich. He was curious what it really meant to build for a hundred years, which Shashank keeps repeating in every public forum. I shared how that shapes our everyday decision making: what’s right in the long-term, is right.</p>
+<p>I said I'd think about whether there's any possibility, but I can't guarantee. He said he had no expectations. He was glad to be here, glad to have made the trip, and—what felt a little heartbreaking—he was glad I even responded to the email, because most recruiters don’t. It made me wonder who might be the people whose emails I have missed responding to.</p>
+<p>Sometimes I don't know how to process moments like this. But on this day, I knew I had become a man of systems. Because all the things that sound rigidly stupid at a micro level—“but you can make an exception!”, “it’s just this one small thing!”—break when you aggregate them into the macro. The job of leadership, I'm learning through doing, is showing up with empathy while remaining responsible for the macro. Ensuring it doesn't break.</p>
+<p>What feels cold is sometimes just the right thing to do.</p>
+<hr />
+<h2>VI.</h2>
+<p>I am so glad I was at home when I read <em>that</em> Slack message. Because I completely lost it. I wondered if I’d failed as a leader. Had I created a culture where, in the name of openness, the team felt okay sending wildly disrespectful messages on the team group? If culture is what you tolerate, I wasn't going to tolerate this.</p>
+<p>&quot;It's beyond my bedtime and I can't sleep,&quot; I texted Shreya. &quot;Please be ready to meet a different me tomorrow.&quot; (I had to watch 15 minutes of Notting Hill just to feel calm.)</p>
+<p>That night, I ran through every scenario where I might have slipped. I felt like an idiot because my &quot;being kind&quot; had possibly been read as me being okay with the <em>“haan bol diya, fir sorry bol diya”</em> cycle.</p>
+<p>I am not. Especially when I’ve been thinking so carefully about cultivating the creative culture of TWT—which, in Shashank’s words, means a place with no fear of feedback or failure, where the best creative people can do their best creative work.</p>
+<p>I get to build this culture, and I refuse the stupid romanticisation of creative dysfunction—the idea that if someone is talented, you have to put up with them being an asshole or chaotic because &quot;that’s just how creatives are.&quot; Sorry, whoever the fuck you are: no jerks allowed.</p>
+<p>And so, in a deeply ironic moment—right after sharing videos from the Board Meeting to show the team their work was getting praise—I walked into our in-house studio, told them &quot;great work guys,&quot; then pulled two of them out. &quot;Come and meet me, please.&quot;</p>
+<p>I delivered a 15-minute tense monologue—the angriest I’ve ever been at TWT—to communicate one thing: get your shit together or find another job.</p>
+<p>Most likely, it was just immaturity. A failure to realise that while your angst might be real, being a good co-worker means you don’t make your inability to handle your own shit everyone else’s problem.</p>
+<p>All of it together crystallised what I’d been thinking all January: I had never made it clear what a &quot;high-performer&quot; actually looks like in my creative team.</p>
+<p>I was already working on it. I just realised the urgency and sped it up. Because nothing makes me more paranoid in a scaling org than losing our grip on culture.</p>
+<hr />
+<h2>VII.</h2>
+<p>This idea of measuring performance has always irked me. I've seen metrics destroy exactly what they were meant to improve: teachers gaming test scores in Rajasthan schools I'd <a href="https://samarthbansal.com/rajasthan-education-nas.html">reported</a> on, or <a href="https://www.lesswrong.com/posts/YtvZxRpZjcFNwJecS/the-importance-of-goodhart-s-law">Soviet nail factories</a> optimising for weight and producing giant, useless nails.</p>
+<p>But not having metrics—or any framework—simply leads to vagueness. And vagueness wasn’t serving anyone. Some on the business side felt we were inefficient. Some didn’t fully grasp what it actually takes to move a creative project from “mad imagination” to “consistent shipping.” Some, without seeing a clear structure, started treating my team like order-takers.</p>
+<p>With 20 people eventually reporting into me—and more to join soon—I could no longer see everything. And I gradually realised the need for legibility, despite knowing it is reductive. (Oh, I have to start <em>Seeing Like A State?</em>)</p>
+<p>The hardest part is acknowledging how much I hated all of this. I went back and read my own <a href="https://samarthbansal.com/posts/suck-less-manager/">essay</a> from last year where I’d mocked the &quot;vulgar corporate dance&quot; of performance reviews. And now, here I was, trying to design that exact system.  The irony wasn't lost on me.</p>
+<p><em>Is this what scale feels like?</em></p>
+<p>I built my framework from first principles. I binged <em>High Output Management</em> by Andy Grove with the same excitement I felt when I first read Sally Rooney.</p>
+<p>Took me a couple weeks to get to my three-pillared frame of “Craft. Reliability. Culture.” and then three hours starting 5 a.m. on the Friday I’d called for the team meeting to make the deck to share my thinking. I showed them my own resistance. I admitted I was in the tension with them. I wanted their buy-in on the why before we co-created the how. I asked them to break into groups and design the metrics themselves. They struggled. They really, really struggled. And then the lightbulbs went on: “Oh shit, this IS hard.”</p>
+<p><em>Welcome. This is what leadership feels like.</em></p>
+<p>This January, I realised that leading teams is as much of a craft as writing—it’s just that instead of stringing sentences together, you are architecting how people work together. I know how to read the room—at least I think I do—and when I can hold the attention of my team for a 90-minute deck, I feel the exact same high as I do when crafting a 4,000-word essay that people actually read.</p>
+<hr />
+<h2>VIII.</h2>
+<p>I’ve started a “Getting Shit Done” doc where I log everything I did at work during the week. For now, I’m just capturing activities. But as Andy Grove explains, activity is not the same as output.</p>
+<p>This log helps me see what the job actually becomes the higher you go: it’s about holding a model of what I call Small Reality. It’s a complete map of everything I’m responsible for within the world of TWT, and a constant assessment of how it’s moving. This Small Reality is always far from where I want it to be—my own version of utopia—and the job is to close that gap. Some of it is captured in measurable outcomes; much of it is fuzzy, involving the people and the organism that is TWT.</p>
+<p>I am so fully immersed in this world that I remember the day I got home and did... nothing. I had things to do. I could have picked up one of the three books I was reading, or finally watched <em>Raging Bull</em> to earn some cinephile credits of having watched all or most of Martin Scorsese. But I didn't. I wasn't exhausted or even tired. I just wanted to... be. I felt what I feel on most days now: enough.</p>
+<p>A younger version of me would've judged this. He’d have called me a workaholic and told me to retreat into the “artsy-literary zone” to have a life outside work. But January was a reminder of the beauty of unification, of life and work becoming one. And because I live for richness of meaning-per-moment, sometimes, I think the depth of immersion serves me more than the width of experience. My time at TWT—and this January—is just a reflection of it.</p>
+<hr />
+<h2>IX.</h2>
+<p>I said earlier that joy is the whole point of it all. And much of it lies in the <a href="https://samarthbansal.com/posts/deleted-scenes/">deleted scenes</a> that don't make it to the highlight reel of &quot;achievements.&quot; But I want to remember them. Let me list a few.</p>
+<p>Recording and shipping an impromptu <a href="https://www.youtube.com/watch?v=sN9-ccfqUhw">25-minute chat</a> with Shashank about beauty. The community team, led by Aashna, pulling off a label-reading workshop for 300 kids at a school in Thane. Reading a beautiful email from Sharvani on how she finds meaning in her work. Figuring out with Anushka what's actually going on with India's egg supply chain. Watching Saumya's junoon when I spoke about Gen Z. Hearing stories in my induction with the new joinees.</p>
+<p>That one Wednesday when the office was unusually <em>khaali</em> and I skipped an ad shoot I wasn't needed for, which meant I found a rare, un-calendared day for a long, gossipy lunch with my team. Decoding stupidly but sincerely about two famous entrepreneurs we're deeply skeptical of. Hosting a Curious Monday session on Coffee 101 with Parth, who ended the month by ordering manual brew equipment for the office. The day the Broad Room turned into our <em>War and Peace</em> reading club. Randomly telling Nishkarsh and Jaanvi about my short story idea with so many Disgusting Thoughts.</p>
+<p>Hanging out with team at 11 p.m. on Carter Road after the all-team dinner. That learning session where I explained a food science concept and the entire team just went &quot;aha!&quot; at once. Sipping mint chai with team at Cafe De La Paix after an event. Two younger colleagues (men!) asking about my marriage plans, and me telling them let's grab coffee and talk about dating.</p>
+<p>When Shashank ended a leadership meeting with a single ask from all of us: &quot;Just be excited when you come into the room! That's it.&quot; To which I smiled, and said—in my head—<em>&quot;Thik hai dost, ab aap handle karna meri excitement! You asked for it!&quot;</em></p>
+<p><em>Aur kya chahiye?</em></p>
+<p>The moment that actually reflects this month for me was an unglamorous 15-minute auto-ride when dropping Shashank from our office to the Marol metro station. We were done for the day. No <em>kaam ki baat</em>. Just a ride with my friend.</p>
+<p>He told me about something from the previous day—a small win, the kind no one would actually notice unless you saw my friend in action the previous days and in that moment. What I saw was deep contentment. Peak existential freedom. The chaos of Saki Naka disappeared as the weight of that calmness took over. It felt like what the creative energy of our Subko meeting actually looks like when it is finally acted on. A moment of joy that the millions we raised in our Series D could never capture.</p>
+<p>Never.</p>
+
+    </div>
+</article>
+
+        </main>
+    </div>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.querySelector('.theme-icon');
+        const body = document.body;
+
+        // Check for saved theme preference or default to system preference
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        let currentTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+        
+        // Apply initial theme
+        body.setAttribute('data-theme', currentTheme);
+        updateThemeIcon(currentTheme);
+
+        // Theme toggle event listener
+        themeToggle.addEventListener('click', () => {
+            currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+            body.setAttribute('data-theme', currentTheme);
+            localStorage.setItem('theme', currentTheme);
+            updateThemeIcon(currentTheme);
+        });
+
+        // Update theme icon
+        function updateThemeIcon(theme) {
+            themeIcon.textContent = theme === 'light' ? '💡' : '🔅';
+        }
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                currentTheme = e.matches ? 'dark' : 'light';
+                body.setAttribute('data-theme', currentTheme);
+                updateThemeIcon(currentTheme);
+            }
+        });
+    </script>
+</body>
+</html>
