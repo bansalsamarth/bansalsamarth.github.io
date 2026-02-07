@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bd1c8b9ac8ecb8cc",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.5"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.5"
-            }
-          },
-          {
             "id": "509bbdfc095ff3ed",
             "type": "leaf",
             "state": {
@@ -182,7 +170,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bd1c8b9ac8ecb8cc",
+  "active": "509bbdfc095ff3ed",
   "lastOpenFiles": [
     "posts/things-on-my-mind.md",
     "posts/fragments-from-a-january-at-the-whole-truth.md",

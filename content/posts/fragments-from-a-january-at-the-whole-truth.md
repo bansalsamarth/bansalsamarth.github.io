@@ -39,7 +39,7 @@ The shoots happened smoothly. Quite smoothly. We started a bit late and wrapped 
 
 Once the shoot was done, my team showed Shashank a video we'd been working on for a while—one of the seven educational videos to launch a madly exciting new range. What we'd created was a big level up from anything we'd made before. I knew it. Shashank didn’t. 
 
-And because I like watching people watch the things we make, so I just observed. We pressed play. I felt the acknowledgement less in his words (a reflexive “love it!”) and more in the shift in his body. It was in his eyes, which revealed the simulations he was running, imagining exactly how this one beautiful brick fits into the house of TWT the world is about to see.
+And because I like watching people watch the things we make, I just observed. We pressed play. I felt the acknowledgement less in his words (a reflexive “love it!”) and more in the shift in his body. It was in his eyes, which revealed the simulations he was running, imagining exactly how this one beautiful brick fits into the house of TWT the world is about to see.
 
 This is how the creation started for me this year. And looking back made me think:
 
@@ -47,7 +47,7 @@ This is how the creation started for me this year. And looking back made me thin
 > 
 > *Does the world even know what it takes to write a 350 word script for a 2.5 minute video? How this “brand story” feels like the craft of journalism, where I first need to understand our product choices, then understand the market scene from the BD team, then work with my researcher to answer unclear questions, and then go back and forth to arrive at a fact-based narrative, and then finding a through line that fully captures the story while making the brutal choices for the sake of brevity?*
 > 
-> Does the world even need to know? Isn’t getting to do it… enough?"*
+> *Does the world even need to know? Isn’t getting to do it… enough?"*
 
 And then, also:
 
