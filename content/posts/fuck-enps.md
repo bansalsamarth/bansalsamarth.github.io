@@ -65,7 +65,7 @@ I saw at least one leader—whom I respect as a great leader—step away when th
 
 Some of you might be thinking: "Ah okay so Samarth is basically pissed because his org score wasn't great, he didn't like what folks have filled in, and he felt ashamed for the number to be flashed, and hence this rant drama?"
 
-Well, yes and no. My org score is neither awful nor wow, it's above average. Which is good only. But that's not even the point. I had called this out two months ago—"Fuck eNPS!"—in as many words to myself when I was planning to introduce changes in the team.
+Well, yes and no. My org score is neither awful nor wow. But that's not even the point. I had called this out two months ago—"Fuck eNPS!"—in as many words to myself when I was planning to introduce changes in the team.
 
 And yet, I don't like the unintentional leaderboard energy in the org—and that too based on such a flawed metric. All the invisible hours invested for our people are now flattened and reduced to this single number for the org. How demeaning.
 
