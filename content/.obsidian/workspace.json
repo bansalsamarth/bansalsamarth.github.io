@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/small-guy-big-guy.md",
+                "file": "posts/the-maker-waits.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "small-guy-big-guy"
+              "title": "the-maker-waits"
             }
           },
           {
@@ -185,6 +185,8 @@
   },
   "active": "509bbdfc095ff3ed",
   "lastOpenFiles": [
+    "posts/small-guy-big-guy.md",
+    "posts/the-maker-waits.md",
     "posts/fuck-enps.md",
     "posts/scaling-artisnal-food--twt-part-one.md",
     "posts/fragments-from-a-january-at-the-whole-truth.md",
@@ -215,8 +217,6 @@
     "(",
     "how-twt.md",
     "posts/how-we-talk-about-death.md",
-    "posts/notes-on-growth.md",
-    "posts/art-and-capitalism.md",
     "micro",
     "evergreen",
     "journalism",
