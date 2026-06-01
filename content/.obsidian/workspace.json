@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/there-is-a-study-for-everything.md",
+                "file": "posts/ambition-twt.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "there-is-a-study-for-everything"
+              "title": "ambition-twt"
             }
           },
           {
@@ -92,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300.5024719238281
+    "width": 300.5024719238281,
+    "collapsed": true
   },
   "right": {
     "id": "4cbc5a004065a9ba",
@@ -185,8 +186,9 @@
   },
   "active": "509bbdfc095ff3ed",
   "lastOpenFiles": [
-    "posts/the-maker-waits.md",
     "posts/there-is-a-study-for-everything.md",
+    "posts/ambition-twt.md",
+    "posts/the-maker-waits.md",
     "posts/small-guy-big-guy.md",
     "posts/fuck-enps.md",
     "posts/scaling-artisnal-food--twt-part-one.md",
@@ -216,7 +218,6 @@
     "(/posts/how-twt 1.md",
     "(/posts",
     "(",
-    "how-twt.md",
     "micro",
     "evergreen",
     "journalism",

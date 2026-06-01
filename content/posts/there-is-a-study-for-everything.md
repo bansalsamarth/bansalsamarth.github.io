@@ -1,7 +1,7 @@
 ---
-title: "There Is A Study For Everything"
+title: There Is A Study For Everything
 date: 2026-02-22
-published: true
+published: false
 ---
 A scientific citation is available for any claim you want to make in the world. Any. Which is why one of my consistent pet peeves is this thing: "here is a study to back this claim" or "send me a study to prove your claim." 
 
