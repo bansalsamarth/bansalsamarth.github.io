@@ -1,7 +1,7 @@
 ---
 title: "The State of Food Tech in India"
 date: 2024-01-05
-published: true
+published: false
 external_url: "https://thewholetruthfoods.com/blogs/insights/food-tech-india"
 description: "An analysis of the food technology landscape in India and emerging trends"
 ---

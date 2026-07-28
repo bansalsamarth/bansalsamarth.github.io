@@ -1,7 +1,7 @@
 ---
 title: "The Future of Digital Journalism"
 date: 2024-01-08
-published: true
+published: false
 category: "journalism"
 description: "Exploring how technology is reshaping journalism and media"
 ---
