@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+# One-stop publishing helper. Run from anywhere:
+#
+#   ./blog new post "My Post Title"        create a blog post
+#   ./blog new essay "My Essay Title"      create an essay entry
+#   ./blog new journalism "Story Title"    create a journalism entry (link + context)
+#   ./blog new note "A quick thought"      create a note (microblog)
+#   ./blog preview                         build + open local preview at localhost:8000
+#   ./blog publish [message]              build + commit + push (site goes live)
+set -euo pipefail
+cd "$(dirname "$0")"
+
+PY="python3"
+[ -x "venv/bin/python" ] && PY="venv/bin/python"
+
+usage() {
+    sed -n '2,9p' "$0" | sed 's/^# \{0,1\}//'
+    exit 1
+}
+
+cmd="${1:-}"
+case "$cmd" in
+    new)
+        type="${2:-}"
+        shift 2 || usage
+        title="$*"
+        [ -n "$type" ] && [ -n "$title" ] || usage
+        # friendly alias: "note" -> micro
+        [ "$type" = "note" ] && type="micro"
+        "$PY" generator.py new "$type" "$title"
+        ;;
+    preview)
+        "$PY" generator.py build
+        echo "Preview at http://localhost:8000 (Ctrl+C to stop)"
+        (sleep 1 && open "http://localhost:8000" 2>/dev/null || true) &
+        cd docs && "$PY" -m http.server 8000
+        ;;
+    publish)
+        "$PY" generator.py build
+        git add -A
+        if git diff --cached --quiet; then
+            echo "Nothing new to publish — site is already up to date."
+            exit 0
+        fi
+        msg="${2:-Publish site update: $(date '+%Y-%m-%d %H:%M')}"
+        git commit -m "$msg"
+        git push origin main
+        echo "✅ Published. Live in a minute or two at https://www.samarthbansal.com"
+        ;;
+    *)
+        usage
+        ;;
+esac
