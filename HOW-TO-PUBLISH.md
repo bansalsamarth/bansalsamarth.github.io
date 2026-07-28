@@ -1,139 +1,74 @@
 # How To Publish
 
-Your reference manual for adding anything to samarthbansal.com. Everything runs through the `./blog` script from the project folder — you never need to remember generator or git commands.
-
-## The 30-second version
-
-```bash
-./blog new post "My Post Title"   # 1. create
-# ... write in Obsidian or any editor ...
-./blog preview                    # 2. check it locally (optional)
-./blog publish                    # 3. site goes live
-```
-
----
+Quick reference. Run everything from the project folder.
 
 ## The three commands
 
-### `./blog new <type> "Title"`
+- `./blog new post|essay|journalism|note "Title"` — makes the file, frontmatter already filled in
+- `./blog preview` — builds and opens http://localhost:8000. Safe, local only. Ctrl+C to stop.
+- `./blog publish` — builds, commits, **and pushes. This puts it live for the world.**
 
-Creates a markdown file with the right frontmatter already filled in, and prints where it is. Types:
+## Blog post
 
-| Type | What it's for | File lands in |
-|---|---|---|
-| `post` | Blog — reflections, observations, working notes | `content/posts/` |
-| `essay` | Essays — crafted long-form pieces | `content/essays/` |
-| `journalism` | Journalism — curated links to your reporting | `content/journalism/` |
-| `note` | Notes — microblog, quick thoughts, photos | `content/micro/` |
+1. `./blog new post "My Title"`
+2. Open the file in `content/posts/`, write below the `---`
+3. `./blog preview` to check
+4. `./blog publish`
 
-### `./blog preview`
+Frontmatter you can change:
+- `date:` — must be `YYYY-MM-DD`
+- `category:` — groups posts in the "By Category" view
+- `published: false` — hides it (draft)
+- `slug:` — custom URL, if you need to keep an old link working
 
-Builds the site and serves it at http://localhost:8000 (opens your browser). This is **the** way to see your site with full design before publishing. Ctrl+C to stop.
+## Journalism entry
 
-### `./blog publish [optional message]`
+A link plus a note on why the story mattered. Not an archive of everything.
 
-Builds, commits everything, and pushes. Live at samarthbansal.com within a minute or two. If you don't give a message, it uses a dated one. If nothing changed, it tells you and does nothing.
+1. `./blog new journalism "Story Title"`
+2. Fill in:
+   - `publication:` — shows as the purple label
+   - `external_url:` — where the piece lives
+   - `published: true`
+3. **Write the context note in the body, below the `---`.** This is what appears under the title.
 
-**Safety net:** a GitHub Action rebuilds the site on every push. So if you ever edit a file directly on github.com (or push without building), the live site still updates itself.
+## Essay
 
----
+Same shape. Three kinds:
 
-## Recipes by section
+- **Written here** — body is the essay itself, so put the listing note in a `context:` field
+- **Custom HTML page on your site** — `external_url: "/my-page.html"`, body is the note
+- **Published elsewhere** — `external_url: "https://..."`, body is the note
 
-### Blog post
+## Note (microblog)
 
-```bash
-./blog new post "What I Learned This Month"
-```
+`./blog new note "the text"` — timestamped, no title, lands in `content/micro/`.
 
-Open the file, write below the `---`, done. Frontmatter you can tweak:
+## Images
 
-```yaml
-title: "What I Learned This Month"
-date: 2026-07-05
-category: personal        # groups posts in the "By Category" view
-published: true           # false = draft, invisible on the site
-```
+1. Drop the file in `content/images/`
+2. Reference it as `![](/images/name.jpg)`
 
-### Journalism entry
+Works in posts, essays, and notes.
 
-Journalism is a **curation, not an archive**. Each entry is a link plus a context note — why the story mattered, how it came about.
+## Links: internal vs external
 
-```bash
-./blog new journalism "My Investigation Title"
-```
+- `https://...` → shows a ↗ and opens in a new tab
+- `/my-page.html` → treated as your own site, no arrow
 
-```yaml
-title: "My Investigation Title"
-publication: "Mint"                          # shown as the purple label
-date: 2021-02-16
-external_url: "https://livemint.com/..."     # where the piece lives
-published: true
-```
+To add a hand-designed HTML page: put the `.html` file in the `docs/` root (the build preserves root-level HTML files), then point an essay or journalism entry at it.
 
-**The markdown body below the frontmatter is the context note** — it appears under the link on the journalism page. A couple of sentences is perfect.
+## Current state
 
-Your entire old CSV was migrated: all ~92 entries sit in `content/journalism/` as drafts (`published: false`). To hand-pick one: open it, write the context note, flip `published: true`, publish.
+- 87 journalism entries live in `content/journalism/`, all `published: false`. 65 already have context notes from the old CSV; about 22 still need one.
+- Essays and Journalism pages show an empty-state message until you flip entries to `published: true`.
+- Notes (`/micro/`) and Evergreen (`/evergreen/`) are still "coming soon" pages.
 
-### Essay
+## If something looks wrong
 
-Essays come in three flavours, all one small file:
+- **Piece doesn't appear** — `published: false` is still set
+- **Appears but no note** — note goes in the body (for external links) or a `context:` field (for essays written here)
+- **Build fails** — read the error; a bad `date:` format is the usual cause
+- **Site live but stale** — give GitHub Pages a minute, then check the Actions tab
 
-**1. Written here as markdown** — like a blog post but in `content/essays/`. The body is the essay itself. For the note shown on the listing page, use a `context:` field:
-
-```yaml
-title: "My Essay"
-date: 2026-07-05
-context: "Why I wrote this — shown on the essays listing page."
-```
-
-**2. A custom-designed HTML page hosted on your site** (like `romantic-idiot.html`):
-
-```yaml
-title: "The Romantic Idiot"
-date: 2023-07-22
-external_url: "/romantic-idiot.html"    # relative = internal, no ↗ arrow
-```
-
-Body = context note. (Draft entries for all ten of your existing custom pages already sit in `content/essays/` and `content/journalism/` — write their notes and flip them on.)
-
-**3. Published elsewhere:**
-
-```yaml
-external_url: "https://theatlantic.com/..."   # full URL = shows ↗, opens new tab
-```
-
-Body = context note.
-
-### Note (microblog)
-
-```bash
-./blog new note "Anything — this becomes the note text"
-```
-
-Timestamped, no title, shows up on /micro/ like a tweet. Edit the file to add more, including photos:
-
-1. Drop the image in `content/images/` (e.g. `content/images/sunset.jpg`)
-2. Reference it in the note: `![](/images/sunset.jpg)`
-
-Images work the same way in posts and essays.
-
----
-
-## Things worth knowing
-
-- **Drafts**: `published: false` in any file's frontmatter hides it from the site. Great for half-written things — they stay in the repo, invisible to readers.
-- **Custom HTML pages**: to add a new hand-designed page, put the `.html` file in `docs/` root — the generator automatically preserves any root-level `.html` file during rebuilds. Then create an essay/journalism entry pointing at it (`external_url: "/my-page.html"`) so people can find it.
-- **Custom URLs**: add `slug: my-custom-url` to frontmatter to control a post's URL (used to preserve old links).
-- **Editing old posts**: just edit the markdown file and `./blog publish`. The build log tells you what was added/updated/deleted.
-- **Evergreen** (`/evergreen/`) exists in the code but is still "coming soon" — activate later if you want it.
-- **Previewing**: always judge the site through `./blog preview` (localhost:8000). Opening a template file from `templates/` in an editor preview shows unstyled fragments — the design is assembled from `base.html` only at build time.
-
-## When something looks off
-
-| Symptom | Likely cause |
-|---|---|
-| New piece doesn't show up | `published: false` still set, or you didn't rebuild — run `./blog publish` again |
-| Piece shows but no context note | Note goes in the markdown body (external pieces) or `context:` field (hosted essays) |
-| Site live but stale | Wait a minute for GitHub Pages; check the Actions tab on GitHub if it persists |
-| Weird date or missing date | Frontmatter `date:` must be `YYYY-MM-DD` |
+A GitHub Action rebuilds the site after any push that touches content, so edits made on github.com or your phone still go live.
