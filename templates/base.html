@@ -133,8 +133,6 @@
             text-decoration: none;
             letter-spacing: -0.02em;
             transition: color 0.2s ease;
-            white-space: nowrap;
-            margin-right: 1rem;
         }
 
         .navbar-brand:hover {
@@ -143,7 +141,7 @@
 
         .navbar-nav {
             display: flex;
-            gap: 1.25rem;
+            gap: 2rem;
             margin: 0;
             padding: 0;
             list-style: none;
@@ -586,25 +584,16 @@
         @media (max-width: 480px) {
             .navbar-brand {
                 font-size: 0.95rem;
-                margin-right: 0.5rem;
             }
-
+            
             .navbar-nav {
-                gap: 0.6rem;
-                /* Swipe sideways if links don't fit; scrollbar hidden */
-                overflow-x: auto;
-                -webkit-overflow-scrolling: touch;
-                scrollbar-width: none;
+                gap: 0.5rem;
             }
-
-            .navbar-nav::-webkit-scrollbar {
-                display: none;
-            }
-
+            
             .navbar-nav a {
                 font-size: 0.75rem;
             }
-
+            
             .navbar-container {
                 padding: 0.75rem 0.75rem;
             }
