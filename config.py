@@ -41,6 +41,7 @@ class Config:
     EVERGREEN_DIR = os.path.join(CONTENT_DIR, "evergreen")    # Living documents (principles, beliefs)
     MICRO_DIR = os.path.join(CONTENT_DIR, "micro")         # Microblog posts (short, title-less)
     PAGES_DIR = os.path.join(CONTENT_DIR, "pages")         # Static pages
+    IMAGES_DIR = os.path.join(CONTENT_DIR, "images")       # Images copied to /images/ on the site
     
     # Build and formatting settings
     DATE_FORMAT = "%B %d, %Y"  # Format for displaying dates (e.g., "January 15, 2024")

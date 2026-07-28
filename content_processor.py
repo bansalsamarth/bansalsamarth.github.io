@@ -10,7 +10,7 @@ import os
 import re
 import yaml
 import mistune
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Dict, List, Optional, Any
 from dataclasses import dataclass, field
 
@@ -36,6 +36,8 @@ class ContentItem:
         published: Whether content should be published (default: True)
         external_url: Optional external link (for essays/journalism)
         category: Content category for organization (default: 'uncategorized')
+        publication: Where the piece was published (for journalism)
+        context: Rendered HTML of the curation note shown on listing pages
         metadata: All other frontmatter data
         source_file: Original markdown file path
     """
@@ -48,6 +50,8 @@ class ContentItem:
     published: bool = True
     external_url: Optional[str] = None
     category: str = "uncategorized"
+    publication: str = ""
+    context: str = ""
     metadata: Dict[str, Any] = field(default_factory=dict)
     source_file: str = ""
     
@@ -93,6 +97,16 @@ class ContentItem:
         else:
             return f"/{self.content_type}/{self.slug}/"
     
+    @property
+    def link(self) -> str:
+        """The URL a listing should point to: external link if set, else the local page."""
+        return self.external_url or self.url
+
+    @property
+    def is_external(self) -> bool:
+        """True only for links that leave the site (custom pages hosted here use relative external_url)."""
+        return bool(self.external_url) and self.external_url.startswith('http')
+
     @property
     def formatted_date(self) -> str:
         """
@@ -153,6 +167,16 @@ class ContentProcessor:
             else:
                 title = frontmatter.get('title', 'Untitled')
             
+            # Curation note (shown on listing pages for essays/journalism):
+            # a `context:` frontmatter field wins; otherwise, for external links,
+            # the markdown body doubles as the note since no page is generated for them.
+            external_url = frontmatter.get('external_url')
+            context_html = ""
+            if frontmatter.get('context'):
+                context_html = self.markdown(str(frontmatter['context']))
+            elif external_url and markdown_content.strip():
+                context_html = html_content
+
             # Create ContentItem with parsed data
             item = ContentItem(
                 title=title,
@@ -160,8 +184,10 @@ class ContentProcessor:
                 date=self._parse_date(frontmatter.get('date')),
                 content_type=content_type,
                 published=frontmatter.get('published', True),
-                external_url=frontmatter.get('external_url'),
+                external_url=external_url,
                 category=frontmatter.get('category', 'uncategorized'),
+                publication=frontmatter.get('publication', ''),
+                context=context_html,
                 metadata=frontmatter,
                 source_file=file_path
             )
@@ -290,6 +316,8 @@ class ContentProcessor:
                         items.append(item)
         
         # Sort by date (newest first), then by title
-        items.sort(key=lambda x: (x.date or datetime.min, x.title), reverse=True)
+        # Dates from _parse_date are timezone-aware, so the fallback must be too
+        undated = datetime.min.replace(tzinfo=timezone.utc)
+        items.sort(key=lambda x: (x.date or undated, x.title), reverse=True)
         
         return items

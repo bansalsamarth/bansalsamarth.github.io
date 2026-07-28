@@ -336,6 +336,12 @@ class SiteGenerator:
             print("Static files copied")
         else:
             print("No static directory found, skipping static files")
+
+        # Copy content images (referenced from posts/notes as /images/<name>)
+        if os.path.exists(Config.IMAGES_DIR):
+            images_output = os.path.join(Config.OUTPUT_DIR, 'images')
+            shutil.copytree(Config.IMAGES_DIR, images_output, dirs_exist_ok=True)
+            print("Content images copied")
     
     def render_template(self, template_name: str, **context) -> str:
         """
@@ -661,22 +667,28 @@ published: true
 """
     
     if content_type == 'essays':
+        frontmatter += "# For essays not written here, point to where they live (external site or a custom HTML page like /my-essay.html):\n"
         frontmatter += "# external_url: \"https://example.com/my-essay\"\n"
     elif content_type == 'journalism':
+        frontmatter += "publication: \"Publication Name\"\n"
         frontmatter += "external_url: \"https://example.com/my-article\"\n"
     elif content_type == 'evergreen':
         frontmatter += "# last_updated: 2025-07-19  # Update this when you modify the content\n"
     elif content_type == 'micro':
         frontmatter += "# tags: [thought, link]  # Optional tags\n"
-    
+
     frontmatter += "---\n\n"
-    
+
     # Create the file
     with open(file_path, 'w', encoding='utf-8') as f:
         f.write(frontmatter)
         if content_type == 'micro':
             # Micro posts don't need title headers
             f.write(f"{title}\n")  # Use title as content
+        elif content_type == 'journalism':
+            f.write("Write the context here: why this story mattered, how it came about. Shown under the link on the journalism page.\n")
+        elif content_type == 'essays':
+            f.write("Write your essay here. If this entry uses external_url instead, this text becomes the context note shown on the essays page.\n")
         else:
             f.write(f"# {title}\n\n")
             f.write("Write your content here...\n")
