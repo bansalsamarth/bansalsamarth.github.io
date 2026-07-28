@@ -9,32 +9,31 @@
 {% block content %}
 <h1 class="page-title">Essays</h1>
 
-<div class="post-content">
-    <p>This is where longer-form explorations of ideas will live—the kind of writing that needs more space to breathe than a blog post allows.</p>
-    
-    <p>I'm currently migrating pieces from various corners of the internet and deciding which deserve a permanent home here.</p>
-    
+<div class="curated-intro">
+    <p>Longer, more crafted pieces — the writing I care most about. Some live here, some were published elsewhere. This is a curation, not an archive: each entry comes with a note on why it exists.</p>
 </div>
 
-<!-- ORIGINAL ESSAYS CODE - COMMENTED OUT FOR COMING SOON PAGE
 {% if essays %}
-<ul class="posts-list">
+<div class="curated-list">
     {% for essay in essays %}
-    <li class="post-item">
-        <div class="post-date">{{ essay.date | short_date if essay.date else '' }}</div>
-        <div class="post-title">
-            {% if essay.external_url %}
-                <a href="{{ essay.external_url }}" target="_blank">{{ essay.title }}</a>
-                <span class="external-link">(External)</span>
-            {% else %}
-                <a href="{{ essay.url }}">{{ essay.title }}</a>
-            {% endif %}
+    <article class="curated-item">
+        <div class="curated-meta">
+            {% if essay.date %}<span class="curated-date">{{ essay.date | short_date }}</span>{% endif %}
         </div>
-    </li>
+        <h2 class="curated-title">
+            {% if essay.is_external %}
+            <a href="{{ essay.link }}" target="_blank" rel="noopener noreferrer">{{ essay.title }} <span class="external-link">↗</span></a>
+            {% else %}
+            <a href="{{ essay.link }}">{{ essay.title }}</a>
+            {% endif %}
+        </h2>
+        {% if essay.context %}
+        <div class="curated-note">{{ essay.context | safe }}</div>
+        {% endif %}
+    </article>
     {% endfor %}
-</ul>
+</div>
 {% else %}
 <p>No essays yet. Check back soon!</p>
 {% endif %}
-END ORIGINAL ESSAYS CODE -->
 {% endblock %}

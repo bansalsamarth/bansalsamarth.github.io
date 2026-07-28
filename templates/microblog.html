@@ -22,10 +22,10 @@
     }
     
     .micro-item:hover {
-        background-color: rgba(93, 24, 220, 0.02);
+        background-color: var(--subtle-hover);
         transform: translateY(-1px);
     }
-    
+
     .micro-item:not(:last-child)::after {
         content: '';
         position: absolute;
@@ -34,11 +34,11 @@
         transform: translateX(-50%);
         width: 80px;
         height: 1px;
-        background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.12), transparent);
+        background: var(--border-light);
     }
-    
+
     .micro-timestamp {
-        color: rgb(110, 110, 110);
+        color: var(--date-color);
         font-size: 0.8rem;
         font-weight: 500;
         margin-bottom: 0.75rem;
@@ -50,7 +50,7 @@
     }
     
     .micro-item:hover .micro-timestamp {
-        color: rgb(93, 24, 220);
+        color: var(--link-color);
     }
     
     .micro-content {
@@ -143,9 +143,9 @@
 
 <div class="post-content">
     <p>This space is reserved for brief thoughts, interesting links, and the kind of fleeting observations that don't quite warrant a full blog post but are too good to let disappear into the void of my brain.</p>
-    
+
     <p>Think of it as the marginalia of my digital life. I'm still figuring out the best way to capture and organize these micro-thoughts without turning it into another social media obligation.</p>
-    
+
     <p>Stay tuned! (Or don't, no pressure.)</p>
 </div>
 
@@ -158,10 +158,12 @@
 <div class="micro-list">
     {% for post in micro_posts %}
     <article class="micro-item">
+        {% if post.date %}
         <time class="micro-timestamp" datetime="{{ post.date.isoformat() }}">
             {{ post.date.strftime('%b %d, %Y • %I:%M %p') | upper }}
         </time>
-        
+        {% endif %}
+
         <div class="micro-content">
             {{ post.content | safe }}
         </div>
@@ -170,7 +172,7 @@
 </div>
 {% else %}
 <p style="color: var(--text-secondary); text-align: center; margin: 3rem 0;">
-    No micro posts yet. <a href="#" style="color: var(--link-color);">Create your first one!</a>
+    Nothing here yet — first note coming soon.
 </p>
 {% endif %}
 END ORIGINAL MICROBLOG CODE -->
