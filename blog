@@ -11,7 +11,7 @@ set -euo pipefail
 cd "$(dirname "$0")"
 
 PY="python3"
-[ -x "venv/bin/python" ] && PY="venv/bin/python"
+[ -x "venv/bin/python" ] && PY="$(pwd)/venv/bin/python"
 
 usage() {
     sed -n '2,9p' "$0" | sed 's/^# \{0,1\}//'
