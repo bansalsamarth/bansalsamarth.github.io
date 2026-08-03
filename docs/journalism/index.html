@@ -640,6 +640,82 @@
     </style>
     
     
+
+<style>
+    .curated-intro {
+        color: var(--text-secondary);
+        font-size: 1.05rem;
+        line-height: 1.7;
+        margin-bottom: 3rem;
+    }
+
+    .curated-item {
+        margin: 2.5rem 0;
+        padding-bottom: 2.25rem;
+        border-bottom: 1px solid var(--border-light);
+    }
+
+    .curated-item:last-child {
+        border-bottom: none;
+    }
+
+    .curated-meta {
+        display: flex;
+        gap: 0.75rem;
+        align-items: baseline;
+        margin-bottom: 0.4rem;
+        font-size: 0.85rem;
+    }
+
+    .curated-publication {
+        color: var(--link-color);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        font-size: 0.8rem;
+    }
+
+    .curated-date {
+        color: var(--date-color);
+        font-feature-settings: "tnum";
+    }
+
+    .curated-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1.4;
+        margin: 0 0 0.6rem;
+    }
+
+    .curated-title a {
+        color: var(--text-primary);
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    .curated-title a:hover {
+        color: var(--link-color);
+    }
+
+    .curated-note {
+        font-size: 0.98rem;
+        line-height: 1.65;
+        color: var(--text-secondary);
+    }
+
+    .curated-note p {
+        margin: 0.6em 0;
+    }
+
+    .curated-note p:first-child {
+        margin-top: 0;
+    }
+
+    .curated-note p:last-child {
+        margin-bottom: 0;
+    }
+</style>
+
 </head>
 <body>
     <!-- Top Navigation Bar -->
@@ -667,107 +743,65 @@
         
         <main>
             
-<h1 class="page-title">Journalism Portfolio</h1>
+<h1 class="page-title">Journalism</h1>
 
-<div class="post-content">
-    
-    <p>I'm still organising my journalism archive for this site./p>
-    
-    <p>Check back soon, or <a href="/contact/">drop me a line</a> if you're looking for something specific!</p>
+<div class="curated-intro">
+    <p>A curated selection of my reporting — investigations, data stories, and long-form pieces. Not everything I've published, just the work that mattered, with notes on why.</p>
 </div>
 
-<!-- ORIGINAL JOURNALISM CODE - COMMENTED OUT FOR COMING SOON PAGE
-<div class="post-content">
-    <p>A curated selection of my journalism work spanning investigations, data analysis, and digital culture. The pieces below represent what I consider my most significant contributions to public discourse.</p>
+
+<div class="curated-list">
+    
+    <article class="curated-item">
+        <div class="curated-meta">
+            <span class="curated-publication">The Wire</span>
+            <span class="curated-date">Jan 2022</span>
+        </div>
+        <h2 class="curated-title">
+            
+            <a href="/the-wires-tek-fog-investigation-futile-search-for-evidence.html">The Wire’s TekFog investigation: A futile search for evidence</a>
+            
+        </h2>
+        
+        <div class="curated-note"><p>[DUMMY TEXT — replace] A close reading of the evidence behind a story that gripped Indian media, and what it revealed about verification standards in digital reporting.</p>
+</div>
+        
+    </article>
+    
+    <article class="curated-item">
+        <div class="curated-meta">
+            <span class="curated-publication">Rest of World</span>
+            <span class="curated-date">Dec 2020</span>
+        </div>
+        <h2 class="curated-title">
+            
+            <a href="https://restofworld.org/2020/all-the-data-fit-to-sell/" target="_blank" rel="noopener noreferrer">Inside India’s booming dark data economy <span class="external-link">↗</span></a>
+            
+        </h2>
+        
+        <div class="curated-note"><p>Long read on India’s booming dark data economy: spyware, detectives, data brokers, scammers—all that and more. Thanks to lax privacy laws and high consumer demand, details on everything from how you shop to who you date are all for sale.</p>
+</div>
+        
+    </article>
+    
+    <article class="curated-item">
+        <div class="curated-meta">
+            <span class="curated-publication">The Atlantic</span>
+            <span class="curated-date">Apr 2019</span>
+        </div>
+        <h2 class="curated-title">
+            
+            <a href="https://www.theatlantic.com/international/archive/2019/04/india-misinformation-election-fake-news/586123/" target="_blank" rel="noopener noreferrer">Misinformation Is Endangering India’s 2019 Election <span class="external-link">↗</span></a>
+            
+        </h2>
+        
+        <div class="curated-note"><p>India is facing information wars of an unprecedented nature and scale. Indians are bombarded with fake news and divisive propaganda on a near-constant basis from a wide range of sources, from television news to global platforms like Facebook and WhatsApp. In this story, we map the misinformation ecosystem.</p>
+</div>
+        
+    </article>
+    
 </div>
 
-<div class="journalism-list">
-    
-</div>
-END ORIGINAL JOURNALISM CODE -->
-
-<style>
-    .journalism-list {
-        margin-top: 3rem;
-    }
-    
-    .journalism-item {
-        margin: 2.5rem 0;
-        padding-bottom: 2rem;
-        border-bottom: 1px solid var(--border-light);
-        transition: all 0.2s ease;
-    }
-    
-    .journalism-item:last-child {
-        border-bottom: none;
-    }
-    
-    .journalism-item:hover {
-        transform: translateX(2px);
-    }
-    
-    .article-meta {
-        display: flex;
-        gap: 1rem;
-        margin-bottom: 0.5rem;
-        font-size: 0.875rem;
-        color: var(--text-secondary);
-        font-weight: 500;
-    }
-    
-    .article-publication {
-        color: var(--link-color);
-        font-weight: 600;
-    }
-    
-    .article-date {
-        color: var(--date-color);
-    }
-    
-    .article-title {
-        font-size: 1.25rem;
-        font-weight: 600;
-        line-height: 1.4;
-        margin: 0 0 1rem;
-    }
-    
-    .article-title a {
-        color: var(--text-primary);
-        text-decoration: none;
-        transition: color 0.2s ease;
-    }
-    
-    .article-title a:hover {
-        color: var(--link-color);
-    }
-    
-    .article-excerpt {
-        font-size: 1rem;
-        line-height: 1.6;
-        color: var(--text-secondary);
-        margin: 0;
-    }
-    
-    /* Mobile responsive */
-    @media (max-width: 768px) {
-        .journalism-item {
-            margin: 2rem 0;
-        }
-        
-        .article-meta {
-            flex-direction: column;
-            gap: 0.25rem;
-        }
-        
-        .article-title {
-            font-size: 1.1rem;
-        }
-        
-        .article-excerpt {
-            font-size: 0.95rem;
-        }
-    }
-</style>
 
         </main>
     </div>

@@ -640,6 +640,82 @@
     </style>
     
     
+
+<style>
+    .curated-intro {
+        color: var(--text-secondary);
+        font-size: 1.05rem;
+        line-height: 1.7;
+        margin-bottom: 3rem;
+    }
+
+    .curated-item {
+        margin: 2.5rem 0;
+        padding-bottom: 2.25rem;
+        border-bottom: 1px solid var(--border-light);
+    }
+
+    .curated-item:last-child {
+        border-bottom: none;
+    }
+
+    .curated-meta {
+        display: flex;
+        gap: 0.75rem;
+        align-items: baseline;
+        margin-bottom: 0.4rem;
+        font-size: 0.85rem;
+    }
+
+    .curated-publication {
+        color: var(--link-color);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        font-size: 0.8rem;
+    }
+
+    .curated-date {
+        color: var(--date-color);
+        font-feature-settings: "tnum";
+    }
+
+    .curated-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1.4;
+        margin: 0 0 0.6rem;
+    }
+
+    .curated-title a {
+        color: var(--text-primary);
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    .curated-title a:hover {
+        color: var(--link-color);
+    }
+
+    .curated-note {
+        font-size: 0.98rem;
+        line-height: 1.65;
+        color: var(--text-secondary);
+    }
+
+    .curated-note p {
+        margin: 0.6em 0;
+    }
+
+    .curated-note p:first-child {
+        margin-top: 0;
+    }
+
+    .curated-note p:last-child {
+        margin-bottom: 0;
+    }
+</style>
+
 </head>
 <body>
     <!-- Top Navigation Bar -->
@@ -669,39 +745,45 @@
             
 <h1 class="page-title">Essays</h1>
 
-<div class="post-content">
-    <p>This is where longer-form explorations of ideas will live—the kind of writing that needs more space to breathe than a blog post allows.</p>
+<div class="curated-intro">
+    <p>Longer, more crafted pieces — the writing I care most about. Some live here, some were published elsewhere. This is a curation, not an archive: each entry comes with a note on why it exists.</p>
+</div>
+
+
+<div class="curated-list">
     
-    <p>I'm currently migrating pieces from various corners of the internet and deciding which deserve a permanent home here.</p>
+    <article class="curated-item">
+        <div class="curated-meta">
+            <span class="curated-date">Feb 2024</span>
+        </div>
+        <h2 class="curated-title">
+            
+            <a href="/thirty-thriving.html">Thirty and Thriving</a>
+            
+        </h2>
+        
+        <div class="curated-note"><p>Notes on Singledom</p>
+</div>
+        
+    </article>
+    
+    <article class="curated-item">
+        <div class="curated-meta">
+            <span class="curated-date">Jul 2023</span>
+        </div>
+        <h2 class="curated-title">
+            
+            <a href="/romantic-idiot.html">The Romantic Idiot</a>
+            
+        </h2>
+        
+        <div class="curated-note"><p>One year, endless misadventures—my unfiltered dating diary.</p>
+</div>
+        
+    </article>
     
 </div>
 
-<!-- ORIGINAL ESSAYS CODE - COMMENTED OUT FOR COMING SOON PAGE
-
-<ul class="posts-list">
-    
-    <li class="post-item">
-        <div class="post-date">Jan 2024</div>
-        <div class="post-title">
-            
-                <a href="/essays/future-of-journalism/">The Future of Digital Journalism</a>
-            
-        </div>
-    </li>
-    
-    <li class="post-item">
-        <div class="post-date">Jan 2024</div>
-        <div class="post-title">
-            
-                <a href="https://thewholetruthfoods.com/blogs/insights/food-tech-india" target="_blank">The State of Food Tech in India</a>
-                <span class="external-link">(External)</span>
-            
-        </div>
-    </li>
-    
-</ul>
-
-END ORIGINAL ESSAYS CODE -->
 
         </main>
     </div>
