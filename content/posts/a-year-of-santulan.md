@@ -192,9 +192,9 @@ A list of my favourites from the year (the list categories are totally random, j
 
 Sharing something I wrote on 9th May, on my flight back from Paris, when I was feeling so grateful, wondering how could I tell anyone how magical these two weeks in my favourite city in the world felt like, what do I do with all my feelings inside me, well, this internal monologue ran through: 
 
-> *I am so proud of myself. Well, as much narcissistic as it feels to utter these words to oneself, isn't it true that for those for whom their solitariness is the primary way of being in this world, the perception of self—the one the self spends the most time with—matters. It does. It does for me. 
+> I am so proud of myself. Well, as much narcissistic as it feels to utter these words to oneself, isn't it true that for those for whom their solitariness is the primary way of being in this world, the perception of self—the one the self spends the most time with—matters. It does. It does for me. 
 > 
-> And I am, genuinely, proud. Because I am 32, and I dream (and dream widely), then I make the dream happen, and during the happening, I treat myself like a king. In moments like this the reminder comes in: no one else needs to know what the kingly treatment is; no one else needs to feel why this trip was so special—why I am so happy, why I would not change one bit in the last two weeks, and the weeks and months that preceded it—and why, among the millions who would call themselves lovers of this great city, I don't need to stand out. I know what this means, and it is enough. Just be like this. You are good! And nothing else matters.*
+> And I am, genuinely, proud. Because I am 32, and I dream (and dream widely), then I make the dream happen, and during the happening, I treat myself like a king. In moments like this the reminder comes in: no one else needs to know what the kingly treatment is; no one else needs to feel why this trip was so special—why I am so happy, why I would not change one bit in the last two weeks, and the weeks and months that preceded it—and why, among the millions who would call themselves lovers of this great city, I don't need to stand out. I know what this means, and it is enough. Just be like this. You are good! And nothing else matters.
 
 I am sharing this only to say that if you are reading this, and if you feel proud of yourself, please call it out to yourself. It is like nothing else. :)
 
@@ -210,6 +210,6 @@ Birthday wish for myself? Well, [words](https://jamesclear.com/great-speeches/fa
 
 ![Alt text](/images/dinner.jpeg)
 
-*Booked a reservation at Ekaa for food and drinks. Well, I don't drink drink, but I had my first glass of alcohol—a glass of wine—in my life this year in Paris, then the second on a day I made a big decision earlier this year, and then today, for the fun of it, the third glass. Which makes it 450 ml of wine in 33 years. Irrelevant detail, I know. Anyway, I went to the bar section, sat there, and the girl sitting next to me (there were just the two of us) started a conversation. We ended up chatting for, well, three hours, making it the second unplanned social encounter on a solo SoBo date. Now that's the universe getting it right on how to break the solitude. :)*
+*Booked a dinner reservation at Ekaa for food and drinks. Well, I don't drink drink, but I had my first glass of alcohol—a glass of wine—in my life this year in Paris, then the second on a day I made a big decision earlier this year, and then today, for the fun of it, the third glass. Which makes it 450 ml of wine in 33 years. Irrelevant detail, I know. Anyway, I went to the bar section, sat there, and the girl sitting next to me (there were just the two of us) started a conversation. We ended up chatting for, well, three hours, making it the second unplanned social encounter on a solo SoBo date. Now that's the universe getting it right on how to break the solitude. :)*
 
 ---
