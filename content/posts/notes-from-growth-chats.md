@@ -3,7 +3,7 @@ title: "Notes from Growth Chats"
 date: 2026-09-13
 published: true
 ---
-*I wrote this note for the people who report to me and my skips at The Whole Truth. It's drawn from notes across 20+ quarterly chats I did a couple months ago, focused on how to set them up for growth. There were a few things I found myself repeatedly saying across those chats, so I put them together. Sharing here too, hoping it might be useful beyond the team.*
+*I wrote this note for my team (Media Labs) at The Whole Truth (TWT). It's based on notes I took across 20+ quarterly chats I did a couple months ago (with my direct reports and skips), focused on how to set them up for growth. There were a few things I found myself repeatedly saying across those chats, so I put them together. Sharing here too, hoping it might be useful beyond the team.*
 
 **1) Creative trust and showing your rough work**
 
@@ -119,9 +119,9 @@ Getting better at estimating deadlines is also growth.
 
 **12) On progress**
 
-Two things can be simultaneously true:
-— Things have become better
-—There is still a lot that can be better.
+Two things can be simultaneously true:  
+— Things have become better  
+— There is still a lot that can be better.
 
 We focus so much more on the latter, so perspective on what has changed and what has become better can help.
 
@@ -145,7 +145,7 @@ Don't mistake whatever version of reality is running in your head—what X think
 
 Because there is a difference between observation and inference. So treat your version of reality as one from a set of *possibilities*. And then test it in the real world.
 
-Sometimes you are running a version which is so off, and can be recaliberated by talking. And sometimes you have to act to know. Just go find out. When you create stories without collecting evidence, that becomes a problem.
+Sometimes you are running a version which is so off, and can be recalibrated by talking. And sometimes you have to act to know. Just go find out. When you create stories without collecting evidence, that becomes a problem.
 
 ---
 
