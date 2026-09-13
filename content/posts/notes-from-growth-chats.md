@@ -159,4 +159,5 @@ Which brings me to the point of inner growth: we often think of growth as growth
 
 ---
 
-That's it. Hope this is helpful.
+
+![Be curious, not judgmental — Ted Lasso](/images/ted-lasso-be-curious.png)
