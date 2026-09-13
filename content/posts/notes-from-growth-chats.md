@@ -3,7 +3,7 @@ title: "Notes from Growth Chats"
 date: 2026-09-13
 published: true
 ---
-*I wrote this note for my team at The Whole Truth. It's drawn from notes across 20+ quarterly chats I did a couple months ago, focused on how to set people up for growth. There were a few things I found myself repeatedly saying across those chats, so I put them together for them. Sharing here too, hoping it might be useful beyond the team.*
+*I wrote this note for the people who report to me and my skips at The Whole Truth. It's drawn from notes across 20+ quarterly chats I did a couple months ago, focused on how to set them up for growth. There were a few things I found myself repeatedly saying across those chats, so I put them together. Sharing here too, hoping it might be useful beyond the team.*
 
 **1) Creative trust and showing your rough work**
 
