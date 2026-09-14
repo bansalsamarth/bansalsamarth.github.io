@@ -65,7 +65,7 @@ Whenever you're anxious about perception, show up and do your absolute best in t
 
 Whatever your ambition is, your leaders should know. Make asks. That's your job. It *really* helps to know where you are at, what you are thinking, and depending on how things are going, if managers can make space for the kind of things you want to do.
 
-The key point for this to work is: don't feel *entitled (*italicised for emphasis) that your ask will be fulfilled. Your manager's job is to offer you clarity: what is possible, what is not, and what they simply don't know, what they are figuring out.
+The key point for this to work is: don't feel *entitled* (italicised for emphasis) that your ask will be fulfilled. Your manager's job is to offer you clarity: what is possible, what is not, and what they simply don't know, what they are figuring out.
 
 This is really just like any other adult conversation. Once you know, if you realise what you want isn't going to happen here, and you feel undervalued, or you genuinely believe you'll be more valued elsewhere, it's information for you. But before making conclusions, have the adult conversation.
 
